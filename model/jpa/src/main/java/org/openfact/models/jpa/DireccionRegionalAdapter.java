@@ -82,6 +82,6 @@ public class DireccionRegionalAdapter implements DireccionRegionalModel {
         } else if (!getDenominacion().equals(other.getDenominacion()))
             return false;
         return true;
-    }
+    }	
 
 }
