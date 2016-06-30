@@ -97,7 +97,7 @@ ext {
                     ext_api: [version: '2.2.0.Final']
             ]
     ]
-    jboss_jaxrs_api_20_spec = '2.2.0.Final'
+    jboss_jaxrs_api_20_spec = '1.0.0.Final'
     log4j = [version: '1.2.16']
     resteasy = [version: '3.0.14.Final']
     slf4j = [version: '1.7.7']
