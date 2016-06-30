@@ -12,4 +12,5 @@ public interface DireccionRegionalModel extends Model {
 
     void setEstado(boolean estado);
 
+    String setObservacion();
 }
