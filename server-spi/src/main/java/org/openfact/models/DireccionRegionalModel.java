@@ -2,8 +2,6 @@ package org.openfact.models;
 
 public interface DireccionRegionalModel extends Model {
 
-	public String Id = "";
-
 	String getId();
 
 	String getDenominacion();
