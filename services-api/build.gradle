@@ -13,9 +13,6 @@ dependencies {
     compile ( libraries.jboss_servlet_api_30_spec )
     compile ( libraries.twitter4j_core )
 
-    // not related to jboss-logging-tools, just required for JAX-RS
-    provided ( libraries.jboss_jaxrs_api_20_spec )
-
     // These dependencies are the jboss-logging tools magic
     // the jboss-logging-tools processor
     provided ( libraries.jboss_logging_processor )

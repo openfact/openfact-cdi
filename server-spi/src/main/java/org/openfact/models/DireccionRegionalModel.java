@@ -2,14 +2,14 @@ package org.openfact.models;
 
 public interface DireccionRegionalModel extends Model {
 
-    String getId();
+	String getId();
 
-    String getDenominacion();
+	String getDenominacion();
 
-    void setDenominacion(String denominacion);
+	void setDenominacion(String denominacion);
 
-    boolean getEstado();
+	boolean getEstado();
 
-    void setEstado(boolean estado);
+	void setEstado(boolean estado);
 
 }
