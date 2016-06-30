@@ -1,6 +1,7 @@
 *~
 .gradle
 /build
+/gradle/wrapper
 /out
 /intTestHomeDir
 /subprojects/*/out
