@@ -1,0 +1,452 @@
+INFO	?	main	2016-06-30T22:15:39.476Z	org.javacs.Main#connectToNode	Connected to parent using socket on port 55282
+INFO	?	pool-1-thread-1	2016-06-30T22:15:39.568Z	org.javacs.JavaLanguageServer#doLint	Lint e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+SEVERE	?	pool-1-thread-1	2016-06-30T22:15:39.573Z	org.javacs.Main#lambda$run$0	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+org.javacs.ShowMessageException: Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+	at org.javacs.ShowMessageException.create(ShowMessageException.java:29)
+	at org.javacs.ShowMessageException.warning(ShowMessageException.java:20)
+	at org.javacs.JavaLanguageServer$1.didOpen(JavaLanguageServer.java:185)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:217)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:213)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.javacs.NoJavaConfigException: Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.doLint(JavaLanguageServer.java:292)
+	at org.javacs.JavaLanguageServer.access$400(JavaLanguageServer.java:25)
+	at org.javacs.JavaLanguageServer$1.didOpen(JavaLanguageServer.java:182)
+	... 12 more
+
+SEVERE	?	pool-1-thread-1	2016-06-30T22:15:42.673Z	org.javacs.Main#lambda$run$0	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+org.javacs.NoJavaConfigException: Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.autocomplete(JavaLanguageServer.java:866)
+	at org.javacs.JavaLanguageServer$1.completion(JavaLanguageServer.java:97)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:136)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+WARNING	?	pool-1-thread-1	2016-06-30T22:15:42.675Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+SEVERE	?	pool-1-thread-1	2016-06-30T22:15:43.835Z	org.javacs.Main#lambda$run$0	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+org.javacs.NoJavaConfigException: Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.autocomplete(JavaLanguageServer.java:866)
+	at org.javacs.JavaLanguageServer$1.completion(JavaLanguageServer.java:97)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:136)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+WARNING	?	pool-1-thread-1	2016-06-30T22:15:43.839Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+SEVERE	?	pool-1-thread-1	2016-06-30T22:15:43.993Z	org.javacs.Main#lambda$run$0	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+org.javacs.NoJavaConfigException: Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.autocomplete(JavaLanguageServer.java:866)
+	at org.javacs.JavaLanguageServer$1.completion(JavaLanguageServer.java:97)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:136)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+WARNING	?	pool-1-thread-1	2016-06-30T22:15:43.997Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+SEVERE	?	pool-1-thread-1	2016-06-30T22:15:44.136Z	org.javacs.Main#lambda$run$0	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+org.javacs.NoJavaConfigException: Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.autocomplete(JavaLanguageServer.java:866)
+	at org.javacs.JavaLanguageServer$1.completion(JavaLanguageServer.java:97)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:136)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+WARNING	?	pool-1-thread-1	2016-06-30T22:15:44.137Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+SEVERE	?	pool-1-thread-1	2016-06-30T22:15:44.282Z	org.javacs.Main#lambda$run$0	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+org.javacs.NoJavaConfigException: Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.autocomplete(JavaLanguageServer.java:866)
+	at org.javacs.JavaLanguageServer$1.completion(JavaLanguageServer.java:97)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:136)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+WARNING	?	pool-1-thread-1	2016-06-30T22:15:44.283Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+SEVERE	?	pool-1-thread-1	2016-06-30T22:15:44.565Z	org.javacs.Main#lambda$run$0	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+org.javacs.NoJavaConfigException: Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.autocomplete(JavaLanguageServer.java:866)
+	at org.javacs.JavaLanguageServer$1.completion(JavaLanguageServer.java:97)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:136)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+WARNING	?	pool-1-thread-1	2016-06-30T22:15:44.566Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+SEVERE	?	pool-1-thread-1	2016-06-30T22:15:44.719Z	org.javacs.Main#lambda$run$0	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+org.javacs.NoJavaConfigException: Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.autocomplete(JavaLanguageServer.java:866)
+	at org.javacs.JavaLanguageServer$1.completion(JavaLanguageServer.java:97)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:136)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+WARNING	?	pool-1-thread-1	2016-06-30T22:15:44.720Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+SEVERE	?	pool-1-thread-1	2016-06-30T22:15:46.254Z	org.javacs.Main#lambda$run$0	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+org.javacs.NoJavaConfigException: Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.autocomplete(JavaLanguageServer.java:866)
+	at org.javacs.JavaLanguageServer$1.completion(JavaLanguageServer.java:97)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:136)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+WARNING	?	pool-1-thread-1	2016-06-30T22:15:46.255Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+SEVERE	?	pool-1-thread-1	2016-06-30T22:15:47.207Z	org.javacs.Main#lambda$run$0	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+org.javacs.NoJavaConfigException: Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.autocomplete(JavaLanguageServer.java:866)
+	at org.javacs.JavaLanguageServer$1.completion(JavaLanguageServer.java:97)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:136)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+WARNING	?	pool-1-thread-1	2016-06-30T22:15:47.210Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+SEVERE	?	pool-1-thread-1	2016-06-30T22:15:47.346Z	org.javacs.Main#lambda$run$0	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+org.javacs.NoJavaConfigException: Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.autocomplete(JavaLanguageServer.java:866)
+	at org.javacs.JavaLanguageServer$1.completion(JavaLanguageServer.java:97)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:136)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+WARNING	?	pool-1-thread-1	2016-06-30T22:15:47.347Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+SEVERE	?	pool-1-thread-1	2016-06-30T22:15:47.490Z	org.javacs.Main#lambda$run$0	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+org.javacs.NoJavaConfigException: Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.autocomplete(JavaLanguageServer.java:866)
+	at org.javacs.JavaLanguageServer$1.completion(JavaLanguageServer.java:97)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:136)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+WARNING	?	pool-1-thread-1	2016-06-30T22:15:47.491Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+SEVERE	?	pool-1-thread-1	2016-06-30T22:15:47.614Z	org.javacs.Main#lambda$run$0	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+org.javacs.NoJavaConfigException: Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.autocomplete(JavaLanguageServer.java:866)
+	at org.javacs.JavaLanguageServer$1.completion(JavaLanguageServer.java:97)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:136)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+WARNING	?	pool-1-thread-1	2016-06-30T22:15:47.615Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+SEVERE	?	pool-1-thread-1	2016-06-30T22:15:47.824Z	org.javacs.Main#lambda$run$0	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+org.javacs.NoJavaConfigException: Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.autocomplete(JavaLanguageServer.java:866)
+	at org.javacs.JavaLanguageServer$1.completion(JavaLanguageServer.java:97)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:136)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+WARNING	?	pool-1-thread-1	2016-06-30T22:15:47.826Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+SEVERE	?	pool-1-thread-1	2016-06-30T22:15:48.123Z	org.javacs.Main#lambda$run$0	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+org.javacs.NoJavaConfigException: Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.autocomplete(JavaLanguageServer.java:866)
+	at org.javacs.JavaLanguageServer$1.completion(JavaLanguageServer.java:97)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:136)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+WARNING	?	pool-1-thread-1	2016-06-30T22:15:48.124Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+SEVERE	?	pool-1-thread-1	2016-06-30T22:15:49.687Z	org.javacs.Main#lambda$run$0	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+org.javacs.NoJavaConfigException: Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.autocomplete(JavaLanguageServer.java:866)
+	at org.javacs.JavaLanguageServer$1.completion(JavaLanguageServer.java:97)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:136)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+WARNING	?	pool-1-thread-1	2016-06-30T22:15:49.688Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+SEVERE	?	pool-1-thread-1	2016-06-30T22:15:49.823Z	org.javacs.Main#lambda$run$0	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+org.javacs.NoJavaConfigException: Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.autocomplete(JavaLanguageServer.java:866)
+	at org.javacs.JavaLanguageServer$1.completion(JavaLanguageServer.java:97)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:136)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+WARNING	?	pool-1-thread-1	2016-06-30T22:15:49.825Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+SEVERE	?	pool-1-thread-1	2016-06-30T22:15:51.968Z	org.javacs.Main#lambda$run$0	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+org.javacs.NoJavaConfigException: Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.autocomplete(JavaLanguageServer.java:866)
+	at org.javacs.JavaLanguageServer$1.completion(JavaLanguageServer.java:97)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:136)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+WARNING	?	pool-1-thread-1	2016-06-30T22:15:51.970Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+INFO	?	pool-1-thread-1	2016-06-30T22:15:57.337Z	org.javacs.JavaLanguageServer#doLint	Lint e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+SEVERE	?	pool-1-thread-1	2016-06-30T22:15:57.338Z	org.javacs.Main#lambda$run$0	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+org.javacs.NoJavaConfigException: Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.doLint(JavaLanguageServer.java:292)
+	at org.javacs.JavaLanguageServer.access$400(JavaLanguageServer.java:25)
+	at org.javacs.JavaLanguageServer$1.didSave(JavaLanguageServer.java:232)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:223)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:213)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+WARNING	?	pool-1-thread-1	2016-06-30T22:15:57.338Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+SEVERE	?	pool-1-thread-1	2016-06-30T22:16:05.877Z	org.javacs.Main#lambda$run$0	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+org.javacs.NoJavaConfigException: Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.doHover(JavaLanguageServer.java:776)
+	at org.javacs.JavaLanguageServer$1.hover(JavaLanguageServer.java:107)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:140)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:127)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+WARNING	?	pool-1-thread-1	2016-06-30T22:16:05.878Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+INFO	?	pool-1-thread-1	2016-06-30T22:16:07.794Z	org.javacs.JavaLanguageServer#doLint	Lint e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+SEVERE	?	pool-1-thread-1	2016-06-30T22:16:07.794Z	org.javacs.Main#lambda$run$0	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+org.javacs.NoJavaConfigException: Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:444)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:444)
+	at org.javacs.JavaLanguageServer.doLint(JavaLanguageServer.java:292)
+	at org.javacs.JavaLanguageServer.access$400(JavaLanguageServer.java:25)
+	at org.javacs.JavaLanguageServer$1.didSave(JavaLanguageServer.java:232)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter._doAccept(LanguageServerToJsonAdapter.xtend:223)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.doAccept(LanguageServerToJsonAdapter.xtend:213)
+	at io.typefox.lsapi.services.json.LanguageServerToJsonAdapter.accept(LanguageServerToJsonAdapter.xtend:124)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol.handleMessage(LanguageServerProtocol.xtend:79)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.handleMessage(LanguageServerProtocol.xtend:284)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:220)
+	at io.typefox.lsapi.services.json.LanguageServerProtocol$IOHandler.run(LanguageServerProtocol.xtend:180)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+WARNING	?	pool-1-thread-1	2016-06-30T22:16:07.795Z	org.javacs.JavaLanguageServer#onError	Can't find configuration file for e:\DEVELOP JAVA\IDEA JAVA\openfact\server-spi\src\main\java\org\openfact\models\DireccionRegionalModel.java
