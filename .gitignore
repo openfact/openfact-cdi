@@ -48,9 +48,25 @@ target
 
 
 
+# Created by .ignore support plugin (hsz.mobi)
+### Gradle template
+.gradle
+build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+# gradle/wrapper/gradle-wrapper.properties
+
 
 *~
-.gradle
 /build
 **/wrapper/**
 **/build/**
@@ -143,3 +159,10 @@ log
 jaxrs/.DS_Store
 .DS_Store
 *.db
+common/build/
+core/build/
+model/jpa/bin/
+model/jpa/build/
+server-spi/build/
+services-api/build/
+services/build/
