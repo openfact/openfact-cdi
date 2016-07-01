@@ -7,6 +7,7 @@ import java.util.Date;
  */
 public class NotaModel {
     /* emisor electronico*/
+public class NotaModel  {
     Date FechaEmision;
     String FirmaDigital;
     String RazonSocial;
