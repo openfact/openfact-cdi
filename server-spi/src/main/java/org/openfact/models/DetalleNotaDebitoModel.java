@@ -5,7 +5,6 @@ package org.openfact.models;
  */
 public class DetalleNotaDebitoModel {
     NotaDebitoModel notaDebitoModel;
-    NotaCreditoModel notaCreditoModel;
     String MotivoSustento;
     String UnidadMedidaModifica;
     double CantidaModifica;

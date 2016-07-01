@@ -5,13 +5,12 @@ package org.openfact.models;
  */
 public class NotaCreditoModel extends NotaModel {
 
-    String CodigoTipoNota;
-    String NumeroSerieCorrelativo;
-    String ApNomRazonSocial;
-      /*----RESUMEN venta-*/
+    String CodigoTipoNotaCredito;
 
-    String SerieDocumentoModifica;
-    String TipoDocumentoModifica;
+
+    /*-- Informe adicional*/
     String DocumentoReferencia;
+    String LeyendaRepresentacion;
+    String AutirizadoResulucion;
 
 }

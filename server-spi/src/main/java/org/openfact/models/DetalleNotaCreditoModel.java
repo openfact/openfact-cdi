@@ -7,7 +7,6 @@ import java.util.Date;
  */
 public class DetalleNotaCreditoModel {
     NotaCreditoModel notaCreditoModel;
-    String MotivoSustento;
     String UnidadMedidaModifica;
     double CantidaModifica;
     String CodigoProducto;
