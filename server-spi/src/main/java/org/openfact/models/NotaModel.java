@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * Created by ahren-dev01 on 1/07/2016.
  */
-public class NotaModel {
+public class NotaModel extends DocumentoElectronicoModel {
     Date FechaEmision;
     String RazonSocial;
     String NombreComercial;

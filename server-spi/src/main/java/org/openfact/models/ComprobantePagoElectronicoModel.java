@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * Created by Alex Pariona on 1/07/2016.
  */
-public class ComprobantePagoElectronicoModel {
+public class ComprobantePagoElectronicoModel extends DocumentoElectronicoModel {
 	Date FechaEmision;
 	/*-----INI DATOS CONTRIBUYENTE----*/
 	String RazonSocial;
