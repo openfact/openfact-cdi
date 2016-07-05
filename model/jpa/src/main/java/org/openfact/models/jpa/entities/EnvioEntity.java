@@ -1,8 +1,8 @@
-package org.openfact.models;
+package org.openfact.models.jpa.entities;
 
 import java.time.LocalDate;
 
-public class EnvioModel {
+public class EnvioEntity {
 
     private String versionUbl;
     private String versionDocumento;

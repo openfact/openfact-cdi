@@ -1,8 +1,10 @@
-package org.openfact.models;
+package org.openfact.models.jpa.entities;
+
+import org.openfact.models.enums.TipoNotaType;
 
 import java.time.LocalDate;
 
-public class NotaModel {
+public class NotaEntity {
 
     private String serie;
     private String numero;
@@ -21,12 +23,12 @@ public class NotaModel {
     private double totalIgv;
     private double totalIsc;
 
-    private TipoNotaModel tipoNota;
+    private TipoNotaEntity tipoNota;
 
-    private AdquirienteModel adquiriente;
+    private AdquirienteEntity adquiriente;
 
-    private HistorialEmisorModel historialEmisor;
+    private HistorialEmisorEntity historialEmisor;
 
-    private ComprobantePagoModel comprobante;
+    private ComprobantePagoEntity comprobante;
     private String DocumentoReferencia;
 }

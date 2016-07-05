@@ -1,9 +1,9 @@
-package org.openfact.models;
+package org.openfact.models.jpa.entities;
 
 import java.time.LocalDate;
 import java.util.Date;
 
-public class ComprobanteTributacionModel {
+public class ComprobanteTributacionEntity {
 
     // Datos de la percepcion
     private String regimen;
@@ -27,7 +27,7 @@ public class ComprobanteTributacionModel {
     private String monedaPagoCobro;
 
     // Comprobante relacionado
-    private ComprobantePagoModel comprobantePago;
+    private ComprobantePagoEntity comprobantePago;
 
     // Datos de la percepcionRetencion
     private double importeRetenidoPercibido;
