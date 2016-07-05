@@ -1,11 +1,25 @@
 package org.openfact.models;
 
-public class ContribuyenteModel {
+public class EmisorModel {
+
+    private String ruc;
+    private String razonSocial;
+    private String nombreComercial;
+
+    private String domicilioFiscal;
+
+
+
+
+
+
 
     private String numeroDocumentoIdentidad;
     private String tipoDocumentoIdentidad;
 
-    private String nombreComercial;
+    String leyendaAutorizacion;
+    String leyendaRepresentacion;
+
 
     // domicilio fiscal
     private String ubigeo;

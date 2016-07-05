@@ -27,7 +27,7 @@ public class ComprobanteTributacionModel {
     private String monedaPagoCobro;
 
     // Comprobante relacionado
-    private ComprobantePagoElectronicoModel comprobantePago;
+    private ComprobantePagoModel comprobantePago;
 
     // Datos de la percepcionRetencion
     private double importeRetenidoPercibido;
