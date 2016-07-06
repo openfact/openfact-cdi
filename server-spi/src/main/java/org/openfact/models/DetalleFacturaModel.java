@@ -1,16 +1,35 @@
 package org.openfact.models;
 
-public class DetalleFacturaModel {
+public interface DetalleFacturaModel {
 
-	private String unidadMedida;
-	private double cantidad;
-	private String descripcion;
+    String getUnidadMedida();
 
-	private double valorUnitario;
-	private double precioVenta;
+    void setUnidadMedida(String unidadMedida);
 
-	private double igv;
-	private double isc;
+    double getCantidad();
 
-	private FacturaModel factura;
+    void setCantidad(double cantidad);
+
+    String getDescripcion();
+
+    void setDescripcion(String descripcion);
+
+    double getValorUnitario();
+
+    void setValorUnitario(double valorUnitario);
+
+    double getPrecioVenta();
+
+    void setPrecioVenta(double precioVenta);
+
+    double getIgv();
+
+    void setIgv(double igv);
+
+    double getIsc();
+
+    void setIsc(double isc);
+
+    FacturaModel getFactura();
+
 }
