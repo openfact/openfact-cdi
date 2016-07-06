@@ -4,7 +4,6 @@ import java.time.LocalDate;
 
 public interface ComprobantePagoModel {
 
-    TipoDocumentoModel getTipoDocumento();
 
     String getSerie();
 
@@ -35,8 +34,6 @@ public interface ComprobantePagoModel {
     double getTotalIsc();
 
     AdquirienteModel getAdquiriente();
-
-    TipoDocumentoModel getTipoDocumentoGuiaRemision();
 
     String getNumeroGuiaRemision();
 
