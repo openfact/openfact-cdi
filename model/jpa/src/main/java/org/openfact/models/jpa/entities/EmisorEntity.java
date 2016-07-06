@@ -1,71 +1,93 @@
 package org.openfact.models.jpa.entities;
 
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.NamedQueries;
+import org.hibernate.annotations.NamedQuery;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 
-@Table(name="EMISOR")
+@Table(name = "EMISOR")
 @Entity
+@NamedQueries(value = {
+        @NamedQuery(name = "EmisorEntity.findAll", query = "SELECT d FROM EmisorEntity d"),
+        @NamedQuery(name = "EmisorEntity.findByRuc", query = "SELECT d FROM EmisorEntity d WHERE d.ruc = :ruc"),
+        @NamedQuery(name = "EmisorEntity.findByRazonSocial", query = "SELECT d FROM EmisorEntity d WHERE d.razonSocial = :razonSocial")})
 public class EmisorEntity {
 
-    @Id
-    @Access(AccessType.PROPERTY)
-    @GeneratedValue(generator = "uuid2")
-    @GenericGenerator(name = "uuid2", strategy = "uuid2")
-    @Column(name="id", length = 36)
-    private String id;
+	@Id
+	@Access(AccessType.PROPERTY)
+	@GeneratedValue(generator = "uuid2")
+	@GenericGenerator(name = "uuid2", strategy = "uuid2")
+	@Column(name = "id", length = 36)
+	private String id;
 
-    @Column(name="ruc", unique = true)
-    private String ruc;
+	@Column(name = "ruc", unique = true)
+	private String ruc;
 
-    @Column(name="razon_social", unique = true)
-    private String razonSocial;
+	@Column(name = "razon_social", unique = true)
+	private String razonSocial;
 
-    @Column(name="nombre_comercial")
-    private String nombreComercial;
+	@Column(name = "nombre_comercial")
+	private String nombreComercial;
 
-    @Column(name="domicilio_fiscal")
-    private String domicilioFiscal;
+	@Column(name = "domicilio_fiscal")
+	private String domicilioFiscal;
 
-    public String getId() {
-        return id;
-    }
+	@Type(type = "org.hibernate.type.TrueFalseType")
+	@Column(name = "ESTADO")
+	private boolean estado;
 
-    public void setId(String id) {
-        this.id = id;
-    }
+	@Version
+	private Integer optlk;
 
-    public String getRuc() {
-        return ruc;
-    }
+	public String getId() {
+		return id;
+	}
 
-    public void setRuc(String ruc) {
-        this.ruc = ruc;
-    }
+	public void setId(String id) {
+		this.id = id;
+	}
 
-    public String getRazonSocial() {
-        return razonSocial;
-    }
+	public String getRuc() {
+		return ruc;
+	}
 
-    public void setRazonSocial(String razonSocial) {
-        this.razonSocial = razonSocial;
-    }
+	public void setRuc(String ruc) {
+		this.ruc = ruc;
+	}
 
-    public String getNombreComercial() {
-        return nombreComercial;
-    }
+	public String getRazonSocial() {
+		return razonSocial;
+	}
 
-    public void setNombreComercial(String nombreComercial) {
-        this.nombreComercial = nombreComercial;
-    }
+	public void setRazonSocial(String razonSocial) {
+		this.razonSocial = razonSocial;
+	}
 
-    public String getDomicilioFiscal() {
-        return domicilioFiscal;
-    }
+	public String getNombreComercial() {
+		return nombreComercial;
+	}
 
-    public void setDomicilioFiscal(String domicilioFiscal) {
-        this.domicilioFiscal = domicilioFiscal;
-    }
+	public void setNombreComercial(String nombreComercial) {
+		this.nombreComercial = nombreComercial;
+	}
+
+	public String getDomicilioFiscal() {
+		return domicilioFiscal;
+	}
+
+	public void setDomicilioFiscal(String domicilioFiscal) {
+		this.domicilioFiscal = domicilioFiscal;
+	}
+
+	public boolean isEstado() {
+		return estado;
+	}
+
+	public void setEstado(boolean estado) {
+		this.estado = estado;
+	}
 
 	@Override
 	public int hashCode() {

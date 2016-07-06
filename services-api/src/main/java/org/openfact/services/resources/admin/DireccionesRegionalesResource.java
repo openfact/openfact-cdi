@@ -8,6 +8,7 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
@@ -26,7 +27,7 @@ public interface DireccionesRegionalesResource {
      */
     @Path("{idDireccionRegional}")
     public DireccionRegionalResource direccionRegional(
-            @PathParam("idDireccionRegional") String idDireccionRegional);
+            @PathParam("idDireccionRegional") String idDireccionRegional/*, @QueryParam("a") int a*/);
 
     /**
      * Use este endpoint para crear una direccionRegional. Una direccion
@@ -38,10 +39,11 @@ public interface DireccionesRegionalesResource {
      * @statuscode 200 Si la direccionRegional fue creada satisfactoriamente.
      * @return Informacion acerca de la direccionRegional creada.
      */
-    @POST
+    @POST 
     @Produces(MediaType.APPLICATION_JSON)
     public Response create(DireccionRegionalRepresentation rep);
-
+    
+    
     /**
      * Este endpoint lista todas las direccionesRegionales que existen en el
      * sistema.
@@ -51,11 +53,10 @@ public interface DireccionesRegionalesResource {
      *             satisfactoriamente.
      * @return Una Lista de direccionesRegionales.
      */
-    @GET
-    @Consumes(MediaType.APPLICATION_JSON)
+    @GET    
     @Produces(MediaType.APPLICATION_JSON)
-    public List<DireccionRegionalRepresentation> getAll();
-
+    public List<DireccionRegionalRepresentation> getAll();    
+   
     /**
      * Este endpoint provee una forma de buscar direccionesRegionales. Los
      * criterios de busqueda estan definidos por los parametros enviados.
@@ -67,7 +68,7 @@ public interface DireccionesRegionalesResource {
      * @return Los resultados de la busqueda (una pagina de
      *         direccionesRegionales).
      */
-    /*@POST
+  /* @POST
     @Path("search")
     @Produces(MediaType.APPLICATION_JSON)
     public SearchResultsRepresentation<DireccionRegionalRepresentation> search(

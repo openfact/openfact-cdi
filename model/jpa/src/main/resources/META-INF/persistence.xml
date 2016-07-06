@@ -14,5 +14,5 @@
 			<property name="hibernate.id.new_generator_mappings" value="true" />
 		</properties>
 	</persistence-unit>
-
+	
 </persistence>
