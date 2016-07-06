@@ -15,6 +15,7 @@ import javax.persistence.TypedQuery;
 import org.openfact.models.EmisorModel;
 import org.openfact.models.EmisorProvider;
 import org.openfact.models.ModelDuplicateException;
+import org.openfact.models.enums.TipoDocumentoType;
 import org.openfact.models.enums.TipoNotaType;
 import org.openfact.models.jpa.entities.EmisorEntity;
 import org.openfact.models.jpa.entities.TipoNotaEntity;
