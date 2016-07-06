@@ -5,7 +5,6 @@ import java.time.LocalDate;
 public class BajaModel {
 
     private LocalDate fechaEmision;
-    private TipoDocumentoModel tipoDocumento;
 
     private String motivoBaja;
 
