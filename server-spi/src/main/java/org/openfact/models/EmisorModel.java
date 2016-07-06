@@ -8,8 +8,6 @@ public interface EmisorModel extends Model {
 
 	String getRazonSocial();
 
-	void setRazonSocial(String razonSocial);
-
 	String getNombreComercial();
 
 	void setNombreComercial(String nombreComercial);
@@ -21,10 +19,5 @@ public interface EmisorModel extends Model {
 	boolean getEstado();
 
 	void setEstado(boolean estado);
-
-	/*
-	 * private String ruc; private String razonSocial; private String
-	 * nombreComercial; private String domicilioFiscal;
-	 */
 
 }

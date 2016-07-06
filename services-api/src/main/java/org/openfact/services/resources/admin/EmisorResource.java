@@ -12,6 +12,7 @@ import javax.ws.rs.core.Response;
 import org.openfact.representations.idm.EmisorRepresentation;
 
 public interface EmisorResource {
+
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	public EmisorRepresentation toRepresentation();

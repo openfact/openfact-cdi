@@ -19,19 +19,19 @@ public class EmisorEntity {
 	@Access(AccessType.PROPERTY)
 	@GeneratedValue(generator = "uuid2")
 	@GenericGenerator(name = "uuid2", strategy = "uuid2")
-	@Column(name = "id", length = 36)
+	@Column(name = "ID", length = 36)
 	private String id;
 
-	@Column(name = "ruc", unique = true)
+	@Column(name = "RUC", unique = true)
 	private String ruc;
 
-	@Column(name = "razon_social", unique = true)
+	@Column(name = "RAZON_SOCIAL", unique = true)
 	private String razonSocial;
 
-	@Column(name = "nombre_comercial")
+	@Column(name = "NOMBRE_COMERCIAL")
 	private String nombreComercial;
 
-	@Column(name = "domicilio_fiscal")
+	@Column(name = "DOMICILIO_FISCAL")
 	private String domicilioFiscal;
 
 	@Type(type = "org.hibernate.type.TrueFalseType")

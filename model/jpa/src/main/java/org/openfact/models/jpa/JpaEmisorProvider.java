@@ -36,14 +36,12 @@ public class JpaEmisorProvider extends AbstractHibernateStorage implements Emiso
     @Override
     public void close() {
         // TODO Auto-generated method stub
-
     }
 
     @Override
     public EmisorModel create(String ruc, String razonSocial) {
         if (findByRuc(ruc) != null) {
-            throw new ModelDuplicateException(
-                    "El emisor sunat debe ser unico, se encontro otra entidad con el mismo RUC: " + ruc);
+            throw new ModelDuplicateException("El emisor sunat debe ser unico, se encontro otra entidad con el mismo RUC: " + ruc);
         }
         EmisorEntity emisorEntity = new EmisorEntity();
         emisorEntity.setRuc(ruc);
@@ -84,8 +82,7 @@ public class JpaEmisorProvider extends AbstractHibernateStorage implements Emiso
         if (results.isEmpty()) {
             return null;
         } else if (results.size() > 1) {
-            throw new IllegalStateException(
-                    "Mas de un Emisor con RAZON SOCIAL=" + razonSocial + ", results=" + results);
+            throw new IllegalStateException("Mas de un Emisor con RAZON SOCIAL=" + razonSocial + ", results=" + results);
         } else {
             return new EmisorAdapter(em, results.get(0));
         }
@@ -96,9 +93,7 @@ public class JpaEmisorProvider extends AbstractHibernateStorage implements Emiso
         TypedQuery<EmisorEntity> query = em.createNamedQuery("EmisorEntity.findAll", EmisorEntity.class);
         List<EmisorEntity> entities = query.getResultList();
         List<EmisorModel> result = new ArrayList<>();
-        for (EmisorEntity entity : entities) {
-            result.add(new EmisorAdapter(em, entity));
-        }
+        entities.forEach(f -> result.add(new EmisorAdapter(em, f)));
         return result;
     }
 
@@ -109,23 +104,21 @@ public class JpaEmisorProvider extends AbstractHibernateStorage implements Emiso
 
         SearchResultsModel<EmisorModel> searchResult = new SearchResultsModel<>();
         List<EmisorModel> models = searchResult.getModels();
-        for (EmisorEntity entity : entities) {
-            models.add(new EmisorAdapter(em, entity));
-        }
+
+        entities.forEach(f -> models.add(new EmisorAdapter(em, f) ));
         searchResult.setTotalSize(entityResult.getTotalSize());
         return searchResult;
     }
 
     @Override
     public SearchResultsModel<EmisorModel> search(SearchCriteriaModel criteria, String filterText) {
-        SearchResultsModel<EmisorEntity> entityResult = findFullText(criteria, EmisorEntity.class, filterText,
-                "razonSocial");
+        SearchResultsModel<EmisorEntity> entityResult = findFullText(criteria, EmisorEntity.class, filterText, "razonSocial");
         List<EmisorEntity> entities = entityResult.getModels();
+
         SearchResultsModel<EmisorModel> searchResult = new SearchResultsModel<>();
         List<EmisorModel> models = searchResult.getModels();
-        for (EmisorEntity entity : entities) {
-            models.add(new EmisorAdapter(em, entity));
-        }
+
+        entities.forEach(f -> models.add(new EmisorAdapter(em, f) ));
         searchResult.setTotalSize(entityResult.getTotalSize());
         return searchResult;
     }

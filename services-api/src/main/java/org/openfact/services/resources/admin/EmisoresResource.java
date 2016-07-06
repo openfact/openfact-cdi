@@ -27,7 +27,6 @@ public interface EmisoresResource {
    
     @GET    
     @Produces(MediaType.APPLICATION_JSON)
-    public List<EmisorRepresentation> getAll();    
-   
+    public List<EmisorRepresentation> getAll();
 
 }

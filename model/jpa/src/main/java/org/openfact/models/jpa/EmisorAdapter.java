@@ -5,23 +5,19 @@ import javax.persistence.EntityManager;
 import org.openfact.models.EmisorModel;
 import org.openfact.models.jpa.entities.EmisorEntity;
 
-public class EmisorAdapter implements EmisorModel {
-    private static final long serialVersionUID = 1L;
-    private EmisorEntity emisorEntity;
+public class EmisorAdapter implements EmisorModel, JpaModel<EmisorEntity> {
+
     private EntityManager em;
+    private EmisorEntity emisorEntity;
 
     public EmisorAdapter(EntityManager em, EmisorEntity emisorEntity) {
         this.em = em;
         this.emisorEntity = emisorEntity;
     }
 
-    public EmisorEntity getEmisorEntity() {
-        return emisorEntity;
-    }
-
     public static EmisorEntity toEmisorEntity(EmisorModel model, EntityManager em) {
         if (model instanceof EmisorAdapter) {
-            return ((EmisorAdapter) model).getEmisorEntity();
+            return ((EmisorAdapter) model).getEntity();
         }
         return em.getReference(EmisorEntity.class, model.getId());
     }
@@ -32,8 +28,12 @@ public class EmisorAdapter implements EmisorModel {
     }
 
     @Override
-    public String getId() {
+    public EmisorEntity getEntity() {
+        return emisorEntity;
+    }
 
+    @Override
+    public String getId() {
         return emisorEntity.getId();
     }
 
@@ -45,11 +45,6 @@ public class EmisorAdapter implements EmisorModel {
     @Override
     public String getRazonSocial() {
         return emisorEntity.getRazonSocial();
-    }
-
-    @Override
-    public void setRazonSocial(String razonSocial) {
-        emisorEntity.setRazonSocial(razonSocial);
     }
 
     @Override
