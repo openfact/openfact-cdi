@@ -1,6 +1,7 @@
 package org.openfact.services.resources.admin;
 
 
+import org.openfact.representations.idm.DetalleFacturaRepresentation;
 import org.openfact.representations.idm.FacturaRepresentation;
 
 import javax.ws.rs.*;
@@ -15,17 +16,43 @@ public interface FacturaResource {
     @Produces(MediaType.APPLICATION_JSON)
     public FacturaRepresentation toRepresentation();
 
+    @GET
+    @Path("send")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response send();
+
+    @GET
+    @Path("estatus")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response status();
+
+    @GET
+    @Path("chart")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response chart();
+
+    @GET
+    @Path("xml")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response downloadXml();
+
+    @GET
+    @Path("xls")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response downloadXls();
+
+    @GET
+    @Path("pdf")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response downloadPdf();
+
+    @GET
+    @Path("cdr")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response downloadCdr();
+
     @PUT
     @Consumes(MediaType.APPLICATION_JSON)
-    public void update(FacturaRepresentation rep);
+    public void update(FacturaRepresentation facturaRepresentation);
 
-    @POST
-    @Path("enable")
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response enable();
-
-    @POST
-    @Path("disable")
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response disable();
 }
