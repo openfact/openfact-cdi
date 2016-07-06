@@ -11,4 +11,5 @@ public class EnvioModel {
 
     private LocalDate fechaEnvio;
 
+    private  FacturaModel facturaModel;
 }

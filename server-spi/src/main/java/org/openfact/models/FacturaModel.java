@@ -1,14 +1,25 @@
 package org.openfact.models;
 
-public class FacturaModel extends ComprobantePagoModel {
+public interface FacturaModel extends ComprobantePagoModel {
 
-	private double igv;
-	private double isc;
+    double getIgv();
+
+    double getIsc();
+
+    DocumentoRelacionadoTributario getDocumentoRelacionado();
+
+    String getNumeroDocumentoRelacionado();
+
+    void setIgv(double igv);
+
+    void setIsc(double isc);
+
+    void setNumeroDocumentoRelacionado(String numeroDocumentoRelacionado);
+/*	private double igv;
+    private double isc;
 
 	// Catalogo 12
 	private DocumentoRelacionadoTributario documentoRelacionado;
-	private String numeroDocumentoRelacionado;
-
-	private EnvioModel envio;
+	private String numeroDocumentoRelacionado;*/
 
 }

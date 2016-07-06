@@ -1,8 +1,10 @@
 package org.openfact.models;
 
-public class DocumentoRelacionadoTributario {
+public interface DocumentoRelacionadoTributario {
 
-    private String codigo;
-    private String descripcion;
+    String getCodigo();
+    String getDescripcion();
+  /*  private String codigo;
+    private String descripcion;*/
 
 }

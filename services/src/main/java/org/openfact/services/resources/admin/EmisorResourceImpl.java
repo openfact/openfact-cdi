@@ -40,8 +40,7 @@ public class EmisorResourceImpl implements EmisorResource {
 
 	@Override
 	public void update(EmisorRepresentation rep) {
-		EmisorModel emisor = getEmisorModel();		
-		emisor.setRazonSocial(rep.getRazonSocial());
+		EmisorModel emisor = getEmisorModel();
 		emisor.setNombreComercial(rep.getNombreComercial());
 		emisor.setDomicilioFiscal(rep.getDomicilioFiscal());
 		emisor.commit();

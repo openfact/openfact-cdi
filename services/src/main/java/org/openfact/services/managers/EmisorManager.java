@@ -10,8 +10,7 @@ import org.openfact.representations.idm.EmisorRepresentation;
 @Stateless
 @TransactionAttribute(TransactionAttributeType.REQUIRED)
 public class EmisorManager {
-	public boolean update(EmisorModel emisor, EmisorRepresentation rep) {		
-		emisor.setRazonSocial(rep.getRazonSocial());
+	public boolean update(EmisorModel emisor, EmisorRepresentation rep) {
 		emisor.setNombreComercial(rep.getNombreComercial());
 		emisor.setDomicilioFiscal(rep.getDomicilioFiscal());
 		emisor.commit();

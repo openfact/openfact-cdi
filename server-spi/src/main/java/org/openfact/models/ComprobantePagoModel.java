@@ -2,10 +2,48 @@ package org.openfact.models;
 
 import java.time.LocalDate;
 
-public class ComprobantePagoModel {
+public interface ComprobantePagoModel {
 
-	// Catalogo 01
-	private TipoDocumentoModel tipoDocumento;
+    TipoDocumentoModel getTipoDocumento();
+
+    String getSerie();
+
+    String getNumero();
+
+    LocalDate getFechaEmision();
+
+    String getMoneda();
+
+    double getImporteTotal();
+
+    double getCargos();
+
+    double getTributos();
+
+    double getDescuentos();
+
+    double getTotalOperacionesGravadas();
+
+    double getTotalOperacionesExoneradas();
+
+    double getTotalOperacionesInafectas();
+
+    double getTotalValorVentaOperacionesGratuitas();
+
+    double getTotalIgv();
+
+    double getTotalIsc();
+
+    AdquirienteModel getAdquiriente();
+
+    TipoDocumentoModel getTipoDocumentoGuiaRemision();
+
+    String getNumeroGuiaRemision();
+
+    EmisorModel getEmisor();
+
+    // Catalogo 01
+    /*private TipoDocumentoModel tipoDocumento;
 
 	private String serie;
 	private String numero;
@@ -33,5 +71,5 @@ public class ComprobantePagoModel {
 	private TipoDocumentoModel tipoDocumentoGuiaRemision;
 	private String numeroGuiaRemision;
 
-	private HistorialEmisorModel historialEmisor;
+	private EmisorModel emisor;*/
 }

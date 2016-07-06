@@ -1,5 +1,5 @@
 package org.openfact.models;
 
-public class BoletaModel extends ComprobantePagoModel {
+public interface BoletaModel extends ComprobantePagoModel {
 
 }
