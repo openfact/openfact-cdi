@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * Created by Alex Pariona on 06/07/2016.
  */
-public class FacturaRepresentation implements Serializable {
+public class FacturaRepresentation extends ComprobantePagoRepresentation implements Serializable {
     private double igv;
     private double isc;
     private String numeroDocumentoRelacionado;
