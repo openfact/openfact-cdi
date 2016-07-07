@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class BajaEntity {
 
     private LocalDate fechaEmision;
-    private TipoDocumentoEntity tipoDocumento;
+    //private TipoDocumentoEntity tipoDocumento;
 
     private String motivoBaja;
 

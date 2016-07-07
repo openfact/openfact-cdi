@@ -12,7 +12,7 @@ import org.openfact.provider.Provider;
 public interface EmisorProvider extends Provider {
 
 	EmisorModel create(String ruc, String razonSocial);
-	
+
 	EmisorModel findById(int id);
 
 	EmisorModel findByRuc(String ruc);
@@ -24,4 +24,5 @@ public interface EmisorProvider extends Provider {
 	SearchResultsModel<EmisorModel> search(SearchCriteriaModel criteria);
 
 	SearchResultsModel<EmisorModel> search(SearchCriteriaModel criteria, String filterText);
+
 }

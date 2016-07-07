@@ -1,23 +1,27 @@
 package org.openfact.models;
 
-public interface DetalleBoletaModel extends Model{
-	String getUnidadMedida();
+import java.math.BigDecimal;
 
-	void setUnidadMedida(String unidadMedida);
+public interface DetalleBoletaModel extends Model {
 
-	 double getCantidad();
+    String getId();
 
-	 void setCantidad(double cantidad);
+    String getUnidadMedida();
 
-	 String getDescripcion();
+    void setUnidadMedida(String unidadMedida);
 
-	void setDescripcion(String descripcion);
+    BigDecimal getCantidad();
 
-	double getPrecioVenta();
+    void setCantidad(BigDecimal cantidad);
 
-    void setPrecioVenta(double precioVenta);
+    String getDescripcion();
 
-	 BoletaModel getBoleta();
+    void setDescripcion(String descripcion);
 
-	 void setBoleta(BoletaModel boleta);
+    BigDecimal getPrecioVenta();
+
+    void setPrecioVenta(BigDecimal precioVenta);
+
+    BoletaModel getBoleta();
+
 }

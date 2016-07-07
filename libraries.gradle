@@ -57,7 +57,9 @@ ext {
             ],
             javax        : [
                     persistence: [version: '1.0.0.Final']
-            ]
+            ],
+            validator: [version: '5.2.4.Final'],
+            java8: [version: '5.2.1.Final']
     ]
     infinispan = [version: '8.1.0.Final']
     jackson = [version: '2.5.4']
@@ -221,9 +223,11 @@ ext {
             log4j                           : "log4j:log4j:${log4j.version}",
             junit                           : "junit:junit:${junit.version}",
             hamcrest_all                    : "org.hamcrest:hamcrest-all:${hamcrest.version}",
-            hibernate_jpa_21_api            : "org.hibernate.javax.persistence:hibernate-jpa-2.1-api:${hibernate.javax.persistence.version}",
             h2                              : "com.h2database:h2:${h2.version}",
+            hibernate_jpa_21_api            : "org.hibernate.javax.persistence:hibernate-jpa-2.1-api:${hibernate.javax.persistence.version}",
             hibernate_entitymanager         : "org.hibernate:hibernate-entitymanager:${hibernate.entitymanager.version}",
+            hibernate_validator             : "org.hibernate:hibernate-validator:${hibernate.validator.version}",
+            hibernate_java8                 : "org.hibernate:hibernate-java8:${hibernate.java8.version}",
             freemarker                      : "org.freemarker:freemarker:${freemarker.version}",
             xmlsec                          : "org.apache.santuario:xmlsec:${xmlsec.version}",
             wildfly_dist                    : "org.wildfly:wildfly-dist:${wildfly.version}",

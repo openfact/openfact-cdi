@@ -1,34 +1,38 @@
 package org.openfact.models;
 
+import java.math.BigDecimal;
+
 public interface DetalleFacturaModel {
+
+    String getId();
 
     String getUnidadMedida();
 
     void setUnidadMedida(String unidadMedida);
 
-    double getCantidad();
+    BigDecimal getCantidad();
 
-    void setCantidad(double cantidad);
+    void setCantidad(BigDecimal cantidad);
 
     String getDescripcion();
 
     void setDescripcion(String descripcion);
 
-    double getValorUnitario();
+    BigDecimal getValorUnitario();
 
-    void setValorUnitario(double valorUnitario);
+    void setValorUnitario(BigDecimal valorUnitario);
 
-    double getPrecioVenta();
+    BigDecimal getPrecioVenta();
 
-    void setPrecioVenta(double precioVenta);
+    void setPrecioVenta(BigDecimal precioVenta);
 
-    double getIgv();
+    BigDecimal getIgv();
 
-    void setIgv(double igv);
+    void setIgv(BigDecimal igv);
 
-    double getIsc();
+    BigDecimal getIsc();
 
-    void setIsc(double isc);
+    void setIsc(BigDecimal isc);
 
     FacturaModel getFactura();
 

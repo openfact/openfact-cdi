@@ -1,70 +1,71 @@
 package org.openfact.models;
 
+import org.openfact.models.enums.TipoDocumentoType;
+import org.openfact.models.enums.TipoGuiaRemisionType;
+
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 public interface ComprobantePagoModel extends  Model {
-    String getSerie();
 
-    String getNumero();
+     String getId();
 
-    LocalDate getFechaEmision();
+     TipoDocumentoType getTipoDocumento();
+    
+     LocalDate getFechaEmision();
 
-    String getMoneda();
+     String getSerie();
 
-    double getImporteTotal();
+     String getNumero();
 
-    double getCargos();
+     String getMoneda();
 
-    double getTributos();
+     BigDecimal getImporteTotal();
 
-    double getDescuentos();
+     void setImporteTotal(BigDecimal importeTotal);
 
-    double getTotalOperacionesGravadas();
+     double getIgv();
 
-    double getTotalOperacionesExoneradas();
+     void setIgv(double igv);
 
-    double getTotalOperacionesInafectas();
+     double getIsc();
 
-    double getTotalValorVentaOperacionesGratuitas();
+     void setIsc(double isc);
 
-    double getTotalIgv();
+     double getCargos();
 
-    double getTotalIsc();
+     void setCargos(double cargos);
 
-    AdquirienteModel getAdquiriente();
+     double getTributos();
 
-    String getNumeroGuiaRemision();
+     void setTributos(double tributos);
 
-    EmisorModel getEmisor();
+     double getDescuentos();
 
-    // Catalogo 01
-    /*private TipoDocumentoModel tipoDocumento;
+     void setDescuentos(double descuentos);
 
-	private String serie;
-	private String numero;
-	private LocalDate fechaEmision;
+     double getTotalGravado();
 
-	private String moneda;
-	private double importeTotal;
+     void setTotalGravado(double totalGravado);
 
-	private double cargos;
-	private double tributos;
-	private double descuentos;
+     double getTotalInafecto();
 
-	private double totalOperacionesGravadas;
-	private double totalOperacionesInafectas;
-	private double totalOperacionesExoneradas;
+     void setTotalInafecto(double totalInafecto);
 
-	private double totalValorVentaOperacionesGratuitas;
+     double getTotalExonerado();
 
-	private double totalIgv;
-	private double totalIsc;
+     void setTotalExonerado(double totalExonerado);
 
-	private AdquirienteModel adquiriente;
+     TipoGuiaRemisionType getTipoGuiaRemision();
 
-	// Catalogo 01
-	private TipoDocumentoModel tipoDocumentoGuiaRemision;
-	private String numeroGuiaRemision;
+     void setTipoGuiaRemision(TipoGuiaRemisionType tipoGuiaRemision);
 
-	private EmisorModel emisor;*/
+     String getNumeroGuiaRemision();
+
+     void setNumeroGuiaRemision(String numeroGuiaRemision);
+
+     EmisorModel getEmisor();
+
+     AdquirienteModel getAdquiriente();
+
 }

@@ -1,6 +1,6 @@
 package org.openfact.services.resources.admin;
 
-import org.openfact.representations.idm.FacturaRepresentation;
+import org.openfact.representations.idm.BotelaRepresentation;
 import org.openfact.representations.idm.search.SearchCriteriaRepresentation;
 import org.openfact.representations.idm.search.SearchResultsRepresentation;
 
@@ -10,23 +10,23 @@ import javax.ws.rs.core.Response;
 import java.util.List;
 
 @Consumes(MediaType.APPLICATION_JSON)
-public interface FacturasResource {
+public interface BoletasResource {
 
-	@Path("{idFactura}")
-	FacturaResource factura(@PathParam("idFactura") String idFactura);
+	@Path("{idBoleta}")
+	public BoletaResource botela(@PathParam("idBoleta") String idBoleta);
 
 	@POST
 	@Produces(MediaType.APPLICATION_JSON)
-	Response create(FacturaRepresentation rep);
+	public Response create(BotelaRepresentation rep);
 
-	@POST
+	@GET
 	@Path("importar")
 	@Produces(MediaType.APPLICATION_JSON)
-	Response importar(List<FacturaRepresentation> rep);
+	public Response importar(List<BotelaRepresentation> rep);
 
-	@POST
+	@GET
 	@Path("search")
 	@Produces(MediaType.APPLICATION_JSON)
-	SearchResultsRepresentation<FacturaRepresentation> search(SearchCriteriaRepresentation criteria);
+	public SearchResultsRepresentation<BotelaRepresentation> search(SearchCriteriaRepresentation criterial);
 
 }

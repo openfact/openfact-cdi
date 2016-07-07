@@ -1,16 +1,16 @@
 package org.openfact.models.enums;
 
-public enum TipoDocumentoType {
+public enum TipoDocumentoRelacionadoType {
 
-    FACTURA("FACTURA", "01"),
-    BOLETA("BOLETA DE VENTA", "03"),
-    NOTA_CREDITO("NOTA DE CREDITO", "07"),
-    NOTA_DEBITO("NOTA DE DEBITO", "08");
+    TICKET("TICKET DE SALIDA - ENAPU", "04"),
+    CODIGO_SCOP("CODIGO SCOP", "05"),
+    OTROS("OTROS", "99"),
+    FACTURA_EMITIDA("FACTURA - EMITIDA PARA CORREGIR ERROR EN EL RUC", "01");
 
     private final String descripcion;
     private final String codigo;
 
-    TipoDocumentoType(String descripcion, String codigo) {
+    TipoDocumentoRelacionadoType(String descripcion, String codigo) {
         this.descripcion = descripcion;
         this.codigo = codigo;
     }

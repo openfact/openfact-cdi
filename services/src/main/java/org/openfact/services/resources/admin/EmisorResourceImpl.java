@@ -2,6 +2,7 @@ package org.openfact.services.resources.admin;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;
+import javax.ws.rs.InternalServerErrorException;
 import javax.ws.rs.NotFoundException;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.core.Response;
@@ -10,13 +11,14 @@ import org.openfact.models.EmisorModel;
 import org.openfact.models.EmisorProvider;
 import org.openfact.models.utils.ModelToRepresentation;
 import org.openfact.representations.idm.EmisorRepresentation;
+import org.openfact.services.ErrorResponse;
 import org.openfact.services.managers.EmisorManager;
 
 @Stateless
 public class EmisorResourceImpl implements EmisorResource {
-	   
+
 	@PathParam("idEmisor")
-	private int idEmisor;	
+	private int idEmisor;
 
 	@Inject
 	private EmisorManager emisorManager;
@@ -24,8 +26,16 @@ public class EmisorResourceImpl implements EmisorResource {
 	@Inject
 	private EmisorProvider emisorProvider;
 
+	@Inject
+	private ComprobantesPagoResource comprobantesPagoResource;
+
 	private EmisorModel getEmisorModel() {
 		return emisorProvider.findById(idEmisor);
+	}
+
+	@Override
+	public ComprobantesPagoResource comprobantesPago() {
+		return comprobantesPagoResource;
 	}
 
 	@Override
@@ -34,18 +44,16 @@ public class EmisorResourceImpl implements EmisorResource {
 		if (rep != null) {
 			return rep;
 		} else {
-			throw new NotFoundException("Emisor Sunat no encontrada");
+			throw new NotFoundException("Emisor no encontrado");
 		}
 	}
 
 	@Override
 	public void update(EmisorRepresentation rep) {
-		EmisorModel emisor = getEmisorModel();
-		emisor.setNombreComercial(rep.getNombreComercial());
-		emisor.setDomicilioFiscal(rep.getDomicilioFiscal());
-		emisor.commit();
-		
-		//emisorManager.update(getEmisorModel(), rep);
+		boolean result = emisorManager.update(getEmisorModel(), rep);
+		if (!result) {
+			throw new InternalServerErrorException();
+		}
 	}
 
 	@Override
@@ -55,19 +63,18 @@ public class EmisorResourceImpl implements EmisorResource {
 		if (result) {
 			return Response.noContent().build();
 		} else {
-			return null; // ErrorResponse.error("Emisor no pudo ser
-							// desactivada", Response.Status.BAD_REQUEST);
+			return ErrorResponse.error("Emisor no pudo ser activado", Response.Status.BAD_REQUEST);
 		}
 	}
 
 	@Override
 	public Response disable() {
 		EmisorModel emisorModel = getEmisorModel();
-		boolean result = emisorManager.enable(emisorModel);
+		boolean result = emisorManager.disable(emisorModel);
 		if (result) {
 			return Response.noContent().build();
 		} else {
-			return null;
+			return ErrorResponse.error("Emisor no pudo ser desactivado", Response.Status.BAD_REQUEST);
 		}
 	}
 

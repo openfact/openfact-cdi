@@ -15,20 +15,23 @@ public interface EmisorResource {
 
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	public EmisorRepresentation toRepresentation();
+	EmisorRepresentation toRepresentation();
 
 	@PUT
 	@Consumes(MediaType.APPLICATION_JSON)
-	public void update(EmisorRepresentation rep);
+	void update(EmisorRepresentation rep);
 
 	@POST
 	@Path("enable")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response enable();
+	Response enable();
 
 	@POST
 	@Path("disable")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response disable();
-	
+	Response disable();
+
+	@Path("comprobantesPago")
+	ComprobantesPagoResource comprobantesPago();
+
 }

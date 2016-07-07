@@ -37,6 +37,7 @@ public class EmisoresResourceImpl implements EmisoresResource {
         return emisorResource;
     }
 
+    @Override
     public Response create(EmisorRepresentation rep) {
         try {
             EmisorModel model = representationToModel.createEmisor(rep, emisorProvider);
@@ -44,10 +45,11 @@ public class EmisoresResourceImpl implements EmisoresResource {
                     .header("Access-Control-Expose-Headers", "Location")
                     .entity(ModelToRepresentation.toRepresentation(model)).build();
         } catch (ModelDuplicateException e) {
-            return ErrorResponse.exists("DireccionRegional existe con la misma denominacion");
+            return ErrorResponse.exists("Emisor ya registrado");
         }
     }
 
+    @Override
     public List<EmisorRepresentation> getAll() {
         List<EmisorModel> models = emisorProvider.getAll();
         List<EmisorRepresentation> result = new ArrayList<>();

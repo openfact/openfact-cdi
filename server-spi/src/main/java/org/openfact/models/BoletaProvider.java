@@ -9,7 +9,8 @@ import org.openfact.models.search.SearchCriteriaModel;
 import org.openfact.models.search.SearchResultsModel;
 import org.openfact.provider.Provider;
 
-@Local public interface FacturaProvider extends Provider {
+@Local
+public interface BoletaProvider extends Provider {
 
 	EmisorModel create(EmisorModel emisor, LocalDate fechaEmision, String serie, String numero, BigDecimal importeTotal);
 
