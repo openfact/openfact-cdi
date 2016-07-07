@@ -54,4 +54,5 @@ public interface FacturaResource {
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response downloadCdr();
 
+	@Path("detalle") DetallesFacturaResource detallesFactura();
 }

@@ -1,12 +1,16 @@
 package org.openfact.services.resources.admin;
 
+import org.openfact.models.DetalleFacturaProvider;
+import org.openfact.models.FacturaModel;
 import org.openfact.models.FacturaProvider;
+import org.openfact.models.utils.ModelToRepresentation;
 import org.openfact.representations.idm.EventoRepresentation;
 import org.openfact.representations.idm.FacturaRepresentation;
 import org.openfact.services.managers.FacturaManager;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;
+import javax.ws.rs.NotFoundException;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.core.Response;
 import java.util.List;
@@ -14,24 +18,31 @@ import java.util.List;
 /**
  * Created by AHREN on 06/07/2016.
  */
-@Stateless
-public class FacturaResourceImpl implements  FacturaResource {
+@Stateless public class FacturaResourceImpl implements FacturaResource {
 
-    @PathParam("idFactura")
-    private String idFactura;
+    @PathParam("idFactura") private String idFactura;
 
-    @Inject
-    private FacturaManager facturaManager;
+    @Inject private FacturaManager facturaManager;
 
-    @Inject
-    private FacturaProvider facturaProvider;
+    @Inject private FacturaProvider facturaProvider;
 
-    @Inject
-    private DetalleFacturasResource  detalleFacturasResource;
+    @Inject private DetallesFacturaResource detalleFacturasResource;
 
+    private FacturaModel getFacturaModel() {
+        return facturaProvider.findById(idFactura);
+    }
+
+    @Override public DetallesFacturaResource detallesFactura() {
+        return detalleFacturasResource;
+    }
 
     @Override public FacturaRepresentation toRepresentation() {
-        return null;
+        FacturaRepresentation rep = ModelToRepresentation.toRepresentation(getFacturaModel());
+        if (rep != null) {
+            return rep;
+        } else {
+            throw new NotFoundException("Factura no encontrado");
+        }
     }
 
     @Override public void update(FacturaRepresentation facturaRepresentation) {
@@ -65,4 +76,5 @@ public class FacturaResourceImpl implements  FacturaResource {
     @Override public Response downloadCdr() {
         return null;
     }
+
 }

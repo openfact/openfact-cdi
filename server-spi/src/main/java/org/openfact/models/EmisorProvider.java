@@ -26,3 +26,23 @@ public interface EmisorProvider extends Provider {
 	SearchResultsModel<EmisorModel> search(SearchCriteriaModel criteria, String filterText);
 
 }
+
+/*
+*  ProcedimientoRepresentation procedimientoRepresentation = rep.getProcedimiento();
+        ProcedimientoModel procedimientoModel = estadoProcedimientoProvider
+                .findById(procedimientoRepresentation.getId());
+        try {
+            HistorialProyectoModel direccionRegionalModel = representationToModel.createHistorialProyecto(rep,
+                    getProyectoModel(), procedimientoModel, historialProyectoProvider,
+                    sessionResource.getTrabajador());
+            return Response
+                    .created(uriInfo.getAbsolutePathBuilder().path(direccionRegionalModel.getId()).build())
+                    .header("Access-Control-Expose-Headers", "Location")
+                    .entity(ModelToRepresentation.toRepresentation(direccionRegionalModel)).build();
+        } catch (ModelDuplicateException e) {
+            return ErrorResponse.exists("Historial existe con la misma denominacion");
+        } catch (ModelReadOnlyException e) {
+            return ErrorResponse.exists("Proyecto de solo lectura");
+        }
+* */
+

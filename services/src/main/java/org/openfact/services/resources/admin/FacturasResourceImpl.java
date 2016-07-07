@@ -10,15 +10,13 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 
-import org.openfact.models.EmisorModel;
-import org.openfact.models.EmisorProvider;
-import org.openfact.models.FacturaModel;
-import org.openfact.models.FacturaProvider;
+import org.openfact.models.*;
 import org.openfact.models.search.SearchCriteriaFilterOperator;
 import org.openfact.models.search.SearchCriteriaModel;
 import org.openfact.models.search.SearchResultsModel;
 import org.openfact.models.utils.ModelToRepresentation;
 import org.openfact.models.utils.RepresentationToModel;
+import org.openfact.representations.idm.EmisorRepresentation;
 import org.openfact.representations.idm.FacturaRepresentation;
 import org.openfact.representations.idm.search.*;
 
@@ -30,6 +28,9 @@ import org.openfact.representations.idm.search.*;
 
     @Inject private FacturaProvider facturaProvider;
 
+    @Inject private EmisorProvider emisorProvider;
+   // @Inject private
+
     @Inject private RepresentationToModel representationToModel;
 
     @Override public FacturaResource factura(String idFactura) {
@@ -37,7 +38,10 @@ import org.openfact.representations.idm.search.*;
     }
 
     @Override public Response create(FacturaRepresentation rep) {
-        // TODO Auto-generated method stub
+        /*__DATOS DEL EMISOR__*/
+        EmisorRepresentation emisorRepresentation = rep.getEmisor();
+        EmisorModel emisorModel = emisorProvider.findByRuc(emisorRepresentation.getRuc());
+/**/
         return null;
     }
 
