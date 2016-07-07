@@ -11,58 +11,64 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.core.Response;
 import java.util.List;
 
-/**
- * Created by AHREN on 06/07/2016.
- */
 @Stateless
-public class FacturaResourceImpl implements  FacturaResource {
+public class FacturaResourceImpl implements FacturaResource {
 
-    @PathParam("idFactura")
-    private String idFactura;
+	@PathParam("idFactura")
+	private String idFactura;
 
-    @Inject
-    private FacturaManager facturaManager;
+	@Inject
+	private FacturaManager facturaManager;
 
-    @Inject
-    private FacturaProvider facturaProvider;
+	@Inject
+	private FacturaProvider facturaProvider;
 
-    @Inject
-    private DetalleFacturasResource  detalleFacturasResource;
+	@Inject
+	private DetalleFacturasResource detalleFacturasResource;
 
+	@Override
+	public FacturaRepresentation toRepresentation() {
+		return null;
+	}
 
-    @Override public FacturaRepresentation toRepresentation() {
-        return null;
-    }
+	@Override
+	public void update(FacturaRepresentation facturaRepresentation) {
 
-    @Override public void update(FacturaRepresentation facturaRepresentation) {
+	}
 
-    }
+	@Override
+	public Response send() {
+		return null;
+	}
 
-    @Override public Response send() {
-        return null;
-    }
+	@Override
+	public Response status() {
+		return null;
+	}
 
-    @Override public Response status() {
-        return null;
-    }
+	@Override
+	public List<EventoRepresentation> eventos() {
+		return null;
+	}
 
-    @Override public List<EventoRepresentation> eventos() {
-        return null;
-    }
+	@Override
+	public Response downloadXml() {
+		return null;
+	}
 
-    @Override public Response downloadXml() {
-        return null;
-    }
+	@Override
+	public Response downloadXls() {
+		return null;
+	}
 
-    @Override public Response downloadXls() {
-        return null;
-    }
+	@Override
+	public Response downloadPdf() {
+		return null;
+	}
 
-    @Override public Response downloadPdf() {
-        return null;
-    }
+	@Override
+	public Response downloadCdr() {
+		return null;
+	}
 
-    @Override public Response downloadCdr() {
-        return null;
-    }
 }

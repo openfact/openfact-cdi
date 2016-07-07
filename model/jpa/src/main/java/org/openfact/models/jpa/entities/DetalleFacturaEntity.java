@@ -8,6 +8,8 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
+@Entity
+@Table(name = "DETALLE_FACTURA")
 public class DetalleFacturaEntity {
 
 	@Id
@@ -17,40 +19,40 @@ public class DetalleFacturaEntity {
 	private String id;
 
 	@NotNull
-	@Column(name="UNIDAD_MEDIDA")
+	@Column(name = "UNIDAD_MEDIDA")
 	private String unidadMedida;
 
 	@NotNull
 	@Min(value = 0)
 	@Digits(integer = 18, fraction = 2)
-	@Column(name="CANTIDAD")
+	@Column(name = "CANTIDAD")
 	private BigDecimal cantidad;
 
 	@NotNull
-	@Column(name="DESCRIPCION")
+	@Column(name = "DESCRIPCION")
 	private String descripcion;
 
 	@NotNull
 	@Min(value = 0)
 	@Digits(integer = 18, fraction = 2)
-	@Column(name="VALOR_UNITARIO")
+	@Column(name = "VALOR_UNITARIO")
 	private BigDecimal valorUnitario;
 
 	@NotNull
 	@Min(value = 0)
 	@Digits(integer = 18, fraction = 2)
-	@Column(name="PRECIO_VENTA")
+	@Column(name = "PRECIO_VENTA")
 	private BigDecimal precioVenta;
 
 	@NotNull
 	@Min(value = 0)
 	@Digits(integer = 18, fraction = 2)
-	@Column(name="IGV")
+	@Column(name = "IGV")
 	private BigDecimal igv;
 
 	@Min(value = 0)
 	@Digits(integer = 18, fraction = 2)
-	@Column(name="ISC")
+	@Column(name = "ISC")
 	private BigDecimal isc;
 
 	@NotNull
@@ -129,4 +131,30 @@ public class DetalleFacturaEntity {
 	public void setFactura(FacturaEntity factura) {
 		this.factura = factura;
 	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		DetalleFacturaEntity other = (DetalleFacturaEntity) obj;
+		if (id == null) {
+			if (other.id != null)
+				return false;
+		} else if (!id.equals(other.id))
+			return false;
+		return true;
+	}
+
 }

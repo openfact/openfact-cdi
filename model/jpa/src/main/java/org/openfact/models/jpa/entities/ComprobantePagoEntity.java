@@ -1,264 +1,159 @@
 package org.openfact.models.jpa.entities;
 
-import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.validator.constraints.NotBlank;
-import org.openfact.models.enums.TipoDocumentoType;
-import org.openfact.models.enums.TipoGuiaRemisionType;
-
-import javax.persistence.*;
-import javax.validation.constraints.Digits;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
-import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@MappedSuperclass
+import javax.persistence.Column;
+import javax.persistence.DiscriminatorColumn;
+import javax.persistence.DiscriminatorType;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
+import javax.persistence.ForeignKey;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.validation.constraints.NotNull;
+
+import org.hibernate.annotations.GenericGenerator;
+import org.openfact.models.enums.TipoDocumentoType;
+
+@Entity(name = "COMPROBANTE_PAGO")
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name="TYPE", discriminatorType=DiscriminatorType.STRING)
 public class ComprobantePagoEntity {
 
-    @Id
-    @GeneratedValue(generator = "uuid2")
-    @GenericGenerator(name = "uuid2", strategy = "uuid2")
-    @Column(name = "ID")
-    private String id;
+	@Id
+	@GeneratedValue(generator = "uuid2")
+	@GenericGenerator(name = "uuid2", strategy = "uuid2")
+	@Column(name = "ID")
+	private String id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "EMISOR", foreignKey = @ForeignKey)
-    private EmisorEntity emisor;
+	@NotNull
+	@Enumerated(EnumType.STRING)
+	@Column(name = "TIPO_DOCUMENTO")
+	private TipoDocumentoType tipoDocumento;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "ADQUIRIENTE", foreignKey = @ForeignKey)
-    private AdquirienteEntity adquiriente;
+	@NotNull
+	@Column(name = "FECHA_EMISION")
+	private LocalDate fechaEmision;
 
-    @Enumerated(EnumType.STRING)
-    @NotNull
-    @Column(name = "TIPO_DOCUMENTO")
-    private TipoDocumentoType tipoDocumento;
+	
+	@NotNull
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "NUMERACION", foreignKey = @ForeignKey)
+	private NumeracionComprobantePagoEntity numeracion;
 
-    @NotNull
-    @Column(name = "FECHA_EMISION")
-    private LocalDate fechaEmision;
+	@NotNull
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "EMISOR", foreignKey = @ForeignKey)
+	private EmisorEntity emisor;
 
-    @NotNull
-    @NotBlank
-    @Column(name = "SERIE")
-    private String serie;
+	@NotNull
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "ADQUIRIENTE", foreignKey = @ForeignKey)
+	private AdquirienteEntity adquiriente;
 
-    @NotNull
-    @NotBlank
-    @Column(name = "NUMERO")
-    private String numero;
+	
+	@NotNull
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "RESUMEN", foreignKey = @ForeignKey)
+	private ResumenComprobantePagoEntity resumen;
 
-    @NotNull
-    @NotBlank
-    @Column(name = "MONEDA")
-    private String moneda;
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "INFORMACION_ADICIONAL", foreignKey = @ForeignKey)
+	private InformacionAdicionalComprobantePagoEntity informacionAdicional;
 
-    @NotNull
-    @Min(value = 0)
-    @Digits(integer = 18, fraction = 2)
-    @Column(name = "IMPORTE_TOTAL")
-    private BigDecimal importeTotal;
+	public String getId() {
+		return id;
+	}
 
+	public void setId(String id) {
+		this.id = id;
+	}
 
-    @Min(value = 0)
-    @Digits(integer = 18, fraction = 2)
-    @Column(name = "IGV")
-    private double igv;
+	public TipoDocumentoType getTipoDocumento() {
+		return tipoDocumento;
+	}
 
-    @Min(value = 0)
-    @Digits(integer = 18, fraction = 2)
-    @Column(name = "ISC")
-    private double isc;
+	public void setTipoDocumento(TipoDocumentoType tipoDocumento) {
+		this.tipoDocumento = tipoDocumento;
+	}
 
+	public LocalDate getFechaEmision() {
+		return fechaEmision;
+	}
 
-    @Min(value = 0)
-    @Digits(integer = 18, fraction = 2)
-    @Column(name = "CARGOS")
-    private double cargos;
+	public void setFechaEmision(LocalDate fechaEmision) {
+		this.fechaEmision = fechaEmision;
+	}
 
-    @Min(value = 0)
-    @Digits(integer = 18, fraction = 2)
-    @Column(name = "TRIBUTOS")
-    private double tributos;
+	public NumeracionComprobantePagoEntity getNumeracion() {
+		return numeracion;
+	}
 
-    @Min(value = 0)
-    @Digits(integer = 18, fraction = 2)
-    @Column(name = "DESCUENTOS")
-    private double descuentos;
+	public void setNumeracion(NumeracionComprobantePagoEntity numeracion) {
+		this.numeracion = numeracion;
+	}
 
+	public EmisorEntity getEmisor() {
+		return emisor;
+	}
 
-    @Min(value = 0)
-    @Digits(integer = 18, fraction = 2)
-    @Column(name = "TOTAL_GRAVADO")
-    private double totalGravado;
+	public void setEmisor(EmisorEntity emisor) {
+		this.emisor = emisor;
+	}
 
-    @Min(value = 0)
-    @Digits(integer = 18, fraction = 2)
-    @Column(name = "TOTAL_INAFECTO")
-    private double totalInafecto;
+	public AdquirienteEntity getAdquiriente() {
+		return adquiriente;
+	}
 
-    @Min(value = 0)
-    @Digits(integer = 18, fraction = 2)
-    @Column(name = "TOTAL_EXONERADO")
-    private double totalExonerado;
+	public void setAdquiriente(AdquirienteEntity adquiriente) {
+		this.adquiriente = adquiriente;
+	}
 
+	public ResumenComprobantePagoEntity getResumen() {
+		return resumen;
+	}
 
-    @Enumerated(EnumType.STRING)
-    @Column(name = "TIPO_DOCUMENTO")
-    private TipoGuiaRemisionType tipoGuiaRemision;
+	public void setResumen(ResumenComprobantePagoEntity resumen) {
+		this.resumen = resumen;
+	}
 
-    @Column(name = "NUMERO_GUIA_REMISION")
-    private String numeroGuiaRemision;
+	public InformacionAdicionalComprobantePagoEntity getInformacionAdicional() {
+		return informacionAdicional;
+	}
 
-    public String getId() {
-        return id;
-    }
+	public void setInformacionAdicional(InformacionAdicionalComprobantePagoEntity informacionAdicional) {
+		this.informacionAdicional = informacionAdicional;
+	}
 
-    public void setId(String id) {
-        this.id = id;
-    }
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		return result;
+	}
 
-    public EmisorEntity getEmisor() {
-        return emisor;
-    }
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		ComprobantePagoEntity other = (ComprobantePagoEntity) obj;
+		if (id == null) {
+			if (other.id != null)
+				return false;
+		} else if (!id.equals(other.id))
+			return false;
+		return true;
+	}
 
-    public void setEmisor(EmisorEntity emisor) {
-        this.emisor = emisor;
-    }
-
-    public AdquirienteEntity getAdquiriente() {
-        return adquiriente;
-    }
-
-    public void setAdquiriente(AdquirienteEntity adquiriente) {
-        this.adquiriente = adquiriente;
-    }
-
-    public TipoDocumentoType getTipoDocumento() {
-        return tipoDocumento;
-    }
-
-    public void setTipoDocumento(TipoDocumentoType tipoDocumento) {
-        this.tipoDocumento = tipoDocumento;
-    }
-
-    public LocalDate getFechaEmision() {
-        return fechaEmision;
-    }
-
-    public void setFechaEmision(LocalDate fechaEmision) {
-        this.fechaEmision = fechaEmision;
-    }
-
-    public String getSerie() {
-        return serie;
-    }
-
-    public void setSerie(String serie) {
-        this.serie = serie;
-    }
-
-    public String getNumero() {
-        return numero;
-    }
-
-    public void setNumero(String numero) {
-        this.numero = numero;
-    }
-
-    public String getMoneda() {
-        return moneda;
-    }
-
-    public void setMoneda(String moneda) {
-        this.moneda = moneda;
-    }
-
-    public BigDecimal getImporteTotal() {
-        return importeTotal;
-    }
-
-    public void setImporteTotal(BigDecimal importeTotal) {
-        this.importeTotal = importeTotal;
-    }
-
-    public double getIgv() {
-        return igv;
-    }
-
-    public void setIgv(double igv) {
-        this.igv = igv;
-    }
-
-    public double getIsc() {
-        return isc;
-    }
-
-    public void setIsc(double isc) {
-        this.isc = isc;
-    }
-
-    public double getCargos() {
-        return cargos;
-    }
-
-    public void setCargos(double cargos) {
-        this.cargos = cargos;
-    }
-
-    public double getTributos() {
-        return tributos;
-    }
-
-    public void setTributos(double tributos) {
-        this.tributos = tributos;
-    }
-
-    public double getDescuentos() {
-        return descuentos;
-    }
-
-    public void setDescuentos(double descuentos) {
-        this.descuentos = descuentos;
-    }
-
-    public double getTotalGravado() {
-        return totalGravado;
-    }
-
-    public void setTotalGravado(double totalGravado) {
-        this.totalGravado = totalGravado;
-    }
-
-    public double getTotalInafecto() {
-        return totalInafecto;
-    }
-
-    public void setTotalInafecto(double totalInafecto) {
-        this.totalInafecto = totalInafecto;
-    }
-
-    public double getTotalExonerado() {
-        return totalExonerado;
-    }
-
-    public void setTotalExonerado(double totalExonerado) {
-        this.totalExonerado = totalExonerado;
-    }
-
-    public TipoGuiaRemisionType getTipoGuiaRemision() {
-        return tipoGuiaRemision;
-    }
-
-    public void setTipoGuiaRemision(TipoGuiaRemisionType tipoGuiaRemision) {
-        this.tipoGuiaRemision = tipoGuiaRemision;
-    }
-
-    public String getNumeroGuiaRemision() {
-        return numeroGuiaRemision;
-    }
-
-    public void setNumeroGuiaRemision(String numeroGuiaRemision) {
-        this.numeroGuiaRemision = numeroGuiaRemision;
-    }
 }
