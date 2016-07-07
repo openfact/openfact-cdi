@@ -1,7 +1,5 @@
 package org.openfact.services.resources.admin;
 
-import org.openfact.models.DetalleFacturaProvider;
-import org.openfact.models.FacturaModel;
 import org.openfact.models.FacturaProvider;
 import org.openfact.models.utils.ModelToRepresentation;
 import org.openfact.representations.idm.EventoRepresentation;

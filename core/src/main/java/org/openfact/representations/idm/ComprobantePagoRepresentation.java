@@ -7,167 +7,167 @@ import java.time.LocalDate;
  * Created by Gissela-Sistemas on 6/07/2016.
  */
 public class ComprobantePagoRepresentation {
-    private String serie;
-    private String numero;
-    private LocalDate fechaEmision;
+	private String serie;
+	private String numero;
+	private LocalDate fechaEmision;
 
-    private String moneda;
-    private BigDecimal importeTotal;
+	private String moneda;
+	private BigDecimal importeTotal;
 
-    private double cargos;
-    private double tributos;
-    private double descuentos;
+	private BigDecimal cargos;
+	private BigDecimal tributos;
+	private BigDecimal descuentos;
 
-    private double totalOperacionesGravadas;
-    private double totalOperacionesInafectas;
-    private double totalOperacionesExoneradas;
+	private BigDecimal totalOperacionesGravadas;
+	private BigDecimal totalOperacionesInafectas;
+	private BigDecimal totalOperacionesExoneradas;
 
-    private double totalValorVentaOperacionesGratuitas;
+	private BigDecimal totalValorVentaOperacionesGratuitas;
 
-    private double totalIgv;
-    private double totalIsc;
+	private BigDecimal totalIgv;
+	private BigDecimal totalIsc;
 
-    private AdquirienteRepresentation adquiriente;
+	private AdquirienteRepresentation adquiriente;
 
-    // Catalogo 01
+	// Catalogo 01
 
-    private String numeroGuiaRemision;
+	private String numeroGuiaRemision;
 
-    private EmisorRepresentation emisor;
+	private EmisorRepresentation emisor;
 
-    public String getSerie() {
-        return serie;
-    }
+	public String getSerie() {
+		return serie;
+	}
 
-    public void setSerie(String serie) {
-        this.serie = serie;
-    }
+	public void setSerie(String serie) {
+		this.serie = serie;
+	}
 
-    public String getNumero() {
-        return numero;
-    }
+	public String getNumero() {
+		return numero;
+	}
 
-    public void setNumero(String numero) {
-        this.numero = numero;
-    }
+	public void setNumero(String numero) {
+		this.numero = numero;
+	}
 
-    public LocalDate getFechaEmision() {
-        return fechaEmision;
-    }
+	public LocalDate getFechaEmision() {
+		return fechaEmision;
+	}
 
-    public void setFechaEmision(LocalDate fechaEmision) {
-        this.fechaEmision = fechaEmision;
-    }
+	public void setFechaEmision(LocalDate fechaEmision) {
+		this.fechaEmision = fechaEmision;
+	}
 
-    public String getMoneda() {
-        return moneda;
-    }
+	public String getMoneda() {
+		return moneda;
+	}
 
-    public void setMoneda(String moneda) {
-        this.moneda = moneda;
-    }
+	public void setMoneda(String moneda) {
+		this.moneda = moneda;
+	}
 
-    public BigDecimal getImporteTotal() {
-        return importeTotal;
-    }
+	public BigDecimal getImporteTotal() {
+		return importeTotal;
+	}
 
-    public void setImporteTotal(BigDecimal importeTotal) {
-        this.importeTotal = importeTotal;
-    }
+	public void setImporteTotal(BigDecimal importeTotal) {
+		this.importeTotal = importeTotal;
+	}
 
-    public double getCargos() {
-        return cargos;
-    }
+	public BigDecimal getCargos() {
+		return cargos;
+	}
 
-    public void setCargos(double cargos) {
-        this.cargos = cargos;
-    }
+	public void setCargos(BigDecimal cargos) {
+		this.cargos = cargos;
+	}
 
-    public double getTributos() {
-        return tributos;
-    }
+	public BigDecimal getTributos() {
+		return tributos;
+	}
 
-    public void setTributos(double tributos) {
-        this.tributos = tributos;
-    }
+	public void setTributos(BigDecimal tributos) {
+		this.tributos = tributos;
+	}
 
-    public double getDescuentos() {
-        return descuentos;
-    }
+	public BigDecimal getDescuentos() {
+		return descuentos;
+	}
 
-    public void setDescuentos(double descuentos) {
-        this.descuentos = descuentos;
-    }
+	public void setDescuentos(BigDecimal descuentos) {
+		this.descuentos = descuentos;
+	}
 
-    public double getTotalOperacionesGravadas() {
-        return totalOperacionesGravadas;
-    }
+	public BigDecimal getTotalOperacionesGravadas() {
+		return totalOperacionesGravadas;
+	}
 
-    public void setTotalOperacionesGravadas(double totalOperacionesGravadas) {
-        this.totalOperacionesGravadas = totalOperacionesGravadas;
-    }
+	public void setTotalOperacionesGravadas(BigDecimal totalOperacionesGravadas) {
+		this.totalOperacionesGravadas = totalOperacionesGravadas;
+	}
 
-    public double getTotalOperacionesInafectas() {
-        return totalOperacionesInafectas;
-    }
+	public BigDecimal getTotalOperacionesInafectas() {
+		return totalOperacionesInafectas;
+	}
 
-    public void setTotalOperacionesInafectas(double totalOperacionesInafectas) {
-        this.totalOperacionesInafectas = totalOperacionesInafectas;
-    }
+	public void setTotalOperacionesInafectas(BigDecimal totalOperacionesInafectas) {
+		this.totalOperacionesInafectas = totalOperacionesInafectas;
+	}
 
-    public double getTotalOperacionesExoneradas() {
-        return totalOperacionesExoneradas;
-    }
+	public BigDecimal getTotalOperacionesExoneradas() {
+		return totalOperacionesExoneradas;
+	}
 
-    public void setTotalOperacionesExoneradas(double totalOperacionesExoneradas) {
-        this.totalOperacionesExoneradas = totalOperacionesExoneradas;
-    }
+	public void setTotalOperacionesExoneradas(BigDecimal totalOperacionesExoneradas) {
+		this.totalOperacionesExoneradas = totalOperacionesExoneradas;
+	}
 
-    public double getTotalValorVentaOperacionesGratuitas() {
-        return totalValorVentaOperacionesGratuitas;
-    }
+	public BigDecimal getTotalValorVentaOperacionesGratuitas() {
+		return totalValorVentaOperacionesGratuitas;
+	}
 
-    public void setTotalValorVentaOperacionesGratuitas(double totalValorVentaOperacionesGratuitas) {
-        this.totalValorVentaOperacionesGratuitas = totalValorVentaOperacionesGratuitas;
-    }
+	public void setTotalValorVentaOperacionesGratuitas(BigDecimal totalValorVentaOperacionesGratuitas) {
+		this.totalValorVentaOperacionesGratuitas = totalValorVentaOperacionesGratuitas;
+	}
 
-    public double getTotalIgv() {
-        return totalIgv;
-    }
+	public BigDecimal getTotalIgv() {
+		return totalIgv;
+	}
 
-    public void setTotalIgv(double totalIgv) {
-        this.totalIgv = totalIgv;
-    }
+	public void setTotalIgv(BigDecimal totalIgv) {
+		this.totalIgv = totalIgv;
+	}
 
-    public double getTotalIsc() {
-        return totalIsc;
-    }
+	public BigDecimal getTotalIsc() {
+		return totalIsc;
+	}
 
-    public void setTotalIsc(double totalIsc) {
-        this.totalIsc = totalIsc;
-    }
+	public void setTotalIsc(BigDecimal totalIsc) {
+		this.totalIsc = totalIsc;
+	}
 
-    public AdquirienteRepresentation getAdquiriente() {
-        return adquiriente;
-    }
+	public AdquirienteRepresentation getAdquiriente() {
+		return adquiriente;
+	}
 
-    public void setAdquiriente(AdquirienteRepresentation adquiriente) {
-        this.adquiriente = adquiriente;
-    }
+	public void setAdquiriente(AdquirienteRepresentation adquiriente) {
+		this.adquiriente = adquiriente;
+	}
 
-    public String getNumeroGuiaRemision() {
-        return numeroGuiaRemision;
-    }
+	public String getNumeroGuiaRemision() {
+		return numeroGuiaRemision;
+	}
 
-    public void setNumeroGuiaRemision(String numeroGuiaRemision) {
-        this.numeroGuiaRemision = numeroGuiaRemision;
-    }
+	public void setNumeroGuiaRemision(String numeroGuiaRemision) {
+		this.numeroGuiaRemision = numeroGuiaRemision;
+	}
 
-    public EmisorRepresentation getEmisor() {
-        return emisor;
-    }
+	public EmisorRepresentation getEmisor() {
+		return emisor;
+	}
 
-    public void setEmisor(EmisorRepresentation emisor) {
-        this.emisor = emisor;
-    }
+	public void setEmisor(EmisorRepresentation emisor) {
+		this.emisor = emisor;
+	}
 }

@@ -10,92 +10,120 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 
-import org.openfact.models.*;
+import org.openfact.models.EmisorModel;
+import org.openfact.models.EmisorProvider;
+import org.openfact.models.FacturaModel;
+import org.openfact.models.FacturaProvider;
+import org.openfact.models.ModelDuplicateException;
 import org.openfact.models.search.SearchCriteriaFilterOperator;
 import org.openfact.models.search.SearchCriteriaModel;
 import org.openfact.models.search.SearchResultsModel;
 import org.openfact.models.utils.ModelToRepresentation;
 import org.openfact.models.utils.RepresentationToModel;
-import org.openfact.representations.idm.EmisorRepresentation;
 import org.openfact.representations.idm.FacturaRepresentation;
-import org.openfact.representations.idm.search.*;
+import org.openfact.representations.idm.search.PagingRepresentation;
+import org.openfact.representations.idm.search.SearchCriteriaFilterOperatorRepresentation;
+import org.openfact.representations.idm.search.SearchCriteriaRepresentation;
+import org.openfact.representations.idm.search.SearchResultsRepresentation;
+import org.openfact.services.ErrorResponse;
 
-@Stateless public class FacturasResourceImpl implements FacturasResource {
+@Stateless
+public class FacturasResourceImpl implements FacturasResource {
 
-    @Context private UriInfo uriInfo;
+	@PathParam("idEmisor")
+	private int idEmisor;
 
-    @Inject private FacturaResource facturaResource;
+	@Context
+	private UriInfo uriInfo;
 
-    @Inject private FacturaProvider facturaProvider;
+	@Inject
+	private EmisorProvider emisorProvider;
 
-    @Inject private EmisorProvider emisorProvider;
-   // @Inject private
+	@Inject
+	private FacturaResource facturaResource;
 
-    @Inject private RepresentationToModel representationToModel;
+	@Inject
+	private FacturaProvider facturaProvider;
 
-    @Override public FacturaResource factura(String idFactura) {
-        return facturaResource;
-    }
+	@Inject
+	private RepresentationToModel representationToModel;
 
-    @Override public Response create(FacturaRepresentation rep) {
-        /*__DATOS DEL EMISOR__*/
-        EmisorRepresentation emisorRepresentation = rep.getEmisor();
-        EmisorModel emisorModel = emisorProvider.findByRuc(emisorRepresentation.getRuc());
-/**/
-        return null;
-    }
+	private EmisorModel getEmisorModel() {
+		return emisorProvider.findById(idEmisor);
+	}
 
-    @Override public Response importar(List<FacturaRepresentation> rep) {
-        // TODO Auto-generated method stub
-        return null;
-    }
+	@Override
+	public FacturaResource factura(String idFactura) {
+		return facturaResource;
+	}
 
-    @Override public List<FacturaRepresentation> getAll(EmisorModel e) {
-        List<FacturaModel> models = facturaProvider.getAll(e);
-        List<FacturaRepresentation> result = new ArrayList<>();
-        models.forEach(f -> result.add(ModelToRepresentation.toRepresentation(f)));
-        return result;
-    }
+	@Override
+	public Response create(FacturaRepresentation rep) {
+		try {
+			FacturaModel model = representationToModel.createFactura(rep, getEmisorModel(), facturaProvider);
+			return Response.created(uriInfo.getAbsolutePathBuilder().path(model.getId()).build())
+					.header("Access-Control-Expose-Headers", "Location")
+					.entity(ModelToRepresentation.toRepresentation(model)).build();
+		} catch (ModelDuplicateException e) {
+			return ErrorResponse.exists("Factura ya registrada");
+		}
+	}
 
-    @Override public SearchResultsRepresentation<FacturaRepresentation> search(
-            SearchCriteriaRepresentation criteria) {
+	@Override
+	public Response importar(List<FacturaRepresentation> rep) {
+		try {
+			rep.forEach(f -> representationToModel.createFactura(f, getEmisorModel(), facturaProvider));
+		} catch (ModelDuplicateException e) {
+			return ErrorResponse.exists("Factura ya registrada");
+		}
+		return Response.ok().build();
+	}
 
-        SearchCriteriaModel criteriaModel = new SearchCriteriaModel();
+	@Override
+	public List<FacturaRepresentation> getAll(EmisorModel e) {
+		List<FacturaModel> models = facturaProvider.getAll(e);
+		List<FacturaRepresentation> result = new ArrayList<>();
+		models.forEach(f -> result.add(ModelToRepresentation.toRepresentation(f)));
+		return result;
+	}
 
-        // set filter and order
-        for (SearchCriteriaFilterRepresentation filter : criteria.getFilters()) {
-            criteriaModel.addFilter(filter.getName(), filter.getValue(),
-                    SearchCriteriaFilterOperator.valueOf(filter.getOperator().toString()));
-        }
-        for (OrderByRepresentation order : criteria.getOrders()) {
-            criteriaModel.addOrder(order.getName(), order.isAscending());
-        }
+	@Override
+	public SearchResultsRepresentation<FacturaRepresentation> search(SearchCriteriaRepresentation criteria) {
+		SearchCriteriaModel criteriaModel = new SearchCriteriaModel();
 
-        // set paging
-        PagingRepresentation paging = criteria.getPaging();
-        criteriaModel.setPageSize(paging.getPageSize());
-        criteriaModel.setPage(paging.getPage());
+		// set filter and order
+		Function<SearchCriteriaFilterOperatorRepresentation, SearchCriteriaFilterOperator> function = f -> {
+			return SearchCriteriaFilterOperator.valueOf(f.toString());
+		};
+		criteria.getFilters().forEach(f -> {
+			criteriaModel.addFilter(f.getName(), f.getValue(), function.apply(f.getOperator()));
+		});
+		criteria.getOrders().forEach(f -> criteriaModel.addOrder(f.getName(), f.isAscending()));
 
-        // extract filterText
-        String filterText = criteria.getFilterText();
+		// set paging
+		PagingRepresentation paging = criteria.getPaging();
+		criteriaModel.setPageSize(paging.getPageSize());
+		criteriaModel.setPage(paging.getPage());
 
-        // search
-        SearchResultsModel<FacturaModel> results = null;
-        if (filterText == null) {
-            results = facturaProvider.search(criteriaModel);
-        } else {
-            results = facturaProvider.search(criteriaModel, filterText);
-        }
-        SearchResultsRepresentation<FacturaRepresentation> rep = new SearchResultsRepresentation<>();
-        List<FacturaRepresentation> items = new ArrayList<>();
+		// extract filterText
+		String filterText = criteria.getFilterText();
 
-        results.getModels().forEach(f -> items.add(ModelToRepresentation.toRepresentation(f)));
-        //        for (FacturaModel model : results.getModels()) {
-        //            items.add(ModelToRepresentation.toRepresentation(model));
-        //        }
-        rep.setItems(items);
-        rep.setTotalSize(results.getTotalSize());
-        return rep;
-    }
+		// search
+		SearchResultsModel<FacturaModel> results = null;
+		if (filterText == null) {
+			results = facturaProvider.search(criteriaModel);
+		} else {
+			results = facturaProvider.search(criteriaModel, filterText);
+		}
+
+		// prepare for response
+		SearchResultsRepresentation<FacturaRepresentation> rep = new SearchResultsRepresentation<>();
+		List<FacturaRepresentation> items = new ArrayList<>();
+		results.getModels().forEach(f -> items.add(ModelToRepresentation.toRepresentation(f)));
+
+		rep.setItems(items);
+		rep.setTotalSize(results.getTotalSize());
+		return rep;
+	}
 
 }

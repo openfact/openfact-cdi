@@ -1,22 +1,21 @@
 package org.openfact.models;
 
-public interface AdquirienteModel {
+public interface AdquirienteModel extends Model {
 
-    String getNumeroDocumento();
+	String getId();
 
-    String getNombre();
+	void setNumeroDocumento(String numeroDocumento);
 
-    String getDireccion();
+	String getNumeroDocumento();
 
-    void setNombre(String nombre);
+	String getNombre();
 
-    void setDireccion(String direccion);
+	void setNombre(String nombre);
 
-    DocumentoIdentidadModel getDocumento();
+	String getDireccion();
 
-   /* private DocumentoIdentidadModel documento;
-    private String numeroDocumento;
-    private String nombre;
-    private String direccion;*/
+	void setDireccion(String direccion);
+
+	DocumentoIdentidadModel getDocumento();
 
 }
