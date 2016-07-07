@@ -2,6 +2,7 @@ package org.openfact.services.resources.admin;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;
