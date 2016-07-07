@@ -2,9 +2,7 @@ package org.openfact.models;
 
 import java.time.LocalDate;
 
-public interface ComprobantePagoModel {
-
-
+public interface ComprobantePagoModel extends  Model {
     String getSerie();
 
     String getNumero();
