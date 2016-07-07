@@ -1,5 +1,6 @@
 package org.openfact.representations.idm;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 /**
@@ -11,7 +12,7 @@ public class ComprobantePagoRepresentation {
     private LocalDate fechaEmision;
 
     private String moneda;
-    private double importeTotal;
+    private BigDecimal importeTotal;
 
     private double cargos;
     private double tributos;
@@ -66,11 +67,11 @@ public class ComprobantePagoRepresentation {
         this.moneda = moneda;
     }
 
-    public double getImporteTotal() {
+    public BigDecimal getImporteTotal() {
         return importeTotal;
     }
 
-    public void setImporteTotal(double importeTotal) {
+    public void setImporteTotal(BigDecimal importeTotal) {
         this.importeTotal = importeTotal;
     }
 

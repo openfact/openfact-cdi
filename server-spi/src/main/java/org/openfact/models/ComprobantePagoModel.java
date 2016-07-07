@@ -6,66 +6,70 @@ import org.openfact.models.enums.TipoGuiaRemisionType;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-public interface ComprobantePagoModel extends  Model {
+public interface ComprobantePagoModel extends Model {
 
-     String getId();
+    String getId();
 
-     TipoDocumentoType getTipoDocumento();
-    
-     LocalDate getFechaEmision();
+    TipoDocumentoType getTipoDocumento();
 
-     String getSerie();
+    LocalDate getFechaEmision();
 
-     String getNumero();
+    String getSerie();
 
-     String getMoneda();
+    String getNumero();
 
-     BigDecimal getImporteTotal();
+    String getMoneda();
 
-     void setImporteTotal(BigDecimal importeTotal);
+    String getNumeroDocumentoRelacionado();
 
-     double getIgv();
+    void setNumeroDocumentoRelacionado(String numeroDocumentoRelacionado);
 
-     void setIgv(double igv);
+    BigDecimal getImporteTotal();
 
-     double getIsc();
+    void setImporteTotal(BigDecimal importeTotal);
 
-     void setIsc(double isc);
+    double getIgv();
 
-     double getCargos();
+    void setIgv(double igv);
 
-     void setCargos(double cargos);
+    double getIsc();
 
-     double getTributos();
+    void setIsc(double isc);
 
-     void setTributos(double tributos);
+    double getCargos();
 
-     double getDescuentos();
+    void setCargos(double cargos);
 
-     void setDescuentos(double descuentos);
+    double getTributos();
 
-     double getTotalGravado();
+    void setTributos(double tributos);
 
-     void setTotalGravado(double totalGravado);
+    double getDescuentos();
 
-     double getTotalInafecto();
+    void setDescuentos(double descuentos);
 
-     void setTotalInafecto(double totalInafecto);
+    double getTotalGravado();
 
-     double getTotalExonerado();
+    void setTotalGravado(double totalGravado);
 
-     void setTotalExonerado(double totalExonerado);
+    double getTotalInafecto();
 
-     TipoGuiaRemisionType getTipoGuiaRemision();
+    void setTotalInafecto(double totalInafecto);
 
-     void setTipoGuiaRemision(TipoGuiaRemisionType tipoGuiaRemision);
+    double getTotalExonerado();
 
-     String getNumeroGuiaRemision();
+    void setTotalExonerado(double totalExonerado);
 
-     void setNumeroGuiaRemision(String numeroGuiaRemision);
+    TipoGuiaRemisionType getTipoGuiaRemision();
 
-     EmisorModel getEmisor();
+    void setTipoGuiaRemision(TipoGuiaRemisionType tipoGuiaRemision);
 
-     AdquirienteModel getAdquiriente();
+    String getNumeroGuiaRemision();
+
+    void setNumeroGuiaRemision(String numeroGuiaRemision);
+
+    EmisorModel getEmisor();
+
+    AdquirienteModel getAdquiriente();
 
 }

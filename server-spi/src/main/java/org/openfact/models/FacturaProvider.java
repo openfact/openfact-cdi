@@ -2,6 +2,7 @@ package org.openfact.models;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 import javax.ejb.Local;
 
@@ -11,12 +12,18 @@ import org.openfact.provider.Provider;
 
 @Local public interface FacturaProvider extends Provider {
 
-	EmisorModel create(EmisorModel emisor, LocalDate fechaEmision, String serie, String numero, BigDecimal importeTotal);
+	FacturaModel create(EmisorModel emisor, LocalDate fechaEmision, String serie, String numero, BigDecimal importeTotal);
 
-	EmisorModel findById(String id);
+	FacturaModel findById(String id);
 
-	SearchResultsModel<EmisorModel> search(EmisorModel emisor, SearchCriteriaModel criteria);
+	List<FacturaModel> getAll(EmisorModel emisorModel);
 
-	SearchResultsModel<EmisorModel> search(EmisorModel emisor, SearchCriteriaModel criteria, String filterText);
+	SearchResultsModel<FacturaModel> search(SearchCriteriaModel criteria);
+
+	SearchResultsModel<FacturaModel> search(SearchCriteriaModel criteria, String filterText);
+
+	SearchResultsModel<FacturaModel> search(FacturaModel facturaModel, SearchCriteriaModel criteria);
+
+	SearchResultsModel<FacturaModel> search(FacturaModel facturaModel, SearchCriteriaModel criteria, String filterText);
     
 }

@@ -1,25 +1,26 @@
 package org.openfact.services.resources.admin;
 
-import javax.ws.rs.Consumes;
-import javax.ws.rs.GET;
-import javax.ws.rs.PUT;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 
+import org.openfact.representations.idm.EventoRepresentation;
 import org.openfact.representations.idm.FacturaRepresentation;
+
+import java.util.List;
 
 public interface FacturaResource {
 
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public FacturaRepresentation toRepresentation();
+
+    @PUT
+    @Consumes(MediaType.APPLICATION_JSON)
+    public void update( FacturaRepresentation facturaRepresentation);
+
 	@GET
-	@Produces(MediaType.APPLICATION_JSON)
-	public FacturaRepresentation toRepresentation();
-
-	@PUT
-	@Consumes(MediaType.APPLICATION_JSON)
-	public void update(FacturaRepresentation facturaRepresentation);
-
-	/*@GET
-	@Path("send")
+    @Path("send")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response send();
 
@@ -31,7 +32,7 @@ public interface FacturaResource {
 	@GET
 	@Path("eventos")
 	@Produces(MediaType.APPLICATION_JSON)
-	public List<FacturaRepresentation, eventorepresentation> eventos();
+	public List<EventoRepresentation> eventos();
 
 	@GET
 	@Path("ubl")
@@ -51,6 +52,6 @@ public interface FacturaResource {
 	@GET
 	@Path("cdr")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response downloadCdr();*/
+	public Response downloadCdr();
 
 }
