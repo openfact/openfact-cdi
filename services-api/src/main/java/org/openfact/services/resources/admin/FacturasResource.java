@@ -19,12 +19,11 @@ public interface FacturasResource {
     public FacturaResource factura(@PathParam("idFactura") String idFactura);
 
     @POST
-    @Path("savefactura")
     @Produces(MediaType.APPLICATION_JSON)
     public Response createFactura(FacturaRepresentation rep);
 
     @POST
-    @Path("savefacturas")
+    @Path("importar")
     @Produces(MediaType.APPLICATION_JSON)
     public Response createFacturas(List<FacturaRepresentation> rep);
 

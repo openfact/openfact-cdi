@@ -7,6 +7,7 @@ import org.openfact.representations.idm.FacturaRepresentation;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.util.List;
 
 /**
  * Created by Alex Pariona on 06/07/2016.
@@ -22,17 +23,17 @@ public interface FacturaResource {
     public Response send();
 
     @GET
-    @Path("estatus")
+    @Path("status")
     @Produces(MediaType.APPLICATION_JSON)
     public Response status();
 
     @GET
-    @Path("chart")
+    @Path("eventos")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response chart();
+    public List<FacturaRepresentation/*eventorepresentation*/> eventos();
 
     @GET
-    @Path("xml")
+    @Path("ubl")
     @Produces(MediaType.APPLICATION_JSON)
     public Response downloadXml();
 

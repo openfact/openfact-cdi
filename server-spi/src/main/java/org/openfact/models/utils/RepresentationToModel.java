@@ -1,11 +1,9 @@
 package org.openfact.models.utils;
 
-import org.openfact.models.DireccionRegionalModel;
-import org.openfact.models.DireccionRegionalProvider;
-import org.openfact.models.EmisorModel;
-import org.openfact.models.EmisorProvider;
+import org.openfact.models.*;
 import org.openfact.representations.idm.DireccionRegionalRepresentation;
 import org.openfact.representations.idm.EmisorRepresentation;
+import org.openfact.representations.idm.FacturaRepresentation;
 
 import javax.ejb.Stateless;
 import javax.ejb.TransactionAttribute;
@@ -25,5 +23,9 @@ import javax.ejb.TransactionAttributeType;
         model.commit();
         return model;
     }
-
+    public FacturaModel createFactura(FacturaRepresentation rep, FacturaProvider provider) {
+        FacturaModel model = provider.create(rep.getIgv());
+        model.commit();
+        return model;
+    }
 }
