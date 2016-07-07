@@ -1,7 +1,6 @@
 package org.openfact.services.resources.admin;
 
 import org.openfact.representations.idm.BotelaRepresentation;
-import org.openfact.representations.idm.EmisorRepresentation;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -19,7 +18,7 @@ public interface BotelaResource {
 
     @PUT
     @Consumes(MediaType.APPLICATION_JSON)
-    public void update(EmisorRepresentation rep);
+    public void update(BotelaRepresentation rep);
 
     @POST
     @Path("enable")

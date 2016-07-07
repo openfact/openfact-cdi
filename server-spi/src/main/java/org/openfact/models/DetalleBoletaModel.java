@@ -1,13 +1,23 @@
 package org.openfact.models;
 
-public class DetalleBoletaModel {
+public interface DetalleBoletaModel extends Model{
+	String getUnidadMedida();
 
-	private String unidadMedida;
-	private double cantidad;
-	private String descripcion;
+	void setUnidadMedida(String unidadMedida);
 
-	private double precioVenta;
+	 double getCantidad();
 
-	private BoletaModel boleta;
-	
+	 void setCantidad(double cantidad);
+
+	 String getDescripcion();
+
+	void setDescripcion(String descripcion);
+
+	double getPrecioVenta();
+
+    void setPrecioVenta(double precioVenta);
+
+	 BoletaModel getBoleta();
+
+	 void setBoleta(BoletaModel boleta);
 }
