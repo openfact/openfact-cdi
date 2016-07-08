@@ -29,4 +29,7 @@ public interface EmisoresResource {
     @Produces(MediaType.APPLICATION_JSON)
     public List<EmisorRepresentation> getAll();
 
+    @Path("comprobantes")
+    ComprobantesPagoResource comprobantesPago();
+
 }
