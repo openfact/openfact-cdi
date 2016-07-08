@@ -16,19 +16,15 @@ import org.openfact.representations.idm.EmisorRepresentation;
 @Consumes(MediaType.APPLICATION_JSON)
 public interface EmisoresAdminResource {
 
-	@Path("{idEmisor}")
-	EmisorAdminResource emisor(@PathParam("idEmisor") String idEmisor);
-	
-	@POST 
+    @Path("{idEmisor}")
+    EmisorAdminResource emisor(@PathParam("idEmisor") final String idEmisor);
+
+    @POST
     @Produces(MediaType.APPLICATION_JSON)
-    Response create(EmisorRepresentation rep);
-    
-   
-    @GET    
+    Response create(final EmisorRepresentation rep);
+
+    @GET
     @Produces(MediaType.APPLICATION_JSON)
     List<EmisorRepresentation> getAll();
-
-    @Path("comprobantes")
-    ComprobantesPagoResource comprobantesPago();
 
 }

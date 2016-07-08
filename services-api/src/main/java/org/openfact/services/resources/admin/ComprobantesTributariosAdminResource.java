@@ -11,32 +11,34 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import org.openfact.representations.idm.FacturaRepresentation;
+import org.openfact.representations.idm.ComprobanteTributarioRepresentation;
 import org.openfact.representations.idm.search.SearchCriteriaRepresentation;
 import org.openfact.representations.idm.search.SearchResultsRepresentation;
 
 @Consumes(MediaType.APPLICATION_JSON)
-public interface FacturasAdminResource {
+public interface ComprobantesTributariosAdminResource {
 
-    @Path("{idFactura}")
-    FacturaAdminResource factura(@PathParam("idFactura") String idFactura);
+    @Path("{idComprobanteTributario}")
+    ComprobanteTributarioAdminResource factura(
+            @PathParam("idComprobanteTributario") final String idComprobanteTributario);
 
     @POST
     @Produces(MediaType.APPLICATION_JSON)
-    Response create(final FacturaRepresentation rep);
+    Response create(final ComprobanteTributarioRepresentation rep);
 
     @POST
     @Path("importar")
     @Produces(MediaType.APPLICATION_JSON)
-    Response importar(final List<FacturaRepresentation> rep);
+    Response importar(final List<ComprobanteTributarioRepresentation> rep);
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public List<FacturaRepresentation> getAll();
+    public List<ComprobanteTributarioRepresentation> getAll();
 
     @GET
     @Path("search")
     @Produces(MediaType.APPLICATION_JSON)
-    SearchResultsRepresentation<FacturaRepresentation> search(final SearchCriteriaRepresentation criteria);
+    SearchResultsRepresentation<ComprobanteTributarioRepresentation> search(
+            final SearchCriteriaRepresentation criteria);
 
 }

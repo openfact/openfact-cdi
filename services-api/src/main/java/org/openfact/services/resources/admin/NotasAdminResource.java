@@ -11,32 +11,32 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import org.openfact.representations.idm.FacturaRepresentation;
+import org.openfact.representations.idm.NotaRepresentation;
 import org.openfact.representations.idm.search.SearchCriteriaRepresentation;
 import org.openfact.representations.idm.search.SearchResultsRepresentation;
 
 @Consumes(MediaType.APPLICATION_JSON)
-public interface FacturasAdminResource {
+public interface NotasAdminResource {
 
-    @Path("{idFactura}")
-    FacturaAdminResource factura(@PathParam("idFactura") String idFactura);
+    @Path("{idNota}")
+    NotaAdminResource factura(@PathParam("idNota") final String idNota);
 
     @POST
     @Produces(MediaType.APPLICATION_JSON)
-    Response create(final FacturaRepresentation rep);
+    Response create(final NotaRepresentation rep);
 
     @POST
     @Path("importar")
     @Produces(MediaType.APPLICATION_JSON)
-    Response importar(final List<FacturaRepresentation> rep);
+    Response importar(final List<NotaRepresentation> rep);
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public List<FacturaRepresentation> getAll();
+    public List<NotaRepresentation> getAll();
 
     @GET
     @Path("search")
     @Produces(MediaType.APPLICATION_JSON)
-    SearchResultsRepresentation<FacturaRepresentation> search(final SearchCriteriaRepresentation criteria);
+    SearchResultsRepresentation<NotaRepresentation> search(final SearchCriteriaRepresentation criteria);
 
 }

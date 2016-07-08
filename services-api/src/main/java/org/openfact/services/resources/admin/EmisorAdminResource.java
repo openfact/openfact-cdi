@@ -13,31 +13,34 @@ import org.openfact.representations.idm.EmisorRepresentation;
 
 public interface EmisorAdminResource {
 
-	@GET
-	@Produces(MediaType.APPLICATION_JSON)
-	EmisorRepresentation toRepresentation();
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    EmisorRepresentation toRepresentation();
 
-	@PUT
-	@Consumes(MediaType.APPLICATION_JSON)
-	void update(EmisorRepresentation rep);
+    @PUT
+    @Consumes(MediaType.APPLICATION_JSON)
+    void update(final EmisorRepresentation rep);
 
-	@POST
-	@Path("enable")
-	@Produces(MediaType.APPLICATION_JSON)
-	Response enable();
+    @POST
+    @Path("enable")
+    @Produces(MediaType.APPLICATION_JSON)
+    Response enable();
 
-	@POST
-	@Path("disable")
-	@Produces(MediaType.APPLICATION_JSON)
-	Response disable();
+    @POST
+    @Path("disable")
+    @Produces(MediaType.APPLICATION_JSON)
+    Response disable();
 
-	@Path("comprobantesPago")
-	ComprobantesPagoAdminResource comprobantesPago();
+    @Path("comprobantesPago")
+    ComprobantesPagoAdminResource comprobantesPago();
 
-	@Path("notas")
+    @Path("notas")
     NotasAdminResource notas();
-	
-	@Path("comprobantesTributarios")
+
+    @Path("comprobantesTributarios")
     ComprobantesTributariosAdminResource comprobantesTributarios();
-	
+
+    @Path("envios")
+    EnviosAdminResource envios();
+
 }

@@ -6,16 +6,16 @@ import javax.ws.rs.PUT;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import org.openfact.representations.idm.BoletaRepresentation;
+import org.openfact.representations.idm.NotaRepresentation;
 
-public interface BoletaAdminResource {
+public interface NotaAdminResource {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    BoletaRepresentation toRepresentation();
+    NotaRepresentation toRepresentation();
 
     @PUT
     @Consumes(MediaType.APPLICATION_JSON)
-    void update(final BoletaRepresentation rep);
+    void update(final NotaRepresentation rep);
 
 }

@@ -22,7 +22,7 @@ public interface FacturaAdminResource {
 
     @PUT
     @Consumes(MediaType.APPLICATION_JSON)
-    void update(FacturaRepresentation facturaRepresentation);
+    void update(final FacturaRepresentation facturaRepresentation);
 
     @GET
     @Path("send")
@@ -58,10 +58,10 @@ public interface FacturaAdminResource {
     @Path("cdr")
     @Produces(MediaType.APPLICATION_JSON)
     Response downloadCdr();
-  
+
     @GET
     @Path("detalles")
     @Produces(MediaType.APPLICATION_JSON)
     List<DetalleFacturaRepresentation> getAll();
-    
+
 }

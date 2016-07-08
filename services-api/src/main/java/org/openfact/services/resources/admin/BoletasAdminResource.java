@@ -1,6 +1,6 @@
 package org.openfact.services.resources.admin;
 
-import org.openfact.representations.idm.BotelaRepresentation;
+import org.openfact.representations.idm.BoletaRepresentation;
 import org.openfact.representations.idm.search.SearchCriteriaRepresentation;
 import org.openfact.representations.idm.search.SearchResultsRepresentation;
 
@@ -13,20 +13,20 @@ import java.util.List;
 public interface BoletasAdminResource {
 
     @Path("{idBoleta}")
-    public BoletaAdminResource botela(@PathParam("idBoleta") String idBoleta);
+    BoletaAdminResource botela(@PathParam("idBoleta") final String idBoleta);
 
     @POST
     @Produces(MediaType.APPLICATION_JSON)
-    public Response create(BotelaRepresentation rep);
+    Response create(final BoletaRepresentation rep);
 
     @GET
     @Path("importar")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response importar(List<BotelaRepresentation> rep);
+    Response importar(final List<BoletaRepresentation> rep);
 
     @GET
     @Path("search")
     @Produces(MediaType.APPLICATION_JSON)
-    public SearchResultsRepresentation<BotelaRepresentation> search(SearchCriteriaRepresentation criterial);
+    SearchResultsRepresentation<BoletaRepresentation> search(final SearchCriteriaRepresentation criterial);
 
 }
