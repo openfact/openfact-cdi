@@ -6,8 +6,6 @@ import javax.ws.rs.PUT;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import org.openfact.representations.idm.BoletaRepresentation;
-
 public interface BoletaResource {
 
 	@GET

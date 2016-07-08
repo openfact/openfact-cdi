@@ -1,6 +1,5 @@
 package org.openfact.services.resources.admin;
 
-import org.openfact.representations.idm.BoletaRepresentation;
 import org.openfact.representations.idm.search.SearchCriteriaRepresentation;
 import org.openfact.representations.idm.search.SearchResultsRepresentation;
 

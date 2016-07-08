@@ -7,11 +7,9 @@ import javax.inject.Inject;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.core.Response;
 
-import org.openfact.models.BoletaModel;
 import org.openfact.models.BoletaProvider;
 import org.openfact.models.EmisorModel;
 import org.openfact.models.EmisorProvider;
-import org.openfact.representations.idm.BoletaRepresentation;
 import org.openfact.representations.idm.search.SearchCriteriaRepresentation;
 import org.openfact.representations.idm.search.SearchResultsRepresentation;
 
