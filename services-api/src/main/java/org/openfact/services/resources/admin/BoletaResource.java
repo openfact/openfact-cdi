@@ -6,16 +6,16 @@ import javax.ws.rs.PUT;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import org.openfact.representations.idm.BotelaRepresentation;
+import org.openfact.representations.idm.BoletaRepresentation;
 
 public interface BoletaResource {
 
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	public BotelaRepresentation toRepresentation();
+	public BoletaRepresentation toRepresentation();
 
 	@PUT
 	@Consumes(MediaType.APPLICATION_JSON)
-	public void update(BotelaRepresentation rep);
+	public void update(BoletaRepresentation rep);
 
 }

@@ -10,7 +10,7 @@ public class DetalleBoletaRepresentation {
 
     private double precioVenta;
 
-    private BotelaRepresentation boleta;
+    private BoletaRepresentation boleta;
 
     public String getUnidadMedida() {
         return unidadMedida;
@@ -44,11 +44,11 @@ public class DetalleBoletaRepresentation {
         this.precioVenta = precioVenta;
     }
 
-    public BotelaRepresentation getBoleta() {
+    public BoletaRepresentation getBoleta() {
         return boleta;
     }
 
-    public void setBoleta(BotelaRepresentation boleta) {
+    public void setBoleta(BoletaRepresentation boleta) {
         this.boleta = boleta;
     }
 }
