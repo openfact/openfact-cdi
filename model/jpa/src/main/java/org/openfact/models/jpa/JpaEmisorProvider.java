@@ -59,7 +59,7 @@ import org.openfact.models.search.SearchResultsModel;
         entity.setEstado(true);
         entity.setResolucionAutorizacion(resolucionAutorizacion);
         entity.setMensajeRepresentacionImpresa(mensajeRepresentacionImpresa);
-        //entity.setEmisor(emisorModel);
+        entity.setEmisor(EmisorAdapter.toEmisorEntity(emisorModel, em));
         em.persist(entity);
         return new HistorialEmisorAdapter(em, entity);
     }
@@ -70,7 +70,8 @@ import org.openfact.models.search.SearchResultsModel;
     }
 
     @Override public boolean desactivar(HistorialEmisorModel historialEmisorModel) {
-        HistorialEmisorEntity entity = this.em.find(HistorialEmisorEntity.class, historialEmisorModel.getId());
+        HistorialEmisorEntity entity = this.em
+                .find(HistorialEmisorEntity.class, historialEmisorModel.getId());
         entity.setEstado(false);
         em.persist(entity);
         return true;
