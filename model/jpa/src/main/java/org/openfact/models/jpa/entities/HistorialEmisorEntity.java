@@ -1,30 +1,43 @@
 package org.openfact.models.jpa.entities;
 
-import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.annotations.Type;
+import org.hibernate.annotations.*;
 
 import javax.persistence.*;
+import javax.persistence.AccessType;
+import javax.persistence.Entity;
+import javax.persistence.ForeignKey;
+import javax.persistence.NamedQuery;
+import javax.persistence.Table;
 
 @Table(name="HISTORIAL_EMISOR")
 @Entity
+@org.hibernate.annotations.NamedQueries(value = {
+        @org.hibernate.annotations.NamedQuery(name = "HistorialEmisorEntity.findAll", query = "SELECT d FROM HistorialEmisorEntity d"),
+        @org.hibernate.annotations.NamedQuery(name = "HistorialEmisorEntity.findByEstado", query = "SELECT d FROM HistorialEmisorEntity d WHERE d.estado = :estado")})
 public class HistorialEmisorEntity {
 
     @Id
     @Access(AccessType.PROPERTY)
     @GeneratedValue(generator = "uuid2")
     @GenericGenerator(name = "uuid2", strategy = "uuid2")
-    @Column(name="id", length = 36)
+    @Column(name="ID", length = 36)
     private String id;
 
-    @Column(name="resolucion_autorizacion")
+    @Column(name="RESOLUCION_AUTORIZACION")
     private String resolucionAutorizacion;
 
+    @Column(name="MENSAJE_REPRESENTACION_IMPRESA")
+    private String mensajeRepresentacionImpresa;
+
+    @Column(name="MENSAJE_SERVICIO_GRATUITO")
+    private String mensajeServicioGratuito;
+
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "emisor", foreignKey = @ForeignKey)
+    @JoinColumn(name = "EMISOR", foreignKey = @ForeignKey)
     private EmisorEntity emisor;
 
     @Type(type = "org.hibernate.type.TrueFalseType")
-    @Column(name = "estado")
+    @Column(name = "ESTADO")
     private boolean estado;
 
     public String getId() {
@@ -42,7 +55,28 @@ public class HistorialEmisorEntity {
     public void setResolucionAutorizacion(String resolucionAutorizacion) {
         this.resolucionAutorizacion = resolucionAutorizacion;
     }
+    public String getMensajeRepresentacionImpresa() {
+        return mensajeRepresentacionImpresa;
+    }
 
+    public void setMensajeRepresentacionImpresa(String mensajeRepresentacionImpresa) {
+        this.mensajeRepresentacionImpresa = mensajeRepresentacionImpresa;
+    }
+
+    public String getMensajeServicioGratuito() {
+        return mensajeServicioGratuito;
+    }
+
+    public void setMensajeServicioGratuito(String mensajeServicioGratuito) {
+        this.mensajeServicioGratuito = mensajeServicioGratuito;
+    }
+    public boolean isEstado() {
+        return estado;
+    }
+
+    public void setEstado(boolean estado) {
+        this.estado = estado;
+    }
     public EmisorEntity getEmisor() {
         return emisor;
     }
@@ -51,13 +85,7 @@ public class HistorialEmisorEntity {
         this.emisor = emisor;
     }
 
-    public boolean isEstado() {
-        return estado;
-    }
 
-    public void setEstado(boolean estado) {
-        this.estado = estado;
-    }
 
     @Override
     public int hashCode() {

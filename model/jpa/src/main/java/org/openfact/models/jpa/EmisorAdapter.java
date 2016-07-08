@@ -4,6 +4,7 @@ import javax.persistence.EntityManager;
 
 import org.openfact.models.EmisorModel;
 import org.openfact.models.jpa.entities.EmisorEntity;
+import org.openfact.models.jpa.entities.HistorialEmisorEntity;
 
 public class EmisorAdapter implements EmisorModel, JpaModel<EmisorEntity> {
 

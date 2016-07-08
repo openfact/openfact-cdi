@@ -12,39 +12,32 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 
-import org.openfact.models.EmisorModel;
-import org.openfact.models.EmisorProvider;
-import org.openfact.models.ModelDuplicateException;
+import org.openfact.models.*;
 import org.openfact.models.enums.TipoDocumentoType;
 import org.openfact.models.enums.TipoNotaType;
 import org.openfact.models.jpa.entities.EmisorEntity;
+import org.openfact.models.jpa.entities.HistorialEmisorEntity;
 import org.openfact.models.jpa.entities.TipoNotaEntity;
 import org.openfact.models.search.SearchCriteriaModel;
 import org.openfact.models.search.SearchResultsModel;
 
-@Named
-@Stateless
-@Local(EmisorProvider.class)
-@TransactionAttribute(TransactionAttributeType.REQUIRED)
-public class JpaEmisorProvider extends AbstractHibernateStorage implements EmisorProvider {
+@Named @Stateless @Local(EmisorProvider.class) @TransactionAttribute(TransactionAttributeType.REQUIRED) public class JpaEmisorProvider
+        extends AbstractHibernateStorage implements EmisorProvider {
 
-    @PersistenceContext
-    private EntityManager em;
+    @PersistenceContext private EntityManager em;
 
-    @Override
-    protected EntityManager getEntityManager() {
+    @Override protected EntityManager getEntityManager() {
         return this.em;
     }
 
-    @Override
-    public void close() {
+    @Override public void close() {
         // TODO Auto-generated method stub
     }
 
-    @Override
-    public EmisorModel create(String ruc, String razonSocial) {
+    @Override public EmisorModel create(String ruc, String razonSocial) {
         if (findByRuc(ruc) != null) {
-            throw new ModelDuplicateException("El emisor sunat debe ser unico, se encontro otra entidad con el mismo RUC: " + ruc);
+            throw new ModelDuplicateException(
+                    "El emisor sunat debe ser unico, se encontro otra entidad con el mismo RUC: " + ruc);
         }
         EmisorEntity emisorEntity = new EmisorEntity();
         emisorEntity.setRuc(ruc);
@@ -54,14 +47,51 @@ public class JpaEmisorProvider extends AbstractHibernateStorage implements Emiso
         return new EmisorAdapter(em, emisorEntity);
     }
 
-    @Override
-    public EmisorModel findById(int id) {
+    @Override public HistorialEmisorModel createHistorial(EmisorModel emisorModel,
+            String resolucionAutorizacion, String mensajeRepresentacionImpresa) {
+        HistorialEmisorModel historialEmisorModel = findByEstado(true);
+        if (historialEmisorModel != null) {
+            if (historialEmisorModel.isEstado()) {
+                desactivar(historialEmisorModel);
+            }
+        }
+        HistorialEmisorEntity entity = new HistorialEmisorEntity();
+        entity.setEstado(true);
+        entity.setResolucionAutorizacion(resolucionAutorizacion);
+        entity.setMensajeRepresentacionImpresa(mensajeRepresentacionImpresa);
+        //entity.setEmisor(emisorModel);
+        em.persist(entity);
+        return new HistorialEmisorAdapter(em, entity);
+    }
+
+    @Override public EmisorModel findById(int id) {
         EmisorEntity emisorEntity = this.em.find(EmisorEntity.class, id);
         return emisorEntity != null ? new EmisorAdapter(em, emisorEntity) : null;
     }
 
-    @Override
-    public EmisorModel findByRuc(String ruc) {
+    @Override public boolean desactivar(HistorialEmisorModel historialEmisorModel) {
+        HistorialEmisorEntity entity = this.em.find(HistorialEmisorEntity.class, historialEmisorModel.getId());
+        entity.setEstado(false);
+        em.persist(entity);
+        return true;
+    }
+
+    @Override public HistorialEmisorModel findByEstado(boolean status) {
+        TypedQuery<HistorialEmisorEntity> query = em
+                .createNamedQuery("EmisorEntity.findByEstado", HistorialEmisorEntity.class);
+        query.setParameter("estado", status);
+        List<HistorialEmisorEntity> results = query.getResultList();
+        if (results.isEmpty()) {
+            return null;
+        } else if (results.size() > 1) {
+            throw new IllegalStateException(
+                    "Mas de un historial con Estado=" + status + ", results=" + results);
+        } else {
+            return new HistorialEmisorAdapter(em, results.get(0));
+        }
+    }
+
+    @Override public EmisorModel findByRuc(String ruc) {
         TypedQuery<EmisorEntity> query = em.createNamedQuery("EmisorEntity.findByRuc", EmisorEntity.class);
         query.setParameter("ruc", ruc);
 
@@ -75,24 +105,23 @@ public class JpaEmisorProvider extends AbstractHibernateStorage implements Emiso
         }
     }
 
-    @Override
-    public EmisorModel findByRazonSocial(String razonSocial) {
-        TypedQuery<EmisorEntity> query = em.createNamedQuery("EmisorEntity.findByRazonSocial",
-                EmisorEntity.class);
+    @Override public EmisorModel findByRazonSocial(String razonSocial) {
+        TypedQuery<EmisorEntity> query = em
+                .createNamedQuery("EmisorEntity.findByRazonSocial", EmisorEntity.class);
         query.setParameter("razonSocial", razonSocial);
 
         List<EmisorEntity> results = query.getResultList();
         if (results.isEmpty()) {
             return null;
         } else if (results.size() > 1) {
-            throw new IllegalStateException("Mas de un Emisor con RAZON SOCIAL=" + razonSocial + ", results=" + results);
+            throw new IllegalStateException(
+                    "Mas de un Emisor con RAZON SOCIAL=" + razonSocial + ", results=" + results);
         } else {
             return new EmisorAdapter(em, results.get(0));
         }
     }
 
-    @Override
-    public List<EmisorModel> getAll() {
+    @Override public List<EmisorModel> getAll() {
         TypedQuery<EmisorEntity> query = em.createNamedQuery("EmisorEntity.findAll", EmisorEntity.class);
         List<EmisorEntity> entities = query.getResultList();
         List<EmisorModel> result = new ArrayList<>();
@@ -100,28 +129,27 @@ public class JpaEmisorProvider extends AbstractHibernateStorage implements Emiso
         return result;
     }
 
-    @Override
-    public SearchResultsModel<EmisorModel> search(SearchCriteriaModel criteria) {
+    @Override public SearchResultsModel<EmisorModel> search(SearchCriteriaModel criteria) {
         SearchResultsModel<EmisorEntity> entityResult = find(criteria, EmisorEntity.class);
         List<EmisorEntity> entities = entityResult.getModels();
 
         SearchResultsModel<EmisorModel> searchResult = new SearchResultsModel<>();
         List<EmisorModel> models = searchResult.getModels();
 
-        entities.forEach(f -> models.add(new EmisorAdapter(em, f) ));
+        entities.forEach(f -> models.add(new EmisorAdapter(em, f)));
         searchResult.setTotalSize(entityResult.getTotalSize());
         return searchResult;
     }
 
-    @Override
-    public SearchResultsModel<EmisorModel> search(SearchCriteriaModel criteria, String filterText) {
-        SearchResultsModel<EmisorEntity> entityResult = findFullText(criteria, EmisorEntity.class, filterText, "razonSocial");
+    @Override public SearchResultsModel<EmisorModel> search(SearchCriteriaModel criteria, String filterText) {
+        SearchResultsModel<EmisorEntity> entityResult = findFullText(criteria, EmisorEntity.class, filterText,
+                "razonSocial");
         List<EmisorEntity> entities = entityResult.getModels();
 
         SearchResultsModel<EmisorModel> searchResult = new SearchResultsModel<>();
         List<EmisorModel> models = searchResult.getModels();
 
-        entities.forEach(f -> models.add(new EmisorAdapter(em, f) ));
+        entities.forEach(f -> models.add(new EmisorAdapter(em, f)));
         searchResult.setTotalSize(entityResult.getTotalSize());
         return searchResult;
     }

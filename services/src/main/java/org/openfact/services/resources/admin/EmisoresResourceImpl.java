@@ -17,28 +17,25 @@ import org.openfact.models.utils.RepresentationToModel;
 import org.openfact.representations.idm.EmisorRepresentation;
 import org.openfact.services.ErrorResponse;
 
-@Stateless
-public class EmisoresResourceImpl implements EmisoresResource {
+@Stateless public class EmisoresResourceImpl implements EmisoresResource {
 
-    @Context
-    private UriInfo uriInfo;
+    @Context private UriInfo uriInfo;
 
-    @Inject
-    private EmisorResource emisorResource;
+    @Inject private EmisorResource emisorResource;
 
-    @Inject
-    private EmisorProvider emisorProvider;
+    @Inject private EmisorProvider emisorProvider;
+    @Inject private ComprobantesPagoResource comprobantesPagoResource;
+    @Inject private RepresentationToModel representationToModel;
 
-    @Inject
-    private RepresentationToModel representationToModel;
-
-    @Override
-    public EmisorResource emisor(String idEmisor) {
+    @Override public EmisorResource emisor(String idEmisor) {
         return emisorResource;
     }
 
-    @Override
-    public Response create(EmisorRepresentation rep) {
+    @Override public ComprobantesPagoResource comprobantesPago() {
+        return comprobantesPagoResource;
+    }
+
+    @Override public Response create(EmisorRepresentation rep) {
         try {
             EmisorModel model = representationToModel.createEmisor(rep, emisorProvider);
             return Response.created(uriInfo.getAbsolutePathBuilder().path(model.getId()).build())
@@ -49,8 +46,7 @@ public class EmisoresResourceImpl implements EmisoresResource {
         }
     }
 
-    @Override
-    public List<EmisorRepresentation> getAll() {
+    @Override public List<EmisorRepresentation> getAll() {
         List<EmisorModel> models = emisorProvider.getAll();
         List<EmisorRepresentation> result = new ArrayList<>();
         models.forEach(f -> result.add(ModelToRepresentation.toRepresentation(f)));

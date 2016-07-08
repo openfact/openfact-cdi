@@ -11,80 +11,79 @@ public class EmisorRepresentation implements Serializable {
 	private String razonSocial;
 	private String nombreComercial;
 	private String domicilioFiscal;
+	private String resolucionAutorizacion;
+	private String mensajeRepresentacionImpresa;
 
-	/**
-	 * @return the id
-	 */
+	public String getMensajeServicioGratuito() {
+		return mensajeServicioGratuito;
+	}
+
+	public void setMensajeServicioGratuito(String mensajeServicioGratuito) {
+		this.mensajeServicioGratuito = mensajeServicioGratuito;
+	}
+
+	public static long getSerialVersionUID() {
+		return serialVersionUID;
+	}
+
 	public String getId() {
 		return id;
 	}
 
-	/**
-	 * @param id
-	 *            the id to set
-	 */
 	public void setId(String id) {
 		this.id = id;
 	}
 
-	/**
-	 * @return the ruc
-	 */
 	public String getRuc() {
 		return ruc;
 	}
 
-	/**
-	 * @param ruc
-	 *            the ruc to set
-	 */
 	public void setRuc(String ruc) {
 		this.ruc = ruc;
 	}
 
-	/**
-	 * @return the razonSocial
-	 */
 	public String getRazonSocial() {
 		return razonSocial;
 	}
 
-	/**
-	 * @param razonSocial
-	 *            the razonSocial to set
-	 */
 	public void setRazonSocial(String razonSocial) {
 		this.razonSocial = razonSocial;
 	}
 
-	/**
-	 * @return the nombreComercial
-	 */
 	public String getNombreComercial() {
 		return nombreComercial;
 	}
 
-	/**
-	 * @param nombreComercial
-	 *            the nombreComercial to set
-	 */
 	public void setNombreComercial(String nombreComercial) {
 		this.nombreComercial = nombreComercial;
 	}
 
-	/**
-	 * @return the domicilioFiscal
-	 */
 	public String getDomicilioFiscal() {
 		return domicilioFiscal;
 	}
 
-	/**
-	 * @param domicilioFiscal
-	 *            the domicilioFiscal to set
-	 */
 	public void setDomicilioFiscal(String domicilioFiscal) {
 		this.domicilioFiscal = domicilioFiscal;
 	}
+
+	public String getResolucionAutorizacion() {
+		return resolucionAutorizacion;
+	}
+
+	public void setResolucionAutorizacion(String resolucionAutorizacion) {
+		this.resolucionAutorizacion = resolucionAutorizacion;
+	}
+
+	public String getMensajeRepresentacionImpresa() {
+		return mensajeRepresentacionImpresa;
+	}
+
+	public void setMensajeRepresentacionImpresa(String mensajeRepresentacionImpresa) {
+		this.mensajeRepresentacionImpresa = mensajeRepresentacionImpresa;
+	}
+
+	private String mensajeServicioGratuito;
+
+
 
 }
