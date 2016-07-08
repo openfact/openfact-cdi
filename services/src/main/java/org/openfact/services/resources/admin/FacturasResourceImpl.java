@@ -32,7 +32,7 @@ import org.openfact.services.ErrorResponse;
 public class FacturasResourceImpl implements FacturasResource {
 
 	@PathParam("idEmisor")
-	private int idEmisor;
+	private String idEmisor;
 
 	@Context
 	private UriInfo uriInfo;

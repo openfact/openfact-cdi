@@ -9,6 +9,7 @@ import javax.ws.rs.core.Response;
 
 import org.openfact.models.EmisorModel;
 import org.openfact.models.EmisorProvider;
+import org.openfact.models.HistorialEmisorModel;
 import org.openfact.models.utils.ModelToRepresentation;
 import org.openfact.representations.idm.EmisorRepresentation;
 import org.openfact.services.ErrorResponse;
@@ -18,7 +19,7 @@ import org.openfact.services.managers.EmisorManager;
 public class EmisorResourceImpl implements EmisorResource {
 
 	@PathParam("idEmisor")
-	private int idEmisor;
+	private String idEmisor;
 
 	@Inject
 	private EmisorManager emisorManager;
@@ -51,6 +52,7 @@ public class EmisorResourceImpl implements EmisorResource {
 	@Override
 	public void update(EmisorRepresentation rep) {
 		boolean result = emisorManager.update(getEmisorModel(), rep);
+		HistorialEmisorModel historialEmisorModel=emisorProvider.createHistorial( getEmisorModel(),rep.getResolucionAutorizacion(),rep.getMensajeRepresentacionImpresa());
 		if (!result) {
 			throw new InternalServerErrorException();
 		}

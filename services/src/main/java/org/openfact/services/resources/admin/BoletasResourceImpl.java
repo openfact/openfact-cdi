@@ -18,7 +18,7 @@ import org.openfact.representations.idm.search.SearchResultsRepresentation;
 public class BoletasResourceImpl implements BoletasResource {
 
 	@PathParam("idEmisor")
-	private int idEmisor;
+	private String idEmisor;
 
 	@Inject
 	private EmisorProvider emisorProvider;

@@ -15,7 +15,7 @@ import org.openfact.provider.Provider;
     HistorialEmisorModel createHistorial(EmisorModel emisorModel, String resolucionAutorizacion,
             String mensajeRepresentacionImpresa);
 
-    EmisorModel findById(int id);
+    EmisorModel findById(String id);
 
     HistorialEmisorModel findByEstado(boolean status);
 
