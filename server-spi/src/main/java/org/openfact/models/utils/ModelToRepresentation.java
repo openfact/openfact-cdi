@@ -1,11 +1,10 @@
 package org.openfact.models.utils;
 
-import org.openfact.models.DireccionRegionalModel;
-import org.openfact.models.EmisorModel;
-import org.openfact.models.FacturaModel;
-import org.openfact.representations.idm.DireccionRegionalRepresentation;
-import org.openfact.representations.idm.EmisorRepresentation;
-import org.openfact.representations.idm.FacturaRepresentation;
+import org.openfact.models.*;
+import org.openfact.representations.idm.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ModelToRepresentation {
 
@@ -17,6 +16,24 @@ public class ModelToRepresentation {
         rep.setId(model.getId());
         rep.setDenominacion(model.getDenominacion());
         rep.setEstado(model.getEstado());
+        return rep;
+    }
+
+    public static AdquirienteRepresentation toRepresentation(AdquirienteModel model) {
+        if (model == null)
+            return null;
+
+        AdquirienteRepresentation rep = new AdquirienteRepresentation();
+        //seters and geters
+        return rep;
+    }
+
+    public static DetalleFacturaRepresentation toRepresentation(DetalleFacturaModel model) {
+        if (model == null)
+            return null;
+
+        DetalleFacturaRepresentation rep = new DetalleFacturaRepresentation();
+        //seters and geters
         return rep;
     }
 
@@ -35,31 +52,30 @@ public class ModelToRepresentation {
     public static FacturaRepresentation toRepresentation(FacturaModel model) {
         if (model == null)
             return null;
-        /*
-    private double totalIgv;
-    private double totalIsc;
-    private AdquirienteRepresentation adquiriente;
-    private EmisorRepresentation emisor;
-        * */
         FacturaRepresentation rep = new FacturaRepresentation();
-        rep.setIsc(model.getIsc());
-        rep.setIgv(model.getIgv());
-        rep.setNumero(model.getNumero());
-        rep.setSerie(model.getSerie());
-        rep.setNumeroDocumentoRelacionado(model.getNumeroDocumentoRelacionado());
-        //rep.setAdquiriente(model.getAdquiriente());
-        rep.setCargos(model.getCargos());
-        rep.setDescuentos(model.getDescuentos());
+        rep.setIsc(model.getResumen().getIsc());
+        rep.setIgv(model.getResumen().getIgv());
+        rep.setNumero(model.getNumeracion().getNumero());
+        rep.setSerie(model.getNumeracion().getSerie());
+        rep.setNumeroDocumentoRelacionado(model.getTipoDocumentoRelacionadoType().getCodigo());
+        rep.setAdquiriente(toRepresentation(model.getAdquiriente()));
+        rep.setCargos(model.getResumen().getCargos());
+        rep.setDescuentos(model.getResumen().getDescuentos());
         rep.setFechaEmision(model.getFechaEmision());
-        rep.setImporteTotal(model.getImporteTotal());
-        rep.setMoneda(model.getMoneda());
-        rep.setTributos(model.getTributos());
-        rep.setTotalOperacionesGravadas(model.getTotalGravado());
-        rep.setTotalOperacionesInafectas(model.getTotalInafecto());
-        rep.setTotalOperacionesExoneradas(model.getTotalExonerado());
-        //rep.setTotalValorVentaOperacionesGratuitas(model.get);
-        rep.setNumeroGuiaRemision(model.getNumeroGuiaRemision());
-        //rep.setEmisor(model.getEmisor());
+        rep.setImporteTotal(model.getResumen().getImporteTotal());
+        rep.setMoneda(model.getResumen().getMoneda());
+        rep.setTributos(model.getResumen().getTributos());
+        rep.setTotalOperacionesGravadas(model.getResumen().getTotalGravado());
+        rep.setTotalOperacionesInafectas(model.getResumen().getTotalInafecto());
+        rep.setTotalOperacionesExoneradas(model.getResumen().getTotalExonerado());
+        rep.setNumeroGuiaRemision(model.getInformacionAdicional().getNumeroGuiaRemision());
+        rep.setEmisor(toRepresentation(model.getEmisor()));
+        rep.setTotalIgv(model.getResumen().getIgv());
+        rep.setTotalIsc(model.getResumen().getIsc());
+        List<DetalleFacturaRepresentation> detalle = new ArrayList<>();
+        model.getDetalle().forEach(d -> detalle.add(toRepresentation(d)));
+        rep.setDetalle(detalle);
+        rep.setTotalValorVentaOperacionesGratuitas(model.getResumen().getTotalValorVentaOperacionesGratuitas());
         return rep;
     }
 

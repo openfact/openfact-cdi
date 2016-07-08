@@ -4,46 +4,50 @@ import java.math.BigDecimal;
 
 public interface ResumenComprobantePagoModel extends Model {
 
-	public String getId();
+    public String getId();
 
-	public BigDecimal getIgv();
+    public BigDecimal getIgv();
 
-	public void setIgv(BigDecimal igv);
+    public void setIgv(BigDecimal igv);
 
-	public BigDecimal getIsc();
+    public BigDecimal getIsc();
 
-	public void setIsc(BigDecimal isc);
+    public void setIsc(BigDecimal isc);
 
-	public BigDecimal getCargos();
+    public BigDecimal getCargos();
 
-	public void setCargos(BigDecimal cargos);
+    public void setCargos(BigDecimal cargos);
 
-	public BigDecimal getTributos();
+    public BigDecimal getTributos();
 
-	public void setTributos(BigDecimal tributos);
+    public void setTributos(BigDecimal tributos);
 
-	public BigDecimal getDescuentos();
+    public BigDecimal getDescuentos();
 
-	public void setDescuentos(BigDecimal descuentos);
+    public void setDescuentos(BigDecimal descuentos);
 
-	public BigDecimal getTotalGravado();
+    public BigDecimal getTotalGravado();
 
-	public void setTotalGravado(BigDecimal totalGravado);
+    public void setTotalGravado(BigDecimal totalGravado);
 
-	public BigDecimal getTotalInafecto();
+    public BigDecimal getTotalInafecto();
 
-	public void setTotalInafecto(BigDecimal totalInafecto);
+    public void setTotalInafecto(BigDecimal totalInafecto);
 
-	public BigDecimal getTotalExonerado();
+    public BigDecimal getTotalExonerado();
 
-	public void setTotalExonerado(BigDecimal totalExonerado);
+    public void setTotalExonerado(BigDecimal totalExonerado);
 
-	public String getMoneda();
+    public String getMoneda();
 
-	public void setMoneda(String moneda);
+    public void setMoneda(String moneda);
 
-	public BigDecimal getImporteTotal();
+    public BigDecimal getImporteTotal();
 
-	public void setImporteTotal(BigDecimal importeTotal);
+    public void setImporteTotal(BigDecimal importeTotal);
+
+    public BigDecimal getTotalValorVentaOperacionesGratuitas();
+
+    public void setTotalValorVentaOperacionesGratuitas(BigDecimal totalValorVentaOperacionesGratuitas);
 
 }

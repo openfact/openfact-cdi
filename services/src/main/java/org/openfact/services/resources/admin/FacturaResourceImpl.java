@@ -1,5 +1,6 @@
 package org.openfact.services.resources.admin;
 
+import org.openfact.models.FacturaModel;
 import org.openfact.models.FacturaProvider;
 import org.openfact.models.utils.ModelToRepresentation;
 import org.openfact.representations.idm.EventoRepresentation;
@@ -34,7 +35,11 @@ import java.util.List;
         return detalleFacturasResource;
     }
 
-    @Override public FacturaRepresentation toRepresentation() {
+	@Override public EnviosResource enviosResource() {
+		return null;//envio provider
+	}
+
+	@Override public FacturaRepresentation toRepresentation() {
         FacturaRepresentation rep = ModelToRepresentation.toRepresentation(getFacturaModel());
         if (rep != null) {
             return rep;
