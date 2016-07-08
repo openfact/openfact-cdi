@@ -79,4 +79,44 @@ public class ModelToRepresentation {
         return rep;
     }
 
+    public static DetalleBoletaRepresentation toRepresentation(DetalleBoletaModel model) {
+        if (model == null)
+            return null;
+
+        DetalleBoletaRepresentation rep = new DetalleBoletaRepresentation();
+        //seters and geters
+        return rep;
+    }
+
+    public static BoletaRepresentation toRepresentation(BoletaModel model) {
+        if (model == null)
+            return null;
+        BoletaRepresentation rep = new BoletaRepresentation();
+        rep.setNumero(model.getNumeracion().getNumero());
+        rep.setSerie(model.getNumeracion().getSerie());
+        rep.setNumeroDocumentoRelacionado(model.getTipoDocumento().getCodigo());
+        rep.setAdquiriente(toRepresentation(model.getAdquiriente()));
+        rep.setCargos(model.getResumen().getCargos());
+        rep.setDescuentos(model.getResumen().getDescuentos());
+        rep.setFechaEmision(model.getFechaEmision());
+        rep.setImporteTotal(model.getResumen().getImporteTotal());
+        rep.setMoneda(model.getResumen().getMoneda());
+        rep.setTributos(model.getResumen().getTributos());
+        rep.setTotalOperacionesGravadas(model.getResumen().getTotalGravado());
+        rep.setTotalOperacionesInafectas(model.getResumen().getTotalInafecto());
+        rep.setTotalOperacionesExoneradas(model.getResumen().getTotalExonerado());
+        rep.setNumeroGuiaRemision(model.getInformacionAdicional().getNumeroGuiaRemision());
+        rep.setEmisor(toRepresentation(model.getEmisor()));
+        rep.setTotalIgv(model.getResumen().getIgv());
+        rep.setTotalIsc(model.getResumen().getIsc());
+        List<DetalleBoletaRepresentation> detalle = new ArrayList<>();
+        model.getDetalle().forEach(d -> detalle.add(toRepresentation(d)));
+        rep.setDetalle(detalle);
+        rep.setTotalValorVentaOperacionesGratuitas(model.getResumen().getTotalValorVentaOperacionesGratuitas());
+        return rep;
+
+    }
+
+
 }
+
