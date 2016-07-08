@@ -29,10 +29,10 @@ import org.openfact.representations.idm.search.SearchResultsRepresentation;
 import org.openfact.services.ErrorResponse;
 
 @Stateless
-public class FacturasResourceImpl implements FacturasResource {
+public class FacturasAdminResourceImpl implements FacturasAdminResource {
 
 	@PathParam("idEmisor")
-	private String idEmisor;
+	private int idEmisor;
 
 	@Context
 	private UriInfo uriInfo;
@@ -41,7 +41,7 @@ public class FacturasResourceImpl implements FacturasResource {
 	private EmisorProvider emisorProvider;
 
 	@Inject
-	private FacturaResource facturaResource;
+	private FacturaAdminResource facturaResource;
 
 	@Inject
 	private FacturaProvider facturaProvider;
@@ -54,7 +54,7 @@ public class FacturasResourceImpl implements FacturasResource {
 	}
 
 	@Override
-	public FacturaResource factura(String idFactura) {
+	public FacturaAdminResource factura(String idFactura) {
 		return facturaResource;
 	}
 
@@ -80,13 +80,13 @@ public class FacturasResourceImpl implements FacturasResource {
 		return Response.ok().build();
 	}
 
-	/*@Override
+	@Override
 	public List<FacturaRepresentation> getAll(EmisorModel e) {
 		List<FacturaModel> models = facturaProvider.getAll(e);
 		List<FacturaRepresentation> result = new ArrayList<>();
 		models.forEach(f -> result.add(ModelToRepresentation.toRepresentation(f)));
 		return result;
-	}*/
+	}
 
 	@Override
 	public SearchResultsRepresentation<FacturaRepresentation> search(SearchCriteriaRepresentation criteria) {

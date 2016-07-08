@@ -9,7 +9,6 @@ import javax.ws.rs.core.Response;
 
 import org.openfact.models.EmisorModel;
 import org.openfact.models.EmisorProvider;
-import org.openfact.models.HistorialEmisorModel;
 import org.openfact.models.utils.ModelToRepresentation;
 import org.openfact.representations.idm.EmisorRepresentation;
 import org.openfact.services.ErrorResponse;

@@ -10,7 +10,7 @@ import javax.ws.rs.core.Response;
 import org.openfact.models.BoletaProvider;
 import org.openfact.models.EmisorModel;
 import org.openfact.models.EmisorProvider;
-import org.openfact.representations.idm.BoletaRepresentation;
+import org.openfact.representations.idm.BotelaRepresentation;
 import org.openfact.representations.idm.search.SearchCriteriaRepresentation;
 import org.openfact.representations.idm.search.SearchResultsRepresentation;
 
@@ -18,7 +18,7 @@ import org.openfact.representations.idm.search.SearchResultsRepresentation;
 public class BoletasResourceImpl implements BoletasResource {
 
 	@PathParam("idEmisor")
-	private String idEmisor;
+	private int idEmisor;
 
 	@Inject
 	private EmisorProvider emisorProvider;
@@ -37,29 +37,21 @@ public class BoletasResourceImpl implements BoletasResource {
 	}
 
 	@Override
-	public Response create(BoletaRepresentation rep) {
+	public Response create(BotelaRepresentation rep) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Response importar(List<BoletaRepresentation> rep) {
+	public Response importar(List<BotelaRepresentation> rep) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public SearchResultsRepresentation<BoletaRepresentation> search(SearchCriteriaRepresentation criterial) {
+	public SearchResultsRepresentation<BotelaRepresentation> search(SearchCriteriaRepresentation criterial) {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
-//	@Override
-//	public List<BoletaRepresentation> getAll() {
-//		List<BoletaModel> models = BoletaProvider.getAll();
-//		List<BoletaRepresentation> result = new ArrayList<>();
-//		models.forEach(f -> result.add(ModelToRepresentation.toRepresentation(f)));
-//		return result;
-//	}
 
 }

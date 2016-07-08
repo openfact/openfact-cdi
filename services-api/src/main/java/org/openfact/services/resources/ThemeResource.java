@@ -19,5 +19,5 @@ public interface ThemeResource {
     @GET
     @Path("/{version}/{themeType}/{themeName}/{path:.*}")
     public Response getResource(@PathParam("version") String version, @PathParam("themeType") String themType,
-                                @PathParam("themeName") String themeName, @PathParam("path") String path);
+            @PathParam("themeName") String themeName, @PathParam("path") String path);
 }

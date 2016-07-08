@@ -19,6 +19,9 @@ import java.util.List;
     @POST @Path("importar") @Produces(MediaType.APPLICATION_JSON) Response importar(
             List<FacturaRepresentation> rep);
 
+    @GET @Produces(MediaType.APPLICATION_JSON) public List<FacturaRepresentation> getAll(EmisorModel e);
+
     @GET @Path("search") @Produces(MediaType.APPLICATION_JSON) SearchResultsRepresentation<FacturaRepresentation> search(
             SearchCriteriaRepresentation criteria);
+
 }

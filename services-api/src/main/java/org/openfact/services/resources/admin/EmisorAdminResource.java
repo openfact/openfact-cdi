@@ -11,7 +11,7 @@ import javax.ws.rs.core.Response;
 
 import org.openfact.representations.idm.EmisorRepresentation;
 
-public interface EmisorResource {
+public interface EmisorAdminResource {
 
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
@@ -32,6 +32,12 @@ public interface EmisorResource {
 	Response disable();
 
 	@Path("comprobantesPago")
-	ComprobantesPagoResource comprobantesPago();
+	ComprobantesPagoAdminResource comprobantesPago();
 
+	@Path("notas")
+    NotasAdminResource notas();
+	
+	@Path("comprobantesTributarios")
+    ComprobantesTributariosAdminResource comprobantesTributarios();
+	
 }

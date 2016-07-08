@@ -41,10 +41,13 @@ dependencies {
     testCompile ( libraries.junit )
 }
 
+group = 'org.sistcoop'
+
 miredot {
     source = sourceSets.main.allJava
     destination = sourceSets.main.output
-    organizationId = 'f7f300d6-135f-469b-bbdf-36267a599e5b'
+    licence = 'cHJvamVjdHxvcmcuc2lzdGNvb3AuY29vcGVyYXRpdmEtY2xpZW50fDIwMTYtMTAtMDd8dHJ1ZXwtMSNNQ3dDRkQ2cTBJYk5WTkNmRFg1Z1FOWUoxeGNoQ2tHK0FoUmErS05jdzJGRXNQSlhmUnRnMEpNUnpjbEptdz09'
+    //organizationId = '5af71207-da6c-4743-a30c-b32cfcb44460'
 
     restModel {
         restFramework {

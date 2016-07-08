@@ -1,6 +1,6 @@
 package org.openfact.services.resources.admin;
 
-import org.openfact.representations.idm.BoletaRepresentation;
+import org.openfact.representations.idm.BotelaRepresentation;
 import org.openfact.representations.idm.search.SearchCriteriaRepresentation;
 import org.openfact.representations.idm.search.SearchResultsRepresentation;
 
@@ -17,16 +17,16 @@ public interface BoletasResource {
 
 	@POST
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response create(BoletaRepresentation rep);
+	public Response create(BotelaRepresentation rep);
 
 	@GET
 	@Path("importar")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response importar(List<BoletaRepresentation> rep);
+	public Response importar(List<BotelaRepresentation> rep);
 
 	@GET
 	@Path("search")
 	@Produces(MediaType.APPLICATION_JSON)
-	public SearchResultsRepresentation<BoletaRepresentation> search(SearchCriteriaRepresentation criterial);
+	public SearchResultsRepresentation<BotelaRepresentation> search(SearchCriteriaRepresentation criterial);
 
 }
