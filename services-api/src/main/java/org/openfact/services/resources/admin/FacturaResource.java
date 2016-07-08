@@ -55,4 +55,5 @@ public interface FacturaResource {
 	public Response downloadCdr();
 
 	@Path("detalle") DetallesFacturaResource detallesFactura();
+	@Path("envios") EnviosResource enviosResource();
 }
