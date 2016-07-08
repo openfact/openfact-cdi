@@ -80,13 +80,13 @@ public class FacturasResourceImpl implements FacturasResource {
 		return Response.ok().build();
 	}
 
-	@Override
+	/*@Override
 	public List<FacturaRepresentation> getAll(EmisorModel e) {
 		List<FacturaModel> models = facturaProvider.getAll(e);
 		List<FacturaRepresentation> result = new ArrayList<>();
 		models.forEach(f -> result.add(ModelToRepresentation.toRepresentation(f)));
 		return result;
-	}
+	}*/
 
 	@Override
 	public SearchResultsRepresentation<FacturaRepresentation> search(SearchCriteriaRepresentation criteria) {

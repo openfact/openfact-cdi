@@ -5,6 +5,7 @@ import javax.ejb.TransactionAttribute;
 import javax.ejb.TransactionAttributeType;
 
 import org.openfact.models.EmisorModel;
+import org.openfact.models.HistorialEmisorModel;
 import org.openfact.representations.idm.EmisorRepresentation;
 
 @Stateless
@@ -29,5 +30,4 @@ public class EmisorManager {
 		model.commit();
 		return true;
 	}
-
 }
