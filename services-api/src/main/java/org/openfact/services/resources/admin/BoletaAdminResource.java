@@ -62,7 +62,7 @@ void update(final BoletaRepresentation rep);
 	public Response downloadCdr();
 
 	@Path("detalle") DetallesBoletaResource detallesBoleta();
-	@Path("envios") EnviosResource enviosResource();
+	@Path("envios") EnviosAdminResource enviosResource();
 
 
 }
