@@ -9,10 +9,10 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 
-import org.openfact.models.*;
-import org.openfact.models.utils.ModelToRepresentation;
-import org.openfact.models.utils.RepresentationToModel;
-import org.openfact.representations.idm.BoletaRepresentation;
+import org.openfact.models.BoletaProvider;
+import org.openfact.models.EmisorModel;
+import org.openfact.models.EmisorProvider;
+import org.openfact.representations.idm.BotelaRepresentation;
 import org.openfact.representations.idm.search.SearchCriteriaRepresentation;
 import org.openfact.representations.idm.search.SearchResultsRepresentation;
 import org.openfact.services.ErrorResponse;

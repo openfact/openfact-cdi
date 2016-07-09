@@ -23,6 +23,14 @@ import org.openfact.representations.idm.FacturaRepresentation;
         model.commit();
         return model;
     }
+    public HistorialEmisorModel createHistorial(EmisorRepresentation rep, EmisorProvider provider) {
+        EmisorModel model=provider.findById(rep.getId());
+        HistorialEmisorModel historialEmisorModel = provider.createHistorial(model, rep.getResolucionAutorizacion(),
+                        rep.getMensajeRepresentacionImpresa());
+        historialEmisorModel.setMensajeServicioGratuito(rep.getMensajeServicioGratuito());
+        historialEmisorModel.commit();
+        return historialEmisorModel;
+    }
 
     public FacturaModel createFactura(FacturaRepresentation rep, EmisorModel emisor,
             FacturaProvider provider) {

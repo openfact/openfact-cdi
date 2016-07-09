@@ -1,6 +1,7 @@
 package org.openfact.models;
 
-public interface HistorialEmisorModel {
+
+public interface HistorialEmisorModel extends Model{
 
     String getId();
     String getResolucionAutorizacion();

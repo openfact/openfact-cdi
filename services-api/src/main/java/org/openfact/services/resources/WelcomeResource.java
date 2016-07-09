@@ -11,7 +11,7 @@ import java.net.URISyntaxException;
 public interface WelcomeResource {
 
     /**
-     * Welcome page of Repeid
+     * Welcome page of Openfact
      *
      * @return
      * @throws URISyntaxException
@@ -23,16 +23,5 @@ public interface WelcomeResource {
     @POST
     @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
     public Response createUser(final MultivaluedMap<String, String> formData);
-
-    /**
-     * Resources for welcome page
-     *
-     * @param path
-     * @return
-     */
-    @GET
-    @Path("/welcome-content/{path}")
-    @Produces(MediaType.TEXT_HTML_UTF_8)
-    public Response getResource(@PathParam("path") String path);
 
 }

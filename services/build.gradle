@@ -1,6 +1,6 @@
 dependencies {
     //Project dependencies
-    compile project (":openfact-services-api")
+    compile project (":cooperativa-client") //compile project(":openfact-services-api")
     compile project (":openfact-core")
     compile project (":openfact-server-spi")
 

@@ -64,7 +64,7 @@ import org.openfact.models.search.SearchResultsModel;
         return new HistorialEmisorAdapter(em, entity);
     }
 
-    @Override public EmisorModel findById(int id) {
+    @Override public EmisorModel findById(String id) {
         EmisorEntity emisorEntity = this.em.find(EmisorEntity.class, id);
         return emisorEntity != null ? new EmisorAdapter(em, emisorEntity) : null;
     }

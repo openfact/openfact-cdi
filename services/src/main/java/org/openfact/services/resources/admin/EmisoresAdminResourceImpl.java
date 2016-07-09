@@ -11,32 +11,41 @@ import javax.ws.rs.core.UriInfo;
 
 import org.openfact.models.EmisorModel;
 import org.openfact.models.EmisorProvider;
-import org.openfact.models.HistorialEmisorModel;
 import org.openfact.models.ModelDuplicateException;
 import org.openfact.models.utils.ModelToRepresentation;
 import org.openfact.models.utils.RepresentationToModel;
 import org.openfact.representations.idm.EmisorRepresentation;
 import org.openfact.services.ErrorResponse;
+import org.openfact.services.managers.AppAuthManager;
 
-@Stateless public class EmisoresResourceImpl implements EmisoresResource {
+@Stateless
+public class EmisoresAdminResourceImpl implements EmisoresAdminResource {
 
-    @Context private UriInfo uriInfo;
+    @Context
+    private UriInfo uriInfo;
+    private AppAuthManager authManager;
 
-    @Inject private EmisorResource emisorResource;
+    @Inject
+    private EmisorAdminResource emisorResource;
 
-    @Inject private EmisorProvider emisorProvider;
-    @Inject private ComprobantesPagoResource comprobantesPagoResource;
-    @Inject private RepresentationToModel representationToModel;
+    @Inject
+    private EmisorProvider emisorProvider;
 
-    @Override public EmisorResource emisor(String idEmisor) {
+    @Inject
+    private RepresentationToModel representationToModel;
+
+    @Override
+    public EmisorAdminResource emisor(String idEmisor) {
         return emisorResource;
     }
 
-    @Override public ComprobantesPagoResource comprobantesPago() {
-        return comprobantesPagoResource;
+    @Inject
+    public EmisoresAdminResourceImpl(AppAuthManager authManager) {
+        this.authManager = authManager;
     }
 
-    @Override public Response create(EmisorRepresentation rep) {
+    @Override
+    public Response create(EmisorRepresentation rep) {
         try {
             EmisorModel model = representationToModel.createEmisor(rep, emisorProvider);
             return Response.created(uriInfo.getAbsolutePathBuilder().path(model.getId()).build())
@@ -47,7 +56,8 @@ import org.openfact.services.ErrorResponse;
         }
     }
 
-    @Override public List<EmisorRepresentation> getAll() {
+    @Override
+    public List<EmisorRepresentation> getAll() {
         List<EmisorModel> models = emisorProvider.getAll();
         List<EmisorRepresentation> result = new ArrayList<>();
         models.forEach(f -> result.add(ModelToRepresentation.toRepresentation(f)));
