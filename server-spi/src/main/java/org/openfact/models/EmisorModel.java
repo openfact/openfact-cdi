@@ -2,22 +2,26 @@ package org.openfact.models;
 
 public interface EmisorModel extends Model {
 
-	String getId();
+    String getId();
 
-	String getRuc();
+    String getRuc();
 
-	String getRazonSocial();
+    String getPais();
 
-	String getNombreComercial();
+    void setPais(String pais);
 
-	void setNombreComercial(String nombreComercial);
+    String getRazonSocial();
 
-	String getDomicilioFiscal();
+    String getNombreComercial();
 
-	void setDomicilioFiscal(String domicilioFiscal);
+    void setNombreComercial(String nombreComercial);
 
-	boolean getEstado();
+    String getDomicilioFiscal();
 
-	void setEstado(boolean estado);
+    void setDomicilioFiscal(String domicilioFiscal);
+
+    boolean getEstado();
+
+    void setEstado(boolean estado);
 
 }
