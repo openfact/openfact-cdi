@@ -73,12 +73,7 @@ import org.openfact.representations.idm.FacturaRepresentation;
         model.commit();
         return model;
     }
-		FacturaModel model = provider.create(emisor, adquiriente, rep.getFechaEmision(), numeracion, resumen);
-		//model.setTipoDocumentoRelacionadoType(type);
-		//model.setInformacionAdicional(informacionAdicional);
-		model.commit();
-		return model;
-	}
+
 	public BoletaModel createBoleta(BoletaRepresentation rep, EmisorModel emisor,BoletaProvider provider){
 		AdquirienteModel adquiriente = null;
 

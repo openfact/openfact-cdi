@@ -122,6 +122,10 @@ import org.openfact.models.search.SearchResultsModel;
         }
     }
 
+    @Override public EmisorModel findByPaisRazonSocial(String pais, String razonSocial) {
+        return null;
+    }
+
     @Override public List<EmisorModel> getAll() {
         TypedQuery<EmisorEntity> query = em.createNamedQuery("EmisorEntity.findAll", EmisorEntity.class);
         List<EmisorEntity> entities = query.getResultList();

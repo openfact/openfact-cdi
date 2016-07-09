@@ -11,6 +11,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import org.openfact.models.EmisorModel;
 import org.openfact.representations.idm.FacturaRepresentation;
 import org.openfact.representations.idm.search.SearchCriteriaRepresentation;
 import org.openfact.representations.idm.search.SearchResultsRepresentation;
@@ -34,6 +35,10 @@ public interface FacturasAdminResource {
     @Produces(MediaType.APPLICATION_JSON)
     public List<FacturaRepresentation> getAll();
 
+    @GET
+    @Path("facturas")
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<FacturaRepresentation> getAll(EmisorModel e);
     @GET
     @Path("search")
     @Produces(MediaType.APPLICATION_JSON)

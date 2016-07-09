@@ -32,7 +32,7 @@ import org.openfact.services.ErrorResponse;
 public class FacturasAdminResourceImpl implements FacturasAdminResource {
 
 	@PathParam("idEmisor")
-	private int idEmisor;
+	private String idEmisor;
 
 	@Context
 	private UriInfo uriInfo;
@@ -78,6 +78,11 @@ public class FacturasAdminResourceImpl implements FacturasAdminResource {
 			return ErrorResponse.exists("Factura ya registrada");
 		}
 		return Response.ok().build();
+	}
+
+	@Override
+	public List<FacturaRepresentation> getAll() {
+		return null;
 	}
 
 	@Override
