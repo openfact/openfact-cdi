@@ -8,8 +8,7 @@ import org.openfact.models.search.SearchCriteriaModel;
 import org.openfact.models.search.SearchResultsModel;
 import org.openfact.provider.Provider;
 
-@Local
-public interface EmisorProvider extends Provider {
+@Local public interface EmisorProvider extends Provider {
 
     EmisorModel create(String ruc, String razonSocial);
 
@@ -27,9 +26,8 @@ public interface EmisorProvider extends Provider {
     EmisorModel findByPaisRazonSocial(String pais, String razonSocial);
 
     List<EmisorModel> getAll();
-    boolean desactivar(HistorialEmisorModel historialEmisorModel);
 
-    List<EmisorModel> getAll();
+    boolean desactivar(HistorialEmisorModel historialEmisorModel);
 
     SearchResultsModel<EmisorModel> search(SearchCriteriaModel criteria);
 

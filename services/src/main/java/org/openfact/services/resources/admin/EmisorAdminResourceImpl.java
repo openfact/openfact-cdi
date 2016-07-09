@@ -95,4 +95,9 @@ public class EmisorAdminResourceImpl implements EmisorAdminResource {
         return null;
     }
 
+    @Override
+    public EnviosAdminResource envios() {
+        return null;
+    }
+
 }
