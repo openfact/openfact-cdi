@@ -11,9 +11,6 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-/**
- * @author <a href="mailto:sthorger@redhat.com">Stian Thorgersen</a>
- */
 public class Cors {
     //protected static final ServicesLogger logger = ServicesLogger.ROOT_LOGGER;
 

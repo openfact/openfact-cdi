@@ -1,7 +1,9 @@
 package org.openfact.services.resources;
 
+import javax.ejb.Stateless;
 import javax.ws.rs.core.Response;
 
+@Stateless
 public class ThemeResourceImpl implements ThemeResource {
 
     @Override

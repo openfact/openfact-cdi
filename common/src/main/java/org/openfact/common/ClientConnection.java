@@ -2,10 +2,14 @@ package org.openfact.common;
 
 public interface ClientConnection {
 
-	String getRemoteAddr();
+    String getRemoteAddr();
 
-	String getRemoteHost();
+    String getRemoteHost();
 
-	int getReportPort();
+    int getRemotePort();
+
+    String getLocalAddr();
+
+    int getLocalPort();
 
 }

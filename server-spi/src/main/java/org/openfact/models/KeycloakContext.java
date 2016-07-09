@@ -2,6 +2,9 @@ package org.openfact.models;
 
 import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.UriInfo;
+
+import org.openfact.common.ClientConnection;
+
 import java.net.URI;
 import java.util.Locale;
 
