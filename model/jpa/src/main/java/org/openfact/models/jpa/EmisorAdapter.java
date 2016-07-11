@@ -4,7 +4,6 @@ import javax.persistence.EntityManager;
 
 import org.openfact.models.EmisorModel;
 import org.openfact.models.jpa.entities.EmisorEntity;
-import org.openfact.models.jpa.entities.HistorialEmisorEntity;
 
 public class EmisorAdapter implements EmisorModel, JpaModel<EmisorEntity> {
 
@@ -17,7 +16,7 @@ public class EmisorAdapter implements EmisorModel, JpaModel<EmisorEntity> {
     }
 
     public static EmisorEntity toEmisorEntity(EmisorModel model, EntityManager em) {
-        if (model instanceof EmisorAdapter) {
+        if (model instanceof EmisorAdapter) {   
             return ((EmisorAdapter) model).getEntity();
         }
         return em.getReference(EmisorEntity.class, model.getId());
@@ -65,6 +64,18 @@ public class EmisorAdapter implements EmisorModel, JpaModel<EmisorEntity> {
 
     @Override public void setEstado(boolean estado) {
         emisorEntity.setEstado(estado);
+    }
+
+    @Override
+    public String getPais() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public void setPais(String pais) {
+        // TODO Auto-generated method stub
+        
     }
 
 }
