@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 
 public interface DetalleNotaModel {
 
+
     String getId();
 
     String getMotivo();
