@@ -1,6 +1,8 @@
 package org.openfact.services.resources.admin;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;
@@ -10,9 +12,14 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 
 import org.openfact.models.*;
+import org.openfact.models.search.SearchCriteriaFilterOperator;
+import org.openfact.models.search.SearchCriteriaModel;
+import org.openfact.models.search.SearchResultsModel;
 import org.openfact.models.utils.ModelToRepresentation;
 import org.openfact.models.utils.RepresentationToModel;
 import org.openfact.representations.idm.BoletaRepresentation;
+import org.openfact.representations.idm.search.PagingRepresentation;
+import org.openfact.representations.idm.search.SearchCriteriaFilterOperatorRepresentation;
 import org.openfact.representations.idm.search.SearchCriteriaRepresentation;
 import org.openfact.representations.idm.search.SearchResultsRepresentation;
 import org.openfact.services.ErrorResponse;
@@ -26,13 +33,13 @@ public class BoletasAdminResourceImpl implements BoletasAdminResource {
     private AppAuthManager authManager;
     private EmisorModel emisor;
 
-    @PathParam("idEmisor")
+    @PathParam(value = "idEmisor")
     private String idEmisor;
 
     @Inject
     private EmisorProvider emisorProvider;
     @Inject
-    private BoletaAdminResource   boletaAdminResource;
+    private BoletaAdminResource boletaAdminResource;
 
     @Inject
     private BoletaProvider boletaProvider;
@@ -53,24 +60,62 @@ public class BoletasAdminResourceImpl implements BoletasAdminResource {
         try {
             BoletaModel model = representationToModel.createBoleta(rep, getEmisorModel(), boletaProvider);
             return Response.created(uriInfo.getAbsolutePathBuilder().path(model.getId()).build())
-                    .header("", "").entity(ModelToRepresentation.toRepresentation(model)).build();
-        }catch (ModelDuplicateException e){
+                    .header("Access-Control-Expose-Headers", "Location").entity(ModelToRepresentation.toRepresentation(model)).build();
+        } catch (ModelDuplicateException e) {
             return ErrorResponse.exists("Factura ya registrada");
         }
     }
 
-    @Override public Response importar(List<BoletaRepresentation> rep) {
+    @Override
+    public Response importar(List<BoletaRepresentation> rep) {
         try {
-            rep.forEach(b ->representationToModel.createBoleta(b, getEmisorModel(),boletaProvider));
-        }catch (ModelDuplicateException e){
+            rep.forEach(b -> representationToModel.createBoleta(b, getEmisorModel(), boletaProvider));
+        } catch (ModelDuplicateException e) {
             return ErrorResponse.exists("Factura ya registrada");
         }
         return Response.ok().build();
     }
 
-    @Override public SearchResultsRepresentation<BoletaRepresentation> search(
-            SearchCriteriaRepresentation criterial) {
+    @Override
+    public List<BoletaRepresentation> getAll() {
         return null;
+    }
+
+    @Override
+    public List<BoletaRepresentation> getAll(EmisorModel e) {
+        List<BoletaModel> models = boletaProvider.getAll(e);
+        List<BoletaRepresentation> result = new ArrayList<>();
+        models.forEach(b -> result.add(ModelToRepresentation.toRepresentation(b)));
+        return result;
+    }
+
+    @Override
+    public SearchResultsRepresentation<BoletaRepresentation> search(
+            SearchCriteriaRepresentation criteria) {
+        SearchCriteriaModel criteriaModel = new SearchCriteriaModel();
+        Function<SearchCriteriaFilterOperatorRepresentation, SearchCriteriaFilterOperator> function = b -> {
+            return SearchCriteriaFilterOperator.valueOf(b.toString());
+        };
+        criteria.getFilters().forEach(b -> {
+            criteriaModel.addFilter(b.getName(), b.getValue(), function.apply(b.getOperator()));
+        });
+        criteria.getOrders().forEach(b -> criteriaModel.addOrder(b.getName(), b.isAscending()));
+        PagingRepresentation paging = criteria.getPaging();
+        criteriaModel.setPageSize(paging.getPageSize());
+        criteriaModel.setPage(paging.getPage());
+        String filterText = criteria.getFilterText();
+        SearchResultsModel<BoletaModel> results = null;
+        if (filterText == null) {
+            results = boletaProvider.search(criteriaModel);
+        } else {
+            results = boletaProvider.search(criteriaModel, filterText);
+        }
+        SearchResultsRepresentation<BoletaRepresentation>rep =new SearchResultsRepresentation<>();
+                List<BoletaRepresentation> items=new ArrayList<>();
+        results.getModels().forEach(b->items.add(ModelToRepresentation.toRepresentation(b)));
+        rep.setItems(items);
+        rep.setTotalSize(results.getTotalSize());
+        return rep;
     }
 
     //	@Override
