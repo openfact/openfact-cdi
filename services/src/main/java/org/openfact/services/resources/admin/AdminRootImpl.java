@@ -66,7 +66,7 @@ public class AdminRootImpl implements AdminRoot {
     public AdminConsole getAdminConsole(String codigoPais, String razonSocial) {
         EmisorModel realm = locateEmisor(codigoPais, razonSocial, emisorManager);
         return adminConsole;
-        error
+       // error
         // AdminConsole service = new AdminConsole(realm);
         // return service;
     }
