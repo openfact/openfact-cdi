@@ -1,20 +1,46 @@
 package org.openfact.models;
 
-public class DetalleNotaModel {
+import java.math.BigDecimal;
 
-    private String motivo;
-    private String unidadMedida;
-    private double cantidad;
+public interface DetalleNotaModel {
 
-    private String codigoProducto;
+    String getId();
 
-    private String descripcion;
-    private double valorUnitario;
-    private double precio;
+    String getMotivo();
 
-    private  double igv;
-    private  double isc;
+    void setMotivo(String motivo);
 
-    private NotaModel nota;
+    String getUnidadMedida();
 
+    void setUnidadMedida(String unidadMedida);
+
+    BigDecimal getCantidad();
+
+    void setCantidad(BigDecimal cantidad);
+
+    String getCodigoProducto();
+
+    void setCodigoProducto(String codigoProducto);
+
+    String getDescripcion();
+
+    void setDescripcion(String descripcion);
+
+    BigDecimal getValorUnitario();
+
+    void setValorUnitario(BigDecimal valorUnitario);
+
+    BigDecimal getPrecio();
+
+    void setPrecio(BigDecimal precio);
+
+    BigDecimal getIgv();
+
+    void setIgv(BigDecimal igv);
+
+    BigDecimal getIsc();
+
+     void setIsc(BigDecimal isc);
+
+    NotaModel getNota();
 }

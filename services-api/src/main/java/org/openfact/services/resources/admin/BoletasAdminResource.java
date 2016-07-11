@@ -1,5 +1,6 @@
 package org.openfact.services.resources.admin;
 
+import org.openfact.models.EmisorModel;
 import org.openfact.representations.idm.BoletaRepresentation;
 import org.openfact.representations.idm.search.SearchCriteriaRepresentation;
 import org.openfact.representations.idm.search.SearchResultsRepresentation;
@@ -25,8 +26,17 @@ public interface BoletasAdminResource {
     Response importar(final List<BoletaRepresentation> rep);
 
     @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<BoletaRepresentation> getAll();
+
+    @GET
+    @Path("boletas")
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<BoletaRepresentation> getAll(EmisorModel e);
+
+    @GET
     @Path("search")
     @Produces(MediaType.APPLICATION_JSON)
-    SearchResultsRepresentation<BoletaRepresentation> search(final SearchCriteriaRepresentation criterial);
+    SearchResultsRepresentation<BoletaRepresentation> search(final SearchCriteriaRepresentation criteria );
 
 }
