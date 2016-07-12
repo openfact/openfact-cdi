@@ -158,9 +158,12 @@
 	<modules>
 		<module>common</module>
 		<module>core</module>
+		<module>model</module>
+		<module>services</module>
 		<module>services-api</module>
-		<module>wildfly-swarm-base</module>
+		<module>server-spi</module>
 		<module>wildfly-swarm</module>
+		<module>wildfly-swarm-base</module>
 	</modules>
 
 	<dependencyManagement>
@@ -1268,6 +1271,15 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>7.0</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
 
 	<repositories>
 		<!-- for org.jboss.web:jbossweb -->

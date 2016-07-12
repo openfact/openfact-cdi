@@ -1,82 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <artifactId>openfact</artifactId>
-        <groupId>org.openfact</groupId>
-        <version>1.0.0.Final-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
-    </parent>
+	<parent>
+		<artifactId>openfact</artifactId>
+		<groupId>org.openfact</groupId>
+		<version>1.0.0.Final-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
 
-    <artifactId>openfact-wildfly-swarm</artifactId>
+	<artifactId>openfact-wildfly-swarm</artifactId>
 
-    <name>Openfact Wildfly Swarm</name>
-    <description>Openfact WildFly Swarm</description>
-    <packaging>war</packaging>
+	<name>Openfact Wildfly Swarm</name>
+	<description>Openfact WildFly Swarm</description>
+	<packaging>war</packaging>
 
-    <properties>
-        <failOnMissingWebXml>false</failOnMissingWebXml>
-    </properties>
+	<properties>
+		<failOnMissingWebXml>false</failOnMissingWebXml>
+	</properties>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.wildfly.swarm</groupId>
-                <artifactId>bom</artifactId>
-                <version>${version.wildfly-swarm}</version>
-                <scope>import</scope>
-                <type>pom</type>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.wildfly.swarm</groupId>
+				<artifactId>bom</artifactId>
+				<version>${version.wildfly-swarm}</version>
+				<scope>import</scope>
+				<type>pom</type>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
-    <build>
-        <finalName>${project.artifactId}</finalName>
-        <plugins>
-            <plugin>
-                <groupId>org.wildfly.swarm</groupId>
-                <artifactId>wildfly-swarm-plugin</artifactId>
-                <version>${version.wildfly-swarm}</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>package</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <bundleDependencies>true</bundleDependencies>
-                    <properties>
-                        <swarm.context.path>${project.artifactId}</swarm.context.path>
-                    </properties>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+	<build>
+		<finalName>${project.artifactId}</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.wildfly.swarm</groupId>
+				<artifactId>wildfly-swarm-plugin</artifactId>
+				<version>${version.wildfly-swarm}</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>package</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<bundleDependencies>true</bundleDependencies>
+					<properties>
+						<swarm.context.path>${project.artifactId}</swarm.context.path>
+					</properties>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.openfact</groupId>
-            <artifactId>openfact-wildfly-swarm-base</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.openfact</groupId>
-            <artifactId>openfact-services-api</artifactId>
-        </dependency>
+	<dependencies>
+		<dependency>
+			<groupId>org.openfact</groupId>
+			<artifactId>openfact-wildfly-swarm-base</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.openfact</groupId>
+			<artifactId>openfact-model-jpa</artifactId>
+			<scope>test</scope>
+		</dependency>
 
-        <!-- Java EE 7 dependency -->
-        <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-api</artifactId>
-            <version>7.0</version>
-            <scope>provided</scope>
-        </dependency>
-        <!-- Wildfly Swarm Fractions -->
-        <dependency>
-            <groupId>org.wildfly.swarm</groupId>
-            <artifactId>jaxrs</artifactId>
-        </dependency>
-    </dependencies>
+		<!-- Java EE 7 dependency -->
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>7.0</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- Wildfly Swarm Fractions -->
+		<dependency>
+			<groupId>org.wildfly.swarm</groupId>
+			<artifactId>jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.wildfly.swarm</groupId>
+			<artifactId>jpa-postgresql</artifactId>
+		</dependency>
+	</dependencies>
 </project>
