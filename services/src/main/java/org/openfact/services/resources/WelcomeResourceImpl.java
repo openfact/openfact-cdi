@@ -1,14 +1,15 @@
 package org.openfact.services.resources;
 
+import java.net.InetAddress;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.UnknownHostException;
+import java.util.HashMap;
+import java.util.Map;
+
 import javax.ejb.Stateless;
 import javax.inject.Inject;
-import javax.ws.rs.Consumes;
 import javax.ws.rs.ForbiddenException;
-import javax.ws.rs.GET;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
 import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.Cookie;
@@ -18,18 +19,7 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.ResponseBuilder;
 import javax.ws.rs.core.Response.Status;
 import javax.ws.rs.core.UriInfo;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.InetAddress;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.UnknownHostException;
-import java.util.HashMap;
-import java.util.Map;
 
-import org.openfact.theme.FreeMarkerUtil;
-import org.openfact.theme.Theme;
-import org.openfact.theme.ThemeProvider;
 import org.openfact.common.ClientConnection;
 import org.openfact.models.BrowserSecurityHeaders;
 import org.openfact.models.OpenfactSession;
@@ -37,6 +27,8 @@ import org.openfact.models.utils.OpenfactModelUtils;
 import org.openfact.services.util.CacheControlUtil;
 import org.openfact.services.util.CookieHelper;
 import org.openfact.theme.BrowserSecurityHeaderSetup;
+import org.openfact.theme.FreeMarkerUtil;
+import org.openfact.theme.Theme;
 
 @Stateless
 public class WelcomeResourceImpl implements WelcomeResource {

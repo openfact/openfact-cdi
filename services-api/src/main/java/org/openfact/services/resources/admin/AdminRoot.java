@@ -51,7 +51,7 @@ public interface AdminRoot {
      * @return
      */
     @Path("emisores")
-    EmisoresAdminResource getEmidoresAdmin(@Context final HttpHeaders headers);
+    EmisoresAdminResource getEmisoresAdmin(@Context final HttpHeaders headers);
 
     /**
      * Base Path to commons admin REST interface

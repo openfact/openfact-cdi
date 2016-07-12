@@ -4,14 +4,12 @@ import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.UriInfo;
 
 import org.openfact.common.ClientConnection;
+import org.openfact.models.utils.EmisorImporter;
 
 import java.net.URI;
 import java.util.Locale;
 
-/**
- * @author <a href="mailto:sthorger@redhat.com">Stian Thorgersen</a>
- */
-public interface KeycloakContext {
+public interface OpenfactContext {
 
     URI getAuthServerUrl();
 
@@ -23,20 +21,16 @@ public interface KeycloakContext {
 
     <T> T getContextObject(Class<T> clazz);
 
-    RealmModel getRealm();
+    EmisorModel getEmisor();
 
-    void setRealm(RealmModel realm);
-
-    ClientModel getClient();
-
-    void setClient(ClientModel client);
+    void setEmisor(EmisorModel emisor);
 
     ClientConnection getConnection();
 
     void setConnection(ClientConnection connection);
 
-    RealmImporter getRealmManager();
+    EmisorImporter getEmisorManager();
 
-    Locale resolveLocale(UserModel user);
+    Locale resolveLocale(EmisorModel emisor);
 
 }

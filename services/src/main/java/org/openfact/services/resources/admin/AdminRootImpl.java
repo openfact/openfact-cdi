@@ -10,9 +10,13 @@ import javax.ws.rs.core.UriInfo;
 
 import org.jboss.resteasy.spi.HttpRequest;
 import org.jboss.resteasy.spi.HttpResponse;
+import org.jboss.resteasy.spi.NoLogWebApplicationException;
 import org.openfact.common.ClientConnection;
 import org.openfact.models.EmisorModel;
+import org.openfact.models.OpenfactSession;
 import org.openfact.services.managers.EmisorManager;
+import org.openfact.services.resources.Cors;
+import org.openfact.services.resources.admin.info.ServerInfoAdminResourceImpl;
 import org.openfact.services.resources.admin.info.ServerInfoAdminResourceImpl;
 
 @Stateless
@@ -37,7 +41,16 @@ public class AdminRootImpl implements AdminRoot {
     protected AdminConsole adminConsole;
 
     @Inject
+    protected EmisoresAdminResource emisoresAdminResource;
+
+    @Inject
     protected CommonsAdminResource commonsAdminResource;
+
+    @Inject
+    protected ServerInfoAdminResourceImpl serverInfoAdminResource;
+    
+    @Inject
+    protected OpenfactSession session;
 
     @Override
     public Response masterEmisorAdminConsoleRedirect() {
@@ -64,44 +77,54 @@ public class AdminRootImpl implements AdminRoot {
 
     @Override
     public AdminConsole getAdminConsole(String codigoPais, String razonSocial) {
-        EmisorModel realm = locateEmisor(codigoPais, razonSocial, emisorManager);
+        EmisorModel emisor = locateEmisor(codigoPais, razonSocial, emisorManager);
+        session.getContext().setEmisor(emisor);
         return adminConsole;
-       // error
-        // AdminConsole service = new AdminConsole(realm);
-        // return service;
     }
 
+    // Proteger este endpoint
     @Override
-    public EmisoresAdminResource getEmidoresAdmin(HttpHeaders headers) {
-        // TODO Auto-generated method stub
-        return null;
+    public EmisoresAdminResource getEmisoresAdmin(HttpHeaders headers) {
+        handlePreflightRequest();
+
+        /*
+         * AdminAuth auth = authenticateRealmAdminRequest(headers); if (auth !=
+         * null) { logger.debug("authenticated admin access for: " +
+         * auth.getUser().getUsername()); }
+         */
+
+        Cors.add(request).allowedOrigins("*").allowedMethods("GET", "PUT", "POST", "DELETE").auth()
+                .build(response);
+        return emisoresAdminResource;
     }
 
     @Override
     public CommonsAdminResource getCommonsResource(HttpHeaders headers) {
+        handlePreflightRequest();
         return commonsAdminResource;
     }
 
     @Override
     public ServerInfoAdminResourceImpl getServerInfo(HttpHeaders headers) {
+        handlePreflightRequest();
+
         /*
-         * handlePreflightRequest();
-         * 
          * AdminAuth auth = authenticateRealmAdminRequest(headers); if
          * (!isAdmin(auth)) { throw new ForbiddenException(); }
-         * 
-         * if (auth != null) { logger.debug("authenticated admin access for: " +
-         * auth.getUser().getUsername()); }
-         * 
-         * Cors.add(request).allowedOrigins(auth.getToken()).allowedMethods(
-         * "GET", "PUT", "POST", "DELETE") .auth().build(response);
-         * 
-         * ServerInfoAdminResource adminResource = new
-         * ServerInfoAdminResource();
-         * ResteasyProviderFactory.getInstance().injectProperties(adminResource)
-         * ; return adminResource;
          */
-        return null;
+
+        Cors.add(request).allowedOrigins("*").allowedMethods("GET", "PUT", "POST", "DELETE").auth()
+                .build(response);
+
+        return serverInfoAdminResource;
+    }
+
+    protected void handlePreflightRequest() {
+        if (request.getHttpMethod().equalsIgnoreCase("OPTIONS")) {
+            Response response = Cors.add(request, Response.ok()).preflight()
+                    .allowedMethods("GET", "PUT", "POST", "DELETE").auth().build();
+            throw new NoLogWebApplicationException(response);
+        }
     }
 
 }

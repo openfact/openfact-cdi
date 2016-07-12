@@ -9,6 +9,7 @@ import javax.ws.rs.core.UriInfo;
 import org.jboss.resteasy.spi.HttpRequest;
 import org.jboss.resteasy.spi.HttpResponse;
 import org.openfact.models.EmisorModel;
+import org.openfact.models.OpenfactSession;
 import org.openfact.representations.idm.PublishedEmisorRepresentation;
 
 @Stateless
@@ -23,12 +24,8 @@ public class PublicEmisorResourceImpl implements PublicEmisorResource {
     @Context
     protected HttpResponse response;
 
-    protected EmisorModel emisor;
-
     @Inject
-    public PublicEmisorResourceImpl(EmisorModel emisor) {
-        this.emisor = emisor;
-    }
+    protected OpenfactSession session;
 
     @Override
     public Response accountPreflight() {
@@ -38,7 +35,7 @@ public class PublicEmisorResourceImpl implements PublicEmisorResource {
     @Override
     public PublishedEmisorRepresentation getEmisor() {
         Cors.add(request).allowedOrigins(Cors.ACCESS_CONTROL_ALLOW_ORIGIN_WILDCARD).auth().build(response);
-        return emisorRep(emisor, uriInfo);
+        return emisorRep(session.getContext().getEmisor(), uriInfo);
     }
 
     public static PublishedEmisorRepresentation emisorRep(EmisorModel emisor, UriInfo uriInfo) {
