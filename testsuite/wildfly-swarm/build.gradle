@@ -1,0 +1,5 @@
+dependencies {
+    // third part dependencies
+    //testCompile "org.wildfly.swarm:arquillian:1.0.0.Final"
+    //testCompile "org.wildfly.swarm:arquillian-junit-container:1.0.0.Final"
+}
