@@ -1,32 +1,56 @@
 package org.openfact.models;
 
+import org.openfact.models.enums.TipoDocumentoRelacionadoType;
+import org.openfact.models.enums.TipoDocumentoType;
+
+import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.Set;
 
-public class NotaModel {
+public interface NotaModel extends Model {
+    //
+//    private String serie;
+//    private String numero;
+//    private LocalDate fechaEmision;
+//
+//    private String moneda;
+//    private double importeTotal;
+//
+//    private double cargos;
+//    private double tributos;
+//
+//    private double totalOperacionesGravadas;
+//    private double totalOperacionesInafectas;
+//    private double totalOperacionesExoneradas;
+//
+//    private double totalIgv;
+//    private double totalIsc;
+//
+//    private TipoNotaModel tipoNota;
+//
+//    private AdquirienteModel adquiriente;
+//
+//    private HistorialEmisorModel historialEmisor;
+//
+//    private ComprobantePagoModel comprobante;
+//    private String DocumentoReferencia;
 
-    private String serie;
-    private String numero;
-    private LocalDate fechaEmision;
+    TipoDocumentoRelacionadoType getTipoDocumentoRelacionadoType();
 
-    private String moneda;
-    private double importeTotal;
+    NumeracionComprobantePagoModel getNumeraccion();
 
-    private double cargos;
-    private double tributos;
+    TipoDocumentoType getTipoDocumento();
 
-    private double totalOperacionesGravadas;
-    private double totalOperacionesInafectas;
-    private double totalOperacionesExoneradas;
+    LocalDate getFechaEmision();
 
-    private double totalIgv;
-    private double totalIsc;
+    EmisorModel getEmisor();
 
-    private TipoNotaModel tipoNota;
+    AdquirienteModel getAdquiriente();
 
-    private AdquirienteModel adquiriente;
+    ResumenNotaModel getResumen();
+    EnvioModel getEnvio();
 
-    private HistorialEmisorModel historialEmisor;
+    Set<DetalleNotaModel> getDetalle();
 
-    private ComprobantePagoModel comprobante;
-    private String DocumentoReferencia;
+
 }
