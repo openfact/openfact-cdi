@@ -1,7 +1,5 @@
 # openfact
-#PROBANDO CONFIGURACION CON GIT
 
-hola
-pavel y chano
-#modificado por shanito.
-#nueva modificacion de shanito.
+execute to boot the application
+
+mvn package && java -jar distribution/microservice/wildfly/target/openfact-wildfly-swarm.jar

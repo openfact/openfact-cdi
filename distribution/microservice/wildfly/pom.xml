@@ -1,20 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-
 	<parent>
 		<artifactId>openfact</artifactId>
 		<groupId>org.openfact</groupId>
 		<version>1.0.0.Final-SNAPSHOT</version>
-		<relativePath>../pom.xml</relativePath>
+		<relativePath>../../../pom.xml</relativePath>
 	</parent>
+	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>openfact-wildfly-swarm</artifactId>
-
-	<name>Openfact Wildfly Swarm</name>
-	<description>Openfact WildFly Swarm</description>
-	<packaging>war</packaging>
+	<artifactId>openfact-distribution-microservice-wildfly</artifactId>
+	<name>Openfact Distribution Microservice Wildfly</name>
+	<packaging>jar</packaging>
 
 	<properties>
 		<failOnMissingWebXml>false</failOnMissingWebXml>
@@ -33,7 +30,7 @@
 	</dependencyManagement>
 
 	<build>
-		<finalName>${project.artifactId}</finalName>
+		<finalName>openfact-wildfly</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.wildfly.swarm</groupId>
@@ -47,6 +44,7 @@
 					</execution>
 				</executions>
 				<configuration>
+					<mainClass>org.openfact.swarm.Main</mainClass>
 					<bundleDependencies>true</bundleDependencies>
 					<properties>
 						<swarm.context.path>${project.artifactId}</swarm.context.path>
@@ -60,11 +58,11 @@
 		<dependency>
 			<groupId>org.openfact</groupId>
 			<artifactId>openfact-wildfly-swarm-base</artifactId>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.openfact</groupId>
 			<artifactId>openfact-model-jpa</artifactId>
-			<scope>test</scope>
 		</dependency>
 
 		<!-- Java EE 7 dependency -->
@@ -78,11 +76,23 @@
 		<!-- Wildfly Swarm Fractions -->
 		<dependency>
 			<groupId>org.wildfly.swarm</groupId>
+			<artifactId>undertow</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.wildfly.swarm</groupId>
+			<artifactId>jaxrs</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.wildfly.swarm</groupId>
 			<artifactId>jpa</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.wildfly.swarm</groupId>
 			<artifactId>jpa-postgresql</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.wildfly.swarm</groupId>
+			<artifactId>datasources</artifactId>
 		</dependency>
 	</dependencies>
 </project>

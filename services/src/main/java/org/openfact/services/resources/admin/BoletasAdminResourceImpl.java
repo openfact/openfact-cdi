@@ -30,7 +30,6 @@ public class BoletasAdminResourceImpl implements BoletasAdminResource {
 
     @Context
     private UriInfo uriInfo;
-    private AppAuthManager authManager;
     private EmisorModel emisor;
 
     @PathParam(value = "idEmisor")
@@ -78,12 +77,7 @@ public class BoletasAdminResourceImpl implements BoletasAdminResource {
 
     @Override
     public List<BoletaRepresentation> getAll() {
-        return null;
-    }
-
-    @Override
-    public List<BoletaRepresentation> getAll(EmisorModel e) {
-        List<BoletaModel> models = boletaProvider.getAll(e);
+        List<BoletaModel> models = boletaProvider.getAll(getEmisorModel());
         List<BoletaRepresentation> result = new ArrayList<>();
         models.forEach(b -> result.add(ModelToRepresentation.toRepresentation(b)));
         return result;

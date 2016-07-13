@@ -15,7 +15,6 @@ public class FacturaEntity extends ComprobantePagoEntity {
     @Column(name = "TIPO_DOCUMENTO_RELACIONADO")
     private TipoDocumentoRelacionadoType documentoRelacionado;
 
-    @Enumerated(EnumType.STRING)
     @Column(name = "NUMERO_DOCUMENTO_RELACIONADO")
     private String numeroDocumentoRelacionado;
 

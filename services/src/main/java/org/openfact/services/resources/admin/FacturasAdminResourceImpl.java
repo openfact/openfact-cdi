@@ -82,15 +82,10 @@ public class FacturasAdminResourceImpl implements FacturasAdminResource {
 
 	@Override
 	public List<FacturaRepresentation> getAll() {
-		return null;
-	}
-
-	@Override
-	public List<FacturaRepresentation> getAll(EmisorModel e) {
-		List<FacturaModel> models = facturaProvider.getAll(e);
-		List<FacturaRepresentation> result = new ArrayList<>();
-		models.forEach(f -> result.add(ModelToRepresentation.toRepresentation(f)));
-		return result;
+	    List<FacturaModel> models = facturaProvider.getAll(getEmisorModel());
+        List<FacturaRepresentation> result = new ArrayList<>();
+        models.forEach(f -> result.add(ModelToRepresentation.toRepresentation(f)));
+        return result;
 	}
 
 	@Override
