@@ -20,7 +20,7 @@ public class DetalleNotaRepresentation implements Serializable {
     private double igv;
     private double isc;
 
-  private NotaRepresentation nota;
+    private NotaRepresentation nota;
 
     public String getMotivo() {
         return motivo;

@@ -117,6 +117,27 @@ public class ModelToRepresentation {
 
     }
 
+    public static DetalleNotaRepresentation toRepresentation(DetalleNotaModel model) {
+        if (model == null)
+            return null;
+
+        DetalleNotaRepresentation rep = new DetalleNotaRepresentation();
+        //seters and geters
+        return rep;
+    }
+
+    public static NotaRepresentation toRepresentacion(NotaModel model) {
+        if (model == null)
+            return null;
+        NotaRepresentation rep = new NotaRepresentation();
+        rep.setAdquiriente(toRepresentation(model.getAdquiriente()));
+        rep.setEmisor(toRepresentation(model.getEmisor()));
+        List<DetalleNotaRepresentation> detalle = new ArrayList<>();
+        model.getDetalle().forEach(d -> detalle.add(toRepresentation(d)));
+        rep.setDetalle(detalle);
+        return rep;
+    }
 
 }
+
 

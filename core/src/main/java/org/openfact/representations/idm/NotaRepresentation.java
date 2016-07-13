@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 public class NotaRepresentation {
-//    private String serie;
+    //    private String serie;
 //    private String numero;
 //    private LocalDate fechaEmision;
 //
@@ -30,6 +30,33 @@ public class NotaRepresentation {
 //
 //    private ComprobantePagoRepresentation comprobante;
 //    private String DocumentoReferencia;
+    private AdquirienteRepresentation adquiriente;
 
-    List<DetalleNotaRepresentation> detalle;
+    private EmisorRepresentation emisor;
+
+    private List<DetalleNotaRepresentation> detalle;
+
+    public List<DetalleNotaRepresentation> getDetalle() {
+        return detalle;
+    }
+
+    public void setDetalle(List<DetalleNotaRepresentation> detalle) {
+        this.detalle = detalle;
+    }
+
+    public AdquirienteRepresentation getAdquiriente() {
+        return adquiriente;
+    }
+
+    public void setAdquiriente(AdquirienteRepresentation adquiriente) {
+        this.adquiriente = adquiriente;
+    }
+
+    public EmisorRepresentation getEmisor() {
+        return emisor;
+    }
+
+    public void setEmisor(EmisorRepresentation emisor) {
+        this.emisor = emisor;
+    }
 }
