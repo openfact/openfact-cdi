@@ -8,13 +8,11 @@
         <artifactId>openfact</artifactId>
         <groupId>org.openfact</groupId>
         <version>1.0.0.Final-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>openfact-wildfly-swarm-base</artifactId>
-
-    <name>Openfact WildFly Swarm: Base</name>
-    <description>Openfact WildFly Swarm: Base</description>
+    <artifactId>testsuite-wildfly-swarm-base</artifactId>
+    <name>Testsuite Wildfly Swarm Base</name>
 
     <packaging>jar</packaging>
 

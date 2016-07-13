@@ -162,8 +162,8 @@
 		<module>services</module>
 		<module>services-api</module>
 		<module>server-spi</module>
-		<module>wildfly-swarm-base</module>
 		<module>distribution</module>
+		<module>testsuite</module>
 	</modules>
 
 	<dependencyManagement>
