@@ -31,10 +31,10 @@
 			<groupId>org.openfact</groupId>
 			<artifactId>openfact-server-spi</artifactId>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.openfact</groupId>
 			<artifactId>openfact-services</artifactId>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>org.liquibase</groupId>
 			<artifactId>liquibase-core</artifactId>
