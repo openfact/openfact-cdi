@@ -1,4 +1,4 @@
-package org.openfact.testsuite.arquillian;
+package com.example.rest.util;
 
 public class Calculadora {
 

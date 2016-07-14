@@ -13,4 +13,5 @@ public class Log {
     public List<String> getLines() {
         return this.lines;
     }
+    
 }

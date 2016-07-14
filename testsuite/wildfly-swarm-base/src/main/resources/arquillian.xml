@@ -1,7 +1,5 @@
 <arquillian>
-
-  <extension qualifier="webdriver">
-    <property name="browser">phantomjs</property>
-  </extension>
-
+	<extension qualifier="webdriver">
+		<property name="browser">phantomjs</property>
+	</extension>
 </arquillian>

@@ -6,7 +6,6 @@ import javax.ejb.TransactionAttributeType;
 
 import org.openfact.models.*;
 import org.openfact.representations.idm.BoletaRepresentation;
-import org.openfact.models.*;
 import org.openfact.representations.idm.EmisorRepresentation;
 import org.openfact.representations.idm.FacturaRepresentation;
 
@@ -15,23 +14,25 @@ import org.openfact.representations.idm.FacturaRepresentation;
 public class RepresentationToModel {
 
     public EmisorModel createEmisor(EmisorRepresentation rep, EmisorProvider provider) {
-        EmisorModel model = provider.create(rep.getRuc(), rep.getRazonSocial());
-        HistorialEmisorModel historialEmisorModel = provider.createHistorial(model,
-                rep.getResolucionAutorizacion(), rep.getMensajeRepresentacionImpresa());
-        historialEmisorModel.setMensajeServicioGratuito(rep.getMensajeServicioGratuito());
+        //EmisorModel model = provider.create(rep.getRuc(), rep.getRazonSocial());
+        //HistorialEmisorModel historialEmisorModel = provider.createHistorial(model,
+        //        rep.getResolucionAutorizacion(), rep.getMensajeRepresentacionImpresa());
+        /*historialEmisorModel.setMensajeServicioGratuito(rep.getMensajeServicioGratuito());
         model.setNombreComercial(rep.getNombreComercial());
         model.setDomicilioFiscal(rep.getDomicilioFiscal());
         model.commit();
-        return model;
+        return model;*/
+        return null;
     }
 
     public HistorialEmisorModel createHistorial(EmisorRepresentation rep, EmisorProvider provider) {
         EmisorModel model = provider.findById(rep.getId());
-        HistorialEmisorModel historialEmisorModel = provider.createHistorial(model,
-                rep.getResolucionAutorizacion(), rep.getMensajeRepresentacionImpresa());
-        historialEmisorModel.setMensajeServicioGratuito(rep.getMensajeServicioGratuito());
+        //HistorialEmisorModel historialEmisorModel = provider.createHistorial(model,
+        //        rep.getResolucionAutorizacion(), rep.getMensajeRepresentacionImpresa());
+        /*historialEmisorModel.setMensajeServicioGratuito(rep.getMensajeServicioGratuito());
         historialEmisorModel.commit();
-        return historialEmisorModel;
+        return historialEmisorModel;*/
+        return null;
     }
 
     public FacturaModel createFactura(FacturaRepresentation rep, EmisorModel emisor,
