@@ -11,7 +11,6 @@ import org.openfact.models.search.SearchCriteriaFilterOperator;
  *
  * @author carlosthe19916@openfact.com
  */
-
 public class SearchCriteriaJoinModel {
 
     private String entityAlias;

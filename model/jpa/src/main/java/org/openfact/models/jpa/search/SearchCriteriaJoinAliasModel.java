@@ -2,8 +2,6 @@ package org.openfact.models.jpa.search;
 
 /**
  * A base class that JPA storage impls can extend.
- *
- * @author eric.wittmann@redhat.com
  */
 public class SearchCriteriaJoinAliasModel {
 

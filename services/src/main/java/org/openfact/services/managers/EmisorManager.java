@@ -25,7 +25,7 @@ public class EmisorManager {
     }
 
     public EmisorModel getEmisorByPaisRazonSocial(String pais, String razonSocial) {
-        return emisorProvider.findByPaisRazonSocial(pais, razonSocial);
+        return emisorProvider.findByRazonSocial(pais, razonSocial);
     }
     
     public boolean update(EmisorModel model, EmisorRepresentation rep) {

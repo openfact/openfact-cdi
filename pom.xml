@@ -1046,7 +1046,7 @@
 			</dependency>
 			<dependency>
 				<groupId>org.openfact</groupId>
-				<artifactId>openfact-wildfly-swarm-base</artifactId>
+				<artifactId>testsuite-wildfly-swarm-base</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 

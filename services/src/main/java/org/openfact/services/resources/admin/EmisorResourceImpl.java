@@ -67,10 +67,10 @@ public class EmisorResourceImpl implements EmisorAdminResource {
     @Override
     public void update(EmisorRepresentation rep) {
         boolean result = emisorManager.update(getEmisorModel(), rep);
-        HistorialEmisorModel historialEmisorModel = emisorProvider.createHistorial(getEmisorModel(), rep.getResolucionAutorizacion(), rep.getMensajeRepresentacionImpresa());
+        /*HistorialEmisorModel historialEmisorModel = emisorProvider.createHistorial(getEmisorModel(), rep.getResolucionAutorizacion(), rep.getMensajeRepresentacionImpresa());
         if (!result) {
             throw new InternalServerErrorException();
-        }
+        }*/
     }
 
     @Override

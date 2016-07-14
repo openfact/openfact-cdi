@@ -1,9 +1,8 @@
 package org.openfact.models;
 
-import org.openfact.models.enums.TipoDocumentoType;
-
 import java.time.LocalDate;
-import java.util.Set;
+
+import org.openfact.models.enums.TipoDocumentoType;
 
 public interface ComprobantePagoModel extends Model {
 
@@ -13,7 +12,6 @@ public interface ComprobantePagoModel extends Model {
 
     LocalDate getFechaEmision();
 
-
     NumeracionComprobantePagoModel getNumeracion();
 
     EmisorModel getEmisor();
@@ -21,7 +19,6 @@ public interface ComprobantePagoModel extends Model {
     AdquirienteModel getAdquiriente();
 
     ResumenComprobantePagoModel getResumen();
-
 
     InformacionAdicionalComprobantePagoModel getInformacionAdicional();
 
