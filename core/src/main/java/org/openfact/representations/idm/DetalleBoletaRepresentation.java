@@ -1,9 +1,11 @@
 package org.openfact.representations.idm;
 
+import java.io.Serializable;
+
 /**
  * Created by Gissela-Sistemas on 6/07/2016.
  */
-public class DetalleBoletaRepresentation {
+public class DetalleBoletaRepresentation implements Serializable {
     private String unidadMedida;
     private double cantidad;
     private String descripcion;

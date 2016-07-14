@@ -1,12 +1,13 @@
 package org.openfact.representations.idm;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
 /**
  * Created by Gissela-Sistemas on 6/07/2016.
  */
-public class ComprobantePagoRepresentation {
+public class ComprobantePagoRepresentation implements Serializable {
 	private String serie;
 	private String numero;
 	private LocalDate fechaEmision;

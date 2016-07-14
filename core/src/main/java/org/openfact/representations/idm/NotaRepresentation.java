@@ -1,9 +1,10 @@
 package org.openfact.representations.idm;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.List;
 
-public class NotaRepresentation {
+public class NotaRepresentation implements Serializable {
     //    private String serie;
 //    private String numero;
 //    private LocalDate fechaEmision;
@@ -32,6 +33,8 @@ public class NotaRepresentation {
 //    private String DocumentoReferencia;
     private AdquirienteRepresentation adquiriente;
 
+    private ComprobantePagoRepresentation comprobantePagoRepresentation;
+
     private EmisorRepresentation emisor;
 
     private List<DetalleNotaRepresentation> detalle;
@@ -58,5 +61,13 @@ public class NotaRepresentation {
 
     public void setEmisor(EmisorRepresentation emisor) {
         this.emisor = emisor;
+    }
+
+    public ComprobantePagoRepresentation getComprobantePagoRepresentation() {
+        return comprobantePagoRepresentation;
+    }
+
+    public void setComprobantePagoRepresentation(ComprobantePagoRepresentation comprobantePagoRepresentation) {
+        this.comprobantePagoRepresentation = comprobantePagoRepresentation;
     }
 }

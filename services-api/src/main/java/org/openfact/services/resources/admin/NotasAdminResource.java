@@ -19,7 +19,7 @@ import org.openfact.representations.idm.search.SearchResultsRepresentation;
 public interface NotasAdminResource {
 
     @Path("{idNota}")
-    NotaAdminResource factura(@PathParam("idNota") final String idNota);
+    NotaAdminResource nota(@PathParam("idNota") final String idNota);
 
     @POST
     @Produces(MediaType.APPLICATION_JSON)

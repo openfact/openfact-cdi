@@ -18,7 +18,7 @@ public interface NotaAdminResource {
 
     @PUT
     @Consumes(MediaType.APPLICATION_JSON)
-    void update(final NotaRepresentation rep);
+    void update(final NotaRepresentation notaRepresentation);
 
     @GET
     @Path("send")

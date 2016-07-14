@@ -41,13 +41,13 @@ public class NotaAdminResourceImpl implements NotaAdminResource {
     }
     @Override
     public NotaRepresentation toRepresentation() {
-        NotaRepresentation rep= ModelToRepresentation.toRepresentation(getNotaModel());
+        NotaRepresentation rep= ModelToRepresentation.toRepresentacion(getNotaModel());
         if (rep !=null){
             return  rep;
         }else {
             throw new NotFoundException("Nota no encontrado");
         }
-        return null;
+
     }
 
     @Override

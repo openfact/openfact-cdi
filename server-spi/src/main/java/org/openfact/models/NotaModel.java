@@ -37,6 +37,8 @@ public interface NotaModel extends Model {
 
     TipoDocumentoRelacionadoType getTipoDocumentoRelacionadoType();
 
+    void setTipoDocumentoRelacionadoType(TipoDocumentoRelacionadoType type);
+
     NumeracionComprobantePagoModel getNumeraccion();
 
     TipoDocumentoType getTipoDocumento();
@@ -48,7 +50,10 @@ public interface NotaModel extends Model {
     AdquirienteModel getAdquiriente();
 
     ResumenNotaModel getResumen();
+
     EnvioModel getEnvio();
+
+    ComprobantePagoModel getComprobantePago();
 
     Set<DetalleNotaModel> getDetalle();
 
