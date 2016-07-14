@@ -1,5 +1,14 @@
 package org.openfact.models.xml;
 
+import oasis.names.specification.ubl.schema.xsd.applicationresponse_21.ObjectFactory;
+import oasis.names.specification.ubl.schema.xsd.commonaggregatecomponents_21.*;
+import oasis.names.specification.ubl.schema.xsd.commonbasiccomponents_21.AdditionalInformationType;
+import oasis.names.specification.ubl.schema.xsd.commonextensioncomponents_21.ExtensionContentType;
+import oasis.names.specification.ubl.schema.xsd.commonextensioncomponents_21.UBLExtensionType;
+import oasis.names.specification.ubl.schema.xsd.commonextensioncomponents_21.UBLExtensionsType;
+import oasis.names.specification.ubl.schema.xsd.invoice_21.InvoiceType;
+import org.openfact.models.FacturaModel;
+import org.openfact.models.utils.XmlSpaceNames;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.xml.sax.SAXException;
