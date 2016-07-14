@@ -32,7 +32,7 @@ public class NotaAdminResourceImpl implements NotaAdminResource {
     @Inject
     private NotaProvider notaProvider;
 
-    private NotaModel getNotaModel(){return notaProvider.findById(idNota)}
+    private NotaModel getNotaModel(){return notaProvider.findById(idNota);}
 
     @Inject
     public NotaAdminResourceImpl (AppAuthManager authManager,EmisorModel emisor){
