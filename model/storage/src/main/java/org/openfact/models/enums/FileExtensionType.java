@@ -1,5 +1,8 @@
 package org.openfact.models.enums;
 
+/**
+ * Created by Alex Pariona-"alexpariona@openfact.com" on 14/07/2016.
+ */
 public enum FileExtensionType {
     ZIP(".zip"), GZ(".gz"), RAR(".rar"), XML(".xml");
 

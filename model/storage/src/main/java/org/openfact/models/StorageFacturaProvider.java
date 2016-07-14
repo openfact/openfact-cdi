@@ -1,30 +1,30 @@
 package org.openfact.models;
 
+import org.openfact.models.search.SearchCriteriaModel;
+import org.openfact.models.search.SearchResultsModel;
+
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-import org.openfact.models.search.SearchCriteriaModel;
-import org.openfact.models.search.SearchResultsModel;
-
-public class StorageFacturaProvider implements FacturaProvider{
+public class StorageFacturaProvider implements FacturaProvider {
 
     @Override
     public void close() {
         // TODO Auto-generated method stub
-        
+
     }
 
     @Override
     public FacturaModel create(EmisorModel emisor, AdquirienteModel adquiriente, LocalDate fechaEmision,
-            NumeracionComprobantePagoModel numeracion, ResumenComprobantePagoModel resumen) {
+                               NumeracionComprobantePagoModel numeracion, ResumenComprobantePagoModel resumen) {
         // TODO Auto-generated method stub
         return null;
     }
 
     @Override
     public AdquirienteModel createAdquiriente(DocumentoIdentidadModel documento, String numeroDocumento,
-            String razonSocial) {
+                                              String razonSocial) {
         // TODO Auto-generated method stub
         return null;
     }
@@ -37,21 +37,21 @@ public class StorageFacturaProvider implements FacturaProvider{
 
     @Override
     public ResumenComprobantePagoModel createResumenGravado(BigDecimal totalGravado, String moneda,
-            BigDecimal importeTotal) {
+                                                            BigDecimal importeTotal) {
         // TODO Auto-generated method stub
         return null;
     }
 
     @Override
     public ResumenComprobantePagoModel createResumenInafecto(BigDecimal totalInafecto, String moneda,
-            BigDecimal importeTotal) {
+                                                             BigDecimal importeTotal) {
         // TODO Auto-generated method stub
         return null;
     }
 
     @Override
     public ResumenComprobantePagoModel createResumenExonerado(BigDecimal totalExonerado, String moneda,
-            BigDecimal importeTotal) {
+                                                              BigDecimal importeTotal) {
         // TODO Auto-generated method stub
         return null;
     }
@@ -88,7 +88,7 @@ public class StorageFacturaProvider implements FacturaProvider{
 
     @Override
     public SearchResultsModel<FacturaModel> search(FacturaModel facturaModel, SearchCriteriaModel criteria,
-            String filterText) {
+                                                   String filterText) {
         // TODO Auto-generated method stub
         return null;
     }
