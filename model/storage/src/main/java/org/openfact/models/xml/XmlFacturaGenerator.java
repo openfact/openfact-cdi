@@ -2,7 +2,7 @@ package org.openfact.models.xml;
 
 import oasis.names.specification.ubl.schema.xsd.applicationresponse_21.ObjectFactory;
 import oasis.names.specification.ubl.schema.xsd.commonaggregatecomponents_21.*;
-import oasis.names.specification.ubl.schema.xsd.commonbasiccomponents_21.AdditionalInformationType;
+import oasis.names.specification.ubl.schema.xsd.commonbasiccomponents_21.*;
 import oasis.names.specification.ubl.schema.xsd.commonextensioncomponents_21.ExtensionContentType;
 import oasis.names.specification.ubl.schema.xsd.commonextensioncomponents_21.UBLExtensionType;
 import oasis.names.specification.ubl.schema.xsd.commonextensioncomponents_21.UBLExtensionsType;
@@ -31,6 +31,8 @@ import java.math.BigDecimal;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
+
+import oasis.names.specification.ubl.schema.xsd.applicationresponse_21.ObjectFactory;
 
 /**
  * Created by Alex Pariona-"alexpariona@openfact.com" on 14/07/2016.

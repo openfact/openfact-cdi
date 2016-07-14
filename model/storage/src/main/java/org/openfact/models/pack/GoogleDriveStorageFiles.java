@@ -1,8 +1,6 @@
 package org.openfact.models.pack;
 
-import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeFlow;
-import com.google.api.client.googleapis.auth.oauth2.GoogleClientSecrets;
 import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
 import com.google.api.client.googleapis.auth.oauth2.GoogleTokenResponse;
 import com.google.api.client.googleapis.media.MediaHttpDownloader;
@@ -23,10 +21,8 @@ import org.openfact.models.utils.UploadProgressListener;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.util.Arrays;
-import java.util.Collections;
 
 /**
  * Created by Alex Pariona-"alexpariona@openfact.com" on 14/07/2016.
@@ -89,18 +85,18 @@ public class GoogleDriveStorageFiles {
      * @return an authorized Drive client service
      * @throws IOException
      */
-    public static Drive getDriveService() throws IOException {
+   /* public static Drive getDriveService() throws IOException {
         Credential credential = authorize();
         return new Drive.Builder(
                 httpTransport, JSON_FACTORY, credential)
                 .setApplicationName(APPLICATION_NAME)
                 .build();
-    }
+    }*/
 
     /**
      * Authorizes the installed application to access user's protected data.
      */
-    private static Credential authorize() throws Exception {
+    /*private static Credential authorize() throws Exception {
         // load client secrets
         GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY,
                 new InputStreamReader(GoogleDriveStorageFiles.class.getResourceAsStream("/META-INF/client_secrets.json")));
@@ -116,7 +112,7 @@ public class GoogleDriveStorageFiles {
                 .build();
         // authorize
         return new AuthorizationCodeInstalledApp(flow, new LocalServerReceiver()).authorize("user");
-    }
+    }*/
 
     /**
      * Uploads a file using either resumable or direct media upload.
