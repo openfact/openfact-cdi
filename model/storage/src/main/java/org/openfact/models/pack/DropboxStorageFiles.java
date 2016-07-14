@@ -17,7 +17,7 @@ public class DropboxStorageFiles {
     private static final String DROP_BOX_APP_SECRET = "3t1lqvq1amaehb1";
     DbxClientV1 dbxClient;
 
-    public static void main(String[] args) throws IOException, DbxException {
+/*    public static void main(String[] args) throws IOException, DbxException {
         DropboxStorageFiles dropbox = new DropboxStorageFiles();
         dropbox.authDropbox(DROP_BOX_APP_KEY, DROP_BOX_APP_SECRET);
         System.out.println("Dropbox Size: " + dropbox.getDropboxSize() + " GB");
@@ -26,7 +26,7 @@ public class DropboxStorageFiles {
         dropbox.listDropboxFolders("/");
         dropbox.downloadFromDropbox("happy.png");
 
-    }
+    }*/
 
     public DbxClientV1 authDropbox(String dropBoxAppKey, String dropBoxAppSecret)
             throws IOException, DbxException {
