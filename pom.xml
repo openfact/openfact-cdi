@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
@@ -9,9 +10,7 @@
 	</parent>
 
 	<name>Openfact</name>
-	<description>
-		Openfact SSO
-	</description>
+	<description>Openfact Software</description>
 	<groupId>org.openfact</groupId>
 	<artifactId>openfact</artifactId>
 	<version>1.0.0.Final-SNAPSHOT</version>
@@ -32,7 +31,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<version.arquillian-bom>1.1.11.Final</version.arquillian-bom>
+		<version.arquillian-bom>1.1.10.Final</version.arquillian-bom>
 		<version.arquillian-drone-bom>2.0.0.Final</version.arquillian-drone-bom>
 
 		<version.graphene-webdriver>2.1.0.Final</version.graphene-webdriver>
@@ -170,13 +169,19 @@
 		<module>services</module>
 		<module>services-api</module>
 		<module>server-spi</module>
-		<!-- <module>distribution</module>  -->
+		<module>distribution</module>
 		<module>testsuite</module>
 	</modules>
 
 	<dependencyManagement>
 		<dependencies>
 			<!-- Wildfly Swarm -->
+			<dependency>
+				<groupId>javax</groupId>
+				<artifactId>javaee-api</artifactId>
+				<version>7.0</version>
+				<scope>provided</scope>
+			</dependency>
 			<dependency>
 				<groupId>org.wildfly.swarm</groupId>
 				<artifactId>bom</artifactId>
@@ -212,7 +217,7 @@
 				<version>${version.rest-assured}</version>
 			</dependency>
 
-			<!-- Openstack -->
+			<!-- Openfact -->
 			<dependency>
 				<groupId>com.github.relaxng</groupId>
 				<artifactId>relaxngDatatype</artifactId>
@@ -471,6 +476,12 @@
 				<groupId>org.apache.directory.server</groupId>
 				<artifactId>apacheds-core-annotations</artifactId>
 				<version>${apacheds.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>javax</groupId>
+				<artifactId>javaee-api</artifactId>
+				<version>7.0</version>
+				<scope>provided</scope>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.directory.server</groupId>
@@ -1321,7 +1332,6 @@
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
-			<version>7.0</version>
 			<scope>provided</scope>
 		</dependency>
 
