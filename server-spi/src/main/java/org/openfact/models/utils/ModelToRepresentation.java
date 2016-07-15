@@ -130,8 +130,21 @@ public class ModelToRepresentation {
         if (model == null)
             return null;
         NotaRepresentation rep = new NotaRepresentation();
-        rep.setAdquiriente(toRepresentation(model.getAdquiriente()));
         rep.setEmisor(toRepresentation(model.getEmisor()));
+        rep.setNumero(model.getNumeraccion().getNumero());
+        rep.setSerie(model.getNumeraccion().getSerie());
+        rep.setAdquiriente(toRepresentation(model.getAdquiriente()));
+        rep.setCargos(model.getResumen().getCargos());
+        rep.setFechaEmision(model.getFechaEmision());
+        rep.setImporteTotal(model.getResumen().getImporteTotal());
+        rep.setMoneda(model.getResumen().getMoneda());
+        rep.setTributos(model.getResumen().getTributos());
+        rep.setTotalOperacionesGravadas(model.getResumen().getTotalGravado());
+        rep.setTotalOperacionesInafectas(model.getResumen().getTotalInafecto());
+        rep.setTotalOperacionesExoneradas(model.getResumen().getTotalExonerado());
+        rep.setEmisor(toRepresentation(model.getEmisor()));
+        rep.setTotalIgv(model.getResumen().getIgvTotal());
+        rep.setTotalIsc(model.getResumen().getIscTotal());
         List<DetalleNotaRepresentation> detalle = new ArrayList<>();
         model.getDetalle().forEach(d -> detalle.add(toRepresentation(d)));
         rep.setDetalle(detalle);
