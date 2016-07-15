@@ -8,6 +8,7 @@ import org.openfact.models.*;
 import org.openfact.representations.idm.BoletaRepresentation;
 import org.openfact.representations.idm.EmisorRepresentation;
 import org.openfact.representations.idm.FacturaRepresentation;
+import org.openfact.representations.idm.NotaRepresentation;
 
 @Stateless
 @TransactionAttribute(TransactionAttributeType.REQUIRED)
@@ -112,6 +113,37 @@ public class RepresentationToModel {
         resumen.setIsc(rep.getTotalIsc());
 
         BoletaModel model = provider.create(emisor, adquiriente, rep.getFechaEmision(), numeracion, resumen);
+        model.commit();
+        return model;
+
+    }
+
+    public NotaModel createNota(NotaRepresentation rep, EmisorModel emisor,NotaProvider provider){
+        AdquirienteModel adquiriente=null;
+        //crear numeracion nota
+        NumeracionComprobantePagoModel numeracion=provider.createNumeracion(rep.getSerie(),rep.getNumero());
+        //crear resumen notas
+        ResumenNotaModel resumen;
+        if (rep.getTotalOperacionesExoneradas()!= null){
+            resumen=provider.createResumenExonerado(rep.getTotalOperacionesExoneradas(),rep.getMoneda(),rep.getImporteTotal());
+            resumen.setTotalGravado(rep.getTotalOperacionesGravadas());
+            resumen.setTotalInafecto(rep.getTotalOperacionesInafectas());
+        }else if (rep.getTotalOperacionesGravadas()!=null){
+            resumen=provider.createResumenGravado(rep.getTotalOperacionesGravadas(),rep.getMoneda(),rep.getImporteTotal());
+            resumen.setTotalExonerado(rep.getTotalOperacionesGravadas());
+            resumen.setTotalInafecto(rep.getTotalOperacionesInafectas());
+        }else if (rep.getTotalOperacionesInafectas()!=null){
+            resumen=provider.createResumenInafecto(rep.getTotalOperacionesInafectas(),rep.getMoneda(),rep.getImporteTotal());
+            resumen.setTotalGravado(rep.getTotalOperacionesGravadas());
+            resumen.setTotalExonerado(rep.getTotalOperacionesInafectas());
+        }else {
+            throw  new ModelException("la nota no tiene operaciones gravadas, ifafectas y exoneradas");
+        }
+        resumen.setCargos(rep.getCargos());
+        resumen.setTributos(rep.getTributos());
+        resumen.setIgvTotal(rep.getImporteTotal());
+        resumen.setIscTotal(rep.getTotalIsc());
+        NotaModel model=provider.create(emisor,adquiriente,rep.getFechaEmision(),numeracion,resumen);
         model.commit();
         return model;
 
