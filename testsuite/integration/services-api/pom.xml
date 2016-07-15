@@ -5,12 +5,12 @@
 		<artifactId>openfact</artifactId>
 		<groupId>org.openfact</groupId>
 		<version>1.0.0.Final-SNAPSHOT</version>
-		<relativePath>../../pom.xml</relativePath>
+		<relativePath>../../../pom.xml</relativePath>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>testsuite-arquillian-integration</artifactId>
-	<name>Testsuite Arquillian Integration</name>
+	<artifactId>testsuite-integration-services-api</artifactId>
+	<name>Testsuite Integration Services-Api</name>
 	<packaging>war</packaging>
 
 	<properties>
