@@ -8,7 +8,7 @@ import java.util.List;
 
 public class ModelToRepresentation {
 
-    public static DireccionRegionalRepresentation toRepresentation(DireccionRegionalModel model) {
+    /*public static DireccionRegionalRepresentation toRepresentation(DireccionRegionalModel model) {
         if (model == null)
             return null;
 
@@ -17,7 +17,7 @@ public class ModelToRepresentation {
         rep.setDenominacion(model.getDenominacion());
         rep.setEstado(model.getEstado());
         return rep;
-    }
+    }*/
 
     public static AdquirienteRepresentation toRepresentation(AdquirienteModel model) {
         if (model == null)

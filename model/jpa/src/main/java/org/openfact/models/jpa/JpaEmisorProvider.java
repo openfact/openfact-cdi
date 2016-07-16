@@ -41,7 +41,7 @@ public class JpaEmisorProvider extends AbstractHibernateStorage implements Emiso
     @Override
     public EmisorModel create(String pais, String ruc, String razonSocial) {
         if (findByRuc(pais, ruc) != null) {
-            throw new ModelDuplicateException("Emisor existente, RUC: " + ruc);
+            throw new ModelDuplicateException("Emisor existente, Pais: "+ pais + " y RUC: " + ruc);
         }
         EmisorEntity entity = new EmisorEntity();
         entity.setPais(pais);

@@ -1,4 +1,4 @@
-package org.openfact.test;
+package org.openfact.models;
 
 import static org.junit.Assert.assertTrue;
 
@@ -12,15 +12,12 @@ import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.jboss.shrinkwrap.api.asset.EmptyAsset;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.openfact.resources.HelloWorldEndpoint;
-import org.openfact.resources.RestApplication;
-import org.openfact.services.MyService;
 import org.wildfly.swarm.spi.api.JARArchive;
 
-@RunWith(Arquillian.class)
+//@RunWith(Arquillian.class)
 public class MyTest {
 
-    @Inject
+    /*@Inject
     private MyService service;
 
     @Test
@@ -40,6 +37,6 @@ public class MyTest {
         archive.addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml");
 
         return archive;
-    }
+    }*/
 
 }

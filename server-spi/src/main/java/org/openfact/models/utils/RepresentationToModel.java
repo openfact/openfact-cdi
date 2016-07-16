@@ -27,7 +27,7 @@ public class RepresentationToModel {
     }
 
     public HistorialEmisorModel createHistorial(EmisorRepresentation rep, EmisorProvider provider) {
-        EmisorModel model = provider.findById(rep.getId());
+        //EmisorModel model = provider.findById(rep.getId());
         //HistorialEmisorModel historialEmisorModel = provider.createHistorial(model,
         //        rep.getResolucionAutorizacion(), rep.getMensajeRepresentacionImpresa());
         /*historialEmisorModel.setMensajeServicioGratuito(rep.getMensajeServicioGratuito());
