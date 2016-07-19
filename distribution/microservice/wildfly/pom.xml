@@ -23,7 +23,6 @@
             <plugin>
                 <groupId>org.wildfly.swarm</groupId>
                 <artifactId>wildfly-swarm-plugin</artifactId>
-                <version>${version.wildfly-swarm}</version>
                 <executions>
                     <execution>
                         <goals>
@@ -43,11 +42,6 @@
     </build>
 
     <dependencies>
-        <dependency>
-            <groupId>org.openfact</groupId>
-            <artifactId>testsuite-wildfly-swarm-base</artifactId>
-            <scope>test</scope>
-        </dependency>
         <dependency>
             <groupId>org.openfact</groupId>
             <artifactId>openfact-model-jpa</artifactId>
