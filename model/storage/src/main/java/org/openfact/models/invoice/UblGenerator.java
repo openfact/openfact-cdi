@@ -158,7 +158,7 @@ public class UblGenerator {
         IDType idAMonetaryTotal = FACTORIA.createIDType();
         idAMonetaryTotal.setValue(cod.getCodigo());
         PayableAmountType pa = FACTORIA.createPayableAmountType();
-        pa.setCurrencyID(CurrencyCodeContentType.PERU.getCodigo());
+        pa.setCurrencyID(CurrencyCodeContentTypeFact.PERU.getCodigo());
         pa.setValue(monto);
         AdditionalMonetaryTotal amtt = FACTORIA.createAdditionalMonetaryTotalType();
         amtt.setID(idAMonetaryTotal);
@@ -316,14 +316,14 @@ public class UblGenerator {
         partyLegalEntityTypeCustomer.setRegistrationName(nameType);
     }
 
-    public void setTaxTotalTaxAmount(BigDecimal monto, CurrencyCodeContentType codigo) {
+    public void setTaxTotalTaxAmount(BigDecimal monto, CurrencyCodeContentTypeFact codigo) {
         TaxAmountType taxAmountType = FACTORIA.createTaxAmountType();
         taxAmountType.setValue(monto);
         taxAmountType.setCurrencyID(codigo.getCodigo());
         taxTotalType.setTaxAmount(taxAmountType);
     }
 
-    public void setTaxTotalTaxSubtotalTaxAmount(BigDecimal monto, CurrencyCodeContentType codigo) {
+    public void setTaxTotalTaxSubtotalTaxAmount(BigDecimal monto, CurrencyCodeContentTypeFact codigo) {
         TaxAmountType taxAmountType = FACTORIA.createTaxAmountType();
         taxAmountType.setValue(monto);
         taxAmountType.setCurrencyID(codigo.getCodigo());
@@ -342,14 +342,14 @@ public class UblGenerator {
         taxSchemeType.setTaxTypeCode(taxTypeCodeType);
     }
 
-    public void setLegalMonetaryTotalPayableAmount(BigDecimal monto, CurrencyCodeContentType codigo) {
+    public void setLegalMonetaryTotalPayableAmount(BigDecimal monto, CurrencyCodeContentTypeFact codigo) {
         PayableAmountType payableAmountType = FACTORIA.createPayableAmountType();
         payableAmountType.setCurrencyID(codigo.getCodigo());
         payableAmountType.setValue(monto);
         monetaryTotalType.setPayableAmount(payableAmountType);
     }
 
-    public void addInvoiceLine(InvoiceDetail det) {
+    public void addInvoiceLine(DetalleFactura det) {
         InvoiceLineType ilt = FACTORIA.createInvoiceLineType();
         IDType iDType = FACTORIA.createIDType();
         iDType.setValue(det.getId());
