@@ -142,7 +142,7 @@ public class SignatureXmlDocument {
         // Pass the Public Key File Path
         KeyInfo keyInfo = getKeyInfo(xmlSigFactory, publicKeyFilePath);
         // Create a new XML Signature
-        XMLSignature xmlSignature = xmlSigFactory.newXMLSignature(signedInfo, keyInfo, null, "SignatureAhren", null);
+        XMLSignature xmlSignature = xmlSigFactory.newXMLSignature(signedInfo, keyInfo, null, "SignatureOpenFact", null);
         try {
             // Sign the document
             xmlSignature.sign(domSignCtx);

@@ -5,7 +5,7 @@ package org.openfact.models.utils;
  */
 public class XmlSpaceNames {
     public static final String xmlnsRetention = "urn:sunat:names:specification:ubl:peru:schema:xsd:Retention-1";
-    public static final String xmlnsInvoice = "urn:oasis:names:specification:ubl:schema:xsd:Invoice-2";
+    public static final String xmlnsInvoice = "urn:oasis:names:specification:ubl:schema:xsd:UblGenerator-2";
     public static final String xmlnsCreditNote = "urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2";
     public static final String xmlnsDebitNote = "urn:oasis:names:specification:ubl:schema:xsd:DebitNote-2";
     public static final String xmlnsVoidedDocuments = "urn:sunat:names:specification:ubl:peru:schema:xsd:VoidedDocuments-1";

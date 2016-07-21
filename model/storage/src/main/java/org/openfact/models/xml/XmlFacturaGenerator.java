@@ -19,7 +19,7 @@ public class XmlFacturaGenerator {
     public void createFacturaXml(FacturaModel model, String Path) throws XMLStreamException, IOException {
 
         StringBuilder builder = new StringBuilder();
-        builder.append("<?xml version=\"1.0\" encoding=\"ISO-8859-1\" standalone=\"no\"?><Invoice \n");
+        builder.append("<?xml version=\"1.0\" encoding=\"ISO-8859-1\" standalone=\"no\"?><UblGenerator \n");
         builder.append("xmlns=\"" + XmlSpaceNames.xmlnsInvoice + "\"");
         builder.append("xmlns:cac=\"" + XmlSpaceNames.cac + "\"");
         builder.append("xmlns:cbc=\"" + XmlSpaceNames.cbc + "\"");
