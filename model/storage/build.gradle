@@ -3,13 +3,15 @@ dependencies {
     compile project(":openfact-core")
     compile project(":openfact-server-spi")
     compile project(":openfact-services")
+
+
     compile 'com.dropbox.core:dropbox-core-sdk:2.0.6'
     compile 'com.google.apis:google-api-services-drive:v2-rev135-1.19.0'
 
+    /*compile group: 'org.jvnet.jaxb2.maven2', name: 'maven-jaxb2-plugin', version: '0.13.1'*/
+
     compile group: 'junit', name: 'junit', version: '4.12'
     compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.21'
-    compile group: 'com.helger', name: 'ph-css', version: '5.0.0'
-
 
     // Third libraries
     compile(libraries.bcprov_jdk15on)
