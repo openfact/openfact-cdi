@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 /**
  * Created by Alex Pariona-"alexpariona@openfact.com" on 21/07/2016.
  */
-public class InvoiceDetail {
+public class DetalleFactura {
 
     private String id;
     private String invoicedQuantityUnitCode;

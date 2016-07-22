@@ -19,9 +19,9 @@ import java.util.logging.Logger;
 /**
  * Created by Alex Pariona-"alexpariona@openfact.com" on 21/07/2016.
  */
-public class FacturaElectronicaTest {
+public class FacturaTest {
 
-    public FacturaElectronicaTest() {
+    public FacturaTest() {
     }
 
     @BeforeClass
@@ -43,41 +43,41 @@ public class FacturaElectronicaTest {
     @Test
     public void marshallFacturaElectronica() {
         try {
-            Invoice invoice = new Invoice();
-            invoice.addFacturaExtensionesExtensionContenidoDeExtensionInformacionAdicionalTotalMonetario(CodigoConceptosTributarios.TOTAL_VALO_VENTA_OPERACIONES_GRABADAS, new BigDecimal("348199.15"));
-            invoice.addFacturaExtensionesExtensionContenidoDeExtensionInformacionAdicionalTotalMonetario(CodigoConceptosTributarios.TOTAL_VALO_VENTA_OPERACIONES_EXONERADAS, new BigDecimal("12350.00"));
-            invoice.addFacturaExtensionesExtensionContenidoDeExtensionInformacionAdicionalPropiedadAdicional(CodigoElementosAdicionalesComprobante.MONTO_EN_LETRAS, "CUATROCIENTOS VEINTITRES MIL DOSCIENTOS VEINTICINCO Y 00/100");
-            invoice.setUBLIdVersion("2.0");
-            invoice.setCustomizationId("1.0");
-            invoice.setId("F001-4355");
-            invoice.setIssueDate(new Date());
-            invoice.setInvoiceTypeCode(CodigoTipoDocumento.FACTURA);
-            invoice.setDocumentCurrencyCode("PEN");
+            Factura factura = new Factura();
+            factura.addFacturaExtensionesExtensionContenidoDeExtensionInformacionAdicionalTotalMonetario(CodigoConceptosTributarios.TOTAL_VALO_VENTA_OPERACIONES_GRABADAS, new BigDecimal("348199.15"));
+            factura.addFacturaExtensionesExtensionContenidoDeExtensionInformacionAdicionalTotalMonetario(CodigoConceptosTributarios.TOTAL_VALO_VENTA_OPERACIONES_EXONERADAS, new BigDecimal("12350.00"));
+            factura.addFacturaExtensionesExtensionContenidoDeExtensionInformacionAdicionalPropiedadAdicional(CodigoElementosAdicionalesComprobante.MONTO_EN_LETRAS, "CUATROCIENTOS VEINTITRES MIL DOSCIENTOS VEINTICINCO Y 00/100");
+            factura.setUBLIdVersion("2.0");
+            factura.setCustomizationId("1.0");
+            factura.setId("F001-4355");
+            factura.setIssueDate(new Date());
+            factura.setInvoiceTypeCode(CodigoTipoDocumento.FACTURA);
+            factura.setDocumentCurrencyCode("PEN");
 
-            invoice.setSignatureId("IDSignOlva");
-            invoice.setSignatureSignatoryPartyPartyIdentificationId("10428482072");
-            invoice.setSignatureSignatoryPartyPartyNameName("OLVA COURIER SAC");
-            invoice.setSignatureDigitalSignatureAttachmentExternalReferenceURI("#SignatureOlva");
+            factura.setSignatureId("IDSignOlva");
+            factura.setSignatureSignatoryPartyPartyIdentificationId("10428482072");
+            factura.setSignatureSignatoryPartyPartyNameName("OLVA COURIER SAC");
+            factura.setSignatureDigitalSignatureAttachmentExternalReferenceURI("#SignatureOlva");
 
-            invoice.setAccountingSupplierPartyCustomerAssignedAccountID("10428482072");
-            invoice.setAccountingSupplierPartyAdditionalAccountID(CodTipDocIdentidad.RUC);
-            invoice.setAccountingSupplierPartyPartyPostalAddressId("150111");
-            invoice.setAccountingSupplierPartyPartyPostalAddressStreetName("AV. LOS PRECURSORES #1245");
-            invoice.setAccountingSupplierPartyPartyPostalAddressCitySubdivisionName("URB. MIGUEL GRAU");
-            invoice.setAccountingSupplierPartyPartyPostalAddressCityName("LIMA");
-            invoice.setAccountingSupplierPartyPartyPostalAddressCountrySubentity("LIMA");
-            invoice.setAccountingSupplierPartyPartyPostalAddressDistrict("EL AGUSTINO");
-            invoice.setAccountingSupplierPartyPartyPostalAddressCountryIdentificationCode("PE");
-            invoice.setAccountingSupplierPartyPartyPartyLegalEntityRegistrationName("SOPORTE TECNOLOGICOS EIRL");
-            invoice.setAccountingCustomerPartyCustomerAssignedAccountID("20587896411");
-            invoice.setAccountingCustomerPartyAdditionalAccountID(CodTipDocIdentidad.RUC);
-            invoice.setAccountingCustomerPartyPartyPartyLegalEntityRegistrationName("SERVICABINAS S.A.");
-            invoice.setTaxTotalTaxAmount(new BigDecimal("62675.85"), CurrencyCodeContentType.PEN);
-            invoice.setTaxTotalTaxSubtotalTaxAmount(new BigDecimal("62675.85"), CurrencyCodeContentType.PEN);
-            invoice.setTaxTotalTaxSubtotalTaxCategoryTaxScheme(CodigoTipoTributo.IGV);
-            invoice.setLegalMonetaryTotalPayableAmount(new BigDecimal("423225.00"), CurrencyCodeContentType.PEN);
+            factura.setAccountingSupplierPartyCustomerAssignedAccountID("10428482072");
+            factura.setAccountingSupplierPartyAdditionalAccountID(CodTipDocIdentidad.RUC);
+            factura.setAccountingSupplierPartyPartyPostalAddressId("150111");
+            factura.setAccountingSupplierPartyPartyPostalAddressStreetName("AV. LOS PRECURSORES #1245");
+            factura.setAccountingSupplierPartyPartyPostalAddressCitySubdivisionName("URB. MIGUEL GRAU");
+            factura.setAccountingSupplierPartyPartyPostalAddressCityName("LIMA");
+            factura.setAccountingSupplierPartyPartyPostalAddressCountrySubentity("LIMA");
+            factura.setAccountingSupplierPartyPartyPostalAddressDistrict("EL AGUSTINO");
+            factura.setAccountingSupplierPartyPartyPostalAddressCountryIdentificationCode("PE");
+            factura.setAccountingSupplierPartyPartyPartyLegalEntityRegistrationName("SOPORTE TECNOLOGICOS EIRL");
+            factura.setAccountingCustomerPartyCustomerAssignedAccountID("20587896411");
+            factura.setAccountingCustomerPartyAdditionalAccountID(CodTipDocIdentidad.RUC);
+            factura.setAccountingCustomerPartyPartyPartyLegalEntityRegistrationName("SERVICABINAS S.A.");
+            factura.setTaxTotalTaxAmount(new BigDecimal("62675.85"), CurrencyCodeContentType.PEN);
+            factura.setTaxTotalTaxSubtotalTaxAmount(new BigDecimal("62675.85"), CurrencyCodeContentType.PEN);
+            factura.setTaxTotalTaxSubtotalTaxCategoryTaxScheme(CodigoTipoTributo.IGV);
+            factura.setLegalMonetaryTotalPayableAmount(new BigDecimal("423225.00"), CurrencyCodeContentType.PEN);
 
-            InvoiceDetail det1 = new InvoiceDetail();
+            DetalleFactura det1 = new DetalleFactura();
             det1.setId("1");
             det1.setInvoicedQuantity("NIU", new BigDecimal("2000"));
             det1.setLineExtensionAmount(CurrencyCodeContentType.PEN, new BigDecimal("149491.53"));
@@ -90,15 +90,15 @@ public class FacturaElectronicaTest {
             det1.setItemDescription("Grabadora LG Externo Modelo: GE20LU10");
             det1.setItemDescriptionSellersItemIdentificationId("GLG199");
             det1.setPricePriceAmount(new BigDecimal("83.05"), CurrencyCodeContentType.PEN);
-            invoice.addInvoiceLine(det1);
+            factura.addInvoiceLine(det1);
 
-            invoice.generar();
-            invoice.validar();
+            factura.generar();
+            factura.validar();
 
         } catch (JAXBException ex) {
-            Logger.getLogger(FacturaElectronicaTest.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(FacturaTest.class.getName()).log(Level.SEVERE, null, ex);
         } catch (Exception e) {
-            Logger.getLogger(FacturaElectronicaTest.class.getName()).log(Level.SEVERE, null, e);
+            Logger.getLogger(FacturaTest.class.getName()).log(Level.SEVERE, null, e);
         }
     }
 

@@ -647,9 +647,9 @@
             <xsd:documentation>
                 <ccts:Component>
                     <ccts:ComponentType>ABIE</ccts:ComponentType>
-                    <ccts:DictionaryEntryName>Consolidated Invoice Line Details</ccts:DictionaryEntryName>
-                    <ccts:Definition>Information about a Consolidated Invoice Line.</ccts:Definition>
-                    <ccts:ObjectClass>Consolidated  Invoice Line</ccts:ObjectClass>
+                    <ccts:DictionaryEntryName>Consolidated Factura Line Details</ccts:DictionaryEntryName>
+                    <ccts:Definition>Information about a Consolidated Factura Line.</ccts:Definition>
+                    <ccts:ObjectClass>Consolidated  Factura Line</ccts:ObjectClass>
                 </ccts:Component>
             </xsd:documentation>
         </xsd:annotation>
@@ -659,12 +659,12 @@
                     <xsd:documentation>
                         <ccts:Component>
                             <ccts:ComponentType>ASBIE</ccts:ComponentType>
-                            <ccts:DictionaryEntryName>Consolidated Invoice Line Billing Payment</ccts:DictionaryEntryName>
+                            <ccts:DictionaryEntryName>Consolidated Factura Line Billing Payment</ccts:DictionaryEntryName>
                             <ccts:Definition>An association to Billing Payment.</ccts:Definition>
                             <ccts:Cardinality>0..n</ccts:Cardinality>
-                            <ccts:ObjectClass>Consolidated Invoice Line</ccts:ObjectClass>
+                            <ccts:ObjectClass>Consolidated Factura Line</ccts:ObjectClass>
                             <ccts:PropertyTerm>Billing Payment</ccts:PropertyTerm>
-                            <ccts:AssociatedObjectClass>Consolidated Invoice Line</ccts:AssociatedObjectClass>
+                            <ccts:AssociatedObjectClass>Consolidated Factura Line</ccts:AssociatedObjectClass>
                         </ccts:Component>
                     </xsd:documentation>
                 </xsd:annotation>

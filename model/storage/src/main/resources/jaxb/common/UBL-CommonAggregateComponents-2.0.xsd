@@ -2002,7 +2002,7 @@
                             <ccts:Examples>"Unless specified otherwise and in addition to any rights the Customer may
                                 have under statute, Dell warrants to the Customer that Dell branded Products (excluding
                                 third party products and software), will be free from defects in materials and
-                                workmanship affecting normal use for a period of one year from invoice date ('Standard
+                                workmanship affecting normal use for a period of one year from factura date ('Standard
                                 Warranty')."
                             </ccts:Examples>
                         </ccts:Component>
@@ -3522,7 +3522,7 @@
                             <ccts:ComponentType>BBIE</ccts:ComponentType>
                             <ccts:DictionaryEntryName>Consignment. Total_ Invoice Amount. Amount
                             </ccts:DictionaryEntryName>
-                            <ccts:Definition>Total of all invoice amounts declared in a single consignment.
+                            <ccts:Definition>Total of all factura amounts declared in a single consignment.
                             </ccts:Definition>
                             <ccts:Cardinality>0..1</ccts:Cardinality>
                             <ccts:ObjectClass>Consignment</ccts:ObjectClass>
@@ -7785,7 +7785,7 @@
                             <ccts:ComponentType>ASBIE</ccts:ComponentType>
                             <ccts:DictionaryEntryName>Goods Item. Invoice Line</ccts:DictionaryEntryName>
                             <ccts:Definition>Association to information directly relating to a line item of an
-                                invoice.
+                                factura.
                             </ccts:Definition>
                             <ccts:Cardinality>0..n</ccts:Cardinality>
                             <ccts:ObjectClass>Goods Item</ccts:ObjectClass>
@@ -16549,7 +16549,7 @@
                             <ccts:ComponentType>BBIE</ccts:ComponentType>
                             <ccts:DictionaryEntryName>Supplier Party. Data Sending Capability. Text
                             </ccts:DictionaryEntryName>
-                            <ccts:Definition>Capability to send invoice data via the purchase card provider
+                            <ccts:Definition>Capability to send factura data via the purchase card provider
                                 (VISA/MasterCard/American Express).
                             </ccts:Definition>
                             <ccts:Cardinality>0..1</ccts:Cardinality>

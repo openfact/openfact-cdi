@@ -28,7 +28,7 @@ import java.util.GregorianCalendar;
 /**
  * Created by Alex Pariona-"alexpariona@openfact.com" on 21/07/2016.
  */
-public class Invoice {
+public class Factura {
 
     private static final ObjectFactory FACTORIA = new ObjectFactory();
     private final static GregorianCalendar c = new GregorianCalendar();
@@ -57,7 +57,7 @@ public class Invoice {
     private AttachmentType attachmentType;
     private ExternalReferenceType ert;
 
-    public Invoice() throws JAXBException {
+    public Factura() throws JAXBException {
         if (context == null) {
             context = JAXBContext.newInstance(ObjectFactory.class);
         }
@@ -127,7 +127,7 @@ public class Invoice {
 
     public void validar() throws JAXBException, SAXException {
         SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-        Schema schema = schemaFactory.newSchema(new File("D:\\Factura\\Invoice\\UBLPE-Invoice-1.0.xsd"));
+        Schema schema = schemaFactory.newSchema(new File("D:\\Factura\\Factura\\UBLPE-Factura-1.0.xsd"));
 
         Marshaller marshaller = context.createMarshaller();
         marshaller.setSchema(schema);
@@ -338,7 +338,7 @@ public class Invoice {
         monetaryTotalType.setPayableAmount(payableAmountType);
     }
 
-    public void addInvoiceLine(InvoiceDetail det) {
+    public void addInvoiceLine(DetalleFactura det) {
         InvoiceLineType ilt = FACTORIA.createInvoiceLineType();
         IDType iDType = FACTORIA.createIDType();
         iDType.setValue(det.getId());

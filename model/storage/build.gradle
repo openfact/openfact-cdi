@@ -5,17 +5,7 @@ dependencies {
     compile project(":openfact-services")
     compile 'com.dropbox.core:dropbox-core-sdk:2.0.6'
     compile 'com.google.apis:google-api-services-drive:v2-rev135-1.19.0'
-    //compile 'com.tradeshift:tradeshift-ubl-xsd:2.1.0'
 
-    compile group: 'com.helger', name: 'ph-ubl21', version: '5.0.0'
-    compile group: 'com.helger', name: 'ph-commons', version: '5.1.0'
-    compile group: 'com.helger', name: 'ph-jaxb', version: '8.2.1'
-    compile group: 'com.helger', name: 'ph-xsds-xmldsig', version: '1.0.0'
-    compile group: 'com.helger', name: 'ph-xsds-xades132', version: '1.0.0'
-    compile group: 'com.helger', name: 'ph-xsds-xmldsig', version: '1.0.0'
-    compile group: 'com.helger', name: 'ph-ubl-api', version: '5.0.0'
-    compile group: 'com.helger', name: 'ph-ubl-testfiles', version: '5.0.0'
-    compile group: 'com.helger', name: 'ph-xml', version: '8.2.1'
     compile group: 'junit', name: 'junit', version: '4.12'
     compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.21'
     compile group: 'com.helger', name: 'ph-css', version: '5.0.0'

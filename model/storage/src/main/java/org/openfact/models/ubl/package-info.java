@@ -16,7 +16,7 @@
                 @XmlNs(namespaceURI = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", prefix = "ext"),
                 @XmlNs(namespaceURI = "urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2", prefix = "qdt"),
                 @XmlNs(namespaceURI = "http://www.w3.org/2000/09/xmldsig#", prefix = "ds"),
-                @XmlNs(namespaceURI = "urn:oasis:names:specification:ubl:schema:xsd:Invoice-2", prefix = "")
+                @XmlNs(namespaceURI = "urn:oasis:names:specification:ubl:schema:xsd:Factura-2", prefix = "")
 
         })
 package org.openfact.models.ubl;

@@ -71,7 +71,7 @@ and open the template in the editor.
     </jxb:bindings>
     <jxb:bindings schemaLocation="../Invoice/UBLPE-Invoice-1.0.xsd" node="/xsd:schema">
         <jxb:schemaBindings>
-            <jxb:package name="com.olva.sunatfe.invoice"/>
+            <jxb:package name="com.olva.sunatfe.factura"/>
         </jxb:schemaBindings>
     </jxb:bindings>
     <jxb:bindings schemaLocation="../CreditNote/UBL-CreditNote-2.0.xsd" node="/xsd:schema">

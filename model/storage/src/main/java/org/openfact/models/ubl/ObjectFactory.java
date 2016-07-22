@@ -30,7 +30,7 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _Invoice_QNAME = new QName("urn:oasis:names:specification:ubl:schema:xsd:Invoice-2", "Invoice");
+    private final static QName _Invoice_QNAME = new QName("urn:oasis:names:specification:ubl:schema:xsd:Factura-2", "Factura");
     private final static QName _SummaryDocumentsLine_QNAME = new QName("urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", "SummaryDocumentsLine");
     private final static QName _VoidedDocumentsLine_QNAME = new QName("urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", "VoidedDocumentsLine");
     private final static QName _DocumentSerialID_QNAME = new QName("urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", "DocumentSerialID");
@@ -5363,7 +5363,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link InvoiceType }{@code >}}
      */
-    @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:Invoice-2", name = "Invoice")
+    @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:Factura-2", name = "Factura")
     public JAXBElement<InvoiceType> createInvoice(InvoiceType value) {
         return new JAXBElement<InvoiceType>(_Invoice_QNAME, InvoiceType.class, null, value);
     }
