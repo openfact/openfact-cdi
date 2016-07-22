@@ -15,15 +15,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
+ * 
  * <pre>
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ABIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Delivery. Details&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Information about Delivery.&lt;/ccts:Definition&gt;&lt;ccts:ObjectClass&gt;Delivery&lt;/ccts:ObjectClass&gt;&lt;/ccts:Component&gt;
  * </pre>
- * <p>
- * <p>
+ *
+ * 
  * <p>Clase Java para DeliveryType complex type.
- * <p>
+ * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * <p>
+ * 
  * <pre>
  * &lt;complexType name="DeliveryType"&gt;
  *   &lt;complexContent&gt;
@@ -50,6 +51,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
+ *
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DeliveryType", namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", propOrder = {
@@ -106,12 +109,16 @@ public class DeliveryType {
     protected DespatchType despatch;
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Delivery. Identifier&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Identifies the Delivery.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Delivery&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Identifier&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Identifier&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Identifier. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link IDType }
+     *
+     * @return
+     *     possible object is
+     *     {@link IDType }
+     *     
      */
     public IDType getID() {
         return id;
@@ -120,20 +127,26 @@ public class DeliveryType {
     /**
      * Define el valor de la propiedad id.
      *
-     * @param value allowed object is
-     *              {@link IDType }
+     * @param value
+     *     allowed object is
+     *     {@link IDType }
+     *     
      */
     public void setID(IDType value) {
         this.id = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Delivery. Quantity&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The quantity in a Delivery.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Delivery&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Quantity&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Quantity&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Quantity. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link QuantityTypeCommBas }
+     *
+     * @return
+     *     possible object is
+     *     {@link QuantityTypeCommBas }
+     *     
      */
     public QuantityTypeCommBas getQuantity() {
         return quantity;
@@ -142,20 +155,26 @@ public class DeliveryType {
     /**
      * Define el valor de la propiedad quantity.
      *
-     * @param value allowed object is
-     *              {@link QuantityTypeCommBas }
+     * @param value
+     *     allowed object is
+     *     {@link QuantityTypeCommBas }
+     *     
      */
     public void setQuantity(QuantityTypeCommBas value) {
         this.quantity = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Delivery. Minimum_ Quantity. Quantity&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The minimum quantity in a Delivery.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Delivery&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Minimum&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Quantity&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Quantity&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Quantity. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link MinimumQuantityType }
+     *
+     * @return
+     *     possible object is
+     *     {@link MinimumQuantityType }
+     *     
      */
     public MinimumQuantityType getMinimumQuantity() {
         return minimumQuantity;
@@ -164,20 +183,26 @@ public class DeliveryType {
     /**
      * Define el valor de la propiedad minimumQuantity.
      *
-     * @param value allowed object is
-     *              {@link MinimumQuantityType }
+     * @param value
+     *     allowed object is
+     *     {@link MinimumQuantityType }
+     *     
      */
     public void setMinimumQuantity(MinimumQuantityType value) {
         this.minimumQuantity = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Delivery. Maximum_ Quantity. Quantity&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The maximum quantity in a Delivery.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Delivery&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Maximum&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Quantity&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Quantity&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Quantity. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link MaximumQuantityType }
+     *
+     * @return
+     *     possible object is
+     *     {@link MaximumQuantityType }
+     *     
      */
     public MaximumQuantityType getMaximumQuantity() {
         return maximumQuantity;
@@ -186,20 +211,26 @@ public class DeliveryType {
     /**
      * Define el valor de la propiedad maximumQuantity.
      *
-     * @param value allowed object is
-     *              {@link MaximumQuantityType }
+     * @param value
+     *     allowed object is
+     *     {@link MaximumQuantityType }
+     *     
      */
     public void setMaximumQuantity(MaximumQuantityType value) {
         this.maximumQuantity = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Delivery. Actual_ Delivery Date. Date&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The actual Delivery date.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Delivery&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Actual&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Delivery Date&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Date&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Date. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link ActualDeliveryDateType }
+     *
+     * @return
+     *     possible object is
+     *     {@link ActualDeliveryDateType }
+     *     
      */
     public ActualDeliveryDateType getActualDeliveryDate() {
         return actualDeliveryDate;
@@ -208,20 +239,26 @@ public class DeliveryType {
     /**
      * Define el valor de la propiedad actualDeliveryDate.
      *
-     * @param value allowed object is
-     *              {@link ActualDeliveryDateType }
+     * @param value
+     *     allowed object is
+     *     {@link ActualDeliveryDateType }
+     *     
      */
     public void setActualDeliveryDate(ActualDeliveryDateType value) {
         this.actualDeliveryDate = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Delivery. Actual_ Delivery Time. Time&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The actual Delivery time.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Delivery&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Actual&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Delivery Time&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Time&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Time. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link ActualDeliveryTimeType }
+     *
+     * @return
+     *     possible object is
+     *     {@link ActualDeliveryTimeType }
+     *     
      */
     public ActualDeliveryTimeType getActualDeliveryTime() {
         return actualDeliveryTime;
@@ -230,20 +267,26 @@ public class DeliveryType {
     /**
      * Define el valor de la propiedad actualDeliveryTime.
      *
-     * @param value allowed object is
-     *              {@link ActualDeliveryTimeType }
+     * @param value
+     *     allowed object is
+     *     {@link ActualDeliveryTimeType }
+     *     
      */
     public void setActualDeliveryTime(ActualDeliveryTimeType value) {
         this.actualDeliveryTime = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Delivery. Latest_ Delivery Date. Date&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The latest delivery date allowed by the buyer.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Delivery&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Latest&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Delivery Date&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Date&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Date. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link LatestDeliveryDateType }
+     *
+     * @return
+     *     possible object is
+     *     {@link LatestDeliveryDateType }
+     *     
      */
     public LatestDeliveryDateType getLatestDeliveryDate() {
         return latestDeliveryDate;
@@ -252,20 +295,26 @@ public class DeliveryType {
     /**
      * Define el valor de la propiedad latestDeliveryDate.
      *
-     * @param value allowed object is
-     *              {@link LatestDeliveryDateType }
+     * @param value
+     *     allowed object is
+     *     {@link LatestDeliveryDateType }
+     *     
      */
     public void setLatestDeliveryDate(LatestDeliveryDateType value) {
         this.latestDeliveryDate = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Delivery. Latest_ Delivery Time. Time&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The latest delivery time allowed by the buyer.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Delivery&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Latest&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Delivery Time&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Time&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Time. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link LatestDeliveryTimeType }
+     *
+     * @return
+     *     possible object is
+     *     {@link LatestDeliveryTimeType }
+     *     
      */
     public LatestDeliveryTimeType getLatestDeliveryTime() {
         return latestDeliveryTime;
@@ -274,20 +323,26 @@ public class DeliveryType {
     /**
      * Define el valor de la propiedad latestDeliveryTime.
      *
-     * @param value allowed object is
-     *              {@link LatestDeliveryTimeType }
+     * @param value
+     *     allowed object is
+     *     {@link LatestDeliveryTimeType }
+     *     
      */
     public void setLatestDeliveryTime(LatestDeliveryTimeType value) {
         this.latestDeliveryTime = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Delivery. Tracking Identifier. Identifier&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The delivery Tracking ID (for transport tracking).&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Delivery&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Tracking Identifier&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Identifier&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Identifier. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link TrackingIDType }
+     *
+     * @return
+     *     possible object is
+     *     {@link TrackingIDType }
+     *     
      */
     public TrackingIDType getTrackingID() {
         return trackingID;
@@ -296,20 +351,26 @@ public class DeliveryType {
     /**
      * Define el valor de la propiedad trackingID.
      *
-     * @param value allowed object is
-     *              {@link TrackingIDType }
+     * @param value
+     *     allowed object is
+     *     {@link TrackingIDType }
+     *     
      */
     public void setTrackingID(TrackingIDType value) {
         this.trackingID = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Delivery. Delivery_ Address. Address&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to Delivery Address.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Delivery&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Delivery&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Address&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Address&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link AddressType }
+     *
+     * @return
+     *     possible object is
+     *     {@link AddressType }
+     *     
      */
     public AddressType getDeliveryAddress() {
         return deliveryAddress;
@@ -318,20 +379,26 @@ public class DeliveryType {
     /**
      * Define el valor de la propiedad deliveryAddress.
      *
-     * @param value allowed object is
-     *              {@link AddressType }
+     * @param value
+     *     allowed object is
+     *     {@link AddressType }
+     *     
      */
     public void setDeliveryAddress(AddressType value) {
         this.deliveryAddress = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Delivery. Delivery_ Location. Location&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to Location.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Delivery&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Delivery&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Location&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Location&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link LocationTypeCommAgg }
+     *
+     * @return
+     *     possible object is
+     *     {@link LocationTypeCommAgg }
+     *     
      */
     public LocationTypeCommAgg getDeliveryLocation() {
         return deliveryLocation;
@@ -340,20 +407,26 @@ public class DeliveryType {
     /**
      * Define el valor de la propiedad deliveryLocation.
      *
-     * @param value allowed object is
-     *              {@link LocationTypeCommAgg }
+     * @param value
+     *     allowed object is
+     *     {@link LocationTypeCommAgg }
+     *     
      */
     public void setDeliveryLocation(LocationTypeCommAgg value) {
         this.deliveryLocation = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Delivery. Requested Delivery_ Period. Period&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The requested Period for Delivery.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Delivery&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Requested Delivery&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Period&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Period&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link PeriodType }
+     *
+     * @return
+     *     possible object is
+     *     {@link PeriodType }
+     *     
      */
     public PeriodType getRequestedDeliveryPeriod() {
         return requestedDeliveryPeriod;
@@ -362,20 +435,26 @@ public class DeliveryType {
     /**
      * Define el valor de la propiedad requestedDeliveryPeriod.
      *
-     * @param value allowed object is
-     *              {@link PeriodType }
+     * @param value
+     *     allowed object is
+     *     {@link PeriodType }
+     *     
      */
     public void setRequestedDeliveryPeriod(PeriodType value) {
         this.requestedDeliveryPeriod = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Delivery. Promised Delivery_ Period. Period&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The promised Period for Delivery.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Delivery&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Promised Delivery&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Period&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Period&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link PeriodType }
+     *
+     * @return
+     *     possible object is
+     *     {@link PeriodType }
+     *     
      */
     public PeriodType getPromisedDeliveryPeriod() {
         return promisedDeliveryPeriod;
@@ -384,20 +463,26 @@ public class DeliveryType {
     /**
      * Define el valor de la propiedad promisedDeliveryPeriod.
      *
-     * @param value allowed object is
-     *              {@link PeriodType }
+     * @param value
+     *     allowed object is
+     *     {@link PeriodType }
+     *     
      */
     public void setPromisedDeliveryPeriod(PeriodType value) {
         this.promisedDeliveryPeriod = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Delivery. Estimated Delivery_ Period. Period&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The estimated Period for Delivery.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Delivery&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Estimated Delivery&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Period&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Period&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link PeriodType }
+     *
+     * @return
+     *     possible object is
+     *     {@link PeriodType }
+     *     
      */
     public PeriodType getEstimatedDeliveryPeriod() {
         return estimatedDeliveryPeriod;
@@ -406,20 +491,26 @@ public class DeliveryType {
     /**
      * Define el valor de la propiedad estimatedDeliveryPeriod.
      *
-     * @param value allowed object is
-     *              {@link PeriodType }
+     * @param value
+     *     allowed object is
+     *     {@link PeriodType }
+     *     
      */
     public void setEstimatedDeliveryPeriod(PeriodType value) {
         this.estimatedDeliveryPeriod = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Delivery. Delivery_ Party. Party&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The party to whom the goods/services are delivered.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Delivery&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Delivery&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Party&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Party&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link PartyType }
+     *
+     * @return
+     *     possible object is
+     *     {@link PartyType }
+     *     
      */
     public PartyType getDeliveryParty() {
         return deliveryParty;
@@ -428,20 +519,26 @@ public class DeliveryType {
     /**
      * Define el valor de la propiedad deliveryParty.
      *
-     * @param value allowed object is
-     *              {@link PartyType }
+     * @param value
+     *     allowed object is
+     *     {@link PartyType }
+     *     
      */
     public void setDeliveryParty(PartyType value) {
         this.deliveryParty = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Delivery. Despatch&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to the Despatch.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Delivery&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Despatch&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Despatch&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link DespatchType }
+     *
+     * @return
+     *     possible object is
+     *     {@link DespatchType }
+     *     
      */
     public DespatchType getDespatch() {
         return despatch;
@@ -450,8 +547,10 @@ public class DeliveryType {
     /**
      * Define el valor de la propiedad despatch.
      *
-     * @param value allowed object is
-     *              {@link DespatchType }
+     * @param value
+     *     allowed object is
+     *     {@link DespatchType }
+     *     
      */
     public void setDespatch(DespatchType value) {
         this.despatch = value;

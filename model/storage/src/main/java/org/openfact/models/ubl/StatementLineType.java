@@ -17,15 +17,16 @@ import java.util.List;
 
 
 /**
+ * 
  * <pre>
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ABIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Statement Line. Details&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Information about a Line on a Statement of Account.&lt;/ccts:Definition&gt;&lt;ccts:ObjectClass&gt;Statement Line&lt;/ccts:ObjectClass&gt;&lt;/ccts:Component&gt;
  * </pre>
- * <p>
- * <p>
+ *
+ * 
  * <p>Clase Java para StatementLineType complex type.
- * <p>
+ * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * <p>
+ * 
  * <pre>
  * &lt;complexType name="StatementLineType"&gt;
  *   &lt;complexContent&gt;
@@ -55,6 +56,8 @@ import java.util.List;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
+ *
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "StatementLineType", namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", propOrder = {
@@ -120,12 +123,16 @@ public class StatementLineType {
     protected ExchangeRateType exchangeRate;
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Statement Line. Identifier&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Identifies the Statement Line.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Statement Line&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Identifier&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Identifier&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Identifier. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link IDType }
+     *
+     * @return
+     *     possible object is
+     *     {@link IDType }
+     *     
      */
     public IDType getID() {
         return id;
@@ -134,20 +141,26 @@ public class StatementLineType {
     /**
      * Define el valor de la propiedad id.
      *
-     * @param value allowed object is
-     *              {@link IDType }
+     * @param value
+     *     allowed object is
+     *     {@link IDType }
+     *     
      */
     public void setID(IDType value) {
         this.id = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Statement Line. Note. Text&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Free-form text applying to the Statement Line. This element may contain notes or any other similar information that is not contained explicitly in another structure.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Statement Line&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Note&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Text&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Text. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link NoteType }
+     *
+     * @return
+     *     possible object is
+     *     {@link NoteType }
+     *     
      */
     public NoteType getNote() {
         return note;
@@ -156,20 +169,26 @@ public class StatementLineType {
     /**
      * Define el valor de la propiedad note.
      *
-     * @param value allowed object is
-     *              {@link NoteType }
+     * @param value
+     *     allowed object is
+     *     {@link NoteType }
+     *     
      */
     public void setNote(NoteType value) {
         this.note = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Statement Line. UUID. Identifier&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;A universally unique identifier for an instance of this ABIE.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Statement Line&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;UUID&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Identifier&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Identifier. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link UUIDType }
+     *
+     * @return
+     *     possible object is
+     *     {@link UUIDType }
+     *     
      */
     public UUIDType getUUID() {
         return uuid;
@@ -178,20 +197,26 @@ public class StatementLineType {
     /**
      * Define el valor de la propiedad uuid.
      *
-     * @param value allowed object is
-     *              {@link UUIDType }
+     * @param value
+     *     allowed object is
+     *     {@link UUIDType }
+     *     
      */
     public void setUUID(UUIDType value) {
         this.uuid = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Statement Line. Balance Brought Forward_ Indicator. Indicator&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;If true, indicates that the Statement Line contains a balance brought forward.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Statement Line&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Balance Brought Forward&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Indicator&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Indicator&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Indicator. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link BalanceBroughtForwardIndicatorType }
+     *
+     * @return
+     *     possible object is
+     *     {@link BalanceBroughtForwardIndicatorType }
+     *     
      */
     public BalanceBroughtForwardIndicatorType getBalanceBroughtForwardIndicator() {
         return balanceBroughtForwardIndicator;
@@ -200,20 +225,26 @@ public class StatementLineType {
     /**
      * Define el valor de la propiedad balanceBroughtForwardIndicator.
      *
-     * @param value allowed object is
-     *              {@link BalanceBroughtForwardIndicatorType }
+     * @param value
+     *     allowed object is
+     *     {@link BalanceBroughtForwardIndicatorType }
+     *     
      */
     public void setBalanceBroughtForwardIndicator(BalanceBroughtForwardIndicatorType value) {
         this.balanceBroughtForwardIndicator = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Statement Line. Debit_ Line Amount. Amount&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The amount debited on the Statement Line.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Statement Line&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Debit&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Line Amount&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Amount&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Amount. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link DebitLineAmountType }
+     *
+     * @return
+     *     possible object is
+     *     {@link DebitLineAmountType }
+     *     
      */
     public DebitLineAmountType getDebitLineAmount() {
         return debitLineAmount;
@@ -222,20 +253,26 @@ public class StatementLineType {
     /**
      * Define el valor de la propiedad debitLineAmount.
      *
-     * @param value allowed object is
-     *              {@link DebitLineAmountType }
+     * @param value
+     *     allowed object is
+     *     {@link DebitLineAmountType }
+     *     
      */
     public void setDebitLineAmount(DebitLineAmountType value) {
         this.debitLineAmount = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Statement Line. Credit_ Line Amount. Amount&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The amount credited on the Statement Line.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Statement Line&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Credit&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Line Amount&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Amount&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Amount. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link CreditLineAmountType }
+     *
+     * @return
+     *     possible object is
+     *     {@link CreditLineAmountType }
+     *     
      */
     public CreditLineAmountType getCreditLineAmount() {
         return creditLineAmount;
@@ -244,20 +281,26 @@ public class StatementLineType {
     /**
      * Define el valor de la propiedad creditLineAmount.
      *
-     * @param value allowed object is
-     *              {@link CreditLineAmountType }
+     * @param value
+     *     allowed object is
+     *     {@link CreditLineAmountType }
+     *     
      */
     public void setCreditLineAmount(CreditLineAmountType value) {
         this.creditLineAmount = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Statement Line. Balance Amount. Amount&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The balance amount on the Statement Line.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Statement Line&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Balance Amount&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Amount&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Amount. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link BalanceAmountType }
+     *
+     * @return
+     *     possible object is
+     *     {@link BalanceAmountType }
+     *     
      */
     public BalanceAmountType getBalanceAmount() {
         return balanceAmount;
@@ -266,20 +309,26 @@ public class StatementLineType {
     /**
      * Define el valor de la propiedad balanceAmount.
      *
-     * @param value allowed object is
-     *              {@link BalanceAmountType }
+     * @param value
+     *     allowed object is
+     *     {@link BalanceAmountType }
+     *     
      */
     public void setBalanceAmount(BalanceAmountType value) {
         this.balanceAmount = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Statement Line. Payment Means&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to Payment Means.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Statement Line&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Payment Means&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Payment Means&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link PaymentMeansType }
+     *
+     * @return
+     *     possible object is
+     *     {@link PaymentMeansType }
+     *     
      */
     public PaymentMeansType getPaymentMeans() {
         return paymentMeans;
@@ -288,35 +337,40 @@ public class StatementLineType {
     /**
      * Define el valor de la propiedad paymentMeans.
      *
-     * @param value allowed object is
-     *              {@link PaymentMeansType }
+     * @param value
+     *     allowed object is
+     *     {@link PaymentMeansType }
+     *     
      */
     public void setPaymentMeans(PaymentMeansType value) {
         this.paymentMeans = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Statement Line. Payment Terms&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to Payment Terms.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..n&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Statement Line&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Payment Terms&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Payment Terms&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      * Gets the value of the paymentTerms property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the paymentTerms property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getPaymentTerms().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     *
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link PaymentTermsType }
+     *
+     * 
      */
     public List<PaymentTermsType> getPaymentTerms() {
         if (paymentTerms == null) {
@@ -326,12 +380,16 @@ public class StatementLineType {
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Statement Line. Buyer_ Customer Party. Customer Party&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to Buyer.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Statement Line&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Buyer&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Customer Party&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Customer Party&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link CustomerPartyType }
+     *
+     * @return
+     *     possible object is
+     *     {@link CustomerPartyType }
+     *     
      */
     public CustomerPartyType getBuyerCustomerParty() {
         return buyerCustomerParty;
@@ -340,20 +398,26 @@ public class StatementLineType {
     /**
      * Define el valor de la propiedad buyerCustomerParty.
      *
-     * @param value allowed object is
-     *              {@link CustomerPartyType }
+     * @param value
+     *     allowed object is
+     *     {@link CustomerPartyType }
+     *     
      */
     public void setBuyerCustomerParty(CustomerPartyType value) {
         this.buyerCustomerParty = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Statement Line. Seller_ Supplier Party. Supplier Party&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to Seller.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Statement Line&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Seller&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Supplier Party&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Supplier Party&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link SupplierPartyType }
+     *
+     * @return
+     *     possible object is
+     *     {@link SupplierPartyType }
+     *     
      */
     public SupplierPartyType getSellerSupplierParty() {
         return sellerSupplierParty;
@@ -362,20 +426,26 @@ public class StatementLineType {
     /**
      * Define el valor de la propiedad sellerSupplierParty.
      *
-     * @param value allowed object is
-     *              {@link SupplierPartyType }
+     * @param value
+     *     allowed object is
+     *     {@link SupplierPartyType }
+     *     
      */
     public void setSellerSupplierParty(SupplierPartyType value) {
         this.sellerSupplierParty = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Statement Line. Originator_ Customer Party. Customer Party&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to Originator.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Statement Line&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Originator&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Customer Party&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Customer Party&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link CustomerPartyType }
+     *
+     * @return
+     *     possible object is
+     *     {@link CustomerPartyType }
+     *     
      */
     public CustomerPartyType getOriginatorCustomerParty() {
         return originatorCustomerParty;
@@ -384,20 +454,26 @@ public class StatementLineType {
     /**
      * Define el valor de la propiedad originatorCustomerParty.
      *
-     * @param value allowed object is
-     *              {@link CustomerPartyType }
+     * @param value
+     *     allowed object is
+     *     {@link CustomerPartyType }
+     *     
      */
     public void setOriginatorCustomerParty(CustomerPartyType value) {
         this.originatorCustomerParty = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Statement Line. Accounting_ Customer Party. Customer Party&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to Accounting Customer Party.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Statement Line&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Accounting&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Customer Party&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Customer Party&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link CustomerPartyType }
+     *
+     * @return
+     *     possible object is
+     *     {@link CustomerPartyType }
+     *     
      */
     public CustomerPartyType getAccountingCustomerParty() {
         return accountingCustomerParty;
@@ -406,20 +482,26 @@ public class StatementLineType {
     /**
      * Define el valor de la propiedad accountingCustomerParty.
      *
-     * @param value allowed object is
-     *              {@link CustomerPartyType }
+     * @param value
+     *     allowed object is
+     *     {@link CustomerPartyType }
+     *     
      */
     public void setAccountingCustomerParty(CustomerPartyType value) {
         this.accountingCustomerParty = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Statement Line. Accounting_ Supplier Party. Supplier Party&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to Accounting Supplier Party.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Statement Line&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Accounting&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Supplier Party&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Supplier Party&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link SupplierPartyType }
+     *
+     * @return
+     *     possible object is
+     *     {@link SupplierPartyType }
+     *     
      */
     public SupplierPartyType getAccountingSupplierParty() {
         return accountingSupplierParty;
@@ -428,20 +510,26 @@ public class StatementLineType {
     /**
      * Define el valor de la propiedad accountingSupplierParty.
      *
-     * @param value allowed object is
-     *              {@link SupplierPartyType }
+     * @param value
+     *     allowed object is
+     *     {@link SupplierPartyType }
+     *     
      */
     public void setAccountingSupplierParty(SupplierPartyType value) {
         this.accountingSupplierParty = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Statement Line. Payee_ Party. Party&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to Payee.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Statement Line&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Payee&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Party&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Party&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link PartyType }
+     *
+     * @return
+     *     possible object is
+     *     {@link PartyType }
+     *     
      */
     public PartyType getPayeeParty() {
         return payeeParty;
@@ -450,35 +538,40 @@ public class StatementLineType {
     /**
      * Define el valor de la propiedad payeeParty.
      *
-     * @param value allowed object is
-     *              {@link PartyType }
+     * @param value
+     *     allowed object is
+     *     {@link PartyType }
+     *     
      */
     public void setPayeeParty(PartyType value) {
         this.payeeParty = value;
     }
 
     /**
+     * 
      * <pre>
-     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Statement Line. Invoice_ Period. Period&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to Factura Period.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..n&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Statement Line&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Factura&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Period&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Period&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Statement Line. Invoice_ Period. Period&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to Invoice Period.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..n&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Statement Line&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Invoice&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Period&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Period&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      * Gets the value of the invoicePeriod property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the invoicePeriod property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getInvoicePeriod().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     *
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link PeriodType }
+     *
+     * 
      */
     public List<PeriodType> getInvoicePeriod() {
         if (invoicePeriod == null) {
@@ -488,27 +581,30 @@ public class StatementLineType {
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Statement Line. Billing Reference&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to Billing Reference.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..n&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Statement Line&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Billing Reference&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Billing Reference&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      * Gets the value of the billingReference property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the billingReference property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getBillingReference().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     *
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link BillingReferenceType }
+     *
+     * 
      */
     public List<BillingReferenceType> getBillingReference() {
         if (billingReference == null) {
@@ -518,27 +614,30 @@ public class StatementLineType {
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Statement Line. Document Reference&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to Document Reference.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..n&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Statement Line&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Document Reference&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Document Reference&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      * Gets the value of the documentReference property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the documentReference property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getDocumentReference().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     *
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link DocumentReferenceType }
+     *
+     * 
      */
     public List<DocumentReferenceType> getDocumentReference() {
         if (documentReference == null) {
@@ -548,12 +647,16 @@ public class StatementLineType {
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Statement Line. Exchange Rate&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to Exchange Rate (between the Statement Line currency and the Related Document Currency).&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Statement Line&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Exchange Rate&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Exchange Rate&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link ExchangeRateType }
+     *
+     * @return
+     *     possible object is
+     *     {@link ExchangeRateType }
+     *     
      */
     public ExchangeRateType getExchangeRate() {
         return exchangeRate;
@@ -562,8 +665,10 @@ public class StatementLineType {
     /**
      * Define el valor de la propiedad exchangeRate.
      *
-     * @param value allowed object is
-     *              {@link ExchangeRateType }
+     * @param value
+     *     allowed object is
+     *     {@link ExchangeRateType }
+     *     
      */
     public void setExchangeRate(ExchangeRateType value) {
         this.exchangeRate = value;

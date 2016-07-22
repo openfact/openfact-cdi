@@ -17,15 +17,16 @@ import java.util.List;
 
 
 /**
+ * 
  * <pre>
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ABIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Catalogue Reference. Details&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;A reference to a Catalogue.&lt;/ccts:Definition&gt;&lt;ccts:ObjectClass&gt;Catalogue Reference&lt;/ccts:ObjectClass&gt;&lt;/ccts:Component&gt;
  * </pre>
- * <p>
- * <p>
+ *
+ * 
  * <p>Clase Java para CatalogueReferenceType complex type.
- * <p>
+ * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * <p>
+ * 
  * <pre>
  * &lt;complexType name="CatalogueReferenceType"&gt;
  *   &lt;complexContent&gt;
@@ -46,6 +47,8 @@ import java.util.List;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
+ *
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "CatalogueReferenceType", namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", propOrder = {
@@ -84,12 +87,16 @@ public class CatalogueReferenceType {
     protected PreviousVersionIDType previousVersionID;
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Catalogue Reference. Identifier&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An identifier for the Catalogue document.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Catalogue Reference&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Identifier&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Identifier&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Identifier. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link IDType }
+     *
+     * @return
+     *     possible object is
+     *     {@link IDType }
+     *     
      */
     public IDType getID() {
         return id;
@@ -98,20 +105,26 @@ public class CatalogueReferenceType {
     /**
      * Define el valor de la propiedad id.
      *
-     * @param value allowed object is
-     *              {@link IDType }
+     * @param value
+     *     allowed object is
+     *     {@link IDType }
+     *     
      */
     public void setID(IDType value) {
         this.id = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Catalogue Reference. UUID. Identifier&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;A universally unique identifier for an instance of this ABIE.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Catalogue Reference&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;UUID&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Identifier&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Identifier. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link UUIDType }
+     *
+     * @return
+     *     possible object is
+     *     {@link UUIDType }
+     *     
      */
     public UUIDType getUUID() {
         return uuid;
@@ -120,20 +133,26 @@ public class CatalogueReferenceType {
     /**
      * Define el valor de la propiedad uuid.
      *
-     * @param value allowed object is
-     *              {@link UUIDType }
+     * @param value
+     *     allowed object is
+     *     {@link UUIDType }
+     *     
      */
     public void setUUID(UUIDType value) {
         this.uuid = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Catalogue Reference. Issue Date. Date&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The date when the Catalogue was issued.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Catalogue Reference&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Issue Date&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Date&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Date. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link IssueDateType }
+     *
+     * @return
+     *     possible object is
+     *     {@link IssueDateType }
+     *     
      */
     public IssueDateType getIssueDate() {
         return issueDate;
@@ -142,20 +161,26 @@ public class CatalogueReferenceType {
     /**
      * Define el valor de la propiedad issueDate.
      *
-     * @param value allowed object is
-     *              {@link IssueDateType }
+     * @param value
+     *     allowed object is
+     *     {@link IssueDateType }
+     *     
      */
     public void setIssueDate(IssueDateType value) {
         this.issueDate = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Catalogue Reference. Issue Time. Time&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The time when the Catalogue was issued.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Catalogue Reference&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Issue Time&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Time&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Time. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link IssueTimeType }
+     *
+     * @return
+     *     possible object is
+     *     {@link IssueTimeType }
+     *     
      */
     public IssueTimeType getIssueTime() {
         return issueTime;
@@ -164,20 +189,26 @@ public class CatalogueReferenceType {
     /**
      * Define el valor de la propiedad issueTime.
      *
-     * @param value allowed object is
-     *              {@link IssueTimeType }
+     * @param value
+     *     allowed object is
+     *     {@link IssueTimeType }
+     *     
      */
     public void setIssueTime(IssueTimeType value) {
         this.issueTime = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Catalogue Reference. Revision Date. Date&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The date on which the information in the Catalogue was revised.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Catalogue Reference&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Revision Date&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Date&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Date. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link RevisionDateType }
+     *
+     * @return
+     *     possible object is
+     *     {@link RevisionDateType }
+     *     
      */
     public RevisionDateType getRevisionDate() {
         return revisionDate;
@@ -186,20 +217,26 @@ public class CatalogueReferenceType {
     /**
      * Define el valor de la propiedad revisionDate.
      *
-     * @param value allowed object is
-     *              {@link RevisionDateType }
+     * @param value
+     *     allowed object is
+     *     {@link RevisionDateType }
+     *     
      */
     public void setRevisionDate(RevisionDateType value) {
         this.revisionDate = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Catalogue Reference. Revision Time. Time&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The time at which the information in the Catalogue was revised.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Catalogue Reference&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Revision Time&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Time&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Time. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link RevisionTimeType }
+     *
+     * @return
+     *     possible object is
+     *     {@link RevisionTimeType }
+     *     
      */
     public RevisionTimeType getRevisionTime() {
         return revisionTime;
@@ -208,35 +245,40 @@ public class CatalogueReferenceType {
     /**
      * Define el valor de la propiedad revisionTime.
      *
-     * @param value allowed object is
-     *              {@link RevisionTimeType }
+     * @param value
+     *     allowed object is
+     *     {@link RevisionTimeType }
+     *     
      */
     public void setRevisionTime(RevisionTimeType value) {
         this.revisionTime = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Catalogue Reference. Note. Text&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;A free-text note about the Catalogue. This is used for information which is only human readable.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..n&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Catalogue Reference&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Note&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Text&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Text. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      * Gets the value of the note property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the note property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getNote().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     *
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link NoteType }
+     *
+     * 
      */
     public List<NoteType> getNote() {
         if (note == null) {
@@ -246,27 +288,30 @@ public class CatalogueReferenceType {
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Catalogue Reference. Description. Text&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;A description of the Catalogue.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..n&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Catalogue Reference&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Description&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Text&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Text. Type&lt;/ccts:DataType&gt;&lt;ccts:Examples&gt;"computer accessories for laptops"&lt;/ccts:Examples&gt;&lt;/ccts:Component&gt;
      * </pre>
      * Gets the value of the description property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the description property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getDescription().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     *
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link DescriptionType }
+     *
+     * 
      */
     public List<DescriptionType> getDescription() {
         if (description == null) {
@@ -276,12 +321,16 @@ public class CatalogueReferenceType {
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Catalogue Reference. Version. Identifier&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Indicates the current version of the Catalogue.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Catalogue Reference&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Version&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Identifier&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Identifier. Type&lt;/ccts:DataType&gt;&lt;ccts:Examples&gt;"1.1"&lt;/ccts:Examples&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link VersionIDType }
+     *
+     * @return
+     *     possible object is
+     *     {@link VersionIDType }
+     *     
      */
     public VersionIDType getVersionID() {
         return versionID;
@@ -290,20 +339,26 @@ public class CatalogueReferenceType {
     /**
      * Define el valor de la propiedad versionID.
      *
-     * @param value allowed object is
-     *              {@link VersionIDType }
+     * @param value
+     *     allowed object is
+     *     {@link VersionIDType }
+     *     
      */
     public void setVersionID(VersionIDType value) {
         this.versionID = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Catalogue Reference. Previous_ Version. Identifier&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Indicates the previous version (the version superseded by this Catalogue).&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Catalogue Reference&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Previous&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Version&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Identifier&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Identifier. Type&lt;/ccts:DataType&gt;&lt;ccts:Examples&gt;"1.0"&lt;/ccts:Examples&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link PreviousVersionIDType }
+     *
+     * @return
+     *     possible object is
+     *     {@link PreviousVersionIDType }
+     *     
      */
     public PreviousVersionIDType getPreviousVersionID() {
         return previousVersionID;
@@ -312,8 +367,10 @@ public class CatalogueReferenceType {
     /**
      * Define el valor de la propiedad previousVersionID.
      *
-     * @param value allowed object is
-     *              {@link PreviousVersionIDType }
+     * @param value
+     *     allowed object is
+     *     {@link PreviousVersionIDType }
+     *     
      */
     public void setPreviousVersionID(PreviousVersionIDType value) {
         this.previousVersionID = value;

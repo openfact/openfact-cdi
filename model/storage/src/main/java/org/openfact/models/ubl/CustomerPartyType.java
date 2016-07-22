@@ -17,15 +17,16 @@ import java.util.List;
 
 
 /**
+ * 
  * <pre>
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ABIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Customer Party. Details&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Information about the Customer Party.&lt;/ccts:Definition&gt;&lt;ccts:ObjectClass&gt;Customer Party&lt;/ccts:ObjectClass&gt;&lt;/ccts:Component&gt;
  * </pre>
- * <p>
- * <p>
+ *
+ * 
  * <p>Clase Java para CustomerPartyType complex type.
- * <p>
+ * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * <p>
+ * 
  * <pre>
  * &lt;complexType name="CustomerPartyType"&gt;
  *   &lt;complexContent&gt;
@@ -43,6 +44,8 @@ import java.util.List;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
+ *
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "CustomerPartyType", namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", propOrder = {
@@ -72,12 +75,16 @@ public class CustomerPartyType {
     protected ContactType buyerContact;
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Customer Party. Customer Assigned_ Account Identifier. Identifier&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An identifier for the Customer's account, assigned by the Customer itself.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Customer Party&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Customer Assigned&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Account Identifier&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Identifier&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Identifier. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link CustomerAssignedAccountIDType }
+     *
+     * @return
+     *     possible object is
+     *     {@link CustomerAssignedAccountIDType }
+     *     
      */
     public CustomerAssignedAccountIDType getCustomerAssignedAccountID() {
         return customerAssignedAccountID;
@@ -86,20 +93,26 @@ public class CustomerPartyType {
     /**
      * Define el valor de la propiedad customerAssignedAccountID.
      *
-     * @param value allowed object is
-     *              {@link CustomerAssignedAccountIDType }
+     * @param value
+     *     allowed object is
+     *     {@link CustomerAssignedAccountIDType }
+     *     
      */
     public void setCustomerAssignedAccountID(CustomerAssignedAccountIDType value) {
         this.customerAssignedAccountID = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Customer Party. Supplier Assigned_ Account Identifier. Identifier&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An identifier for the Customer's account, assigned by the Supplier.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Customer Party&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Supplier Assigned&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Account Identifier&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Identifier&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Identifier. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link SupplierAssignedAccountIDType }
+     *
+     * @return
+     *     possible object is
+     *     {@link SupplierAssignedAccountIDType }
+     *     
      */
     public SupplierAssignedAccountIDType getSupplierAssignedAccountID() {
         return supplierAssignedAccountID;
@@ -108,35 +121,40 @@ public class CustomerPartyType {
     /**
      * Define el valor de la propiedad supplierAssignedAccountID.
      *
-     * @param value allowed object is
-     *              {@link SupplierAssignedAccountIDType }
+     * @param value
+     *     allowed object is
+     *     {@link SupplierAssignedAccountIDType }
+     *     
      */
     public void setSupplierAssignedAccountID(SupplierAssignedAccountIDType value) {
         this.supplierAssignedAccountID = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Customer Party. Additional_ Account Identifier. Identifier&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An identifier for the Customer's account, assigned by a third party.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..n&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Customer Party&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Additional&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Account Identifier&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Identifier&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Identifier. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      * Gets the value of the additionalAccountID property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the additionalAccountID property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getAdditionalAccountID().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     *
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link AdditionalAccountIDType }
+     *
+     * 
      */
     public List<AdditionalAccountIDType> getAdditionalAccountID() {
         if (additionalAccountID == null) {
@@ -146,12 +164,16 @@ public class CustomerPartyType {
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Customer Party. Party&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to Party.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Customer Party&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Party&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Party&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link PartyType }
+     *
+     * @return
+     *     possible object is
+     *     {@link PartyType }
+     *     
      */
     public PartyType getParty() {
         return party;
@@ -160,20 +182,26 @@ public class CustomerPartyType {
     /**
      * Define el valor de la propiedad party.
      *
-     * @param value allowed object is
-     *              {@link PartyType }
+     * @param value
+     *     allowed object is
+     *     {@link PartyType }
+     *     
      */
     public void setParty(PartyType value) {
         this.party = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Customer Party. Delivery_ Contact. Contact&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to Delivery Contact.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Customer Party&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Delivery&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Contact&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Contact&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link ContactType }
+     *
+     * @return
+     *     possible object is
+     *     {@link ContactType }
+     *     
      */
     public ContactType getDeliveryContact() {
         return deliveryContact;
@@ -182,20 +210,26 @@ public class CustomerPartyType {
     /**
      * Define el valor de la propiedad deliveryContact.
      *
-     * @param value allowed object is
-     *              {@link ContactType }
+     * @param value
+     *     allowed object is
+     *     {@link ContactType }
+     *     
      */
     public void setDeliveryContact(ContactType value) {
         this.deliveryContact = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Customer Party. Accounting_ Contact. Contact&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to Accounting Contact (Customer).&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Customer Party&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Accounting&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Contact&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Contact&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link ContactType }
+     *
+     * @return
+     *     possible object is
+     *     {@link ContactType }
+     *     
      */
     public ContactType getAccountingContact() {
         return accountingContact;
@@ -204,20 +238,26 @@ public class CustomerPartyType {
     /**
      * Define el valor de la propiedad accountingContact.
      *
-     * @param value allowed object is
-     *              {@link ContactType }
+     * @param value
+     *     allowed object is
+     *     {@link ContactType }
+     *     
      */
     public void setAccountingContact(ContactType value) {
         this.accountingContact = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Customer Party. Buyer_ Contact. Contact&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to Buyer Contact.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Customer Party&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Buyer&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Contact&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Contact&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link ContactType }
+     *
+     * @return
+     *     possible object is
+     *     {@link ContactType }
+     *     
      */
     public ContactType getBuyerContact() {
         return buyerContact;
@@ -226,8 +266,10 @@ public class CustomerPartyType {
     /**
      * Define el valor de la propiedad buyerContact.
      *
-     * @param value allowed object is
-     *              {@link ContactType }
+     * @param value
+     *     allowed object is
+     *     {@link ContactType }
+     *     
      */
     public void setBuyerContact(ContactType value) {
         this.buyerContact = value;

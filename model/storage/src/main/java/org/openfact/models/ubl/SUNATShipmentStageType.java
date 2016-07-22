@@ -16,9 +16,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Clase Java para SUNATShipmentStageType complex type.
- * <p>
+ * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * <p>
+ * 
  * <pre>
  * &lt;complexType name="SUNATShipmentStageType"&gt;
  *   &lt;complexContent&gt;
@@ -37,6 +37,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
+ *
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "SUNATShipmentStageType", namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", propOrder = {
@@ -71,8 +73,10 @@ public class SUNATShipmentStageType {
     /**
      * Obtiene el valor de la propiedad id.
      *
-     * @return possible object is
-     * {@link IDType }
+     * @return
+     *     possible object is
+     *     {@link IDType }
+     *     
      */
     public IDType getID() {
         return id;
@@ -81,8 +85,10 @@ public class SUNATShipmentStageType {
     /**
      * Define el valor de la propiedad id.
      *
-     * @param value allowed object is
-     *              {@link IDType }
+     * @param value
+     *     allowed object is
+     *     {@link IDType }
+     *     
      */
     public void setID(IDType value) {
         this.id = value;
@@ -91,8 +97,10 @@ public class SUNATShipmentStageType {
     /**
      * Obtiene el valor de la propiedad shipmentStageTypeCode.
      *
-     * @return possible object is
-     * {@link IDType }
+     * @return
+     *     possible object is
+     *     {@link IDType }
+     *     
      */
     public IDType getShipmentStageTypeCode() {
         return shipmentStageTypeCode;
@@ -101,8 +109,10 @@ public class SUNATShipmentStageType {
     /**
      * Define el valor de la propiedad shipmentStageTypeCode.
      *
-     * @param value allowed object is
-     *              {@link IDType }
+     * @param value
+     *     allowed object is
+     *     {@link IDType }
+     *     
      */
     public void setShipmentStageTypeCode(IDType value) {
         this.shipmentStageTypeCode = value;
@@ -111,8 +121,10 @@ public class SUNATShipmentStageType {
     /**
      * Obtiene el valor de la propiedad transportModeCode.
      *
-     * @return possible object is
-     * {@link TransportModeCodeTypeCommBas }
+     * @return
+     *     possible object is
+     *     {@link TransportModeCodeTypeCommBas }
+     *     
      */
     public TransportModeCodeTypeCommBas getTransportModeCode() {
         return transportModeCode;
@@ -121,8 +133,10 @@ public class SUNATShipmentStageType {
     /**
      * Define el valor de la propiedad transportModeCode.
      *
-     * @param value allowed object is
-     *              {@link TransportModeCodeTypeCommBas }
+     * @param value
+     *     allowed object is
+     *     {@link TransportModeCodeTypeCommBas }
+     *     
      */
     public void setTransportModeCode(TransportModeCodeTypeCommBas value) {
         this.transportModeCode = value;
@@ -131,8 +145,10 @@ public class SUNATShipmentStageType {
     /**
      * Obtiene el valor de la propiedad transportMeansTypeCode.
      *
-     * @return possible object is
-     * {@link TransportMeansTypeCodeType }
+     * @return
+     *     possible object is
+     *     {@link TransportMeansTypeCodeType }
+     *     
      */
     public TransportMeansTypeCodeType getTransportMeansTypeCode() {
         return transportMeansTypeCode;
@@ -141,8 +157,10 @@ public class SUNATShipmentStageType {
     /**
      * Define el valor de la propiedad transportMeansTypeCode.
      *
-     * @param value allowed object is
-     *              {@link TransportMeansTypeCodeType }
+     * @param value
+     *     allowed object is
+     *     {@link TransportMeansTypeCodeType }
+     *     
      */
     public void setTransportMeansTypeCode(TransportMeansTypeCodeType value) {
         this.transportMeansTypeCode = value;
@@ -151,8 +169,10 @@ public class SUNATShipmentStageType {
     /**
      * Obtiene el valor de la propiedad sunatCarrierParty.
      *
-     * @return possible object is
-     * {@link SUNATCarrierPartyType }
+     * @return
+     *     possible object is
+     *     {@link SUNATCarrierPartyType }
+     *     
      */
     public SUNATCarrierPartyType getSUNATCarrierParty() {
         return sunatCarrierParty;
@@ -161,8 +181,10 @@ public class SUNATShipmentStageType {
     /**
      * Define el valor de la propiedad sunatCarrierParty.
      *
-     * @param value allowed object is
-     *              {@link SUNATCarrierPartyType }
+     * @param value
+     *     allowed object is
+     *     {@link SUNATCarrierPartyType }
+     *     
      */
     public void setSUNATCarrierParty(SUNATCarrierPartyType value) {
         this.sunatCarrierParty = value;
@@ -171,8 +193,10 @@ public class SUNATShipmentStageType {
     /**
      * Obtiene el valor de la propiedad sunatTransportMeans.
      *
-     * @return possible object is
-     * {@link SUNATTransportMeansType }
+     * @return
+     *     possible object is
+     *     {@link SUNATTransportMeansType }
+     *     
      */
     public SUNATTransportMeansType getSUNATTransportMeans() {
         return sunatTransportMeans;
@@ -181,8 +205,10 @@ public class SUNATShipmentStageType {
     /**
      * Define el valor de la propiedad sunatTransportMeans.
      *
-     * @param value allowed object is
-     *              {@link SUNATTransportMeansType }
+     * @param value
+     *     allowed object is
+     *     {@link SUNATTransportMeansType }
+     *     
      */
     public void setSUNATTransportMeans(SUNATTransportMeansType value) {
         this.sunatTransportMeans = value;
@@ -191,8 +217,10 @@ public class SUNATShipmentStageType {
     /**
      * Obtiene el valor de la propiedad originAddress.
      *
-     * @return possible object is
-     * {@link AddressType }
+     * @return
+     *     possible object is
+     *     {@link AddressType }
+     *     
      */
     public AddressType getOriginAddress() {
         return originAddress;
@@ -201,8 +229,10 @@ public class SUNATShipmentStageType {
     /**
      * Define el valor de la propiedad originAddress.
      *
-     * @param value allowed object is
-     *              {@link AddressType }
+     * @param value
+     *     allowed object is
+     *     {@link AddressType }
+     *     
      */
     public void setOriginAddress(AddressType value) {
         this.originAddress = value;
@@ -211,8 +241,10 @@ public class SUNATShipmentStageType {
     /**
      * Obtiene el valor de la propiedad deliveryAddress.
      *
-     * @return possible object is
-     * {@link AddressType }
+     * @return
+     *     possible object is
+     *     {@link AddressType }
+     *     
      */
     public AddressType getDeliveryAddress() {
         return deliveryAddress;
@@ -221,8 +253,10 @@ public class SUNATShipmentStageType {
     /**
      * Define el valor de la propiedad deliveryAddress.
      *
-     * @param value allowed object is
-     *              {@link AddressType }
+     * @param value
+     *     allowed object is
+     *     {@link AddressType }
+     *     
      */
     public void setDeliveryAddress(AddressType value) {
         this.deliveryAddress = value;

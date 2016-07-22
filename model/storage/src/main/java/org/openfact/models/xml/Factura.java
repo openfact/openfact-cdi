@@ -16,6 +16,7 @@ import javax.xml.bind.Marshaller;
 import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.datatype.DatatypeConstants;
 import javax.xml.datatype.DatatypeFactory;
+import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.dom.DOMResult;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
@@ -24,6 +25,7 @@ import java.math.BigDecimal;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
+
 
 /**
  * Created by Alex Pariona-"alexpariona@openfact.com" on 21/07/2016.
@@ -125,24 +127,23 @@ public class Factura {
         ert = FACTORIA.createExternalReferenceType();
     }
 
-    public void validar() throws JAXBException, SAXException {
+    public void validar(String PathXmlValidator) throws JAXBException, SAXException {
         SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-        Schema schema = schemaFactory.newSchema(new File("D:\\Factura\\Factura\\UBLPE-Factura-1.0.xsd"));
+        Schema schema = schemaFactory.newSchema(new File(PathXmlValidator));
 
         Marshaller marshaller = context.createMarshaller();
         marshaller.setSchema(schema);
         marshaller.marshal(FACTORIA.createInvoice(invoiceType), new DefaultHandler());
     }
 
-    public void generar() throws JAXBException {
+    public void generar(String PathXmlFile) throws JAXBException, ParserConfigurationException {
         JAXBElement<AdditionalInformationTypeSunatAgg> jeAits = FACTORIA.createAdditionalInformation(informacionAdicional);
         DOMResult res = new DOMResult();
         marshallerElement.marshal(jeAits, res);
         Element elem = ((Document) res.getNode()).getDocumentElement();
         contenidoDeExtension.setAny(elem);
-        marshallerInvoice.marshal(FACTORIA.createInvoice(invoiceType), System.out);
+        marshallerInvoice.marshal(FACTORIA.createInvoice(invoiceType), new File(PathXmlFile));
     }
-
     public void addFacturaExtensionesExtensionContenidoDeExtensionInformacionAdicionalTotalMonetario(CodigoConceptosTributarios cod, BigDecimal monto) {
         IDType idAMonetaryTotal = FACTORIA.createIDType();
         idAMonetaryTotal.setValue(cod.getCodigo());

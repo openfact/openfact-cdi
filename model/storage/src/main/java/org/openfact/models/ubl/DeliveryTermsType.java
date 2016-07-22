@@ -15,15 +15,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
+ * 
  * <pre>
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ABIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Delivery Terms. Details&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Information about Delivery Terms.&lt;/ccts:Definition&gt;&lt;ccts:ObjectClass&gt;Delivery Terms&lt;/ccts:ObjectClass&gt;&lt;/ccts:Component&gt;
  * </pre>
- * <p>
- * <p>
+ *
+ * 
  * <p>Clase Java para DeliveryTermsType complex type.
- * <p>
+ * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * <p>
+ * 
  * <pre>
  * &lt;complexType name="DeliveryTermsType"&gt;
  *   &lt;complexContent&gt;
@@ -40,6 +41,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
+ *
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DeliveryTermsType", namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", propOrder = {
@@ -66,12 +69,16 @@ public class DeliveryTermsType {
     protected AllowanceChargeType allowanceCharge;
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Delivery Terms. Identifier&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Identifies the Delivery Terms.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Delivery Terms&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Identifier&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Identifier&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Identifier. Type&lt;/ccts:DataType&gt;&lt;ccts:Examples&gt;CIF, FOB, or EXW from the INCOTERMS Terms of Delivery. (2000 version preferred.)&lt;/ccts:Examples&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link IDType }
+     *
+     * @return
+     *     possible object is
+     *     {@link IDType }
+     *     
      */
     public IDType getID() {
         return id;
@@ -80,20 +87,26 @@ public class DeliveryTermsType {
     /**
      * Define el valor de la propiedad id.
      *
-     * @param value allowed object is
-     *              {@link IDType }
+     * @param value
+     *     allowed object is
+     *     {@link IDType }
+     *     
      */
     public void setID(IDType value) {
         this.id = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Delivery Terms. Special_ Terms. Text&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;A description of special conditions relating to the Delivery Terms.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Delivery Terms&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Special&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Terms&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Text&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Text. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link SpecialTermsType }
+     *
+     * @return
+     *     possible object is
+     *     {@link SpecialTermsType }
+     *     
      */
     public SpecialTermsType getSpecialTerms() {
         return specialTerms;
@@ -102,20 +115,26 @@ public class DeliveryTermsType {
     /**
      * Define el valor de la propiedad specialTerms.
      *
-     * @param value allowed object is
-     *              {@link SpecialTermsType }
+     * @param value
+     *     allowed object is
+     *     {@link SpecialTermsType }
+     *     
      */
     public void setSpecialTerms(SpecialTermsType value) {
         this.specialTerms = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Delivery Terms. Loss Risk Responsibility Code. Code&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An identifier for the responsibility for loss risk in the context of the Delivery Terms, expressed as a code.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Delivery Terms&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Loss Risk Responsibility Code&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Code&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Code. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link LossRiskResponsibilityCodeType }
+     *
+     * @return
+     *     possible object is
+     *     {@link LossRiskResponsibilityCodeType }
+     *     
      */
     public LossRiskResponsibilityCodeType getLossRiskResponsibilityCode() {
         return lossRiskResponsibilityCode;
@@ -124,20 +143,26 @@ public class DeliveryTermsType {
     /**
      * Define el valor de la propiedad lossRiskResponsibilityCode.
      *
-     * @param value allowed object is
-     *              {@link LossRiskResponsibilityCodeType }
+     * @param value
+     *     allowed object is
+     *     {@link LossRiskResponsibilityCodeType }
+     *     
      */
     public void setLossRiskResponsibilityCode(LossRiskResponsibilityCodeType value) {
         this.lossRiskResponsibilityCode = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Delivery Terms. Loss Risk. Text&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;A description of the loss risk in the context of the Delivery Terms.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Delivery Terms&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Loss Risk&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Text&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Text. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link LossRiskType }
+     *
+     * @return
+     *     possible object is
+     *     {@link LossRiskType }
+     *     
      */
     public LossRiskType getLossRisk() {
         return lossRisk;
@@ -146,20 +171,26 @@ public class DeliveryTermsType {
     /**
      * Define el valor de la propiedad lossRisk.
      *
-     * @param value allowed object is
-     *              {@link LossRiskType }
+     * @param value
+     *     allowed object is
+     *     {@link LossRiskType }
+     *     
      */
     public void setLossRisk(LossRiskType value) {
         this.lossRisk = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Delivery Terms. Delivery_ Location. Location&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to Location, e.g., a port.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Delivery Terms&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Delivery&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Location&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Location&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link LocationTypeCommAgg }
+     *
+     * @return
+     *     possible object is
+     *     {@link LocationTypeCommAgg }
+     *     
      */
     public LocationTypeCommAgg getDeliveryLocation() {
         return deliveryLocation;
@@ -168,20 +199,26 @@ public class DeliveryTermsType {
     /**
      * Define el valor de la propiedad deliveryLocation.
      *
-     * @param value allowed object is
-     *              {@link LocationTypeCommAgg }
+     * @param value
+     *     allowed object is
+     *     {@link LocationTypeCommAgg }
+     *     
      */
     public void setDeliveryLocation(LocationTypeCommAgg value) {
         this.deliveryLocation = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Delivery Terms. Allowance Charge&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to Allowance Charge.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Delivery Terms&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Allowance Charge&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Allowance Charge&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link AllowanceChargeType }
+     *
+     * @return
+     *     possible object is
+     *     {@link AllowanceChargeType }
+     *     
      */
     public AllowanceChargeType getAllowanceCharge() {
         return allowanceCharge;
@@ -190,8 +227,10 @@ public class DeliveryTermsType {
     /**
      * Define el valor de la propiedad allowanceCharge.
      *
-     * @param value allowed object is
-     *              {@link AllowanceChargeType }
+     * @param value
+     *     allowed object is
+     *     {@link AllowanceChargeType }
+     *     
      */
     public void setAllowanceCharge(AllowanceChargeType value) {
         this.allowanceCharge = value;

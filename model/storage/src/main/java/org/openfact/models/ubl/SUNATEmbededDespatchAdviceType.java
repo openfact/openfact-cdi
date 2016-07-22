@@ -18,9 +18,9 @@ import java.util.List;
 
 /**
  * <p>Clase Java para SUNATEmbededDespatchAdviceType complex type.
- * <p>
+ * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * <p>
+ * 
  * <pre>
  * &lt;complexType name="SUNATEmbededDespatchAdviceType"&gt;
  *   &lt;complexContent&gt;
@@ -36,6 +36,8 @@ import java.util.List;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
+ *
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "SUNATEmbededDespatchAdviceType", namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", propOrder = {
@@ -61,8 +63,10 @@ public class SUNATEmbededDespatchAdviceType {
     /**
      * Obtiene el valor de la propiedad deliveryAddress.
      *
-     * @return possible object is
-     * {@link AddressType }
+     * @return
+     *     possible object is
+     *     {@link AddressType }
+     *     
      */
     public AddressType getDeliveryAddress() {
         return deliveryAddress;
@@ -71,8 +75,10 @@ public class SUNATEmbededDespatchAdviceType {
     /**
      * Define el valor de la propiedad deliveryAddress.
      *
-     * @param value allowed object is
-     *              {@link AddressType }
+     * @param value
+     *     allowed object is
+     *     {@link AddressType }
+     *     
      */
     public void setDeliveryAddress(AddressType value) {
         this.deliveryAddress = value;
@@ -81,8 +87,10 @@ public class SUNATEmbededDespatchAdviceType {
     /**
      * Obtiene el valor de la propiedad originAddress.
      *
-     * @return possible object is
-     * {@link AddressType }
+     * @return
+     *     possible object is
+     *     {@link AddressType }
+     *     
      */
     public AddressType getOriginAddress() {
         return originAddress;
@@ -91,8 +99,10 @@ public class SUNATEmbededDespatchAdviceType {
     /**
      * Define el valor de la propiedad originAddress.
      *
-     * @param value allowed object is
-     *              {@link AddressType }
+     * @param value
+     *     allowed object is
+     *     {@link AddressType }
+     *     
      */
     public void setOriginAddress(AddressType value) {
         this.originAddress = value;
@@ -101,8 +111,10 @@ public class SUNATEmbededDespatchAdviceType {
     /**
      * Obtiene el valor de la propiedad sunatCarrierParty.
      *
-     * @return possible object is
-     * {@link SUNATCarrierPartyType }
+     * @return
+     *     possible object is
+     *     {@link SUNATCarrierPartyType }
+     *     
      */
     public SUNATCarrierPartyType getSUNATCarrierParty() {
         return sunatCarrierParty;
@@ -111,8 +123,10 @@ public class SUNATEmbededDespatchAdviceType {
     /**
      * Define el valor de la propiedad sunatCarrierParty.
      *
-     * @param value allowed object is
-     *              {@link SUNATCarrierPartyType }
+     * @param value
+     *     allowed object is
+     *     {@link SUNATCarrierPartyType }
+     *     
      */
     public void setSUNATCarrierParty(SUNATCarrierPartyType value) {
         this.sunatCarrierParty = value;
@@ -121,8 +135,10 @@ public class SUNATEmbededDespatchAdviceType {
     /**
      * Obtiene el valor de la propiedad driverParty.
      *
-     * @return possible object is
-     * {@link DriverPartyType }
+     * @return
+     *     possible object is
+     *     {@link DriverPartyType }
+     *     
      */
     public DriverPartyType getDriverParty() {
         return driverParty;
@@ -131,8 +147,10 @@ public class SUNATEmbededDespatchAdviceType {
     /**
      * Define el valor de la propiedad driverParty.
      *
-     * @param value allowed object is
-     *              {@link DriverPartyType }
+     * @param value
+     *     allowed object is
+     *     {@link DriverPartyType }
+     *     
      */
     public void setDriverParty(DriverPartyType value) {
         this.driverParty = value;
@@ -140,23 +158,25 @@ public class SUNATEmbededDespatchAdviceType {
 
     /**
      * Gets the value of the sunatRoadTransport property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the sunatRoadTransport property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getSUNATRoadTransport().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     *
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link SUNATRoadTransportType }
+     *
+     * 
      */
     public List<SUNATRoadTransportType> getSUNATRoadTransport() {
         if (sunatRoadTransport == null) {

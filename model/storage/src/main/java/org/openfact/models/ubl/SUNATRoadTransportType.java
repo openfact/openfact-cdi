@@ -18,9 +18,9 @@ import java.util.List;
 
 /**
  * <p>Clase Java para SUNATRoadTransportType complex type.
- * <p>
+ * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * <p>
+ * 
  * <pre>
  * &lt;complexType name="SUNATRoadTransportType"&gt;
  *   &lt;complexContent&gt;
@@ -35,6 +35,8 @@ import java.util.List;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
+ *
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "SUNATRoadTransportType", namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", propOrder = {
@@ -58,8 +60,10 @@ public class SUNATRoadTransportType
     /**
      * Obtiene el valor de la propiedad transportMeansTypeCode.
      *
-     * @return possible object is
-     * {@link TransportMeansTypeCodeType }
+     * @return
+     *     possible object is
+     *     {@link TransportMeansTypeCodeType }
+     *     
      */
     public TransportMeansTypeCodeType getTransportMeansTypeCode() {
         return transportMeansTypeCode;
@@ -68,8 +72,10 @@ public class SUNATRoadTransportType
     /**
      * Define el valor de la propiedad transportMeansTypeCode.
      *
-     * @param value allowed object is
-     *              {@link TransportMeansTypeCodeType }
+     * @param value
+     *     allowed object is
+     *     {@link TransportMeansTypeCodeType }
+     *     
      */
     public void setTransportMeansTypeCode(TransportMeansTypeCodeType value) {
         this.transportMeansTypeCode = value;
@@ -78,8 +84,10 @@ public class SUNATRoadTransportType
     /**
      * Obtiene el valor de la propiedad transportAuthorizationCode.
      *
-     * @return possible object is
-     * {@link TransportAuthorizationCodeType }
+     * @return
+     *     possible object is
+     *     {@link TransportAuthorizationCodeType }
+     *     
      */
     public TransportAuthorizationCodeType getTransportAuthorizationCode() {
         return transportAuthorizationCode;
@@ -88,8 +96,10 @@ public class SUNATRoadTransportType
     /**
      * Define el valor de la propiedad transportAuthorizationCode.
      *
-     * @param value allowed object is
-     *              {@link TransportAuthorizationCodeType }
+     * @param value
+     *     allowed object is
+     *     {@link TransportAuthorizationCodeType }
+     *     
      */
     public void setTransportAuthorizationCode(TransportAuthorizationCodeType value) {
         this.transportAuthorizationCode = value;
@@ -97,23 +107,25 @@ public class SUNATRoadTransportType
 
     /**
      * Gets the value of the semiTrailer property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the semiTrailer property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getSemiTrailer().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     *
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link RoadTransportType }
+     *
+     * 
      */
     public List<RoadTransportType> getSemiTrailer() {
         if (semiTrailer == null) {
@@ -125,8 +137,10 @@ public class SUNATRoadTransportType
     /**
      * Obtiene el valor de la propiedad brandName.
      *
-     * @return possible object is
-     * {@link BrandNameType }
+     * @return
+     *     possible object is
+     *     {@link BrandNameType }
+     *     
      */
     public BrandNameType getBrandName() {
         return brandName;
@@ -135,8 +149,10 @@ public class SUNATRoadTransportType
     /**
      * Define el valor de la propiedad brandName.
      *
-     * @param value allowed object is
-     *              {@link BrandNameType }
+     * @param value
+     *     allowed object is
+     *     {@link BrandNameType }
+     *     
      */
     public void setBrandName(BrandNameType value) {
         this.brandName = value;

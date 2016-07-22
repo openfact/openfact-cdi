@@ -18,9 +18,9 @@ import java.util.List;
 
 /**
  * <p>Clase Java para DriverPartyType complex type.
- * <p>
+ * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * <p>
+ * 
  * <pre>
  * &lt;complexType name="DriverPartyType"&gt;
  *   &lt;complexContent&gt;
@@ -34,6 +34,8 @@ import java.util.List;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
+ *
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DriverPartyType", namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", propOrder = {
@@ -53,8 +55,10 @@ public class DriverPartyType {
     /**
      * Obtiene el valor de la propiedad customerAssignedAccountID.
      *
-     * @return possible object is
-     * {@link CustomerAssignedAccountIDType }
+     * @return
+     *     possible object is
+     *     {@link CustomerAssignedAccountIDType }
+     *     
      */
     public CustomerAssignedAccountIDType getCustomerAssignedAccountID() {
         return customerAssignedAccountID;
@@ -63,8 +67,10 @@ public class DriverPartyType {
     /**
      * Define el valor de la propiedad customerAssignedAccountID.
      *
-     * @param value allowed object is
-     *              {@link CustomerAssignedAccountIDType }
+     * @param value
+     *     allowed object is
+     *     {@link CustomerAssignedAccountIDType }
+     *     
      */
     public void setCustomerAssignedAccountID(CustomerAssignedAccountIDType value) {
         this.customerAssignedAccountID = value;
@@ -72,23 +78,25 @@ public class DriverPartyType {
 
     /**
      * Gets the value of the additionalAccountID property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the additionalAccountID property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getAdditionalAccountID().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     *
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link AdditionalAccountIDType }
+     *
+     * 
      */
     public List<AdditionalAccountIDType> getAdditionalAccountID() {
         if (additionalAccountID == null) {
@@ -100,8 +108,10 @@ public class DriverPartyType {
     /**
      * Obtiene el valor de la propiedad party.
      *
-     * @return possible object is
-     * {@link PartyType }
+     * @return
+     *     possible object is
+     *     {@link PartyType }
+     *     
      */
     public PartyType getParty() {
         return party;
@@ -110,8 +120,10 @@ public class DriverPartyType {
     /**
      * Define el valor de la propiedad party.
      *
-     * @param value allowed object is
-     *              {@link PartyType }
+     * @param value
+     *     allowed object is
+     *     {@link PartyType }
+     *     
      */
     public void setParty(PartyType value) {
         this.party = value;

@@ -15,15 +15,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
+ * 
  * <pre>
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ABIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Location Coordinate. Details&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Information about physical (geographical) location.&lt;/ccts:Definition&gt;&lt;ccts:ObjectClass&gt;Location Coordinate&lt;/ccts:ObjectClass&gt;&lt;/ccts:Component&gt;
  * </pre>
- * <p>
- * <p>
+ *
+ * 
  * <p>Clase Java para LocationCoordinateType complex type.
- * <p>
+ * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * <p>
+ * 
  * <pre>
  * &lt;complexType name="LocationCoordinateType"&gt;
  *   &lt;complexContent&gt;
@@ -41,6 +42,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
+ *
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "LocationCoordinateType", namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", propOrder = {
@@ -70,12 +73,16 @@ public class LocationCoordinateType {
     protected LongitudeDirectionCodeTypeCommBas longitudeDirectionCode;
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Location Coordinate. Coordinate System Code. Code&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An identifier for the location system used.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Location Coordinate&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Coordinate System Code&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Code&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Code. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link CoordinateSystemCodeType }
+     *
+     * @return
+     *     possible object is
+     *     {@link CoordinateSystemCodeType }
+     *     
      */
     public CoordinateSystemCodeType getCoordinateSystemCode() {
         return coordinateSystemCode;
@@ -84,20 +91,26 @@ public class LocationCoordinateType {
     /**
      * Define el valor de la propiedad coordinateSystemCode.
      *
-     * @param value allowed object is
-     *              {@link CoordinateSystemCodeType }
+     * @param value
+     *     allowed object is
+     *     {@link CoordinateSystemCodeType }
+     *     
      */
     public void setCoordinateSystemCode(CoordinateSystemCodeType value) {
         this.coordinateSystemCode = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Location Coordinate. Latitude_ Degrees. Measure&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The measure of latitude in degrees.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Location Coordinate&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Latitude&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Degrees&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Measure&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Measure. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link LatitudeDegreesMeasureType }
+     *
+     * @return
+     *     possible object is
+     *     {@link LatitudeDegreesMeasureType }
+     *     
      */
     public LatitudeDegreesMeasureType getLatitudeDegreesMeasure() {
         return latitudeDegreesMeasure;
@@ -106,20 +119,26 @@ public class LocationCoordinateType {
     /**
      * Define el valor de la propiedad latitudeDegreesMeasure.
      *
-     * @param value allowed object is
-     *              {@link LatitudeDegreesMeasureType }
+     * @param value
+     *     allowed object is
+     *     {@link LatitudeDegreesMeasureType }
+     *     
      */
     public void setLatitudeDegreesMeasure(LatitudeDegreesMeasureType value) {
         this.latitudeDegreesMeasure = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Location Coordinate. Latitude_ Minutes. Measure&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The measure of latitude in minutes.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Location Coordinate&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Latitude&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Minutes&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Measure&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Measure. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link LatitudeMinutesMeasureType }
+     *
+     * @return
+     *     possible object is
+     *     {@link LatitudeMinutesMeasureType }
+     *     
      */
     public LatitudeMinutesMeasureType getLatitudeMinutesMeasure() {
         return latitudeMinutesMeasure;
@@ -128,20 +147,26 @@ public class LocationCoordinateType {
     /**
      * Define el valor de la propiedad latitudeMinutesMeasure.
      *
-     * @param value allowed object is
-     *              {@link LatitudeMinutesMeasureType }
+     * @param value
+     *     allowed object is
+     *     {@link LatitudeMinutesMeasureType }
+     *     
      */
     public void setLatitudeMinutesMeasure(LatitudeMinutesMeasureType value) {
         this.latitudeMinutesMeasure = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Location Coordinate. Latitude Direction Code. Code&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The direction of latitude measurement from the equator.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Location Coordinate&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Latitude Direction Code&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Code&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Latitude Direction_ Code. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link LatitudeDirectionCodeTypeCommBas }
+     *
+     * @return
+     *     possible object is
+     *     {@link LatitudeDirectionCodeTypeCommBas }
+     *     
      */
     public LatitudeDirectionCodeTypeCommBas getLatitudeDirectionCode() {
         return latitudeDirectionCode;
@@ -150,20 +175,26 @@ public class LocationCoordinateType {
     /**
      * Define el valor de la propiedad latitudeDirectionCode.
      *
-     * @param value allowed object is
-     *              {@link LatitudeDirectionCodeTypeCommBas }
+     * @param value
+     *     allowed object is
+     *     {@link LatitudeDirectionCodeTypeCommBas }
+     *     
      */
     public void setLatitudeDirectionCode(LatitudeDirectionCodeTypeCommBas value) {
         this.latitudeDirectionCode = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Location Coordinate. Longitude_ Degrees. Measure&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The measure of longitude in degrees.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Location Coordinate&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Longitude&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Degrees&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Measure&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Measure. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link LongitudeDegreesMeasureType }
+     *
+     * @return
+     *     possible object is
+     *     {@link LongitudeDegreesMeasureType }
+     *     
      */
     public LongitudeDegreesMeasureType getLongitudeDegreesMeasure() {
         return longitudeDegreesMeasure;
@@ -172,20 +203,26 @@ public class LocationCoordinateType {
     /**
      * Define el valor de la propiedad longitudeDegreesMeasure.
      *
-     * @param value allowed object is
-     *              {@link LongitudeDegreesMeasureType }
+     * @param value
+     *     allowed object is
+     *     {@link LongitudeDegreesMeasureType }
+     *     
      */
     public void setLongitudeDegreesMeasure(LongitudeDegreesMeasureType value) {
         this.longitudeDegreesMeasure = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Location Coordinate. Longitude_ Minutes. Measure&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The measure of longitude in minutes.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Location Coordinate&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Longitude&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Minutes&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Measure&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Measure. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link LongitudeMinutesMeasureType }
+     *
+     * @return
+     *     possible object is
+     *     {@link LongitudeMinutesMeasureType }
+     *     
      */
     public LongitudeMinutesMeasureType getLongitudeMinutesMeasure() {
         return longitudeMinutesMeasure;
@@ -194,20 +231,26 @@ public class LocationCoordinateType {
     /**
      * Define el valor de la propiedad longitudeMinutesMeasure.
      *
-     * @param value allowed object is
-     *              {@link LongitudeMinutesMeasureType }
+     * @param value
+     *     allowed object is
+     *     {@link LongitudeMinutesMeasureType }
+     *     
      */
     public void setLongitudeMinutesMeasure(LongitudeMinutesMeasureType value) {
         this.longitudeMinutesMeasure = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Location Coordinate. Longitude Direction Code. Code&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The direction of longitude measurement from the meridian.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Location Coordinate&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Longitude Direction Code&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Code&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Longitude Direction_ Code. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link LongitudeDirectionCodeTypeCommBas }
+     *
+     * @return
+     *     possible object is
+     *     {@link LongitudeDirectionCodeTypeCommBas }
+     *     
      */
     public LongitudeDirectionCodeTypeCommBas getLongitudeDirectionCode() {
         return longitudeDirectionCode;
@@ -216,8 +259,10 @@ public class LocationCoordinateType {
     /**
      * Define el valor de la propiedad longitudeDirectionCode.
      *
-     * @param value allowed object is
-     *              {@link LongitudeDirectionCodeTypeCommBas }
+     * @param value
+     *     allowed object is
+     *     {@link LongitudeDirectionCodeTypeCommBas }
+     *     
      */
     public void setLongitudeDirectionCode(LongitudeDirectionCodeTypeCommBas value) {
         this.longitudeDirectionCode = value;

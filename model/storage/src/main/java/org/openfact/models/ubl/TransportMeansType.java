@@ -14,15 +14,16 @@ import java.util.List;
 
 
 /**
+ * 
  * <pre>
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ABIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Transport Means. Details&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The particular vehicle used for the transport of goods or persons.&lt;/ccts:Definition&gt;&lt;ccts:ObjectClass&gt;Transport Means&lt;/ccts:ObjectClass&gt;&lt;ccts:AlternativeBusinessTerms&gt;Conveyance&lt;/ccts:AlternativeBusinessTerms&gt;&lt;/ccts:Component&gt;
  * </pre>
- * <p>
- * <p>
+ *
+ * 
  * <p>Clase Java para TransportMeansType complex type.
- * <p>
+ * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * <p>
+ * 
  * <pre>
  * &lt;complexType name="TransportMeansType"&gt;
  *   &lt;complexContent&gt;
@@ -43,6 +44,8 @@ import java.util.List;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
+ *
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "TransportMeansType", namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", propOrder = {
@@ -84,12 +87,16 @@ public class TransportMeansType {
     protected PartyType ownerParty;
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Transport Means. Journey Identifier. Identifier&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An identifier assigned to a regularly scheduled service of a means of transport.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Transport Means&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Journey Identifier&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Identifier&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Identifier. Type&lt;/ccts:DataType&gt;&lt;ccts:AlternativeBusinessTerms&gt;Voyage Number, Scheduled Conveyance Identifier (WCO ID 205), Flight Number&lt;/ccts:AlternativeBusinessTerms&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link JourneyIDType }
+     *
+     * @return
+     *     possible object is
+     *     {@link JourneyIDType }
+     *     
      */
     public JourneyIDType getJourneyID() {
         return journeyID;
@@ -98,20 +105,26 @@ public class TransportMeansType {
     /**
      * Define el valor de la propiedad journeyID.
      *
-     * @param value allowed object is
-     *              {@link JourneyIDType }
+     * @param value
+     *     allowed object is
+     *     {@link JourneyIDType }
+     *     
      */
     public void setJourneyID(JourneyIDType value) {
         this.journeyID = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Transport Means. Registration_ Nationality Identifier. Identifier&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Formal identification of the country in which a means of transport is registered.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Transport Means&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Registration&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Nationality Identifier&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Identifier&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Identifier. Type&lt;/ccts:DataType&gt;&lt;ccts:AlternativeBusinessTerms&gt;Nationality of Means of Transport (WCO 175, 178 and 179)&lt;/ccts:AlternativeBusinessTerms&gt;&lt;ccts:Examples&gt;"LIB"&lt;/ccts:Examples&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link RegistrationNationalityIDType }
+     *
+     * @return
+     *     possible object is
+     *     {@link RegistrationNationalityIDType }
+     *     
      */
     public RegistrationNationalityIDType getRegistrationNationalityID() {
         return registrationNationalityID;
@@ -120,35 +133,40 @@ public class TransportMeansType {
     /**
      * Define el valor de la propiedad registrationNationalityID.
      *
-     * @param value allowed object is
-     *              {@link RegistrationNationalityIDType }
+     * @param value
+     *     allowed object is
+     *     {@link RegistrationNationalityIDType }
+     *     
      */
     public void setRegistrationNationalityID(RegistrationNationalityIDType value) {
         this.registrationNationalityID = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Transport Means. Registration_ Nationality. Text&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Name of the country in which a means of transport is registered.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..n&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Transport Means&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Registration&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Nationality&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Text&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Text. Type&lt;/ccts:DataType&gt;&lt;ccts:AlternativeBusinessTerms&gt;Flag of Vessel, Nationality of Ship&lt;/ccts:AlternativeBusinessTerms&gt;&lt;ccts:Examples&gt;Liberia&lt;/ccts:Examples&gt;&lt;/ccts:Component&gt;
      * </pre>
      * Gets the value of the registrationNationality property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the registrationNationality property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getRegistrationNationality().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     *
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link RegistrationNationalityType }
+     *
+     * 
      */
     public List<RegistrationNationalityType> getRegistrationNationality() {
         if (registrationNationality == null) {
@@ -158,12 +176,16 @@ public class TransportMeansType {
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Transport Means. Direction Code. Code&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The direction of the transport means.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Transport Means&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Direction Code&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Code&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Code. Type&lt;/ccts:DataType&gt;&lt;ccts:AlternativeBusinessTerms&gt;Transit Direction&lt;/ccts:AlternativeBusinessTerms&gt;&lt;ccts:Examples&gt;"North","East"&lt;/ccts:Examples&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link DirectionCodeType }
+     *
+     * @return
+     *     possible object is
+     *     {@link DirectionCodeType }
+     *     
      */
     public DirectionCodeType getDirectionCode() {
         return directionCode;
@@ -172,20 +194,26 @@ public class TransportMeansType {
     /**
      * Define el valor de la propiedad directionCode.
      *
-     * @param value allowed object is
-     *              {@link DirectionCodeType }
+     * @param value
+     *     allowed object is
+     *     {@link DirectionCodeType }
+     *     
      */
     public void setDirectionCode(DirectionCodeType value) {
         this.directionCode = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Transport Means. Stowage&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Association to a location on board a means of transport where specified goods or transport equipment have been or are to be stowed.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Transport Means&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Stowage&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Stowage&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link StowageType }
+     *
+     * @return
+     *     possible object is
+     *     {@link StowageType }
+     *     
      */
     public StowageType getStowage() {
         return stowage;
@@ -194,20 +222,26 @@ public class TransportMeansType {
     /**
      * Define el valor de la propiedad stowage.
      *
-     * @param value allowed object is
-     *              {@link StowageType }
+     * @param value
+     *     allowed object is
+     *     {@link StowageType }
+     *     
      */
     public void setStowage(StowageType value) {
         this.stowage = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Transport Means. Air Transport&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Association to identify an aircraft.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Transport Means&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Air Transport&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Air Transport&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link AirTransportType }
+     *
+     * @return
+     *     possible object is
+     *     {@link AirTransportType }
+     *     
      */
     public AirTransportType getAirTransport() {
         return airTransport;
@@ -216,20 +250,26 @@ public class TransportMeansType {
     /**
      * Define el valor de la propiedad airTransport.
      *
-     * @param value allowed object is
-     *              {@link AirTransportType }
+     * @param value
+     *     allowed object is
+     *     {@link AirTransportType }
+     *     
      */
     public void setAirTransport(AirTransportType value) {
         this.airTransport = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Transport Means. Road Transport&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Association to identify a road vehicle.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Transport Means&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Road Transport&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Road Transport&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link RoadTransportType }
+     *
+     * @return
+     *     possible object is
+     *     {@link RoadTransportType }
+     *     
      */
     public RoadTransportType getRoadTransport() {
         return roadTransport;
@@ -238,20 +278,26 @@ public class TransportMeansType {
     /**
      * Define el valor de la propiedad roadTransport.
      *
-     * @param value allowed object is
-     *              {@link RoadTransportType }
+     * @param value
+     *     allowed object is
+     *     {@link RoadTransportType }
+     *     
      */
     public void setRoadTransport(RoadTransportType value) {
         this.roadTransport = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Transport Means. Rail Transport&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Association to identify a train.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Transport Means&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Rail Transport&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Rail Transport&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link RailTransportType }
+     *
+     * @return
+     *     possible object is
+     *     {@link RailTransportType }
+     *     
      */
     public RailTransportType getRailTransport() {
         return railTransport;
@@ -260,20 +306,26 @@ public class TransportMeansType {
     /**
      * Define el valor de la propiedad railTransport.
      *
-     * @param value allowed object is
-     *              {@link RailTransportType }
+     * @param value
+     *     allowed object is
+     *     {@link RailTransportType }
+     *     
      */
     public void setRailTransport(RailTransportType value) {
         this.railTransport = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Transport Means. Maritime Transport&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Association to identify a ship.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Transport Means&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Maritime Transport&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Maritime Transport&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link MaritimeTransportType }
+     *
+     * @return
+     *     possible object is
+     *     {@link MaritimeTransportType }
+     *     
      */
     public MaritimeTransportType getMaritimeTransport() {
         return maritimeTransport;
@@ -282,20 +334,26 @@ public class TransportMeansType {
     /**
      * Define el valor de la propiedad maritimeTransport.
      *
-     * @param value allowed object is
-     *              {@link MaritimeTransportType }
+     * @param value
+     *     allowed object is
+     *     {@link MaritimeTransportType }
+     *     
      */
     public void setMaritimeTransport(MaritimeTransportType value) {
         this.maritimeTransport = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Transport Means. Owner_ Party. Party&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Association to the party owning the means of transport.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Transport Means&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Owner&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Party&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Party&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link PartyType }
+     *
+     * @return
+     *     possible object is
+     *     {@link PartyType }
+     *     
      */
     public PartyType getOwnerParty() {
         return ownerParty;
@@ -304,8 +362,10 @@ public class TransportMeansType {
     /**
      * Define el valor de la propiedad ownerParty.
      *
-     * @param value allowed object is
-     *              {@link PartyType }
+     * @param value
+     *     allowed object is
+     *     {@link PartyType }
+     *     
      */
     public void setOwnerParty(PartyType value) {
         this.ownerParty = value;

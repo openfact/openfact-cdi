@@ -15,15 +15,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
+ * 
  * <pre>
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ABIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Tax Category. Details&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Information about a tax category.&lt;/ccts:Definition&gt;&lt;ccts:ObjectClass&gt;Tax Category&lt;/ccts:ObjectClass&gt;&lt;/ccts:Component&gt;
  * </pre>
- * <p>
- * <p>
+ *
+ * 
  * <p>Clase Java para TaxCategoryType complex type.
- * <p>
+ * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * <p>
+ * 
  * <pre>
  * &lt;complexType name="TaxCategoryType"&gt;
  *   &lt;complexContent&gt;
@@ -44,6 +45,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
+ *
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "TaxCategoryType", namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", propOrder = {
@@ -82,12 +85,16 @@ public class TaxCategoryType {
     protected TaxSchemeType taxScheme;
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Tax Category. Identifier&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Identifies the tax category.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Tax Category&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Identifier&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Identifier&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Identifier. Type&lt;/ccts:DataType&gt;&lt;ccts:Examples&gt;"ZeroRatedGoods" "NotTaxable" "Standard Rate"&lt;/ccts:Examples&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link IDType }
+     *
+     * @return
+     *     possible object is
+     *     {@link IDType }
+     *     
      */
     public IDType getID() {
         return id;
@@ -96,20 +103,26 @@ public class TaxCategoryType {
     /**
      * Define el valor de la propiedad id.
      *
-     * @param value allowed object is
-     *              {@link IDType }
+     * @param value
+     *     allowed object is
+     *     {@link IDType }
+     *     
      */
     public void setID(IDType value) {
         this.id = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Tax Category. Name&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The name of the tax category.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Tax Category&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Name&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Name&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Name. Type&lt;/ccts:DataType&gt;&lt;ccts:Examples&gt;"Luxury Goods","Wine Equalization", "Exempt"&lt;/ccts:Examples&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link NameTypeCommBas }
+     *
+     * @return
+     *     possible object is
+     *     {@link NameTypeCommBas }
+     *     
      */
     public NameTypeCommBas getName() {
         return name;
@@ -118,20 +131,26 @@ public class TaxCategoryType {
     /**
      * Define el valor de la propiedad name.
      *
-     * @param value allowed object is
-     *              {@link NameTypeCommBas }
+     * @param value
+     *     allowed object is
+     *     {@link NameTypeCommBas }
+     *     
      */
     public void setName(NameTypeCommBas value) {
         this.name = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Tax Category. Percent&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The tax rate for the category, expressed as a percentage.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Tax Category&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Percent&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Percent&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Percent. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link PercentType }
+     *
+     * @return
+     *     possible object is
+     *     {@link PercentType }
+     *     
      */
     public PercentType getPercent() {
         return percent;
@@ -140,20 +159,26 @@ public class TaxCategoryType {
     /**
      * Define el valor de la propiedad percent.
      *
-     * @param value allowed object is
-     *              {@link PercentType }
+     * @param value
+     *     allowed object is
+     *     {@link PercentType }
+     *     
      */
     public void setPercent(PercentType value) {
         this.percent = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Tax Category. Base Unit Measure. Measure&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Where a tax is applied at a certain rate per unit, the measure of units on which the tax calculation is based.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Tax Category&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Base Unit Measure&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Measure&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Measure. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link BaseUnitMeasureType }
+     *
+     * @return
+     *     possible object is
+     *     {@link BaseUnitMeasureType }
+     *     
      */
     public BaseUnitMeasureType getBaseUnitMeasure() {
         return baseUnitMeasure;
@@ -162,20 +187,26 @@ public class TaxCategoryType {
     /**
      * Define el valor de la propiedad baseUnitMeasure.
      *
-     * @param value allowed object is
-     *              {@link BaseUnitMeasureType }
+     * @param value
+     *     allowed object is
+     *     {@link BaseUnitMeasureType }
+     *     
      */
     public void setBaseUnitMeasure(BaseUnitMeasureType value) {
         this.baseUnitMeasure = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Tax Category. Per Unit_ Amount. Amount&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Where a tax is applied at a certain rate per unit, the rate per unit applied.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Tax Category&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Per Unit&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Amount&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Amount&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Amount. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link PerUnitAmountType }
+     *
+     * @return
+     *     possible object is
+     *     {@link PerUnitAmountType }
+     *     
      */
     public PerUnitAmountType getPerUnitAmount() {
         return perUnitAmount;
@@ -184,20 +215,26 @@ public class TaxCategoryType {
     /**
      * Define el valor de la propiedad perUnitAmount.
      *
-     * @param value allowed object is
-     *              {@link PerUnitAmountType }
+     * @param value
+     *     allowed object is
+     *     {@link PerUnitAmountType }
+     *     
      */
     public void setPerUnitAmount(PerUnitAmountType value) {
         this.perUnitAmount = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Tax Category. Tax Exemption Reason Code. Code&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The reason for tax being exempted expressed as a code.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Tax Category&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Tax Exemption Reason Code&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Code&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Code. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link TaxExemptionReasonCodeType }
+     *
+     * @return
+     *     possible object is
+     *     {@link TaxExemptionReasonCodeType }
+     *     
      */
     public TaxExemptionReasonCodeType getTaxExemptionReasonCode() {
         return taxExemptionReasonCode;
@@ -206,20 +243,26 @@ public class TaxCategoryType {
     /**
      * Define el valor de la propiedad taxExemptionReasonCode.
      *
-     * @param value allowed object is
-     *              {@link TaxExemptionReasonCodeType }
+     * @param value
+     *     allowed object is
+     *     {@link TaxExemptionReasonCodeType }
+     *     
      */
     public void setTaxExemptionReasonCode(TaxExemptionReasonCodeType value) {
         this.taxExemptionReasonCode = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Tax Category. Tax Exemption Reason. Text&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The reason for tax being exempted.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Tax Category&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Tax Exemption Reason&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Text&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Text. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link TaxExemptionReasonType }
+     *
+     * @return
+     *     possible object is
+     *     {@link TaxExemptionReasonType }
+     *     
      */
     public TaxExemptionReasonType getTaxExemptionReason() {
         return taxExemptionReason;
@@ -228,20 +271,26 @@ public class TaxCategoryType {
     /**
      * Define el valor de la propiedad taxExemptionReason.
      *
-     * @param value allowed object is
-     *              {@link TaxExemptionReasonType }
+     * @param value
+     *     allowed object is
+     *     {@link TaxExemptionReasonType }
+     *     
      */
     public void setTaxExemptionReason(TaxExemptionReasonType value) {
         this.taxExemptionReason = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Tax Category. Tier Range. Text&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Where a tax is tiered, the range of tiers applied in the calculation of the tax subtotal for the tax category.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Tax Category&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Tier Range&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Text&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Text. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link TierRangeType }
+     *
+     * @return
+     *     possible object is
+     *     {@link TierRangeType }
+     *     
      */
     public TierRangeType getTierRange() {
         return tierRange;
@@ -250,20 +299,26 @@ public class TaxCategoryType {
     /**
      * Define el valor de la propiedad tierRange.
      *
-     * @param value allowed object is
-     *              {@link TierRangeType }
+     * @param value
+     *     allowed object is
+     *     {@link TierRangeType }
+     *     
      */
     public void setTierRange(TierRangeType value) {
         this.tierRange = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Tax Category. Tier Rate. Percent&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Where a tax is tiered, the rate of tax applied to the range of tiers in the calculation of the tax subtotal for the tax category.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Tax Category&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Tier Rate&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Percent&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Percent. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link TierRatePercentType }
+     *
+     * @return
+     *     possible object is
+     *     {@link TierRatePercentType }
+     *     
      */
     public TierRatePercentType getTierRatePercent() {
         return tierRatePercent;
@@ -272,20 +327,26 @@ public class TaxCategoryType {
     /**
      * Define el valor de la propiedad tierRatePercent.
      *
-     * @param value allowed object is
-     *              {@link TierRatePercentType }
+     * @param value
+     *     allowed object is
+     *     {@link TierRatePercentType }
+     *     
      */
     public void setTierRatePercent(TierRatePercentType value) {
         this.tierRatePercent = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Tax Category. Tax Scheme&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to Tax Scheme.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Tax Category&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Tax Scheme&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Tax Scheme&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link TaxSchemeType }
+     *
+     * @return
+     *     possible object is
+     *     {@link TaxSchemeType }
+     *     
      */
     public TaxSchemeType getTaxScheme() {
         return taxScheme;
@@ -294,8 +355,10 @@ public class TaxCategoryType {
     /**
      * Define el valor de la propiedad taxScheme.
      *
-     * @param value allowed object is
-     *              {@link TaxSchemeType }
+     * @param value
+     *     allowed object is
+     *     {@link TaxSchemeType }
+     *     
      */
     public void setTaxScheme(TaxSchemeType value) {
         this.taxScheme = value;

@@ -18,9 +18,9 @@ import java.util.List;
 
 /**
  * <p>Clase Java para SUNATShipmentType complex type.
- * <p>
+ * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * <p>
+ * 
  * <pre>
  * &lt;complexType name="SUNATShipmentType"&gt;
  *   &lt;complexContent&gt;
@@ -37,6 +37,8 @@ import java.util.List;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
+ *
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "SUNATShipmentType", namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", propOrder = {
@@ -65,8 +67,10 @@ public class SUNATShipmentType {
     /**
      * Obtiene el valor de la propiedad grossWeightMeasure.
      *
-     * @return possible object is
-     * {@link GrossWeightMeasureType }
+     * @return
+     *     possible object is
+     *     {@link GrossWeightMeasureType }
+     *     
      */
     public GrossWeightMeasureType getGrossWeightMeasure() {
         return grossWeightMeasure;
@@ -75,8 +79,10 @@ public class SUNATShipmentType {
     /**
      * Define el valor de la propiedad grossWeightMeasure.
      *
-     * @param value allowed object is
-     *              {@link GrossWeightMeasureType }
+     * @param value
+     *     allowed object is
+     *     {@link GrossWeightMeasureType }
+     *     
      */
     public void setGrossWeightMeasure(GrossWeightMeasureType value) {
         this.grossWeightMeasure = value;
@@ -85,8 +91,10 @@ public class SUNATShipmentType {
     /**
      * Obtiene el valor de la propiedad deliveryAddress.
      *
-     * @return possible object is
-     * {@link AddressType }
+     * @return
+     *     possible object is
+     *     {@link AddressType }
+     *     
      */
     public AddressType getDeliveryAddress() {
         return deliveryAddress;
@@ -95,8 +103,10 @@ public class SUNATShipmentType {
     /**
      * Define el valor de la propiedad deliveryAddress.
      *
-     * @param value allowed object is
-     *              {@link AddressType }
+     * @param value
+     *     allowed object is
+     *     {@link AddressType }
+     *     
      */
     public void setDeliveryAddress(AddressType value) {
         this.deliveryAddress = value;
@@ -105,8 +115,10 @@ public class SUNATShipmentType {
     /**
      * Obtiene el valor de la propiedad originAddress.
      *
-     * @return possible object is
-     * {@link AddressType }
+     * @return
+     *     possible object is
+     *     {@link AddressType }
+     *     
      */
     public AddressType getOriginAddress() {
         return originAddress;
@@ -115,8 +127,10 @@ public class SUNATShipmentType {
     /**
      * Define el valor de la propiedad originAddress.
      *
-     * @param value allowed object is
-     *              {@link AddressType }
+     * @param value
+     *     allowed object is
+     *     {@link AddressType }
+     *     
      */
     public void setOriginAddress(AddressType value) {
         this.originAddress = value;
@@ -125,8 +139,10 @@ public class SUNATShipmentType {
     /**
      * Obtiene el valor de la propiedad oldDeliveryAddress.
      *
-     * @return possible object is
-     * {@link AddressType }
+     * @return
+     *     possible object is
+     *     {@link AddressType }
+     *     
      */
     public AddressType getOldDeliveryAddress() {
         return oldDeliveryAddress;
@@ -135,8 +151,10 @@ public class SUNATShipmentType {
     /**
      * Define el valor de la propiedad oldDeliveryAddress.
      *
-     * @param value allowed object is
-     *              {@link AddressType }
+     * @param value
+     *     allowed object is
+     *     {@link AddressType }
+     *     
      */
     public void setOldDeliveryAddress(AddressType value) {
         this.oldDeliveryAddress = value;
@@ -145,8 +163,10 @@ public class SUNATShipmentType {
     /**
      * Obtiene el valor de la propiedad oldOriginAddress.
      *
-     * @return possible object is
-     * {@link AddressType }
+     * @return
+     *     possible object is
+     *     {@link AddressType }
+     *     
      */
     public AddressType getOldOriginAddress() {
         return oldOriginAddress;
@@ -155,8 +175,10 @@ public class SUNATShipmentType {
     /**
      * Define el valor de la propiedad oldOriginAddress.
      *
-     * @param value allowed object is
-     *              {@link AddressType }
+     * @param value
+     *     allowed object is
+     *     {@link AddressType }
+     *     
      */
     public void setOldOriginAddress(AddressType value) {
         this.oldOriginAddress = value;
@@ -164,23 +186,25 @@ public class SUNATShipmentType {
 
     /**
      * Gets the value of the sunatShipmentStage property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the sunatShipmentStage property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getSUNATShipmentStage().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     *
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link SUNATShipmentStageType }
+     *
+     * 
      */
     public List<SUNATShipmentStageType> getSUNATShipmentStage() {
         if (sunatShipmentStage == null) {

@@ -18,9 +18,9 @@ import java.util.List;
 
 /**
  * <p>Clase Java para SUNATDespatchLineType complex type.
- * <p>
+ * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * <p>
+ * 
  * <pre>
  * &lt;complexType name="SUNATDespatchLineType"&gt;
  *   &lt;complexContent&gt;
@@ -46,6 +46,8 @@ import java.util.List;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
+ *
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "SUNATDespatchLineType", namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", propOrder = {
@@ -101,8 +103,10 @@ public class SUNATDespatchLineType {
     /**
      * Obtiene el valor de la propiedad id.
      *
-     * @return possible object is
-     * {@link IDType }
+     * @return
+     *     possible object is
+     *     {@link IDType }
+     *     
      */
     public IDType getID() {
         return id;
@@ -111,8 +115,10 @@ public class SUNATDespatchLineType {
     /**
      * Define el valor de la propiedad id.
      *
-     * @param value allowed object is
-     *              {@link IDType }
+     * @param value
+     *     allowed object is
+     *     {@link IDType }
+     *     
      */
     public void setID(IDType value) {
         this.id = value;
@@ -121,8 +127,10 @@ public class SUNATDespatchLineType {
     /**
      * Obtiene el valor de la propiedad uuid.
      *
-     * @return possible object is
-     * {@link UUIDType }
+     * @return
+     *     possible object is
+     *     {@link UUIDType }
+     *     
      */
     public UUIDType getUUID() {
         return uuid;
@@ -131,8 +139,10 @@ public class SUNATDespatchLineType {
     /**
      * Define el valor de la propiedad uuid.
      *
-     * @param value allowed object is
-     *              {@link UUIDType }
+     * @param value
+     *     allowed object is
+     *     {@link UUIDType }
+     *     
      */
     public void setUUID(UUIDType value) {
         this.uuid = value;
@@ -141,8 +151,10 @@ public class SUNATDespatchLineType {
     /**
      * Obtiene el valor de la propiedad note.
      *
-     * @return possible object is
-     * {@link NoteType }
+     * @return
+     *     possible object is
+     *     {@link NoteType }
+     *     
      */
     public NoteType getNote() {
         return note;
@@ -151,8 +163,10 @@ public class SUNATDespatchLineType {
     /**
      * Define el valor de la propiedad note.
      *
-     * @param value allowed object is
-     *              {@link NoteType }
+     * @param value
+     *     allowed object is
+     *     {@link NoteType }
+     *     
      */
     public void setNote(NoteType value) {
         this.note = value;
@@ -161,8 +175,10 @@ public class SUNATDespatchLineType {
     /**
      * Obtiene el valor de la propiedad lineStatusCode.
      *
-     * @return possible object is
-     * {@link LineStatusCodeTypeCommBas }
+     * @return
+     *     possible object is
+     *     {@link LineStatusCodeTypeCommBas }
+     *     
      */
     public LineStatusCodeTypeCommBas getLineStatusCode() {
         return lineStatusCode;
@@ -171,8 +187,10 @@ public class SUNATDespatchLineType {
     /**
      * Define el valor de la propiedad lineStatusCode.
      *
-     * @param value allowed object is
-     *              {@link LineStatusCodeTypeCommBas }
+     * @param value
+     *     allowed object is
+     *     {@link LineStatusCodeTypeCommBas }
+     *     
      */
     public void setLineStatusCode(LineStatusCodeTypeCommBas value) {
         this.lineStatusCode = value;
@@ -181,8 +199,10 @@ public class SUNATDespatchLineType {
     /**
      * Obtiene el valor de la propiedad deliveredQuantity.
      *
-     * @return possible object is
-     * {@link DeliveredQuantityType }
+     * @return
+     *     possible object is
+     *     {@link DeliveredQuantityType }
+     *     
      */
     public DeliveredQuantityType getDeliveredQuantity() {
         return deliveredQuantity;
@@ -191,8 +211,10 @@ public class SUNATDespatchLineType {
     /**
      * Define el valor de la propiedad deliveredQuantity.
      *
-     * @param value allowed object is
-     *              {@link DeliveredQuantityType }
+     * @param value
+     *     allowed object is
+     *     {@link DeliveredQuantityType }
+     *     
      */
     public void setDeliveredQuantity(DeliveredQuantityType value) {
         this.deliveredQuantity = value;
@@ -201,8 +223,10 @@ public class SUNATDespatchLineType {
     /**
      * Obtiene el valor de la propiedad backorderQuantity.
      *
-     * @return possible object is
-     * {@link BackorderQuantityType }
+     * @return
+     *     possible object is
+     *     {@link BackorderQuantityType }
+     *     
      */
     public BackorderQuantityType getBackorderQuantity() {
         return backorderQuantity;
@@ -211,8 +235,10 @@ public class SUNATDespatchLineType {
     /**
      * Define el valor de la propiedad backorderQuantity.
      *
-     * @param value allowed object is
-     *              {@link BackorderQuantityType }
+     * @param value
+     *     allowed object is
+     *     {@link BackorderQuantityType }
+     *     
      */
     public void setBackorderQuantity(BackorderQuantityType value) {
         this.backorderQuantity = value;
@@ -221,8 +247,10 @@ public class SUNATDespatchLineType {
     /**
      * Obtiene el valor de la propiedad backorderReason.
      *
-     * @return possible object is
-     * {@link BackorderReasonType }
+     * @return
+     *     possible object is
+     *     {@link BackorderReasonType }
+     *     
      */
     public BackorderReasonType getBackorderReason() {
         return backorderReason;
@@ -231,8 +259,10 @@ public class SUNATDespatchLineType {
     /**
      * Define el valor de la propiedad backorderReason.
      *
-     * @param value allowed object is
-     *              {@link BackorderReasonType }
+     * @param value
+     *     allowed object is
+     *     {@link BackorderReasonType }
+     *     
      */
     public void setBackorderReason(BackorderReasonType value) {
         this.backorderReason = value;
@@ -241,8 +271,10 @@ public class SUNATDespatchLineType {
     /**
      * Obtiene el valor de la propiedad outstandingQuantity.
      *
-     * @return possible object is
-     * {@link OutstandingQuantityType }
+     * @return
+     *     possible object is
+     *     {@link OutstandingQuantityType }
+     *     
      */
     public OutstandingQuantityType getOutstandingQuantity() {
         return outstandingQuantity;
@@ -251,8 +283,10 @@ public class SUNATDespatchLineType {
     /**
      * Define el valor de la propiedad outstandingQuantity.
      *
-     * @param value allowed object is
-     *              {@link OutstandingQuantityType }
+     * @param value
+     *     allowed object is
+     *     {@link OutstandingQuantityType }
+     *     
      */
     public void setOutstandingQuantity(OutstandingQuantityType value) {
         this.outstandingQuantity = value;
@@ -261,8 +295,10 @@ public class SUNATDespatchLineType {
     /**
      * Obtiene el valor de la propiedad outstandingReason.
      *
-     * @return possible object is
-     * {@link OutstandingReasonType }
+     * @return
+     *     possible object is
+     *     {@link OutstandingReasonType }
+     *     
      */
     public OutstandingReasonType getOutstandingReason() {
         return outstandingReason;
@@ -271,8 +307,10 @@ public class SUNATDespatchLineType {
     /**
      * Define el valor de la propiedad outstandingReason.
      *
-     * @param value allowed object is
-     *              {@link OutstandingReasonType }
+     * @param value
+     *     allowed object is
+     *     {@link OutstandingReasonType }
+     *     
      */
     public void setOutstandingReason(OutstandingReasonType value) {
         this.outstandingReason = value;
@@ -281,8 +319,10 @@ public class SUNATDespatchLineType {
     /**
      * Obtiene el valor de la propiedad oversupplyQuantity.
      *
-     * @return possible object is
-     * {@link OversupplyQuantityType }
+     * @return
+     *     possible object is
+     *     {@link OversupplyQuantityType }
+     *     
      */
     public OversupplyQuantityType getOversupplyQuantity() {
         return oversupplyQuantity;
@@ -291,8 +331,10 @@ public class SUNATDespatchLineType {
     /**
      * Define el valor de la propiedad oversupplyQuantity.
      *
-     * @param value allowed object is
-     *              {@link OversupplyQuantityType }
+     * @param value
+     *     allowed object is
+     *     {@link OversupplyQuantityType }
+     *     
      */
     public void setOversupplyQuantity(OversupplyQuantityType value) {
         this.oversupplyQuantity = value;
@@ -300,23 +342,25 @@ public class SUNATDespatchLineType {
 
     /**
      * Gets the value of the orderLineReference property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the orderLineReference property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getOrderLineReference().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     *
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link OrderLineReferenceType }
+     *
+     * 
      */
     public List<OrderLineReferenceType> getOrderLineReference() {
         if (orderLineReference == null) {
@@ -327,23 +371,25 @@ public class SUNATDespatchLineType {
 
     /**
      * Gets the value of the documentReference property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the documentReference property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getDocumentReference().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     *
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link DocumentReferenceType }
+     *
+     * 
      */
     public List<DocumentReferenceType> getDocumentReference() {
         if (documentReference == null) {
@@ -355,8 +401,10 @@ public class SUNATDespatchLineType {
     /**
      * Obtiene el valor de la propiedad item.
      *
-     * @return possible object is
-     * {@link ItemType }
+     * @return
+     *     possible object is
+     *     {@link ItemType }
+     *     
      */
     public ItemType getItem() {
         return item;
@@ -365,8 +413,10 @@ public class SUNATDespatchLineType {
     /**
      * Define el valor de la propiedad item.
      *
-     * @param value allowed object is
-     *              {@link ItemType }
+     * @param value
+     *     allowed object is
+     *     {@link ItemType }
+     *     
      */
     public void setItem(ItemType value) {
         this.item = value;
@@ -375,8 +425,10 @@ public class SUNATDespatchLineType {
     /**
      * Obtiene el valor de la propiedad grossWeightMeasure.
      *
-     * @return possible object is
-     * {@link GrossWeightMeasureType }
+     * @return
+     *     possible object is
+     *     {@link GrossWeightMeasureType }
+     *     
      */
     public GrossWeightMeasureType getGrossWeightMeasure() {
         return grossWeightMeasure;
@@ -385,8 +437,10 @@ public class SUNATDespatchLineType {
     /**
      * Define el valor de la propiedad grossWeightMeasure.
      *
-     * @param value allowed object is
-     *              {@link GrossWeightMeasureType }
+     * @param value
+     *     allowed object is
+     *     {@link GrossWeightMeasureType }
+     *     
      */
     public void setGrossWeightMeasure(GrossWeightMeasureType value) {
         this.grossWeightMeasure = value;
@@ -394,23 +448,25 @@ public class SUNATDespatchLineType {
 
     /**
      * Gets the value of the shipment property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the shipment property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getShipment().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     *
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link ShipmentType }
+     *
+     * 
      */
     public List<ShipmentType> getShipment() {
         if (shipment == null) {

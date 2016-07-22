@@ -16,9 +16,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Clase Java para SUNATFiscalPathType complex type.
- * <p>
+ * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * <p>
+ * 
  * <pre>
  * &lt;complexType name="SUNATFiscalPathType"&gt;
  *   &lt;complexContent&gt;
@@ -31,6 +31,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
+ *
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "SUNATFiscalPathType", namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", propOrder = {
@@ -47,8 +49,10 @@ public class SUNATFiscalPathType {
     /**
      * Obtiene el valor de la propiedad id.
      *
-     * @return possible object is
-     * {@link IDType }
+     * @return
+     *     possible object is
+     *     {@link IDType }
+     *     
      */
     public IDType getID() {
         return id;
@@ -57,8 +61,10 @@ public class SUNATFiscalPathType {
     /**
      * Define el valor de la propiedad id.
      *
-     * @param value allowed object is
-     *              {@link IDType }
+     * @param value
+     *     allowed object is
+     *     {@link IDType }
+     *     
      */
     public void setID(IDType value) {
         this.id = value;
@@ -67,8 +73,10 @@ public class SUNATFiscalPathType {
     /**
      * Obtiene el valor de la propiedad name.
      *
-     * @return possible object is
-     * {@link NameTypeCommBas }
+     * @return
+     *     possible object is
+     *     {@link NameTypeCommBas }
+     *     
      */
     public NameTypeCommBas getName() {
         return name;
@@ -77,8 +85,10 @@ public class SUNATFiscalPathType {
     /**
      * Define el valor de la propiedad name.
      *
-     * @param value allowed object is
-     *              {@link NameTypeCommBas }
+     * @param value
+     *     allowed object is
+     *     {@link NameTypeCommBas }
+     *     
      */
     public void setName(NameTypeCommBas value) {
         this.name = value;

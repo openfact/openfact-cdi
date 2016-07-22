@@ -18,9 +18,9 @@ import java.util.List;
 
 /**
  * <p>Clase Java para SUNATTransportMeansType complex type.
- * <p>
+ * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * <p>
+ * 
  * <pre>
  * &lt;complexType name="SUNATTransportMeansType"&gt;
  *   &lt;complexContent&gt;
@@ -33,6 +33,8 @@ import java.util.List;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
+ *
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "SUNATTransportMeansType", namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", propOrder = {
@@ -49,23 +51,25 @@ public class SUNATTransportMeansType
 
     /**
      * Gets the value of the driverParty property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the driverParty property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getDriverParty().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     *
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link DriverPartyType }
+     *
+     * 
      */
     public List<DriverPartyType> getDriverParty() {
         if (driverParty == null) {
@@ -76,23 +80,25 @@ public class SUNATTransportMeansType
 
     /**
      * Gets the value of the sunatRoadTransport property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the sunatRoadTransport property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getSUNATRoadTransport().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     *
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link SUNATRoadTransportType }
+     *
+     * 
      */
     public List<SUNATRoadTransportType> getSUNATRoadTransport() {
         if (sunatRoadTransport == null) {

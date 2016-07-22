@@ -15,13 +15,14 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * A single extension for private use.
- * <p>
- * <p>
+ *
+ *         A single extension for private use.
+ *
+ * 
  * <p>Clase Java para UBLExtensionType complex type.
- * <p>
+ * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * <p>
+ * 
  * <pre>
  * &lt;complexType name="UBLExtensionType"&gt;
  *   &lt;complexContent&gt;
@@ -42,6 +43,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
+ *
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "UBLExtensionType", namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", propOrder = {
@@ -80,12 +83,16 @@ public class UBLExtensionType {
     protected ExtensionContentType extensionContent;
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Extension. Identifier&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Version/&gt;&lt;ccts:Definition&gt;An identifier for the Extension assigned by the creator of the extension.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Extension&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Identifier&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Identifier&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Identifier. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link IDType }
+     *
+     * @return
+     *     possible object is
+     *     {@link IDType }
+     *     
      */
     public IDType getID() {
         return id;
@@ -94,20 +101,26 @@ public class UBLExtensionType {
     /**
      * Define el valor de la propiedad id.
      *
-     * @param value allowed object is
-     *              {@link IDType }
+     * @param value
+     *     allowed object is
+     *     {@link IDType }
+     *     
      */
     public void setID(IDType value) {
         this.id = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Extension. Name&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Version/&gt;&lt;ccts:Definition&gt;A name for the Extension assigned by the creator of the extension.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Extension&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Name&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Name&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Name. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link NameTypeCommBas }
+     *
+     * @return
+     *     possible object is
+     *     {@link NameTypeCommBas }
+     *     
      */
     public NameTypeCommBas getName() {
         return name;
@@ -116,18 +129,24 @@ public class UBLExtensionType {
     /**
      * Define el valor de la propiedad name.
      *
-     * @param value allowed object is
-     *              {@link NameTypeCommBas }
+     * @param value
+     *     allowed object is
+     *     {@link NameTypeCommBas }
+     *     
      */
     public void setName(NameTypeCommBas value) {
         this.name = value;
     }
 
     /**
-     * An agency that maintains one or more Extensions.
      *
-     * @return possible object is
-     * {@link ExtensionAgencyIDType }
+     *             An agency that maintains one or more Extensions.
+     *
+     *
+     * @return
+     *     possible object is
+     *     {@link ExtensionAgencyIDType }
+     *     
      */
     public ExtensionAgencyIDType getExtensionAgencyID() {
         return extensionAgencyID;
@@ -136,18 +155,24 @@ public class UBLExtensionType {
     /**
      * Define el valor de la propiedad extensionAgencyID.
      *
-     * @param value allowed object is
-     *              {@link ExtensionAgencyIDType }
+     * @param value
+     *     allowed object is
+     *     {@link ExtensionAgencyIDType }
+     *     
      */
     public void setExtensionAgencyID(ExtensionAgencyIDType value) {
         this.extensionAgencyID = value;
     }
 
     /**
-     * The name of the agency that maintains the Extension.
      *
-     * @return possible object is
-     * {@link ExtensionAgencyNameType }
+     *             The name of the agency that maintains the Extension.
+     *
+     *
+     * @return
+     *     possible object is
+     *     {@link ExtensionAgencyNameType }
+     *     
      */
     public ExtensionAgencyNameType getExtensionAgencyName() {
         return extensionAgencyName;
@@ -156,18 +181,24 @@ public class UBLExtensionType {
     /**
      * Define el valor de la propiedad extensionAgencyName.
      *
-     * @param value allowed object is
-     *              {@link ExtensionAgencyNameType }
+     * @param value
+     *     allowed object is
+     *     {@link ExtensionAgencyNameType }
+     *     
      */
     public void setExtensionAgencyName(ExtensionAgencyNameType value) {
         this.extensionAgencyName = value;
     }
 
     /**
-     * The version of the Extension.
      *
-     * @return possible object is
-     * {@link ExtensionVersionIDType }
+     *             The version of the Extension.
+     *
+     *
+     * @return
+     *     possible object is
+     *     {@link ExtensionVersionIDType }
+     *     
      */
     public ExtensionVersionIDType getExtensionVersionID() {
         return extensionVersionID;
@@ -176,18 +207,24 @@ public class UBLExtensionType {
     /**
      * Define el valor de la propiedad extensionVersionID.
      *
-     * @param value allowed object is
-     *              {@link ExtensionVersionIDType }
+     * @param value
+     *     allowed object is
+     *     {@link ExtensionVersionIDType }
+     *     
      */
     public void setExtensionVersionID(ExtensionVersionIDType value) {
         this.extensionVersionID = value;
     }
 
     /**
-     * A URI for the Agency that maintains the Extension.
      *
-     * @return possible object is
-     * {@link ExtensionAgencyURIType }
+     *             A URI for the Agency that maintains the Extension.
+     *
+     *
+     * @return
+     *     possible object is
+     *     {@link ExtensionAgencyURIType }
+     *     
      */
     public ExtensionAgencyURIType getExtensionAgencyURI() {
         return extensionAgencyURI;
@@ -196,18 +233,24 @@ public class UBLExtensionType {
     /**
      * Define el valor de la propiedad extensionAgencyURI.
      *
-     * @param value allowed object is
-     *              {@link ExtensionAgencyURIType }
+     * @param value
+     *     allowed object is
+     *     {@link ExtensionAgencyURIType }
+     *     
      */
     public void setExtensionAgencyURI(ExtensionAgencyURIType value) {
         this.extensionAgencyURI = value;
     }
 
     /**
-     * A URI for the Extension.
      *
-     * @return possible object is
-     * {@link ExtensionURIType }
+     *             A URI for the Extension.
+     *
+     *
+     * @return
+     *     possible object is
+     *     {@link ExtensionURIType }
+     *     
      */
     public ExtensionURIType getExtensionURI() {
         return extensionURI;
@@ -216,18 +259,24 @@ public class UBLExtensionType {
     /**
      * Define el valor de la propiedad extensionURI.
      *
-     * @param value allowed object is
-     *              {@link ExtensionURIType }
+     * @param value
+     *     allowed object is
+     *     {@link ExtensionURIType }
+     *     
      */
     public void setExtensionURI(ExtensionURIType value) {
         this.extensionURI = value;
     }
 
     /**
-     * A code for reason the Extension is being included.
      *
-     * @return possible object is
-     * {@link ExtensionReasonCodeType }
+     *             A code for reason the Extension is being included.
+     *
+     *
+     * @return
+     *     possible object is
+     *     {@link ExtensionReasonCodeType }
+     *     
      */
     public ExtensionReasonCodeType getExtensionReasonCode() {
         return extensionReasonCode;
@@ -236,18 +285,24 @@ public class UBLExtensionType {
     /**
      * Define el valor de la propiedad extensionReasonCode.
      *
-     * @param value allowed object is
-     *              {@link ExtensionReasonCodeType }
+     * @param value
+     *     allowed object is
+     *     {@link ExtensionReasonCodeType }
+     *     
      */
     public void setExtensionReasonCode(ExtensionReasonCodeType value) {
         this.extensionReasonCode = value;
     }
 
     /**
-     * A description of the reason for the Extension.
      *
-     * @return possible object is
-     * {@link ExtensionReasonType }
+     *             A description of the reason for the Extension.
+     *
+     *
+     * @return
+     *     possible object is
+     *     {@link ExtensionReasonType }
+     *     
      */
     public ExtensionReasonType getExtensionReason() {
         return extensionReason;
@@ -256,18 +311,24 @@ public class UBLExtensionType {
     /**
      * Define el valor de la propiedad extensionReason.
      *
-     * @param value allowed object is
-     *              {@link ExtensionReasonType }
+     * @param value
+     *     allowed object is
+     *     {@link ExtensionReasonType }
+     *     
      */
     public void setExtensionReason(ExtensionReasonType value) {
         this.extensionReason = value;
     }
 
     /**
-     * The definition of the extension content.
      *
-     * @return possible object is
-     * {@link ExtensionContentType }
+     *             The definition of the extension content.
+     *
+     *
+     * @return
+     *     possible object is
+     *     {@link ExtensionContentType }
+     *     
      */
     public ExtensionContentType getExtensionContent() {
         return extensionContent;
@@ -276,8 +337,10 @@ public class UBLExtensionType {
     /**
      * Define el valor de la propiedad extensionContent.
      *
-     * @param value allowed object is
-     *              {@link ExtensionContentType }
+     * @param value
+     *     allowed object is
+     *     {@link ExtensionContentType }
+     *     
      */
     public void setExtensionContent(ExtensionContentType value) {
         this.extensionContent = value;

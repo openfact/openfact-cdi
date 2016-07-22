@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Clase Java para BinaryObjectMimeCodeContentType.
- * <p>
+ * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * <p>
  * <pre>
@@ -640,6 +640,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/restriction&gt;
  * &lt;/simpleType&gt;
  * </pre>
+ * 
  */
 @XmlType(name = "BinaryObjectMimeCodeContentType", namespace = "urn:un:unece:uncefact:codelist:specification:IANAMIMEMediaType:2003")
 @XmlEnum

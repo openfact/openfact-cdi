@@ -15,15 +15,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
+ * 
  * <pre>
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ABIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Secondary Hazard. Details&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Information about Secondary Hazard (related to a Hazardous Item).&lt;/ccts:Definition&gt;&lt;ccts:ObjectClass&gt;Secondary Hazard&lt;/ccts:ObjectClass&gt;&lt;/ccts:Component&gt;
  * </pre>
- * <p>
- * <p>
+ *
+ * 
  * <p>Clase Java para SecondaryHazardType complex type.
- * <p>
+ * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * <p>
+ * 
  * <pre>
  * &lt;complexType name="SecondaryHazardType"&gt;
  *   &lt;complexContent&gt;
@@ -39,6 +40,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
+ *
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "SecondaryHazardType", namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", propOrder = {
@@ -62,12 +65,16 @@ public class SecondaryHazardType {
     protected ExtensionType extension;
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Secondary Hazard. Identifier&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Identifies the Secondary Hazard.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Secondary Hazard&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Identifier&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Identifier&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Identifier. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link IDType }
+     *
+     * @return
+     *     possible object is
+     *     {@link IDType }
+     *     
      */
     public IDType getID() {
         return id;
@@ -76,20 +83,26 @@ public class SecondaryHazardType {
     /**
      * Define el valor de la propiedad id.
      *
-     * @param value allowed object is
-     *              {@link IDType }
+     * @param value
+     *     allowed object is
+     *     {@link IDType }
+     *     
      */
     public void setID(IDType value) {
         this.id = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Secondary Hazard. Placard Notation. Text&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The placard notation corresponding to the hazard class of the hazardous commodity. Can also be the hazard identification number of the orange placard (upper part) required on the means of transport.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Secondary Hazard&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Placard Notation&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Text&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Text. Type&lt;/ccts:DataType&gt;&lt;ccts:Examples&gt;"5.1"&lt;/ccts:Examples&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link PlacardNotationType }
+     *
+     * @return
+     *     possible object is
+     *     {@link PlacardNotationType }
+     *     
      */
     public PlacardNotationType getPlacardNotation() {
         return placardNotation;
@@ -98,20 +111,26 @@ public class SecondaryHazardType {
     /**
      * Define el valor de la propiedad placardNotation.
      *
-     * @param value allowed object is
-     *              {@link PlacardNotationType }
+     * @param value
+     *     allowed object is
+     *     {@link PlacardNotationType }
+     *     
      */
     public void setPlacardNotation(PlacardNotationType value) {
         this.placardNotation = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Secondary Hazard. Placard Endorsement. Text&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The placard endorsement that is to be shown on the shipping papers for the hazardous commodity. Can also be used for the number of the orange placard (lower part) required on the means of transport.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Secondary Hazard&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Placard Endorsement&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Text&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Text. Type&lt;/ccts:DataType&gt;&lt;ccts:Examples&gt;"2"&lt;/ccts:Examples&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link PlacardEndorsementType }
+     *
+     * @return
+     *     possible object is
+     *     {@link PlacardEndorsementType }
+     *     
      */
     public PlacardEndorsementType getPlacardEndorsement() {
         return placardEndorsement;
@@ -120,20 +139,26 @@ public class SecondaryHazardType {
     /**
      * Define el valor de la propiedad placardEndorsement.
      *
-     * @param value allowed object is
-     *              {@link PlacardEndorsementType }
+     * @param value
+     *     allowed object is
+     *     {@link PlacardEndorsementType }
+     *     
      */
     public void setPlacardEndorsement(PlacardEndorsementType value) {
         this.placardEndorsement = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Secondary Hazard. Emergency Procedures Code. Code&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Emergency procedures for hazardous goods, expressed as a code.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Secondary Hazard&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Emergency Procedures Code&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Code&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Code. Type&lt;/ccts:DataType&gt;&lt;ccts:AlternativeBusinessTerms&gt;EMG code, EMS Page Number&lt;/ccts:AlternativeBusinessTerms&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link EmergencyProceduresCodeType }
+     *
+     * @return
+     *     possible object is
+     *     {@link EmergencyProceduresCodeType }
+     *     
      */
     public EmergencyProceduresCodeType getEmergencyProceduresCode() {
         return emergencyProceduresCode;
@@ -142,20 +167,26 @@ public class SecondaryHazardType {
     /**
      * Define el valor de la propiedad emergencyProceduresCode.
      *
-     * @param value allowed object is
-     *              {@link EmergencyProceduresCodeType }
+     * @param value
+     *     allowed object is
+     *     {@link EmergencyProceduresCodeType }
+     *     
      */
     public void setEmergencyProceduresCode(EmergencyProceduresCodeType value) {
         this.emergencyProceduresCode = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Secondary Hazard. Extension. Text&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Additional information about the hazardous substance. Can be used to specify information such as the type of regulatory requirements that apply to a description.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Secondary Hazard&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Extension&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Text&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Text. Type&lt;/ccts:DataType&gt;&lt;ccts:Examples&gt;"N.O.S. or a Waste Characteristics Code in conjunction with an EPA Waste Stream code"&lt;/ccts:Examples&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link ExtensionType }
+     *
+     * @return
+     *     possible object is
+     *     {@link ExtensionType }
+     *     
      */
     public ExtensionType getExtension() {
         return extension;
@@ -164,8 +195,10 @@ public class SecondaryHazardType {
     /**
      * Define el valor de la propiedad extension.
      *
-     * @param value allowed object is
-     *              {@link ExtensionType }
+     * @param value
+     *     allowed object is
+     *     {@link ExtensionType }
+     *     
      */
     public void setExtension(ExtensionType value) {
         this.extension = value;

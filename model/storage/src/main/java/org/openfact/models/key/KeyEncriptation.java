@@ -1,5 +1,7 @@
 package org.openfact.models.key;
 
+import org.openfact.models.enums.FileLocation;
+
 import java.io.*;
 import java.security.*;
 import java.security.KeyStore.PrivateKeyEntry;
@@ -48,8 +50,8 @@ public class KeyEncriptation {
         KeyPair keyPair = generateKeyPairs();
         PrivateKey privateKey = keyPair.getPrivate();
         PublicKey publicKey = keyPair.getPublic();
-        storeKeys(dirPath + File.separator + "publickey.key", publicKey);
-        storeKeys(dirPath + File.separator + "privatekey.key", privateKey);
+        storeKeys(dirPath + File.separator + "public.key", publicKey);
+        storeKeys(dirPath + File.separator + "private.key", privateKey);
     }
 
     /**
@@ -159,7 +161,7 @@ public class KeyEncriptation {
     public PrivateKeyEntry getLlave() throws KeyStoreException, IOException, NoSuchAlgorithmException,
             CertificateException, UnrecoverableEntryException {
         KeyStore ks = KeyStore.getInstance("JKS");
-        ks.load(new FileInputStream("C:\\Users\\AHREN\\.keystore"), "42848207".toCharArray());
+        ks.load(new FileInputStream(FileLocation.UrlKey.getLocation() + "private.key"/*"C:\\Users\\AHREN\\.keystore"*/), "42848207".toCharArray());
         keyEntry = (KeyStore.PrivateKeyEntry) ks.getEntry("sunat",
                 new KeyStore.PasswordProtection("42848207".toCharArray()));
         cert = (X509Certificate) keyEntry.getCertificate();

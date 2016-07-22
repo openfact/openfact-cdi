@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Clase Java para OrangeHazardPlacardIDType complex type.
- * <p>
+ * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * <p>
+ * 
  * <pre>
  * &lt;complexType name="OrangeHazardPlacardIDType"&gt;
  *   &lt;simpleContent&gt;
@@ -26,6 +26,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/simpleContent&gt;
  * &lt;/complexType&gt;
  * </pre>
+ *
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "OrangeHazardPlacardIDType")

@@ -14,43 +14,44 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
+ * 
  * <pre>
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:UniqueID xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns:clm54217="urn:un:unece:uncefact:codelist:specification:54217:2001" xmlns:clm5639="urn:un:unece:uncefact:codelist:specification:5639:1988" xmlns:clm66411="urn:un:unece:uncefact:codelist:specification:66411:2001" xmlns:clmIANAMIMEMediaType="urn:un:unece:uncefact:codelist:specification:IANAMIMEMediaType:2003" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;UDT000002&lt;/ccts:UniqueID&gt;
  * </pre>
- * <p>
+ * 
  * <pre>
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:CategoryCode xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns:clm54217="urn:un:unece:uncefact:codelist:specification:54217:2001" xmlns:clm5639="urn:un:unece:uncefact:codelist:specification:5639:1988" xmlns:clm66411="urn:un:unece:uncefact:codelist:specification:66411:2001" xmlns:clmIANAMIMEMediaType="urn:un:unece:uncefact:codelist:specification:IANAMIMEMediaType:2003" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;UDT&lt;/ccts:CategoryCode&gt;
  * </pre>
- * <p>
+ * 
  * <pre>
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:DictionaryEntryName xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns:clm54217="urn:un:unece:uncefact:codelist:specification:54217:2001" xmlns:clm5639="urn:un:unece:uncefact:codelist:specification:5639:1988" xmlns:clm66411="urn:un:unece:uncefact:codelist:specification:66411:2001" xmlns:clmIANAMIMEMediaType="urn:un:unece:uncefact:codelist:specification:IANAMIMEMediaType:2003" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;Binary Object. Type&lt;/ccts:DictionaryEntryName&gt;
  * </pre>
- * <p>
+ * 
  * <pre>
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:VersionID xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns:clm54217="urn:un:unece:uncefact:codelist:specification:54217:2001" xmlns:clm5639="urn:un:unece:uncefact:codelist:specification:5639:1988" xmlns:clm66411="urn:un:unece:uncefact:codelist:specification:66411:2001" xmlns:clmIANAMIMEMediaType="urn:un:unece:uncefact:codelist:specification:IANAMIMEMediaType:2003" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;1.0&lt;/ccts:VersionID&gt;
  * </pre>
- * <p>
+ * 
  * <pre>
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Definition xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns:clm54217="urn:un:unece:uncefact:codelist:specification:54217:2001" xmlns:clm5639="urn:un:unece:uncefact:codelist:specification:5639:1988" xmlns:clm66411="urn:un:unece:uncefact:codelist:specification:66411:2001" xmlns:clmIANAMIMEMediaType="urn:un:unece:uncefact:codelist:specification:IANAMIMEMediaType:2003" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;A set of finite-length sequences of binary octets.&lt;/ccts:Definition&gt;
  * </pre>
- * <p>
+ * 
  * <pre>
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:RepresentationTermName xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns:clm54217="urn:un:unece:uncefact:codelist:specification:54217:2001" xmlns:clm5639="urn:un:unece:uncefact:codelist:specification:5639:1988" xmlns:clm66411="urn:un:unece:uncefact:codelist:specification:66411:2001" xmlns:clmIANAMIMEMediaType="urn:un:unece:uncefact:codelist:specification:IANAMIMEMediaType:2003" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;Binary Object&lt;/ccts:RepresentationTermName&gt;
  * </pre>
- * <p>
+ * 
  * <pre>
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:PrimitiveType xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns:clm54217="urn:un:unece:uncefact:codelist:specification:54217:2001" xmlns:clm5639="urn:un:unece:uncefact:codelist:specification:5639:1988" xmlns:clm66411="urn:un:unece:uncefact:codelist:specification:66411:2001" xmlns:clmIANAMIMEMediaType="urn:un:unece:uncefact:codelist:specification:IANAMIMEMediaType:2003" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;binary&lt;/ccts:PrimitiveType&gt;
  * </pre>
- * <p>
+ * 
  * <pre>
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;xsd:BuiltinType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns:clm54217="urn:un:unece:uncefact:codelist:specification:54217:2001" xmlns:clm5639="urn:un:unece:uncefact:codelist:specification:5639:1988" xmlns:clm66411="urn:un:unece:uncefact:codelist:specification:66411:2001" xmlns:clmIANAMIMEMediaType="urn:un:unece:uncefact:codelist:specification:IANAMIMEMediaType:2003" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2"&gt;base64Binary&lt;/xsd:BuiltinType&gt;
  * </pre>
- * <p>
- * <p>
+ *
+ * 
  * <p>Clase Java para BinaryObjectType complex type.
- * <p>
+ * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * <p>
+ * 
  * <pre>
  * &lt;complexType name="BinaryObjectType"&gt;
  *   &lt;simpleContent&gt;
@@ -65,6 +66,8 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  *   &lt;/simpleContent&gt;
  * &lt;/complexType&gt;
  * </pre>
+ *
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "BinaryObjectType", namespace = "urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2", propOrder = {
@@ -99,8 +102,9 @@ public class BinaryObjectType {
     /**
      * Obtiene el valor de la propiedad value.
      *
-     * @return possible object is
-     * byte[]
+     * @return
+     *     possible object is
+     *     byte[]
      */
     public byte[] getValue() {
         return value;
@@ -109,8 +113,9 @@ public class BinaryObjectType {
     /**
      * Define el valor de la propiedad value.
      *
-     * @param value allowed object is
-     *              byte[]
+     * @param value
+     *     allowed object is
+     *     byte[]
      */
     public void setValue(byte[] value) {
         this.value = value;
@@ -119,8 +124,10 @@ public class BinaryObjectType {
     /**
      * Obtiene el valor de la propiedad format.
      *
-     * @return possible object is
-     * {@link String }
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getFormat() {
         return format;
@@ -129,8 +136,10 @@ public class BinaryObjectType {
     /**
      * Define el valor de la propiedad format.
      *
-     * @param value allowed object is
-     *              {@link String }
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setFormat(String value) {
         this.format = value;
@@ -139,8 +148,10 @@ public class BinaryObjectType {
     /**
      * Obtiene el valor de la propiedad mimeCode.
      *
-     * @return possible object is
-     * {@link BinaryObjectMimeCodeContentType }
+     * @return
+     *     possible object is
+     *     {@link BinaryObjectMimeCodeContentType }
+     *     
      */
     public BinaryObjectMimeCodeContentType getMimeCode() {
         return mimeCode;
@@ -149,8 +160,10 @@ public class BinaryObjectType {
     /**
      * Define el valor de la propiedad mimeCode.
      *
-     * @param value allowed object is
-     *              {@link BinaryObjectMimeCodeContentType }
+     * @param value
+     *     allowed object is
+     *     {@link BinaryObjectMimeCodeContentType }
+     *     
      */
     public void setMimeCode(BinaryObjectMimeCodeContentType value) {
         this.mimeCode = value;
@@ -159,8 +172,10 @@ public class BinaryObjectType {
     /**
      * Obtiene el valor de la propiedad encodingCode.
      *
-     * @return possible object is
-     * {@link String }
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getEncodingCode() {
         return encodingCode;
@@ -169,8 +184,10 @@ public class BinaryObjectType {
     /**
      * Define el valor de la propiedad encodingCode.
      *
-     * @param value allowed object is
-     *              {@link String }
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setEncodingCode(String value) {
         this.encodingCode = value;
@@ -179,8 +196,10 @@ public class BinaryObjectType {
     /**
      * Obtiene el valor de la propiedad characterSetCode.
      *
-     * @return possible object is
-     * {@link String }
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCharacterSetCode() {
         return characterSetCode;
@@ -189,8 +208,10 @@ public class BinaryObjectType {
     /**
      * Define el valor de la propiedad characterSetCode.
      *
-     * @param value allowed object is
-     *              {@link String }
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCharacterSetCode(String value) {
         this.characterSetCode = value;
@@ -199,8 +220,10 @@ public class BinaryObjectType {
     /**
      * Obtiene el valor de la propiedad uri.
      *
-     * @return possible object is
-     * {@link String }
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getUri() {
         return uri;
@@ -209,8 +232,10 @@ public class BinaryObjectType {
     /**
      * Define el valor de la propiedad uri.
      *
-     * @param value allowed object is
-     *              {@link String }
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setUri(String value) {
         this.uri = value;
@@ -219,8 +244,10 @@ public class BinaryObjectType {
     /**
      * Obtiene el valor de la propiedad filename.
      *
-     * @return possible object is
-     * {@link String }
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getFilename() {
         return filename;
@@ -229,8 +256,10 @@ public class BinaryObjectType {
     /**
      * Define el valor de la propiedad filename.
      *
-     * @param value allowed object is
-     *              {@link String }
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setFilename(String value) {
         this.filename = value;

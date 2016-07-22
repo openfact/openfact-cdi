@@ -17,15 +17,16 @@ import java.util.List;
 
 
 /**
+ * 
  * <pre>
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ABIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Details&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Information about a shipment.&lt;/ccts:Definition&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:AlternativeBusinessTerms&gt;Consignment&lt;/ccts:AlternativeBusinessTerms&gt;&lt;/ccts:Component&gt;
  * </pre>
- * <p>
- * <p>
+ *
+ * 
  * <p>Clase Java para ShipmentType complex type.
- * <p>
+ * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * <p>
+ * 
  * <pre>
  * &lt;complexType name="ShipmentType"&gt;
  *   &lt;complexContent&gt;
@@ -66,6 +67,8 @@ import java.util.List;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
+ *
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ShipmentType", namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", propOrder = {
@@ -164,12 +167,16 @@ public class ShipmentType {
     protected List<AllowanceChargeType> freightAllowanceCharge;
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Identifier&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Identifies a shipment.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Identifier&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Identifier&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Identifier. Type&lt;/ccts:DataType&gt;&lt;ccts:AlternativeBusinessTerms&gt;Waybill Number&lt;/ccts:AlternativeBusinessTerms&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link IDType }
+     *
+     * @return
+     *     possible object is
+     *     {@link IDType }
+     *     
      */
     public IDType getID() {
         return id;
@@ -178,20 +185,26 @@ public class ShipmentType {
     /**
      * Define el valor de la propiedad id.
      *
-     * @param value allowed object is
-     *              {@link IDType }
+     * @param value
+     *     allowed object is
+     *     {@link IDType }
+     *     
      */
     public void setID(IDType value) {
         this.id = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Shipping Priority Level. Code&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The priority or level of service required for a shipment, expressed as a code.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Shipping Priority Level&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Code&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Code. Type&lt;/ccts:DataType&gt;&lt;ccts:AlternativeBusinessTerms&gt;Service Level, Service Priority&lt;/ccts:AlternativeBusinessTerms&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link ShippingPriorityLevelCodeType }
+     *
+     * @return
+     *     possible object is
+     *     {@link ShippingPriorityLevelCodeType }
+     *     
      */
     public ShippingPriorityLevelCodeType getShippingPriorityLevelCode() {
         return shippingPriorityLevelCode;
@@ -200,20 +213,26 @@ public class ShipmentType {
     /**
      * Define el valor de la propiedad shippingPriorityLevelCode.
      *
-     * @param value allowed object is
-     *              {@link ShippingPriorityLevelCodeType }
+     * @param value
+     *     allowed object is
+     *     {@link ShippingPriorityLevelCodeType }
+     *     
      */
     public void setShippingPriorityLevelCode(ShippingPriorityLevelCodeType value) {
         this.shippingPriorityLevelCode = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Handling Code. Code&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The handling required for a shipment, expressed as a code.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Handling Code&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Code&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Code. Type&lt;/ccts:DataType&gt;&lt;ccts:AlternativeBusinessTerms&gt;Special Handling&lt;/ccts:AlternativeBusinessTerms&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link HandlingCodeType }
+     *
+     * @return
+     *     possible object is
+     *     {@link HandlingCodeType }
+     *     
      */
     public HandlingCodeType getHandlingCode() {
         return handlingCode;
@@ -222,20 +241,26 @@ public class ShipmentType {
     /**
      * Define el valor de la propiedad handlingCode.
      *
-     * @param value allowed object is
-     *              {@link HandlingCodeType }
+     * @param value
+     *     allowed object is
+     *     {@link HandlingCodeType }
+     *     
      */
     public void setHandlingCode(HandlingCodeType value) {
         this.handlingCode = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Handling_ Instructions. Text&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Free-form text describing Handling Instructions for a shipment.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Handling&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Instructions&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Text&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Text. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link HandlingInstructionsType }
+     *
+     * @return
+     *     possible object is
+     *     {@link HandlingInstructionsType }
+     *     
      */
     public HandlingInstructionsType getHandlingInstructions() {
         return handlingInstructions;
@@ -244,20 +269,26 @@ public class ShipmentType {
     /**
      * Define el valor de la propiedad handlingInstructions.
      *
-     * @param value allowed object is
-     *              {@link HandlingInstructionsType }
+     * @param value
+     *     allowed object is
+     *     {@link HandlingInstructionsType }
+     *     
      */
     public void setHandlingInstructions(HandlingInstructionsType value) {
         this.handlingInstructions = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Information. Text&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Free-form text applying to a shipment. This element may contain notes or any other similar information that is not contained explicitly in another structure.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Information&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Text&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Text. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link InformationType }
+     *
+     * @return
+     *     possible object is
+     *     {@link InformationType }
+     *     
      */
     public InformationType getInformation() {
         return information;
@@ -266,20 +297,26 @@ public class ShipmentType {
     /**
      * Define el valor de la propiedad information.
      *
-     * @param value allowed object is
-     *              {@link InformationType }
+     * @param value
+     *     allowed object is
+     *     {@link InformationType }
+     *     
      */
     public void setInformation(InformationType value) {
         this.information = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Gross_ Weight. Measure&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The total gross weight of a shipment; the weight of the goods plus packaging plus transport equipment.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Gross&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Weight&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Measure&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Measure. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link GrossWeightMeasureType }
+     *
+     * @return
+     *     possible object is
+     *     {@link GrossWeightMeasureType }
+     *     
      */
     public GrossWeightMeasureType getGrossWeightMeasure() {
         return grossWeightMeasure;
@@ -288,20 +325,26 @@ public class ShipmentType {
     /**
      * Define el valor de la propiedad grossWeightMeasure.
      *
-     * @param value allowed object is
-     *              {@link GrossWeightMeasureType }
+     * @param value
+     *     allowed object is
+     *     {@link GrossWeightMeasureType }
+     *     
      */
     public void setGrossWeightMeasure(GrossWeightMeasureType value) {
         this.grossWeightMeasure = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Net_ Weight. Measure&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The total net weight of a shipment; the weight of the goods plus packaging.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Net&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Weight&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Measure&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Measure. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link NetWeightMeasureType }
+     *
+     * @return
+     *     possible object is
+     *     {@link NetWeightMeasureType }
+     *     
      */
     public NetWeightMeasureType getNetWeightMeasure() {
         return netWeightMeasure;
@@ -310,20 +353,26 @@ public class ShipmentType {
     /**
      * Define el valor de la propiedad netWeightMeasure.
      *
-     * @param value allowed object is
-     *              {@link NetWeightMeasureType }
+     * @param value
+     *     allowed object is
+     *     {@link NetWeightMeasureType }
+     *     
      */
     public void setNetWeightMeasure(NetWeightMeasureType value) {
         this.netWeightMeasure = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Net Net_ Weight. Measure&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The weight of the goods net of packaging and transport equipment.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Net Net&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Weight&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Measure&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Measure. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link NetNetWeightMeasureType }
+     *
+     * @return
+     *     possible object is
+     *     {@link NetNetWeightMeasureType }
+     *     
      */
     public NetNetWeightMeasureType getNetNetWeightMeasure() {
         return netNetWeightMeasure;
@@ -332,20 +381,26 @@ public class ShipmentType {
     /**
      * Define el valor de la propiedad netNetWeightMeasure.
      *
-     * @param value allowed object is
-     *              {@link NetNetWeightMeasureType }
+     * @param value
+     *     allowed object is
+     *     {@link NetNetWeightMeasureType }
+     *     
      */
     public void setNetNetWeightMeasure(NetNetWeightMeasureType value) {
         this.netNetWeightMeasure = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Gross_ Volume. Measure&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The total volume of the goods in a shipment plus packaging.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Gross&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Volume&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Measure&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Measure. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link GrossVolumeMeasureType }
+     *
+     * @return
+     *     possible object is
+     *     {@link GrossVolumeMeasureType }
+     *     
      */
     public GrossVolumeMeasureType getGrossVolumeMeasure() {
         return grossVolumeMeasure;
@@ -354,20 +409,26 @@ public class ShipmentType {
     /**
      * Define el valor de la propiedad grossVolumeMeasure.
      *
-     * @param value allowed object is
-     *              {@link GrossVolumeMeasureType }
+     * @param value
+     *     allowed object is
+     *     {@link GrossVolumeMeasureType }
+     *     
      */
     public void setGrossVolumeMeasure(GrossVolumeMeasureType value) {
         this.grossVolumeMeasure = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Net_ Volume. Measure&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The volume of a shipment net of packaging and transport equipment.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Net&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Volume&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Measure&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Measure. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link NetVolumeMeasureType }
+     *
+     * @return
+     *     possible object is
+     *     {@link NetVolumeMeasureType }
+     *     
      */
     public NetVolumeMeasureType getNetVolumeMeasure() {
         return netVolumeMeasure;
@@ -376,20 +437,26 @@ public class ShipmentType {
     /**
      * Define el valor de la propiedad netVolumeMeasure.
      *
-     * @param value allowed object is
-     *              {@link NetVolumeMeasureType }
+     * @param value
+     *     allowed object is
+     *     {@link NetVolumeMeasureType }
+     *     
      */
     public void setNetVolumeMeasure(NetVolumeMeasureType value) {
         this.netVolumeMeasure = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Total_ Goods Item Quantity. Quantity&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Count of the total number of goods items within a shipment.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Total&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Goods Item Quantity&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Quantity&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Quantity. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link TotalGoodsItemQuantityType }
+     *
+     * @return
+     *     possible object is
+     *     {@link TotalGoodsItemQuantityType }
+     *     
      */
     public TotalGoodsItemQuantityType getTotalGoodsItemQuantity() {
         return totalGoodsItemQuantity;
@@ -398,20 +465,26 @@ public class ShipmentType {
     /**
      * Define el valor de la propiedad totalGoodsItemQuantity.
      *
-     * @param value allowed object is
-     *              {@link TotalGoodsItemQuantityType }
+     * @param value
+     *     allowed object is
+     *     {@link TotalGoodsItemQuantityType }
+     *     
      */
     public void setTotalGoodsItemQuantity(TotalGoodsItemQuantityType value) {
         this.totalGoodsItemQuantity = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Total_ Transport Handling Unit Quantity. Quantity&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Count of the number of pieces of transport handling equipment in a shipment, such as pallets, boxes, and cases.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Total&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Transport Handling Unit Quantity&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Quantity&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Quantity. Type&lt;/ccts:DataType&gt;&lt;ccts:AlternativeBusinessTerms&gt;Number of THUs&lt;/ccts:AlternativeBusinessTerms&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link TotalTransportHandlingUnitQuantityType }
+     *
+     * @return
+     *     possible object is
+     *     {@link TotalTransportHandlingUnitQuantityType }
+     *     
      */
     public TotalTransportHandlingUnitQuantityType getTotalTransportHandlingUnitQuantity() {
         return totalTransportHandlingUnitQuantity;
@@ -420,20 +493,26 @@ public class ShipmentType {
     /**
      * Define el valor de la propiedad totalTransportHandlingUnitQuantity.
      *
-     * @param value allowed object is
-     *              {@link TotalTransportHandlingUnitQuantityType }
+     * @param value
+     *     allowed object is
+     *     {@link TotalTransportHandlingUnitQuantityType }
+     *     
      */
     public void setTotalTransportHandlingUnitQuantity(TotalTransportHandlingUnitQuantityType value) {
         this.totalTransportHandlingUnitQuantity = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Insurance_ Value. Amount&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;The total sum covered by an insurance for the shipment.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Insurance&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Value&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Amount&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Amount. Type&lt;/ccts:DataType&gt;&lt;ccts:AlternativeBusinessTerms&gt;Value Insured&lt;/ccts:AlternativeBusinessTerms&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link InsuranceValueAmountType }
+     *
+     * @return
+     *     possible object is
+     *     {@link InsuranceValueAmountType }
+     *     
      */
     public InsuranceValueAmountType getInsuranceValueAmount() {
         return insuranceValueAmount;
@@ -442,20 +521,26 @@ public class ShipmentType {
     /**
      * Define el valor de la propiedad insuranceValueAmount.
      *
-     * @param value allowed object is
-     *              {@link InsuranceValueAmountType }
+     * @param value
+     *     allowed object is
+     *     {@link InsuranceValueAmountType }
+     *     
      */
     public void setInsuranceValueAmount(InsuranceValueAmountType value) {
         this.insuranceValueAmount = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Declared Customs_ Value. Amount&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Amount declared for customs purposes of those goods in a shipment which are subject to the same customs procedure, and have the same tariff/statistical heading, country information, and duty regime.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Declared Customs&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Value&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Amount&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Amount. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link DeclaredCustomsValueAmountType }
+     *
+     * @return
+     *     possible object is
+     *     {@link DeclaredCustomsValueAmountType }
+     *     
      */
     public DeclaredCustomsValueAmountType getDeclaredCustomsValueAmount() {
         return declaredCustomsValueAmount;
@@ -464,20 +549,26 @@ public class ShipmentType {
     /**
      * Define el valor de la propiedad declaredCustomsValueAmount.
      *
-     * @param value allowed object is
-     *              {@link DeclaredCustomsValueAmountType }
+     * @param value
+     *     allowed object is
+     *     {@link DeclaredCustomsValueAmountType }
+     *     
      */
     public void setDeclaredCustomsValueAmount(DeclaredCustomsValueAmountType value) {
         this.declaredCustomsValueAmount = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Declared For Carriage_ Value. Amount&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Value, declared by the shipper or his agent solely for the purpose of varying the carrier's level of liability from that provided in the contract of carriage, in case of loss or damage to goods or delayed delivery.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Declared For Carriage&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Value&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Amount&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Amount. Type&lt;/ccts:DataType&gt;&lt;ccts:AlternativeBusinessTerms&gt;Declared value for carriage, Interest in delivery&lt;/ccts:AlternativeBusinessTerms&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link DeclaredForCarriageValueAmountType }
+     *
+     * @return
+     *     possible object is
+     *     {@link DeclaredForCarriageValueAmountType }
+     *     
      */
     public DeclaredForCarriageValueAmountType getDeclaredForCarriageValueAmount() {
         return declaredForCarriageValueAmount;
@@ -486,20 +577,26 @@ public class ShipmentType {
     /**
      * Define el valor de la propiedad declaredForCarriageValueAmount.
      *
-     * @param value allowed object is
-     *              {@link DeclaredForCarriageValueAmountType }
+     * @param value
+     *     allowed object is
+     *     {@link DeclaredForCarriageValueAmountType }
+     *     
      */
     public void setDeclaredForCarriageValueAmount(DeclaredForCarriageValueAmountType value) {
         this.declaredForCarriageValueAmount = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Declared Statistics_ Value. Amount&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Value declared for statistical purposes of those goods in a consignment which have the same statistical heading.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Declared Statistics&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Value&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Amount&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Amount. Type&lt;/ccts:DataType&gt;&lt;ccts:AlternativeBusinessTerms&gt;Statistical Value&lt;/ccts:AlternativeBusinessTerms&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link DeclaredStatisticsValueAmountType }
+     *
+     * @return
+     *     possible object is
+     *     {@link DeclaredStatisticsValueAmountType }
+     *     
      */
     public DeclaredStatisticsValueAmountType getDeclaredStatisticsValueAmount() {
         return declaredStatisticsValueAmount;
@@ -508,20 +605,26 @@ public class ShipmentType {
     /**
      * Define el valor de la propiedad declaredStatisticsValueAmount.
      *
-     * @param value allowed object is
-     *              {@link DeclaredStatisticsValueAmountType }
+     * @param value
+     *     allowed object is
+     *     {@link DeclaredStatisticsValueAmountType }
+     *     
      */
     public void setDeclaredStatisticsValueAmount(DeclaredStatisticsValueAmountType value) {
         this.declaredStatisticsValueAmount = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Free On Board_ Value. Amount&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Monetary amount that has to be or has been paid as calculated under the applicable trade delivery.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Free On Board&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Value&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Amount&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Amount. Type&lt;/ccts:DataType&gt;&lt;ccts:AlternativeBusinessTerms&gt;FOB Value&lt;/ccts:AlternativeBusinessTerms&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link FreeOnBoardValueAmountType }
+     *
+     * @return
+     *     possible object is
+     *     {@link FreeOnBoardValueAmountType }
+     *     
      */
     public FreeOnBoardValueAmountType getFreeOnBoardValueAmount() {
         return freeOnBoardValueAmount;
@@ -530,35 +633,40 @@ public class ShipmentType {
     /**
      * Define el valor de la propiedad freeOnBoardValueAmount.
      *
-     * @param value allowed object is
-     *              {@link FreeOnBoardValueAmountType }
+     * @param value
+     *     allowed object is
+     *     {@link FreeOnBoardValueAmountType }
+     *     
      */
     public void setFreeOnBoardValueAmount(FreeOnBoardValueAmountType value) {
         this.freeOnBoardValueAmount = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Special_ Instructions. Text&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Special instructions relating to a shipment.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..n&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Special&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Instructions&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Text&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Text. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      * Gets the value of the specialInstructions property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the specialInstructions property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getSpecialInstructions().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     *
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link SpecialInstructionsType }
+     *
+     * 
      */
     public List<SpecialInstructionsType> getSpecialInstructions() {
         if (specialInstructions == null) {
@@ -568,27 +676,30 @@ public class ShipmentType {
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Delivery_ Instructions. Text&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Delivery instructions relating to a shipment.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..n&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Delivery&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Instructions&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Text&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Text. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      * Gets the value of the deliveryInstructions property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the deliveryInstructions property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getDeliveryInstructions().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     *
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link DeliveryInstructionsType }
+     *
+     * 
      */
     public List<DeliveryInstructionsType> getDeliveryInstructions() {
         if (deliveryInstructions == null) {
@@ -598,12 +709,16 @@ public class ShipmentType {
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Split Consignment_ Indicator. Indicator&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Indicates whether the consignment has been split in transit.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Split Consignment&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Indicator&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Indicator&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Indicator. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link SplitConsignmentIndicatorType }
+     *
+     * @return
+     *     possible object is
+     *     {@link SplitConsignmentIndicatorType }
+     *     
      */
     public SplitConsignmentIndicatorType getSplitConsignmentIndicator() {
         return splitConsignmentIndicator;
@@ -612,20 +727,26 @@ public class ShipmentType {
     /**
      * Define el valor de la propiedad splitConsignmentIndicator.
      *
-     * @param value allowed object is
-     *              {@link SplitConsignmentIndicatorType }
+     * @param value
+     *     allowed object is
+     *     {@link SplitConsignmentIndicatorType }
+     *     
      */
     public void setSplitConsignmentIndicator(SplitConsignmentIndicatorType value) {
         this.splitConsignmentIndicator = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Consignment&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to Consignment covering the shipment.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Consignment&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Consignment&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link ConsignmentType }
+     *
+     * @return
+     *     possible object is
+     *     {@link ConsignmentType }
+     *     
      */
     public ConsignmentType getConsignment() {
         return consignment;
@@ -634,35 +755,40 @@ public class ShipmentType {
     /**
      * Define el valor de la propiedad consignment.
      *
-     * @param value allowed object is
-     *              {@link ConsignmentType }
+     * @param value
+     *     allowed object is
+     *     {@link ConsignmentType }
+     *     
      */
     public void setConsignment(ConsignmentType value) {
         this.consignment = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Goods Item&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to Goods Item (for Bulk Goods).&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..n&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Goods Item&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Goods Item&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      * Gets the value of the goodsItem property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the goodsItem property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getGoodsItem().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     *
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link GoodsItemType }
+     *
+     * 
      */
     public List<GoodsItemType> getGoodsItem() {
         if (goodsItem == null) {
@@ -672,27 +798,30 @@ public class ShipmentType {
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Shipment Stage&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to Shipment Stage.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..n&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Shipment Stage&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Shipment Stage&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      * Gets the value of the shipmentStage property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the shipmentStage property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getShipmentStage().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     *
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link ShipmentStageType }
+     *
+     * 
      */
     public List<ShipmentStageType> getShipmentStage() {
         if (shipmentStage == null) {
@@ -702,12 +831,16 @@ public class ShipmentType {
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Delivery&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to Delivery.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Delivery&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Delivery&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link DeliveryType }
+     *
+     * @return
+     *     possible object is
+     *     {@link DeliveryType }
+     *     
      */
     public DeliveryType getDelivery() {
         return delivery;
@@ -716,35 +849,40 @@ public class ShipmentType {
     /**
      * Define el valor de la propiedad delivery.
      *
-     * @param value allowed object is
-     *              {@link DeliveryType }
+     * @param value
+     *     allowed object is
+     *     {@link DeliveryType }
+     *     
      */
     public void setDelivery(DeliveryType value) {
         this.delivery = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Transport Handling Unit&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to Transport Handling Unit used for loose and containerized goods.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..n&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Transport Handling Unit&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Transport Handling Unit&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      * Gets the value of the transportHandlingUnit property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the transportHandlingUnit property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getTransportHandlingUnit().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     *
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link TransportHandlingUnitType }
+     *
+     * 
      */
     public List<TransportHandlingUnitType> getTransportHandlingUnit() {
         if (transportHandlingUnit == null) {
@@ -754,12 +892,16 @@ public class ShipmentType {
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Origin_ Address. Address&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;An association to the region in which the goods have been produced or manufactured, according to criteria laid down for the purposes of application of the Customs tariff, or quantitative restrictions, or of any other measure related to trade.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Origin&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Address&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Address&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link AddressType }
+     *
+     * @return
+     *     possible object is
+     *     {@link AddressType }
+     *     
      */
     public AddressType getOriginAddress() {
         return originAddress;
@@ -768,20 +910,26 @@ public class ShipmentType {
     /**
      * Define el valor de la propiedad originAddress.
      *
-     * @param value allowed object is
-     *              {@link AddressType }
+     * @param value
+     *     allowed object is
+     *     {@link AddressType }
+     *     
      */
     public void setOriginAddress(AddressType value) {
         this.originAddress = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. First Arrival Port_ Location. Location&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Identifies the first arrival location. This would be a port for sea, airport for air, and border post for land crossing.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;First Arrival Port&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Location&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Location&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link LocationTypeCommAgg }
+     *
+     * @return
+     *     possible object is
+     *     {@link LocationTypeCommAgg }
+     *     
      */
     public LocationTypeCommAgg getFirstArrivalPortLocation() {
         return firstArrivalPortLocation;
@@ -790,20 +938,26 @@ public class ShipmentType {
     /**
      * Define el valor de la propiedad firstArrivalPortLocation.
      *
-     * @param value allowed object is
-     *              {@link LocationTypeCommAgg }
+     * @param value
+     *     allowed object is
+     *     {@link LocationTypeCommAgg }
+     *     
      */
     public void setFirstArrivalPortLocation(LocationTypeCommAgg value) {
         this.firstArrivalPortLocation = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Last Exit Port_ Location. Location&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Identifies the final exporting location. This would be a port for sea, airport for air, and border post for land crossing.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Last Exit Port&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Location&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Location&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link LocationTypeCommAgg }
+     *
+     * @return
+     *     possible object is
+     *     {@link LocationTypeCommAgg }
+     *     
      */
     public LocationTypeCommAgg getLastExitPortLocation() {
         return lastExitPortLocation;
@@ -812,20 +966,26 @@ public class ShipmentType {
     /**
      * Define el valor de la propiedad lastExitPortLocation.
      *
-     * @param value allowed object is
-     *              {@link LocationTypeCommAgg }
+     * @param value
+     *     allowed object is
+     *     {@link LocationTypeCommAgg }
+     *     
      */
     public void setLastExitPortLocation(LocationTypeCommAgg value) {
         this.lastExitPortLocation = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Export_ Country. Country&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Identifies the country from which the goods are originally exported without any commercial transaction taking place in intermediate countries.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Export&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Country&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Country&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link CountryType }
+     *
+     * @return
+     *     possible object is
+     *     {@link CountryType }
+     *     
      */
     public CountryType getExportCountry() {
         return exportCountry;
@@ -834,35 +994,40 @@ public class ShipmentType {
     /**
      * Define el valor de la propiedad exportCountry.
      *
-     * @param value allowed object is
-     *              {@link CountryType }
+     * @param value
+     *     allowed object is
+     *     {@link CountryType }
+     *     
      */
     public void setExportCountry(CountryType value) {
         this.exportCountry = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ASBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Shipment. Freight_ Allowance Charge. Allowance Charge&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Costs incurred by the shipper in moving goods, by whatever means, from one place to another under the terms of the contract of carriage. In addition to transport costs, this may include such elements as packing, documentation, loading, unloading, and insurance (to the extent that they relate to the freight costs).&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..n&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Shipment&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTermQualifier&gt;Freight&lt;/ccts:PropertyTermQualifier&gt;&lt;ccts:PropertyTerm&gt;Allowance Charge&lt;/ccts:PropertyTerm&gt;&lt;ccts:AssociatedObjectClass&gt;Allowance Charge&lt;/ccts:AssociatedObjectClass&gt;&lt;/ccts:Component&gt;
      * </pre>
      * Gets the value of the freightAllowanceCharge property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the freightAllowanceCharge property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getFreightAllowanceCharge().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     *
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link AllowanceChargeType }
+     *
+     * 
      */
     public List<AllowanceChargeType> getFreightAllowanceCharge() {
         if (freightAllowanceCharge == null) {

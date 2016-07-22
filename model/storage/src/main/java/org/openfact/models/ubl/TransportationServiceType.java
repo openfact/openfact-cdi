@@ -15,15 +15,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
+ * 
  * <pre>
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;ABIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Transportation Service. Details&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Transport service details.&lt;/ccts:Definition&gt;&lt;ccts:ObjectClass&gt;Transportation Service&lt;/ccts:ObjectClass&gt;&lt;/ccts:Component&gt;
  * </pre>
- * <p>
- * <p>
+ *
+ * 
  * <p>Clase Java para TransportationServiceType complex type.
- * <p>
+ * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * <p>
+ * 
  * <pre>
  * &lt;complexType name="TransportationServiceType"&gt;
  *   &lt;complexContent&gt;
@@ -38,6 +39,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
+ *
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "TransportationServiceType", namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", propOrder = {
@@ -58,12 +61,16 @@ public class TransportationServiceType {
     protected FreightRateClassCodeType freightRateClassCode;
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Transportation Service. Transport Service Code. Code&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;A code which describes the general type of service required for the transportation of goods. Specifically, it identifies the extent of the transportation service, e.g., door-to-door, port-to-port.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Transportation Service&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Transport Service Code&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Code&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Code. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link TransportServiceCodeType }
+     *
+     * @return
+     *     possible object is
+     *     {@link TransportServiceCodeType }
+     *     
      */
     public TransportServiceCodeType getTransportServiceCode() {
         return transportServiceCode;
@@ -72,20 +79,26 @@ public class TransportationServiceType {
     /**
      * Define el valor de la propiedad transportServiceCode.
      *
-     * @param value allowed object is
-     *              {@link TransportServiceCodeType }
+     * @param value
+     *     allowed object is
+     *     {@link TransportServiceCodeType }
+     *     
      */
     public void setTransportServiceCode(TransportServiceCodeType value) {
         this.transportServiceCode = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Transportation Service. Tariff Class Code. Code&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Specification of a tariff class applicable to a transportation service.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Transportation Service&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Tariff Class Code&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Code&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Code. Type&lt;/ccts:DataType&gt;&lt;ccts:AlternativeBusinessTerms&gt;Tariff Class Specifier&lt;/ccts:AlternativeBusinessTerms&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link TariffClassCodeType }
+     *
+     * @return
+     *     possible object is
+     *     {@link TariffClassCodeType }
+     *     
      */
     public TariffClassCodeType getTariffClassCode() {
         return tariffClassCode;
@@ -94,20 +107,26 @@ public class TransportationServiceType {
     /**
      * Define el valor de la propiedad tariffClassCode.
      *
-     * @param value allowed object is
-     *              {@link TariffClassCodeType }
+     * @param value
+     *     allowed object is
+     *     {@link TariffClassCodeType }
+     *     
      */
     public void setTariffClassCode(TariffClassCodeType value) {
         this.tariffClassCode = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Transportation Service. Priority. Text&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Statement indicating priority of requested transportation service.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Transportation Service&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Priority&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Text&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Text. Type&lt;/ccts:DataType&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link PriorityType }
+     *
+     * @return
+     *     possible object is
+     *     {@link PriorityType }
+     *     
      */
     public PriorityType getPriority() {
         return priority;
@@ -116,20 +135,26 @@ public class TransportationServiceType {
     /**
      * Define el valor de la propiedad priority.
      *
-     * @param value allowed object is
-     *              {@link PriorityType }
+     * @param value
+     *     allowed object is
+     *     {@link PriorityType }
+     *     
      */
     public void setPriority(PriorityType value) {
         this.priority = value;
     }
 
     /**
+     * 
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;ccts:Component xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ccts:ComponentType&gt;BBIE&lt;/ccts:ComponentType&gt;&lt;ccts:DictionaryEntryName&gt;Transportation Service. Freight Rate Class Code. Code&lt;/ccts:DictionaryEntryName&gt;&lt;ccts:Definition&gt;Code to indicate applicable rate class for freight.&lt;/ccts:Definition&gt;&lt;ccts:Cardinality&gt;0..1&lt;/ccts:Cardinality&gt;&lt;ccts:ObjectClass&gt;Transportation Service&lt;/ccts:ObjectClass&gt;&lt;ccts:PropertyTerm&gt;Freight Rate Class Code&lt;/ccts:PropertyTerm&gt;&lt;ccts:RepresentationTerm&gt;Code&lt;/ccts:RepresentationTerm&gt;&lt;ccts:DataType&gt;Code. Type&lt;/ccts:DataType&gt;&lt;ccts:AlternativeBusinessTerms&gt;Charge Basis&lt;/ccts:AlternativeBusinessTerms&gt;&lt;/ccts:Component&gt;
      * </pre>
      *
-     * @return possible object is
-     * {@link FreightRateClassCodeType }
+     *
+     * @return
+     *     possible object is
+     *     {@link FreightRateClassCodeType }
+     *     
      */
     public FreightRateClassCodeType getFreightRateClassCode() {
         return freightRateClassCode;
@@ -138,8 +163,10 @@ public class TransportationServiceType {
     /**
      * Define el valor de la propiedad freightRateClassCode.
      *
-     * @param value allowed object is
-     *              {@link FreightRateClassCodeType }
+     * @param value
+     *     allowed object is
+     *     {@link FreightRateClassCodeType }
+     *     
      */
     public void setFreightRateClassCode(FreightRateClassCodeType value) {
         this.freightRateClassCode = value;

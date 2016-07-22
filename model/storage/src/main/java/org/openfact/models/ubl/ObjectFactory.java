@@ -15,22 +15,23 @@ import javax.xml.namespace.QName;
 
 
 /**
- * This object contains factory methods for each
- * Java content interface and Java element interface
- * generated in the openFact package.
- * <p>An ObjectFactory allows you to programatically
- * construct new instances of the Java representation
- * for XML content. The Java representation of XML
- * content can consist of schema derived interfaces
- * and classes representing the binding of schema
- * type definitions, element declarations and model
- * groups.  Factory methods for each of these are
+ * This object contains factory methods for each 
+ * Java content interface and Java element interface 
+ * generated in the com.olva.sunatfe.be package. 
+ * <p>An ObjectFactory allows you to programatically 
+ * construct new instances of the Java representation 
+ * for XML content. The Java representation of XML 
+ * content can consist of schema derived interfaces 
+ * and classes representing the binding of schema 
+ * type definitions, element declarations and model 
+ * groups.  Factory methods for each of these are 
  * provided in this class.
+ * 
  */
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _Invoice_QNAME = new QName("urn:oasis:names:specification:ubl:schema:xsd:Factura-2", "Factura");
+    private final static QName _Invoice_QNAME = new QName("urn:oasis:names:specification:ubl:schema:xsd:Invoice-2", "Invoice");
     private final static QName _SummaryDocumentsLine_QNAME = new QName("urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", "SummaryDocumentsLine");
     private final static QName _VoidedDocumentsLine_QNAME = new QName("urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", "VoidedDocumentsLine");
     private final static QName _DocumentSerialID_QNAME = new QName("urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", "DocumentSerialID");
@@ -834,12 +835,14 @@ public class ObjectFactory {
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.olva.sunatfe.be
+     * 
      */
     public ObjectFactory() {
     }
 
     /**
      * Create an instance of {@link InvoiceType }
+     * 
      */
     public InvoiceType createInvoiceType() {
         return new InvoiceType();
@@ -847,6 +850,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SummaryDocumentsLineType }
+     * 
      */
     public SummaryDocumentsLineType createSummaryDocumentsLineType() {
         return new SummaryDocumentsLineType();
@@ -854,6 +858,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link VoidedDocumentsLineType }
+     * 
      */
     public VoidedDocumentsLineType createVoidedDocumentsLineType() {
         return new VoidedDocumentsLineType();
@@ -861,6 +866,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link IdentifierType }
+     * 
      */
     public IdentifierType createIdentifierType() {
         return new IdentifierType();
@@ -868,6 +874,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TextTypeUnqDat }
+     * 
      */
     public TextTypeUnqDat createTextTypeUnqDat() {
         return new TextTypeUnqDat();
@@ -875,6 +882,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PaymentType }
+     * 
      */
     public PaymentType createPaymentType() {
         return new PaymentType();
@@ -882,6 +890,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AdditionalInformationTypeSunatAgg }
+     * 
      */
     public AdditionalInformationTypeSunatAgg createAdditionalInformationTypeSunatAgg() {
         return new AdditionalInformationTypeSunatAgg();
@@ -889,6 +898,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AdditionalMonetaryTotalType }
+     * 
      */
     public AdditionalMonetaryTotalType createAdditionalMonetaryTotalType() {
         return new AdditionalMonetaryTotalType();
@@ -896,6 +906,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AdditionalPropertyType }
+     * 
      */
     public AdditionalPropertyType createAdditionalPropertyType() {
         return new AdditionalPropertyType();
@@ -903,6 +914,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AmountTypeCommBas }
+     * 
      */
     public AmountTypeCommBas createAmountTypeCommBas() {
         return new AmountTypeCommBas();
@@ -910,6 +922,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SUNATTransactionType }
+     * 
      */
     public SUNATTransactionType createSUNATTransactionType() {
         return new SUNATTransactionType();
@@ -917,6 +930,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SUNATEmbededDespatchAdviceType }
+     * 
      */
     public SUNATEmbededDespatchAdviceType createSUNATEmbededDespatchAdviceType() {
         return new SUNATEmbededDespatchAdviceType();
@@ -924,6 +938,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SUNATShipmentType }
+     * 
      */
     public SUNATShipmentType createSUNATShipmentType() {
         return new SUNATShipmentType();
@@ -931,6 +946,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SUNATShipmentStageType }
+     * 
      */
     public SUNATShipmentStageType createSUNATShipmentStageType() {
         return new SUNATShipmentStageType();
@@ -938,6 +954,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SUNATTransportMeansType }
+     * 
      */
     public SUNATTransportMeansType createSUNATTransportMeansType() {
         return new SUNATTransportMeansType();
@@ -945,6 +962,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SUNATRoadTransportType }
+     * 
      */
     public SUNATRoadTransportType createSUNATRoadTransportType() {
         return new SUNATRoadTransportType();
@@ -952,6 +970,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SUNATDespatchLineType }
+     * 
      */
     public SUNATDespatchLineType createSUNATDespatchLineType() {
         return new SUNATDespatchLineType();
@@ -959,6 +978,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DriverPartyType }
+     * 
      */
     public DriverPartyType createDriverPartyType() {
         return new DriverPartyType();
@@ -966,6 +986,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SUNATCarrierPartyType }
+     * 
      */
     public SUNATCarrierPartyType createSUNATCarrierPartyType() {
         return new SUNATCarrierPartyType();
@@ -973,6 +994,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CodeType }
+     * 
      */
     public CodeType createCodeType() {
         return new CodeType();
@@ -980,6 +1002,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RoadTransportType }
+     * 
      */
     public RoadTransportType createRoadTransportType() {
         return new RoadTransportType();
@@ -987,6 +1010,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DeliveryCarrierDateType }
+     * 
      */
     public DeliveryCarrierDateType createDeliveryCarrierDateType() {
         return new DeliveryCarrierDateType();
@@ -994,6 +1018,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DeliveryTimeType }
+     * 
      */
     public DeliveryTimeType createDeliveryTimeType() {
         return new DeliveryTimeType();
@@ -1001,6 +1026,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DocumentReferenceType }
+     * 
      */
     public DocumentReferenceType createDocumentReferenceType() {
         return new DocumentReferenceType();
@@ -1008,6 +1034,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link IDType }
+     * 
      */
     public IDType createIDType() {
         return new IDType();
@@ -1015,6 +1042,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AddressType }
+     * 
      */
     public AddressType createAddressType() {
         return new AddressType();
@@ -1022,6 +1050,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link IndicatorType }
+     * 
      */
     public IndicatorType createIndicatorType() {
         return new IndicatorType();
@@ -1029,6 +1058,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SUNATFiscalPathType }
+     * 
      */
     public SUNATFiscalPathType createSUNATFiscalPathType() {
         return new SUNATFiscalPathType();
@@ -1036,6 +1066,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RelatedItemType }
+     * 
      */
     public RelatedItemType createRelatedItemType() {
         return new RelatedItemType();
@@ -1043,6 +1074,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ContactType }
+     * 
      */
     public ContactType createContactType() {
         return new ContactType();
@@ -1050,6 +1082,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CustomerPartyType }
+     * 
      */
     public CustomerPartyType createCustomerPartyType() {
         return new CustomerPartyType();
@@ -1057,6 +1090,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SupplierPartyType }
+     * 
      */
     public SupplierPartyType createSupplierPartyType() {
         return new SupplierPartyType();
@@ -1064,6 +1098,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PackageType }
+     * 
      */
     public PackageType createPackageType() {
         return new PackageType();
@@ -1071,6 +1106,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ItemIdentificationType }
+     * 
      */
     public ItemIdentificationType createItemIdentificationType() {
         return new ItemIdentificationType();
@@ -1078,6 +1114,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ItemPropertyType }
+     * 
      */
     public ItemPropertyType createItemPropertyType() {
         return new ItemPropertyType();
@@ -1085,6 +1122,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TemperatureType }
+     * 
      */
     public TemperatureType createTemperatureType() {
         return new TemperatureType();
@@ -1092,6 +1130,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AddressLineType }
+     * 
      */
     public AddressLineType createAddressLineType() {
         return new AddressLineType();
@@ -1099,6 +1138,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PartyType }
+     * 
      */
     public PartyType createPartyType() {
         return new PartyType();
@@ -1106,6 +1146,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AirTransportType }
+     * 
      */
     public AirTransportType createAirTransportType() {
         return new AirTransportType();
@@ -1113,6 +1154,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AllowanceChargeType }
+     * 
      */
     public AllowanceChargeType createAllowanceChargeType() {
         return new AllowanceChargeType();
@@ -1120,6 +1162,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PriceType }
+     * 
      */
     public PriceType createPriceType() {
         return new PriceType();
@@ -1127,6 +1170,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link MonetaryTotalType }
+     * 
      */
     public MonetaryTotalType createMonetaryTotalType() {
         return new MonetaryTotalType();
@@ -1134,6 +1178,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TaxCategoryType }
+     * 
      */
     public TaxCategoryType createTaxCategoryType() {
         return new TaxCategoryType();
@@ -1141,6 +1186,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AttachmentType }
+     * 
      */
     public AttachmentType createAttachmentType() {
         return new AttachmentType();
@@ -1148,6 +1194,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link BillingReferenceType }
+     * 
      */
     public BillingReferenceType createBillingReferenceType() {
         return new BillingReferenceType();
@@ -1155,6 +1202,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link BillingReferenceLineType }
+     * 
      */
     public BillingReferenceLineType createBillingReferenceLineType() {
         return new BillingReferenceLineType();
@@ -1162,6 +1210,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link BranchType }
+     * 
      */
     public BranchType createBranchType() {
         return new BranchType();
@@ -1169,6 +1218,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LineItemType }
+     * 
      */
     public LineItemType createLineItemType() {
         return new LineItemType();
@@ -1176,6 +1226,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CardAccountType }
+     * 
      */
     public CardAccountType createCardAccountType() {
         return new CardAccountType();
@@ -1183,6 +1234,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CatalogueItemSpecificationUpdateLineType }
+     * 
      */
     public CatalogueItemSpecificationUpdateLineType createCatalogueItemSpecificationUpdateLineType() {
         return new CatalogueItemSpecificationUpdateLineType();
@@ -1190,6 +1242,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CatalogueLineType }
+     * 
      */
     public CatalogueLineType createCatalogueLineType() {
         return new CatalogueLineType();
@@ -1197,6 +1250,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LineReferenceType }
+     * 
      */
     public LineReferenceType createLineReferenceType() {
         return new LineReferenceType();
@@ -1204,6 +1258,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CataloguePricingUpdateLineType }
+     * 
      */
     public CataloguePricingUpdateLineType createCataloguePricingUpdateLineType() {
         return new CataloguePricingUpdateLineType();
@@ -1211,6 +1266,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CatalogueReferenceType }
+     * 
      */
     public CatalogueReferenceType createCatalogueReferenceType() {
         return new CatalogueReferenceType();
@@ -1218,6 +1274,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CatalogueRequestLineType }
+     * 
      */
     public CatalogueRequestLineType createCatalogueRequestLineType() {
         return new CatalogueRequestLineType();
@@ -1225,6 +1282,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ClassificationCategoryType }
+     * 
      */
     public ClassificationCategoryType createClassificationCategoryType() {
         return new ClassificationCategoryType();
@@ -1232,6 +1290,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CertificateOfOriginApplicationType }
+     * 
      */
     public CertificateOfOriginApplicationType createCertificateOfOriginApplicationType() {
         return new CertificateOfOriginApplicationType();
@@ -1239,6 +1298,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ClassificationSchemeType }
+     * 
      */
     public ClassificationSchemeType createClassificationSchemeType() {
         return new ClassificationSchemeType();
@@ -1246,6 +1306,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CommodityClassificationType }
+     * 
      */
     public CommodityClassificationType createCommodityClassificationType() {
         return new CommodityClassificationType();
@@ -1253,6 +1314,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CommunicationType }
+     * 
      */
     public CommunicationType createCommunicationType() {
         return new CommunicationType();
@@ -1260,6 +1322,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ConsignmentType }
+     * 
      */
     public ConsignmentType createConsignmentType() {
         return new ConsignmentType();
@@ -1267,6 +1330,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link GoodsItemType }
+     * 
      */
     public GoodsItemType createGoodsItemType() {
         return new GoodsItemType();
@@ -1274,6 +1338,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ContractType }
+     * 
      */
     public ContractType createContractType() {
         return new ContractType();
@@ -1281,6 +1346,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CorporateRegistrationSchemeType }
+     * 
      */
     public CorporateRegistrationSchemeType createCorporateRegistrationSchemeType() {
         return new CorporateRegistrationSchemeType();
@@ -1288,6 +1354,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CountryType }
+     * 
      */
     public CountryType createCountryType() {
         return new CountryType();
@@ -1295,6 +1362,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CreditAccountType }
+     * 
      */
     public CreditAccountType createCreditAccountType() {
         return new CreditAccountType();
@@ -1302,6 +1370,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CreditNoteLineType }
+     * 
      */
     public CreditNoteLineType createCreditNoteLineType() {
         return new CreditNoteLineType();
@@ -1309,6 +1378,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link StatusType }
+     * 
      */
     public StatusType createStatusType() {
         return new StatusType();
@@ -1316,6 +1386,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DebitNoteLineType }
+     * 
      */
     public DebitNoteLineType createDebitNoteLineType() {
         return new DebitNoteLineType();
@@ -1323,6 +1394,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LanguageType }
+     * 
      */
     public LanguageType createLanguageType() {
         return new LanguageType();
@@ -1330,6 +1402,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DeliveryType }
+     * 
      */
     public DeliveryType createDeliveryType() {
         return new DeliveryType();
@@ -1337,6 +1410,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LocationTypeCommAgg }
+     * 
      */
     public LocationTypeCommAgg createLocationTypeCommAgg() {
         return new LocationTypeCommAgg();
@@ -1344,6 +1418,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DeliveryTermsType }
+     * 
      */
     public DeliveryTermsType createDeliveryTermsType() {
         return new DeliveryTermsType();
@@ -1351,6 +1426,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DeliveryUnitType }
+     * 
      */
     public DeliveryUnitType createDeliveryUnitType() {
         return new DeliveryUnitType();
@@ -1358,6 +1434,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DespatchType }
+     * 
      */
     public DespatchType createDespatchType() {
         return new DespatchType();
@@ -1365,6 +1442,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DespatchLineType }
+     * 
      */
     public DespatchLineType createDespatchLineType() {
         return new DespatchLineType();
@@ -1372,6 +1450,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DimensionType }
+     * 
      */
     public DimensionType createDimensionType() {
         return new DimensionType();
@@ -1379,6 +1458,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ResponseType }
+     * 
      */
     public ResponseType createResponseType() {
         return new ResponseType();
@@ -1386,6 +1466,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DocumentDistributionType }
+     * 
      */
     public DocumentDistributionType createDocumentDistributionType() {
         return new DocumentDistributionType();
@@ -1393,6 +1474,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DocumentResponseType }
+     * 
      */
     public DocumentResponseType createDocumentResponseType() {
         return new DocumentResponseType();
@@ -1400,6 +1482,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link EndorsementType }
+     * 
      */
     public EndorsementType createEndorsementType() {
         return new EndorsementType();
@@ -1407,6 +1490,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link EndorserPartyType }
+     * 
      */
     public EndorserPartyType createEndorserPartyType() {
         return new EndorserPartyType();
@@ -1414,6 +1498,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PeriodType }
+     * 
      */
     public PeriodType createPeriodType() {
         return new PeriodType();
@@ -1421,6 +1506,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ExchangeRateType }
+     * 
      */
     public ExchangeRateType createExchangeRateType() {
         return new ExchangeRateType();
@@ -1428,6 +1514,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ExternalReferenceType }
+     * 
      */
     public ExternalReferenceType createExternalReferenceType() {
         return new ExternalReferenceType();
@@ -1435,6 +1522,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TransportationServiceType }
+     * 
      */
     public TransportationServiceType createTransportationServiceType() {
         return new TransportationServiceType();
@@ -1442,6 +1530,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link FinancialAccountType }
+     * 
      */
     public FinancialAccountType createFinancialAccountType() {
         return new FinancialAccountType();
@@ -1449,6 +1538,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link FinancialInstitutionType }
+     * 
      */
     public FinancialInstitutionType createFinancialInstitutionType() {
         return new FinancialInstitutionType();
@@ -1456,6 +1546,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link GoodsItemContainerType }
+     * 
      */
     public GoodsItemContainerType createGoodsItemContainerType() {
         return new GoodsItemContainerType();
@@ -1463,6 +1554,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link HazardousGoodsTransitType }
+     * 
      */
     public HazardousGoodsTransitType createHazardousGoodsTransitType() {
         return new HazardousGoodsTransitType();
@@ -1470,6 +1562,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link HazardousItemType }
+     * 
      */
     public HazardousItemType createHazardousItemType() {
         return new HazardousItemType();
@@ -1477,6 +1570,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link InvoiceLineType }
+     * 
      */
     public InvoiceLineType createInvoiceLineType() {
         return new InvoiceLineType();
@@ -1484,6 +1578,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ItemType }
+     * 
      */
     public ItemType createItemType() {
         return new ItemType();
@@ -1491,6 +1586,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ItemComparisonType }
+     * 
      */
     public ItemComparisonType createItemComparisonType() {
         return new ItemComparisonType();
@@ -1498,6 +1594,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ItemInstanceType }
+     * 
      */
     public ItemInstanceType createItemInstanceType() {
         return new ItemInstanceType();
@@ -1505,6 +1602,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ItemLocationQuantityType }
+     * 
      */
     public ItemLocationQuantityType createItemLocationQuantityType() {
         return new ItemLocationQuantityType();
@@ -1512,6 +1610,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ItemPropertyGroupType }
+     * 
      */
     public ItemPropertyGroupType createItemPropertyGroupType() {
         return new ItemPropertyGroupType();
@@ -1519,6 +1618,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LineResponseType }
+     * 
      */
     public LineResponseType createLineResponseType() {
         return new LineResponseType();
@@ -1526,6 +1626,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LocationCoordinateType }
+     * 
      */
     public LocationCoordinateType createLocationCoordinateType() {
         return new LocationCoordinateType();
@@ -1533,6 +1634,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LotIdentificationType }
+     * 
      */
     public LotIdentificationType createLotIdentificationType() {
         return new LotIdentificationType();
@@ -1540,6 +1642,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link MaritimeTransportType }
+     * 
      */
     public MaritimeTransportType createMaritimeTransportType() {
         return new MaritimeTransportType();
@@ -1547,6 +1650,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OrderedShipmentType }
+     * 
      */
     public OrderedShipmentType createOrderedShipmentType() {
         return new OrderedShipmentType();
@@ -1554,6 +1658,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OrderLineType }
+     * 
      */
     public OrderLineType createOrderLineType() {
         return new OrderLineType();
@@ -1561,6 +1666,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OrderLineReferenceType }
+     * 
      */
     public OrderLineReferenceType createOrderLineReferenceType() {
         return new OrderLineReferenceType();
@@ -1568,6 +1674,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OrderReferenceType }
+     * 
      */
     public OrderReferenceType createOrderReferenceType() {
         return new OrderReferenceType();
@@ -1575,6 +1682,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PartyIdentificationType }
+     * 
      */
     public PartyIdentificationType createPartyIdentificationType() {
         return new PartyIdentificationType();
@@ -1582,6 +1690,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PartyLegalEntityType }
+     * 
      */
     public PartyLegalEntityType createPartyLegalEntityType() {
         return new PartyLegalEntityType();
@@ -1589,6 +1698,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PartyNameType }
+     * 
      */
     public PartyNameType createPartyNameType() {
         return new PartyNameType();
@@ -1596,6 +1706,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PartyTaxSchemeType }
+     * 
      */
     public PartyTaxSchemeType createPartyTaxSchemeType() {
         return new PartyTaxSchemeType();
@@ -1603,6 +1714,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PaymentMeansType }
+     * 
      */
     public PaymentMeansType createPaymentMeansType() {
         return new PaymentMeansType();
@@ -1610,6 +1722,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PaymentTermsType }
+     * 
      */
     public PaymentTermsType createPaymentTermsType() {
         return new PaymentTermsType();
@@ -1617,6 +1730,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PersonType }
+     * 
      */
     public PersonType createPersonType() {
         return new PersonType();
@@ -1624,6 +1738,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PhysicalAttributeType }
+     * 
      */
     public PhysicalAttributeType createPhysicalAttributeType() {
         return new PhysicalAttributeType();
@@ -1631,6 +1746,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PriceListType }
+     * 
      */
     public PriceListType createPriceListType() {
         return new PriceListType();
@@ -1638,6 +1754,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PricingReferenceType }
+     * 
      */
     public PricingReferenceType createPricingReferenceType() {
         return new PricingReferenceType();
@@ -1645,6 +1762,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link QuotationLineType }
+     * 
      */
     public QuotationLineType createQuotationLineType() {
         return new QuotationLineType();
@@ -1652,6 +1770,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RailTransportType }
+     * 
      */
     public RailTransportType createRailTransportType() {
         return new RailTransportType();
@@ -1659,6 +1778,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ReceiptLineType }
+     * 
      */
     public ReceiptLineType createReceiptLineType() {
         return new ReceiptLineType();
@@ -1666,6 +1786,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ReminderLineType }
+     * 
      */
     public ReminderLineType createReminderLineType() {
         return new ReminderLineType();
@@ -1673,6 +1794,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RemittanceAdviceLineType }
+     * 
      */
     public RemittanceAdviceLineType createRemittanceAdviceLineType() {
         return new RemittanceAdviceLineType();
@@ -1680,6 +1802,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ShipmentType }
+     * 
      */
     public ShipmentType createShipmentType() {
         return new ShipmentType();
@@ -1687,6 +1810,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RequestForQuotationLineType }
+     * 
      */
     public RequestForQuotationLineType createRequestForQuotationLineType() {
         return new RequestForQuotationLineType();
@@ -1694,6 +1818,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SecondaryHazardType }
+     * 
      */
     public SecondaryHazardType createSecondaryHazardType() {
         return new SecondaryHazardType();
@@ -1701,6 +1826,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ShipmentStageType }
+     * 
      */
     public ShipmentStageType createShipmentStageType() {
         return new ShipmentStageType();
@@ -1708,6 +1834,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SignatureType }
+     * 
      */
     public SignatureType createSignatureType() {
         return new SignatureType();
@@ -1715,6 +1842,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link StatementLineType }
+     * 
      */
     public StatementLineType createStatementLineType() {
         return new StatementLineType();
@@ -1722,6 +1850,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link StowageType }
+     * 
      */
     public StowageType createStowageType() {
         return new StowageType();
@@ -1729,6 +1858,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TaxSchemeType }
+     * 
      */
     public TaxSchemeType createTaxSchemeType() {
         return new TaxSchemeType();
@@ -1736,6 +1866,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TaxSubtotalType }
+     * 
      */
     public TaxSubtotalType createTaxSubtotalType() {
         return new TaxSubtotalType();
@@ -1743,6 +1874,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TaxTotalType }
+     * 
      */
     public TaxTotalType createTaxTotalType() {
         return new TaxTotalType();
@@ -1750,6 +1882,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TradingTermsType }
+     * 
      */
     public TradingTermsType createTradingTermsType() {
         return new TradingTermsType();
@@ -1757,6 +1890,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TransactionConditionsType }
+     * 
      */
     public TransactionConditionsType createTransactionConditionsType() {
         return new TransactionConditionsType();
@@ -1764,6 +1898,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TransportEquipmentType }
+     * 
      */
     public TransportEquipmentType createTransportEquipmentType() {
         return new TransportEquipmentType();
@@ -1771,6 +1906,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TransportEquipmentSealType }
+     * 
      */
     public TransportEquipmentSealType createTransportEquipmentSealType() {
         return new TransportEquipmentSealType();
@@ -1778,6 +1914,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TransportEventType }
+     * 
      */
     public TransportEventType createTransportEventType() {
         return new TransportEventType();
@@ -1785,6 +1922,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TransportHandlingUnitType }
+     * 
      */
     public TransportHandlingUnitType createTransportHandlingUnitType() {
         return new TransportHandlingUnitType();
@@ -1792,6 +1930,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TransportMeansType }
+     * 
      */
     public TransportMeansType createTransportMeansType() {
         return new TransportMeansType();
@@ -1799,6 +1938,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AcceptedIndicatorType }
+     * 
      */
     public AcceptedIndicatorType createAcceptedIndicatorType() {
         return new AcceptedIndicatorType();
@@ -1806,6 +1946,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AccountIDType }
+     * 
      */
     public AccountIDType createAccountIDType() {
         return new AccountIDType();
@@ -1813,6 +1954,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AccountingCostType }
+     * 
      */
     public AccountingCostType createAccountingCostType() {
         return new AccountingCostType();
@@ -1820,6 +1962,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AccountingCostCodeType }
+     * 
      */
     public AccountingCostCodeType createAccountingCostCodeType() {
         return new AccountingCostCodeType();
@@ -1827,6 +1970,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AccountNumberIDType }
+     * 
      */
     public AccountNumberIDType createAccountNumberIDType() {
         return new AccountNumberIDType();
@@ -1834,6 +1978,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AccountTypeCodeType }
+     * 
      */
     public AccountTypeCodeType createAccountTypeCodeType() {
         return new AccountTypeCodeType();
@@ -1841,6 +1986,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ActionCodeType }
+     * 
      */
     public ActionCodeType createActionCodeType() {
         return new ActionCodeType();
@@ -1848,6 +1994,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ActualDeliveryDateType }
+     * 
      */
     public ActualDeliveryDateType createActualDeliveryDateType() {
         return new ActualDeliveryDateType();
@@ -1855,6 +2002,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ActualDeliveryTimeType }
+     * 
      */
     public ActualDeliveryTimeType createActualDeliveryTimeType() {
         return new ActualDeliveryTimeType();
@@ -1862,6 +2010,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ActualDespatchDateType }
+     * 
      */
     public ActualDespatchDateType createActualDespatchDateType() {
         return new ActualDespatchDateType();
@@ -1869,6 +2018,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ActualDespatchTimeType }
+     * 
      */
     public ActualDespatchTimeType createActualDespatchTimeType() {
         return new ActualDespatchTimeType();
@@ -1876,6 +2026,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AdditionalAccountIDType }
+     * 
      */
     public AdditionalAccountIDType createAdditionalAccountIDType() {
         return new AdditionalAccountIDType();
@@ -1883,6 +2034,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AdditionalInformationType }
+     * 
      */
     public AdditionalInformationType createAdditionalInformationType() {
         return new AdditionalInformationType();
@@ -1890,6 +2042,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AdditionalStreetNameType }
+     * 
      */
     public AdditionalStreetNameType createAdditionalStreetNameType() {
         return new AdditionalStreetNameType();
@@ -1897,6 +2050,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AddressFormatCodeType }
+     * 
      */
     public AddressFormatCodeType createAddressFormatCodeType() {
         return new AddressFormatCodeType();
@@ -1904,6 +2058,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AddressTypeCodeType }
+     * 
      */
     public AddressTypeCodeType createAddressTypeCodeType() {
         return new AddressTypeCodeType();
@@ -1911,6 +2066,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AdValoremIndicatorType }
+     * 
      */
     public AdValoremIndicatorType createAdValoremIndicatorType() {
         return new AdValoremIndicatorType();
@@ -1918,6 +2074,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AgencyIDType }
+     * 
      */
     public AgencyIDType createAgencyIDType() {
         return new AgencyIDType();
@@ -1925,6 +2082,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AgencyNameType }
+     * 
      */
     public AgencyNameType createAgencyNameType() {
         return new AgencyNameType();
@@ -1932,6 +2090,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AircraftIDType }
+     * 
      */
     public AircraftIDType createAircraftIDType() {
         return new AircraftIDType();
@@ -1939,6 +2098,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AllowanceChargeReasonType }
+     * 
      */
     public AllowanceChargeReasonType createAllowanceChargeReasonType() {
         return new AllowanceChargeReasonType();
@@ -1946,6 +2106,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AllowanceChargeReasonCodeTypeCommBas }
+     * 
      */
     public AllowanceChargeReasonCodeTypeCommBas createAllowanceChargeReasonCodeTypeCommBas() {
         return new AllowanceChargeReasonCodeTypeCommBas();
@@ -1953,6 +2114,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AllowanceTotalAmountType }
+     * 
      */
     public AllowanceTotalAmountType createAllowanceTotalAmountType() {
         return new AllowanceTotalAmountType();
@@ -1960,6 +2122,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ApplicationIDType }
+     * 
      */
     public ApplicationIDType createApplicationIDType() {
         return new ApplicationIDType();
@@ -1967,6 +2130,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ApplicationStatusCodeType }
+     * 
      */
     public ApplicationStatusCodeType createApplicationStatusCodeType() {
         return new ApplicationStatusCodeType();
@@ -1974,6 +2138,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ApprovalStatusType }
+     * 
      */
     public ApprovalStatusType createApprovalStatusType() {
         return new ApprovalStatusType();
@@ -1981,6 +2146,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AttributeIDType }
+     * 
      */
     public AttributeIDType createAttributeIDType() {
         return new AttributeIDType();
@@ -1988,6 +2154,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link BackOrderAllowedIndicatorType }
+     * 
      */
     public BackOrderAllowedIndicatorType createBackOrderAllowedIndicatorType() {
         return new BackOrderAllowedIndicatorType();
@@ -1995,6 +2162,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link BackorderQuantityType }
+     * 
      */
     public BackorderQuantityType createBackorderQuantityType() {
         return new BackorderQuantityType();
@@ -2002,6 +2170,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link BackorderReasonType }
+     * 
      */
     public BackorderReasonType createBackorderReasonType() {
         return new BackorderReasonType();
@@ -2009,6 +2178,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link BalanceAmountType }
+     * 
      */
     public BalanceAmountType createBalanceAmountType() {
         return new BalanceAmountType();
@@ -2016,6 +2186,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link BalanceBroughtForwardIndicatorType }
+     * 
      */
     public BalanceBroughtForwardIndicatorType createBalanceBroughtForwardIndicatorType() {
         return new BalanceBroughtForwardIndicatorType();
@@ -2023,6 +2194,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link BaseAmountType }
+     * 
      */
     public BaseAmountType createBaseAmountType() {
         return new BaseAmountType();
@@ -2030,6 +2202,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link BaseQuantityType }
+     * 
      */
     public BaseQuantityType createBaseQuantityType() {
         return new BaseQuantityType();
@@ -2037,6 +2210,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link BaseUnitMeasureType }
+     * 
      */
     public BaseUnitMeasureType createBaseUnitMeasureType() {
         return new BaseUnitMeasureType();
@@ -2044,6 +2218,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link BatchQuantityType }
+     * 
      */
     public BatchQuantityType createBatchQuantityType() {
         return new BatchQuantityType();
@@ -2051,6 +2226,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link BlockNameType }
+     * 
      */
     public BlockNameType createBlockNameType() {
         return new BlockNameType();
@@ -2058,6 +2234,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link BrandNameType }
+     * 
      */
     public BrandNameType createBrandNameType() {
         return new BrandNameType();
@@ -2065,6 +2242,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link BuildingNameType }
+     * 
      */
     public BuildingNameType createBuildingNameType() {
         return new BuildingNameType();
@@ -2072,6 +2250,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link BuildingNumberType }
+     * 
      */
     public BuildingNumberType createBuildingNumberType() {
         return new BuildingNumberType();
@@ -2079,6 +2258,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CalculationRateType }
+     * 
      */
     public CalculationRateType createCalculationRateType() {
         return new CalculationRateType();
@@ -2086,6 +2266,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CalculationSequenceNumericType }
+     * 
      */
     public CalculationSequenceNumericType createCalculationSequenceNumericType() {
         return new CalculationSequenceNumericType();
@@ -2093,6 +2274,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CancellationNoteType }
+     * 
      */
     public CancellationNoteType createCancellationNoteType() {
         return new CancellationNoteType();
@@ -2100,6 +2282,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CanonicalizationMethodType }
+     * 
      */
     public CanonicalizationMethodType createCanonicalizationMethodType() {
         return new CanonicalizationMethodType();
@@ -2107,6 +2290,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CardChipCodeType }
+     * 
      */
     public CardChipCodeType createCardChipCodeType() {
         return new CardChipCodeType();
@@ -2114,6 +2298,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CardTypeCodeType }
+     * 
      */
     public CardTypeCodeType createCardTypeCodeType() {
         return new CardTypeCodeType();
@@ -2121,6 +2306,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CargoTypeCodeType }
+     * 
      */
     public CargoTypeCodeType createCargoTypeCodeType() {
         return new CargoTypeCodeType();
@@ -2128,6 +2314,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CarrierAssignedIDType }
+     * 
      */
     public CarrierAssignedIDType createCarrierAssignedIDType() {
         return new CarrierAssignedIDType();
@@ -2135,6 +2322,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CatalogueIndicatorType }
+     * 
      */
     public CatalogueIndicatorType createCatalogueIndicatorType() {
         return new CatalogueIndicatorType();
@@ -2142,6 +2330,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CategoryNameType }
+     * 
      */
     public CategoryNameType createCategoryNameType() {
         return new CategoryNameType();
@@ -2149,6 +2338,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CertificateTypeType }
+     * 
      */
     public CertificateTypeType createCertificateTypeType() {
         return new CertificateTypeType();
@@ -2156,6 +2346,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ChannelType }
+     * 
      */
     public ChannelType createChannelType() {
         return new ChannelType();
@@ -2163,6 +2354,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ChannelCodeTypeCommBas }
+     * 
      */
     public ChannelCodeTypeCommBas createChannelCodeTypeCommBas() {
         return new ChannelCodeTypeCommBas();
@@ -2170,6 +2362,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ChargeableWeightMeasureType }
+     * 
      */
     public ChargeableWeightMeasureType createChargeableWeightMeasureType() {
         return new ChargeableWeightMeasureType();
@@ -2177,6 +2370,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ChargeIndicatorType }
+     * 
      */
     public ChargeIndicatorType createChargeIndicatorType() {
         return new ChargeIndicatorType();
@@ -2184,6 +2378,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ChargeTotalAmountType }
+     * 
      */
     public ChargeTotalAmountType createChargeTotalAmountType() {
         return new ChargeTotalAmountType();
@@ -2191,6 +2386,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ChipApplicationIDType }
+     * 
      */
     public ChipApplicationIDType createChipApplicationIDType() {
         return new ChipApplicationIDType();
@@ -2198,6 +2394,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CityNameType }
+     * 
      */
     public CityNameType createCityNameType() {
         return new CityNameType();
@@ -2205,6 +2402,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CitySubdivisionNameType }
+     * 
      */
     public CitySubdivisionNameType createCitySubdivisionNameType() {
         return new CitySubdivisionNameType();
@@ -2212,6 +2410,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ClassifiedIndicatorType }
+     * 
      */
     public ClassifiedIndicatorType createClassifiedIndicatorType() {
         return new ClassifiedIndicatorType();
@@ -2219,6 +2418,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CodeValueType }
+     * 
      */
     public CodeValueType createCodeValueType() {
         return new CodeValueType();
@@ -2226,6 +2426,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CommodityCodeType }
+     * 
      */
     public CommodityCodeType createCommodityCodeType() {
         return new CommodityCodeType();
@@ -2233,6 +2434,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CompanyIDType }
+     * 
      */
     public CompanyIDType createCompanyIDType() {
         return new CompanyIDType();
@@ -2240,6 +2442,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CompletionIndicatorType }
+     * 
      */
     public CompletionIndicatorType createCompletionIndicatorType() {
         return new CompletionIndicatorType();
@@ -2247,6 +2450,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ConditionType }
+     * 
      */
     public ConditionType createConditionType() {
         return new ConditionType();
@@ -2254,6 +2458,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ConditionCodeType }
+     * 
      */
     public ConditionCodeType createConditionCodeType() {
         return new ConditionCodeType();
@@ -2261,6 +2466,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ConditionsType }
+     * 
      */
     public ConditionsType createConditionsType() {
         return new ConditionsType();
@@ -2268,6 +2474,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ConsumerUnitQuantityType }
+     * 
      */
     public ConsumerUnitQuantityType createConsumerUnitQuantityType() {
         return new ConsumerUnitQuantityType();
@@ -2275,6 +2482,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ContentUnitQuantityType }
+     * 
      */
     public ContentUnitQuantityType createContentUnitQuantityType() {
         return new ContentUnitQuantityType();
@@ -2282,6 +2490,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ContractSubdivisionType }
+     * 
      */
     public ContractSubdivisionType createContractSubdivisionType() {
         return new ContractSubdivisionType();
@@ -2289,6 +2498,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ContractTypeType }
+     * 
      */
     public ContractTypeType createContractTypeType() {
         return new ContractTypeType();
@@ -2296,6 +2506,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ContractTypeCodeType }
+     * 
      */
     public ContractTypeCodeType createContractTypeCodeType() {
         return new ContractTypeCodeType();
@@ -2303,6 +2514,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CoordinateSystemCodeType }
+     * 
      */
     public CoordinateSystemCodeType createCoordinateSystemCodeType() {
         return new CoordinateSystemCodeType();
@@ -2310,6 +2522,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CopiesNumericType }
+     * 
      */
     public CopiesNumericType createCopiesNumericType() {
         return new CopiesNumericType();
@@ -2317,6 +2530,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CopyIndicatorType }
+     * 
      */
     public CopyIndicatorType createCopyIndicatorType() {
         return new CopyIndicatorType();
@@ -2324,6 +2538,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CorporateRegistrationTypeCodeType }
+     * 
      */
     public CorporateRegistrationTypeCodeType createCorporateRegistrationTypeCodeType() {
         return new CorporateRegistrationTypeCodeType();
@@ -2331,6 +2546,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CountrySubentityType }
+     * 
      */
     public CountrySubentityType createCountrySubentityType() {
         return new CountrySubentityType();
@@ -2338,6 +2554,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CountrySubentityCodeType }
+     * 
      */
     public CountrySubentityCodeType createCountrySubentityCodeType() {
         return new CountrySubentityCodeType();
@@ -2345,6 +2562,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CreditAmountType }
+     * 
      */
     public CreditAmountType createCreditAmountType() {
         return new CreditAmountType();
@@ -2352,6 +2570,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CreditedQuantityType }
+     * 
      */
     public CreditedQuantityType createCreditedQuantityType() {
         return new CreditedQuantityType();
@@ -2359,6 +2578,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CreditLineAmountType }
+     * 
      */
     public CreditLineAmountType createCreditLineAmountType() {
         return new CreditLineAmountType();
@@ -2366,6 +2586,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CurrencyBaseRateType }
+     * 
      */
     public CurrencyBaseRateType createCurrencyBaseRateType() {
         return new CurrencyBaseRateType();
@@ -2373,6 +2594,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CurrencyCodeTypeCommBas }
+     * 
      */
     public CurrencyCodeTypeCommBas createCurrencyCodeTypeCommBas() {
         return new CurrencyCodeTypeCommBas();
@@ -2380,6 +2602,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CustomerAssignedAccountIDType }
+     * 
      */
     public CustomerAssignedAccountIDType createCustomerAssignedAccountIDType() {
         return new CustomerAssignedAccountIDType();
@@ -2387,6 +2610,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CustomerReferenceType }
+     * 
      */
     public CustomerReferenceType createCustomerReferenceType() {
         return new CustomerReferenceType();
@@ -2394,6 +2618,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CustomizationIDType }
+     * 
      */
     public CustomizationIDType createCustomizationIDType() {
         return new CustomizationIDType();
@@ -2401,6 +2626,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CustomsIDType }
+     * 
      */
     public CustomsIDType createCustomsIDType() {
         return new CustomsIDType();
@@ -2408,6 +2634,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CustomsImportClassifiedIndicatorType }
+     * 
      */
     public CustomsImportClassifiedIndicatorType createCustomsImportClassifiedIndicatorType() {
         return new CustomsImportClassifiedIndicatorType();
@@ -2415,6 +2642,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CustomsStatusCodeType }
+     * 
      */
     public CustomsStatusCodeType createCustomsStatusCodeType() {
         return new CustomsStatusCodeType();
@@ -2422,6 +2650,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CustomsTariffQuantityType }
+     * 
      */
     public CustomsTariffQuantityType createCustomsTariffQuantityType() {
         return new CustomsTariffQuantityType();
@@ -2429,6 +2658,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CV2IDType }
+     * 
      */
     public CV2IDType createCV2IDType() {
         return new CV2IDType();
@@ -2436,6 +2666,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DamageRemarksType }
+     * 
      */
     public DamageRemarksType createDamageRemarksType() {
         return new DamageRemarksType();
@@ -2443,6 +2674,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DataSendingCapabilityType }
+     * 
      */
     public DataSendingCapabilityType createDataSendingCapabilityType() {
         return new DataSendingCapabilityType();
@@ -2450,6 +2682,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DateType }
+     * 
      */
     public DateType createDateType() {
         return new DateType();
@@ -2457,6 +2690,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DebitAmountType }
+     * 
      */
     public DebitAmountType createDebitAmountType() {
         return new DebitAmountType();
@@ -2464,6 +2698,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DebitedQuantityType }
+     * 
      */
     public DebitedQuantityType createDebitedQuantityType() {
         return new DebitedQuantityType();
@@ -2471,6 +2706,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DebitLineAmountType }
+     * 
      */
     public DebitLineAmountType createDebitLineAmountType() {
         return new DebitLineAmountType();
@@ -2478,6 +2714,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DeclaredCarriageValueAmountType }
+     * 
      */
     public DeclaredCarriageValueAmountType createDeclaredCarriageValueAmountType() {
         return new DeclaredCarriageValueAmountType();
@@ -2485,6 +2722,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DeclaredCustomsValueAmountType }
+     * 
      */
     public DeclaredCustomsValueAmountType createDeclaredCustomsValueAmountType() {
         return new DeclaredCustomsValueAmountType();
@@ -2492,6 +2730,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DeclaredForCarriageValueAmountType }
+     * 
      */
     public DeclaredForCarriageValueAmountType createDeclaredForCarriageValueAmountType() {
         return new DeclaredForCarriageValueAmountType();
@@ -2499,6 +2738,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DeclaredStatisticsValueAmountType }
+     * 
      */
     public DeclaredStatisticsValueAmountType createDeclaredStatisticsValueAmountType() {
         return new DeclaredStatisticsValueAmountType();
@@ -2506,6 +2746,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DegreesMeasureType }
+     * 
      */
     public DegreesMeasureType createDegreesMeasureType() {
         return new DegreesMeasureType();
@@ -2513,6 +2754,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DeliveredQuantityType }
+     * 
      */
     public DeliveredQuantityType createDeliveredQuantityType() {
         return new DeliveredQuantityType();
@@ -2520,6 +2762,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DeliveryDateType }
+     * 
      */
     public DeliveryDateType createDeliveryDateType() {
         return new DeliveryDateType();
@@ -2527,6 +2770,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DeliveryInstructionsType }
+     * 
      */
     public DeliveryInstructionsType createDeliveryInstructionsType() {
         return new DeliveryInstructionsType();
@@ -2534,6 +2778,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DepartmentType }
+     * 
      */
     public DepartmentType createDepartmentType() {
         return new DepartmentType();
@@ -2541,6 +2786,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DescriptionType }
+     * 
      */
     public DescriptionType createDescriptionType() {
         return new DescriptionType();
@@ -2548,6 +2794,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DescriptionCodeType }
+     * 
      */
     public DescriptionCodeType createDescriptionCodeType() {
         return new DescriptionCodeType();
@@ -2555,6 +2802,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DespatchAdviceTypeCodeType }
+     * 
      */
     public DespatchAdviceTypeCodeType createDespatchAdviceTypeCodeType() {
         return new DespatchAdviceTypeCodeType();
@@ -2562,6 +2810,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DespatchDateType }
+     * 
      */
     public DespatchDateType createDespatchDateType() {
         return new DespatchDateType();
@@ -2569,6 +2818,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DespatchTimeType }
+     * 
      */
     public DespatchTimeType createDespatchTimeType() {
         return new DespatchTimeType();
@@ -2576,6 +2826,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DirectionCodeType }
+     * 
      */
     public DirectionCodeType createDirectionCodeType() {
         return new DirectionCodeType();
@@ -2583,6 +2834,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DiscountPercentType }
+     * 
      */
     public DiscountPercentType createDiscountPercentType() {
         return new DiscountPercentType();
@@ -2590,6 +2842,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DispositionCodeType }
+     * 
      */
     public DispositionCodeType createDispositionCodeType() {
         return new DispositionCodeType();
@@ -2597,6 +2850,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DistrictType }
+     * 
      */
     public DistrictType createDistrictType() {
         return new DistrictType();
@@ -2604,6 +2858,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DocumentBinaryObjectType }
+     * 
      */
     public DocumentBinaryObjectType createDocumentBinaryObjectType() {
         return new DocumentBinaryObjectType();
@@ -2611,6 +2866,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DocumentCurrencyCodeType }
+     * 
      */
     public DocumentCurrencyCodeType createDocumentCurrencyCodeType() {
         return new DocumentCurrencyCodeType();
@@ -2618,6 +2874,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DocumentHashType }
+     * 
      */
     public DocumentHashType createDocumentHashType() {
         return new DocumentHashType();
@@ -2625,6 +2882,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DocumentIDType }
+     * 
      */
     public DocumentIDType createDocumentIDType() {
         return new DocumentIDType();
@@ -2632,6 +2890,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DocumentStatusCodeTypeCommBas }
+     * 
      */
     public DocumentStatusCodeTypeCommBas createDocumentStatusCodeTypeCommBas() {
         return new DocumentStatusCodeTypeCommBas();
@@ -2639,6 +2898,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DocumentTypeType }
+     * 
      */
     public DocumentTypeType createDocumentTypeType() {
         return new DocumentTypeType();
@@ -2646,6 +2906,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DocumentTypeCodeType }
+     * 
      */
     public DocumentTypeCodeType createDocumentTypeCodeType() {
         return new DocumentTypeCodeType();
@@ -2653,6 +2914,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DurationMeasureType }
+     * 
      */
     public DurationMeasureType createDurationMeasureType() {
         return new DurationMeasureType();
@@ -2660,6 +2922,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ElectronicMailType }
+     * 
      */
     public ElectronicMailType createElectronicMailType() {
         return new ElectronicMailType();
@@ -2667,6 +2930,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link EmbeddedDocumentBinaryObjectType }
+     * 
      */
     public EmbeddedDocumentBinaryObjectType createEmbeddedDocumentBinaryObjectType() {
         return new EmbeddedDocumentBinaryObjectType();
@@ -2674,6 +2938,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link EmergencyProceduresCodeType }
+     * 
      */
     public EmergencyProceduresCodeType createEmergencyProceduresCodeType() {
         return new EmergencyProceduresCodeType();
@@ -2681,6 +2946,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link EndDateType }
+     * 
      */
     public EndDateType createEndDateType() {
         return new EndDateType();
@@ -2688,6 +2954,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link EndpointIDType }
+     * 
      */
     public EndpointIDType createEndpointIDType() {
         return new EndpointIDType();
@@ -2695,6 +2962,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link EndTimeType }
+     * 
      */
     public EndTimeType createEndTimeType() {
         return new EndTimeType();
@@ -2702,6 +2970,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link EstimatedDespatchDateType }
+     * 
      */
     public EstimatedDespatchDateType createEstimatedDespatchDateType() {
         return new EstimatedDespatchDateType();
@@ -2709,6 +2978,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link EstimatedDespatchTimeType }
+     * 
      */
     public EstimatedDespatchTimeType createEstimatedDespatchTimeType() {
         return new EstimatedDespatchTimeType();
@@ -2716,6 +2986,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link EventCodeType }
+     * 
      */
     public EventCodeType createEventCodeType() {
         return new EventCodeType();
@@ -2723,6 +2994,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ExchangeMarketIDType }
+     * 
      */
     public ExchangeMarketIDType createExchangeMarketIDType() {
         return new ExchangeMarketIDType();
@@ -2730,6 +3002,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ExemptionReasonType }
+     * 
      */
     public ExemptionReasonType createExemptionReasonType() {
         return new ExemptionReasonType();
@@ -2737,6 +3010,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ExemptionReasonCodeType }
+     * 
      */
     public ExemptionReasonCodeType createExemptionReasonCodeType() {
         return new ExemptionReasonCodeType();
@@ -2744,6 +3018,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ExpiryDateType }
+     * 
      */
     public ExpiryDateType createExpiryDateType() {
         return new ExpiryDateType();
@@ -2751,6 +3026,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ExpiryTimeType }
+     * 
      */
     public ExpiryTimeType createExpiryTimeType() {
         return new ExpiryTimeType();
@@ -2758,6 +3034,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ExtendedIDType }
+     * 
      */
     public ExtendedIDType createExtendedIDType() {
         return new ExtendedIDType();
@@ -2765,6 +3042,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ExtensionType }
+     * 
      */
     public ExtensionType createExtensionType() {
         return new ExtensionType();
@@ -2772,6 +3050,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link FactorNumericType }
+     * 
      */
     public FactorNumericType createFactorNumericType() {
         return new FactorNumericType();
@@ -2779,6 +3058,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link FamilyNameType }
+     * 
      */
     public FamilyNameType createFamilyNameType() {
         return new FamilyNameType();
@@ -2786,6 +3066,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link FirstNameType }
+     * 
      */
     public FirstNameType createFirstNameType() {
         return new FirstNameType();
@@ -2793,6 +3074,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link FloorType }
+     * 
      */
     public FloorType createFloorType() {
         return new FloorType();
@@ -2800,6 +3082,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link FreeOfChargeIndicatorType }
+     * 
      */
     public FreeOfChargeIndicatorType createFreeOfChargeIndicatorType() {
         return new FreeOfChargeIndicatorType();
@@ -2807,6 +3090,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link FreeOnBoardValueAmountType }
+     * 
      */
     public FreeOnBoardValueAmountType createFreeOnBoardValueAmountType() {
         return new FreeOnBoardValueAmountType();
@@ -2814,6 +3098,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link FreightRateClassCodeType }
+     * 
      */
     public FreightRateClassCodeType createFreightRateClassCodeType() {
         return new FreightRateClassCodeType();
@@ -2821,6 +3106,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link FullnessIndicationCodeType }
+     * 
      */
     public FullnessIndicationCodeType createFullnessIndicationCodeType() {
         return new FullnessIndicationCodeType();
@@ -2828,6 +3114,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link GoodsItemQuantityType }
+     * 
      */
     public GoodsItemQuantityType createGoodsItemQuantityType() {
         return new GoodsItemQuantityType();
@@ -2835,6 +3122,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link GrossVolumeMeasureType }
+     * 
      */
     public GrossVolumeMeasureType createGrossVolumeMeasureType() {
         return new GrossVolumeMeasureType();
@@ -2842,6 +3130,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link GrossWeightMeasureType }
+     * 
      */
     public GrossWeightMeasureType createGrossWeightMeasureType() {
         return new GrossWeightMeasureType();
@@ -2849,6 +3138,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link HandlingCodeType }
+     * 
      */
     public HandlingCodeType createHandlingCodeType() {
         return new HandlingCodeType();
@@ -2856,6 +3146,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link HandlingInstructionsType }
+     * 
      */
     public HandlingInstructionsType createHandlingInstructionsType() {
         return new HandlingInstructionsType();
@@ -2863,6 +3154,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link HazardClassIDType }
+     * 
      */
     public HazardClassIDType createHazardClassIDType() {
         return new HazardClassIDType();
@@ -2870,6 +3162,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link HazardousCategoryCodeType }
+     * 
      */
     public HazardousCategoryCodeType createHazardousCategoryCodeType() {
         return new HazardousCategoryCodeType();
@@ -2877,6 +3170,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link HazardousRegulationCodeType }
+     * 
      */
     public HazardousRegulationCodeType createHazardousRegulationCodeType() {
         return new HazardousRegulationCodeType();
@@ -2884,6 +3178,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link HazardousRiskIndicatorType }
+     * 
      */
     public HazardousRiskIndicatorType createHazardousRiskIndicatorType() {
         return new HazardousRiskIndicatorType();
@@ -2891,6 +3186,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link HolderNameType }
+     * 
      */
     public HolderNameType createHolderNameType() {
         return new HolderNameType();
@@ -2898,6 +3194,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link IdentificationCodeType }
+     * 
      */
     public IdentificationCodeType createIdentificationCodeType() {
         return new IdentificationCodeType();
@@ -2905,6 +3202,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link IdentificationIDType }
+     * 
      */
     public IdentificationIDType createIdentificationIDType() {
         return new IdentificationIDType();
@@ -2912,6 +3210,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link IndicationIndicatorType }
+     * 
      */
     public IndicationIndicatorType createIndicationIndicatorType() {
         return new IndicationIndicatorType();
@@ -2919,6 +3218,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link InformationType }
+     * 
      */
     public InformationType createInformationType() {
         return new InformationType();
@@ -2926,6 +3226,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link InhalationToxicityZoneCodeType }
+     * 
      */
     public InhalationToxicityZoneCodeType createInhalationToxicityZoneCodeType() {
         return new InhalationToxicityZoneCodeType();
@@ -2933,6 +3234,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link InhouseMailType }
+     * 
      */
     public InhouseMailType createInhouseMailType() {
         return new InhouseMailType();
@@ -2940,6 +3242,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link InspectionMethodCodeType }
+     * 
      */
     public InspectionMethodCodeType createInspectionMethodCodeType() {
         return new InspectionMethodCodeType();
@@ -2947,6 +3250,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link InstructionType }
+     * 
      */
     public InstructionType createInstructionType() {
         return new InstructionType();
@@ -2954,6 +3258,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link InstructionIDType }
+     * 
      */
     public InstructionIDType createInstructionIDType() {
         return new InstructionIDType();
@@ -2961,6 +3266,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link InstructionNoteType }
+     * 
      */
     public InstructionNoteType createInstructionNoteType() {
         return new InstructionNoteType();
@@ -2968,6 +3274,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link InstructionsType }
+     * 
      */
     public InstructionsType createInstructionsType() {
         return new InstructionsType();
@@ -2975,6 +3282,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link InsurancePremiumAmountType }
+     * 
      */
     public InsurancePremiumAmountType createInsurancePremiumAmountType() {
         return new InsurancePremiumAmountType();
@@ -2982,6 +3290,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link InsuranceValueAmountType }
+     * 
      */
     public InsuranceValueAmountType createInsuranceValueAmountType() {
         return new InsuranceValueAmountType();
@@ -2989,6 +3298,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link InvoiceAmountType }
+     * 
      */
     public InvoiceAmountType createInvoiceAmountType() {
         return new InvoiceAmountType();
@@ -2996,6 +3306,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link InvoicedQuantityType }
+     * 
      */
     public InvoicedQuantityType createInvoicedQuantityType() {
         return new InvoicedQuantityType();
@@ -3003,6 +3314,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link InvoiceTypeCodeType }
+     * 
      */
     public InvoiceTypeCodeType createInvoiceTypeCodeType() {
         return new InvoiceTypeCodeType();
@@ -3010,6 +3322,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link InvoicingPartyReferenceType }
+     * 
      */
     public InvoicingPartyReferenceType createInvoicingPartyReferenceType() {
         return new InvoicingPartyReferenceType();
@@ -3017,6 +3330,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link IssueDateType }
+     * 
      */
     public IssueDateType createIssueDateType() {
         return new IssueDateType();
@@ -3024,6 +3338,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link IssueNumberIDType }
+     * 
      */
     public IssueNumberIDType createIssueNumberIDType() {
         return new IssueNumberIDType();
@@ -3031,6 +3346,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link IssuerIDType }
+     * 
      */
     public IssuerIDType createIssuerIDType() {
         return new IssuerIDType();
@@ -3038,6 +3354,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link IssueTimeType }
+     * 
      */
     public IssueTimeType createIssueTimeType() {
         return new IssueTimeType();
@@ -3045,6 +3362,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ItemClassificationCodeType }
+     * 
      */
     public ItemClassificationCodeType createItemClassificationCodeType() {
         return new ItemClassificationCodeType();
@@ -3052,6 +3370,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ItemUpdateRequestIndicatorType }
+     * 
      */
     public ItemUpdateRequestIndicatorType createItemUpdateRequestIndicatorType() {
         return new ItemUpdateRequestIndicatorType();
@@ -3059,6 +3378,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JobIDType }
+     * 
      */
     public JobIDType createJobIDType() {
         return new JobIDType();
@@ -3066,6 +3386,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JobTitleType }
+     * 
      */
     public JobTitleType createJobTitleType() {
         return new JobTitleType();
@@ -3073,6 +3394,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JourneyIDType }
+     * 
      */
     public JourneyIDType createJourneyIDType() {
         return new JourneyIDType();
@@ -3080,6 +3402,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link KeywordType }
+     * 
      */
     public KeywordType createKeywordType() {
         return new KeywordType();
@@ -3087,6 +3410,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LanguageIDType }
+     * 
      */
     public LanguageIDType createLanguageIDType() {
         return new LanguageIDType();
@@ -3094,6 +3418,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LastRevisionDateType }
+     * 
      */
     public LastRevisionDateType createLastRevisionDateType() {
         return new LastRevisionDateType();
@@ -3101,6 +3426,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LastRevisionTimeType }
+     * 
      */
     public LastRevisionTimeType createLastRevisionTimeType() {
         return new LastRevisionTimeType();
@@ -3108,6 +3434,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LatestDeliveryDateType }
+     * 
      */
     public LatestDeliveryDateType createLatestDeliveryDateType() {
         return new LatestDeliveryDateType();
@@ -3115,6 +3442,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LatestDeliveryTimeType }
+     * 
      */
     public LatestDeliveryTimeType createLatestDeliveryTimeType() {
         return new LatestDeliveryTimeType();
@@ -3122,6 +3450,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LatitudeDegreesMeasureType }
+     * 
      */
     public LatitudeDegreesMeasureType createLatitudeDegreesMeasureType() {
         return new LatitudeDegreesMeasureType();
@@ -3129,6 +3458,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LatitudeDirectionCodeTypeCommBas }
+     * 
      */
     public LatitudeDirectionCodeTypeCommBas createLatitudeDirectionCodeTypeCommBas() {
         return new LatitudeDirectionCodeTypeCommBas();
@@ -3136,6 +3466,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LatitudeMinutesMeasureType }
+     * 
      */
     public LatitudeMinutesMeasureType createLatitudeMinutesMeasureType() {
         return new LatitudeMinutesMeasureType();
@@ -3143,6 +3474,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LeadTimeMeasureType }
+     * 
      */
     public LeadTimeMeasureType createLeadTimeMeasureType() {
         return new LeadTimeMeasureType();
@@ -3150,6 +3482,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LegalStatusIndicatorType }
+     * 
      */
     public LegalStatusIndicatorType createLegalStatusIndicatorType() {
         return new LegalStatusIndicatorType();
@@ -3157,6 +3490,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LengthMeasureType }
+     * 
      */
     public LengthMeasureType createLengthMeasureType() {
         return new LengthMeasureType();
@@ -3164,6 +3498,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LicensePlateIDType }
+     * 
      */
     public LicensePlateIDType createLicensePlateIDType() {
         return new LicensePlateIDType();
@@ -3171,6 +3506,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LifeCycleStatusCodeType }
+     * 
      */
     public LifeCycleStatusCodeType createLifeCycleStatusCodeType() {
         return new LifeCycleStatusCodeType();
@@ -3178,6 +3514,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LineType }
+     * 
      */
     public LineType createLineType() {
         return new LineType();
@@ -3185,6 +3522,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LineAmountType }
+     * 
      */
     public LineAmountType createLineAmountType() {
         return new LineAmountType();
@@ -3192,6 +3530,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LineCountNumericType }
+     * 
      */
     public LineCountNumericType createLineCountNumericType() {
         return new LineCountNumericType();
@@ -3199,6 +3538,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LineExtensionAmountType }
+     * 
      */
     public LineExtensionAmountType createLineExtensionAmountType() {
         return new LineExtensionAmountType();
@@ -3206,6 +3546,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LineIDType }
+     * 
      */
     public LineIDType createLineIDType() {
         return new LineIDType();
@@ -3213,6 +3554,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LineStatusCodeTypeCommBas }
+     * 
      */
     public LineStatusCodeTypeCommBas createLineStatusCodeTypeCommBas() {
         return new LineStatusCodeTypeCommBas();
@@ -3220,6 +3562,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LoadingLengthMeasureType }
+     * 
      */
     public LoadingLengthMeasureType createLoadingLengthMeasureType() {
         return new LoadingLengthMeasureType();
@@ -3227,6 +3570,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LocaleCodeType }
+     * 
      */
     public LocaleCodeType createLocaleCodeType() {
         return new LocaleCodeType();
@@ -3234,6 +3578,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LocationType }
+     * 
      */
     public LocationType createLocationType() {
         return new LocationType();
@@ -3241,6 +3586,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LocationIDType }
+     * 
      */
     public LocationIDType createLocationIDType() {
         return new LocationIDType();
@@ -3248,6 +3594,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LogoReferenceIDType }
+     * 
      */
     public LogoReferenceIDType createLogoReferenceIDType() {
         return new LogoReferenceIDType();
@@ -3255,6 +3602,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LongitudeDegreesMeasureType }
+     * 
      */
     public LongitudeDegreesMeasureType createLongitudeDegreesMeasureType() {
         return new LongitudeDegreesMeasureType();
@@ -3262,6 +3610,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LongitudeDirectionCodeTypeCommBas }
+     * 
      */
     public LongitudeDirectionCodeTypeCommBas createLongitudeDirectionCodeTypeCommBas() {
         return new LongitudeDirectionCodeTypeCommBas();
@@ -3269,6 +3618,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LongitudeMinutesMeasureType }
+     * 
      */
     public LongitudeMinutesMeasureType createLongitudeMinutesMeasureType() {
         return new LongitudeMinutesMeasureType();
@@ -3276,6 +3626,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LossRiskType }
+     * 
      */
     public LossRiskType createLossRiskType() {
         return new LossRiskType();
@@ -3283,6 +3634,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LossRiskResponsibilityCodeType }
+     * 
      */
     public LossRiskResponsibilityCodeType createLossRiskResponsibilityCodeType() {
         return new LossRiskResponsibilityCodeType();
@@ -3290,6 +3642,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LotNumberIDType }
+     * 
      */
     public LotNumberIDType createLotNumberIDType() {
         return new LotNumberIDType();
@@ -3297,6 +3650,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LowerOrangeHazardPlacardIDType }
+     * 
      */
     public LowerOrangeHazardPlacardIDType createLowerOrangeHazardPlacardIDType() {
         return new LowerOrangeHazardPlacardIDType();
@@ -3304,6 +3658,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link MailType }
+     * 
      */
     public MailType createMailType() {
         return new MailType();
@@ -3311,6 +3666,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ManufactureDateType }
+     * 
      */
     public ManufactureDateType createManufactureDateType() {
         return new ManufactureDateType();
@@ -3318,6 +3674,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ManufactureTimeType }
+     * 
      */
     public ManufactureTimeType createManufactureTimeType() {
         return new ManufactureTimeType();
@@ -3325,6 +3682,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link MarkAttentionType }
+     * 
      */
     public MarkAttentionType createMarkAttentionType() {
         return new MarkAttentionType();
@@ -3332,6 +3690,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link MarkAttentionIndicatorType }
+     * 
      */
     public MarkAttentionIndicatorType createMarkAttentionIndicatorType() {
         return new MarkAttentionIndicatorType();
@@ -3339,6 +3698,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link MarkCareType }
+     * 
      */
     public MarkCareType createMarkCareType() {
         return new MarkCareType();
@@ -3346,6 +3706,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link MarkCareIndicatorType }
+     * 
      */
     public MarkCareIndicatorType createMarkCareIndicatorType() {
         return new MarkCareIndicatorType();
@@ -3353,6 +3714,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link MarkingIDType }
+     * 
      */
     public MarkingIDType createMarkingIDType() {
         return new MarkingIDType();
@@ -3360,6 +3722,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link MarksType }
+     * 
      */
     public MarksType createMarksType() {
         return new MarksType();
@@ -3367,6 +3730,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link MathematicOperatorCodeType }
+     * 
      */
     public MathematicOperatorCodeType createMathematicOperatorCodeType() {
         return new MathematicOperatorCodeType();
@@ -3374,6 +3738,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link MaximumBackorderQuantityType }
+     * 
      */
     public MaximumBackorderQuantityType createMaximumBackorderQuantityType() {
         return new MaximumBackorderQuantityType();
@@ -3381,6 +3746,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link MaximumCopiesNumericType }
+     * 
      */
     public MaximumCopiesNumericType createMaximumCopiesNumericType() {
         return new MaximumCopiesNumericType();
@@ -3388,6 +3754,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link MaximumMeasureType }
+     * 
      */
     public MaximumMeasureType createMaximumMeasureType() {
         return new MaximumMeasureType();
@@ -3395,6 +3762,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link MaximumOrderQuantityType }
+     * 
      */
     public MaximumOrderQuantityType createMaximumOrderQuantityType() {
         return new MaximumOrderQuantityType();
@@ -3402,6 +3770,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link MaximumQuantityType }
+     * 
      */
     public MaximumQuantityType createMaximumQuantityType() {
         return new MaximumQuantityType();
@@ -3409,6 +3778,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link MeasureTypeCommBas }
+     * 
      */
     public MeasureTypeCommBas createMeasureTypeCommBas() {
         return new MeasureTypeCommBas();
@@ -3416,6 +3786,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link MedicalFirstAidGuideCodeType }
+     * 
      */
     public MedicalFirstAidGuideCodeType createMedicalFirstAidGuideCodeType() {
         return new MedicalFirstAidGuideCodeType();
@@ -3423,6 +3794,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link MiddleNameType }
+     * 
      */
     public MiddleNameType createMiddleNameType() {
         return new MiddleNameType();
@@ -3430,6 +3802,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link MinimumBackorderQuantityType }
+     * 
      */
     public MinimumBackorderQuantityType createMinimumBackorderQuantityType() {
         return new MinimumBackorderQuantityType();
@@ -3437,6 +3810,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link MinimumMeasureType }
+     * 
      */
     public MinimumMeasureType createMinimumMeasureType() {
         return new MinimumMeasureType();
@@ -3444,6 +3818,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link MinimumOrderQuantityType }
+     * 
      */
     public MinimumOrderQuantityType createMinimumOrderQuantityType() {
         return new MinimumOrderQuantityType();
@@ -3451,6 +3826,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link MinimumQuantityType }
+     * 
      */
     public MinimumQuantityType createMinimumQuantityType() {
         return new MinimumQuantityType();
@@ -3458,6 +3834,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link MinutesMeasureType }
+     * 
      */
     public MinutesMeasureType createMinutesMeasureType() {
         return new MinutesMeasureType();
@@ -3465,6 +3842,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ModelNameType }
+     * 
      */
     public ModelNameType createModelNameType() {
         return new ModelNameType();
@@ -3472,6 +3850,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link MultiplierFactorNumericType }
+     * 
      */
     public MultiplierFactorNumericType createMultiplierFactorNumericType() {
         return new MultiplierFactorNumericType();
@@ -3479,6 +3858,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link NameTypeCommBas }
+     * 
      */
     public NameTypeCommBas createNameTypeCommBas() {
         return new NameTypeCommBas();
@@ -3486,6 +3866,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link NameSuffixType }
+     * 
      */
     public NameSuffixType createNameSuffixType() {
         return new NameSuffixType();
@@ -3493,6 +3874,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link NationalityType }
+     * 
      */
     public NationalityType createNationalityType() {
         return new NationalityType();
@@ -3500,6 +3882,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link NationalityIDType }
+     * 
      */
     public NationalityIDType createNationalityIDType() {
         return new NationalityIDType();
@@ -3507,6 +3890,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link NatureCodeType }
+     * 
      */
     public NatureCodeType createNatureCodeType() {
         return new NatureCodeType();
@@ -3514,6 +3898,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link NetNetWeightMeasureType }
+     * 
      */
     public NetNetWeightMeasureType createNetNetWeightMeasureType() {
         return new NetNetWeightMeasureType();
@@ -3521,6 +3906,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link NetVolumeMeasureType }
+     * 
      */
     public NetVolumeMeasureType createNetVolumeMeasureType() {
         return new NetVolumeMeasureType();
@@ -3528,6 +3914,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link NetWeightMeasureType }
+     * 
      */
     public NetWeightMeasureType createNetWeightMeasureType() {
         return new NetWeightMeasureType();
@@ -3535,6 +3922,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link NetworkIDType }
+     * 
      */
     public NetworkIDType createNetworkIDType() {
         return new NetworkIDType();
@@ -3542,6 +3930,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link NoteType }
+     * 
      */
     public NoteType createNoteType() {
         return new NoteType();
@@ -3549,6 +3938,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link NumberIDType }
+     * 
      */
     public NumberIDType createNumberIDType() {
         return new NumberIDType();
@@ -3556,6 +3946,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OccurrenceDateType }
+     * 
      */
     public OccurrenceDateType createOccurrenceDateType() {
         return new OccurrenceDateType();
@@ -3563,6 +3954,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OccurrenceTimeType }
+     * 
      */
     public OccurrenceTimeType createOccurrenceTimeType() {
         return new OccurrenceTimeType();
@@ -3570,6 +3962,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OnCarriageIndicatorType }
+     * 
      */
     public OnCarriageIndicatorType createOnCarriageIndicatorType() {
         return new OnCarriageIndicatorType();
@@ -3577,6 +3970,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OrangeHazardPlacardIDType }
+     * 
      */
     public OrangeHazardPlacardIDType createOrangeHazardPlacardIDType() {
         return new OrangeHazardPlacardIDType();
@@ -3584,6 +3978,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OrderableIndicatorType }
+     * 
      */
     public OrderableIndicatorType createOrderableIndicatorType() {
         return new OrderableIndicatorType();
@@ -3591,6 +3986,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OrderableUnitType }
+     * 
      */
     public OrderableUnitType createOrderableUnitType() {
         return new OrderableUnitType();
@@ -3598,6 +3994,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OrderableUnitFactorRateType }
+     * 
      */
     public OrderableUnitFactorRateType createOrderableUnitFactorRateType() {
         return new OrderableUnitFactorRateType();
@@ -3605,6 +4002,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OrderIDType }
+     * 
      */
     public OrderIDType createOrderIDType() {
         return new OrderIDType();
@@ -3612,6 +4010,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OrderQuantityType }
+     * 
      */
     public OrderQuantityType createOrderQuantityType() {
         return new OrderQuantityType();
@@ -3619,6 +4018,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OrderQuantityIncrementNumericType }
+     * 
      */
     public OrderQuantityIncrementNumericType createOrderQuantityIncrementNumericType() {
         return new OrderQuantityIncrementNumericType();
@@ -3626,6 +4026,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OrganizationDepartmentType }
+     * 
      */
     public OrganizationDepartmentType createOrganizationDepartmentType() {
         return new OrganizationDepartmentType();
@@ -3633,6 +4034,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OriginalJobIDType }
+     * 
      */
     public OriginalJobIDType createOriginalJobIDType() {
         return new OriginalJobIDType();
@@ -3640,6 +4042,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OtherInstructionType }
+     * 
      */
     public OtherInstructionType createOtherInstructionType() {
         return new OtherInstructionType();
@@ -3647,6 +4050,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OutstandingQuantityType }
+     * 
      */
     public OutstandingQuantityType createOutstandingQuantityType() {
         return new OutstandingQuantityType();
@@ -3654,6 +4058,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OutstandingReasonType }
+     * 
      */
     public OutstandingReasonType createOutstandingReasonType() {
         return new OutstandingReasonType();
@@ -3661,6 +4066,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OversupplyQuantityType }
+     * 
      */
     public OversupplyQuantityType createOversupplyQuantityType() {
         return new OversupplyQuantityType();
@@ -3668,6 +4074,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OwnerTypeCodeType }
+     * 
      */
     public OwnerTypeCodeType createOwnerTypeCodeType() {
         return new OwnerTypeCodeType();
@@ -3675,6 +4082,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PackageLevelCodeType }
+     * 
      */
     public PackageLevelCodeType createPackageLevelCodeType() {
         return new PackageLevelCodeType();
@@ -3682,6 +4090,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PackageQuantityType }
+     * 
      */
     public PackageQuantityType createPackageQuantityType() {
         return new PackageQuantityType();
@@ -3689,6 +4098,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PackagesQuantityType }
+     * 
      */
     public PackagesQuantityType createPackagesQuantityType() {
         return new PackagesQuantityType();
@@ -3696,6 +4106,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PackagingTypeCodeTypeCommBas }
+     * 
      */
     public PackagingTypeCodeTypeCommBas createPackagingTypeCodeTypeCommBas() {
         return new PackagingTypeCodeTypeCommBas();
@@ -3703,6 +4114,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PackingCriteriaCodeType }
+     * 
      */
     public PackingCriteriaCodeType createPackingCriteriaCodeType() {
         return new PackingCriteriaCodeType();
@@ -3710,6 +4122,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PackingMaterialType }
+     * 
      */
     public PackingMaterialType createPackingMaterialType() {
         return new PackingMaterialType();
@@ -3717,6 +4130,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PackLevelCodeType }
+     * 
      */
     public PackLevelCodeType createPackLevelCodeType() {
         return new PackLevelCodeType();
@@ -3724,6 +4138,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PackQuantityType }
+     * 
      */
     public PackQuantityType createPackQuantityType() {
         return new PackQuantityType();
@@ -3731,6 +4146,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PackSizeNumericType }
+     * 
      */
     public PackSizeNumericType createPackSizeNumericType() {
         return new PackSizeNumericType();
@@ -3738,6 +4154,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PaidAmountType }
+     * 
      */
     public PaidAmountType createPaidAmountType() {
         return new PaidAmountType();
@@ -3745,6 +4162,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PaidDateType }
+     * 
      */
     public PaidDateType createPaidDateType() {
         return new PaidDateType();
@@ -3752,6 +4170,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PaidTimeType }
+     * 
      */
     public PaidTimeType createPaidTimeType() {
         return new PaidTimeType();
@@ -3759,6 +4178,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ParentDocumentIDType }
+     * 
      */
     public ParentDocumentIDType createParentDocumentIDType() {
         return new ParentDocumentIDType();
@@ -3766,6 +4186,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ParentDocumentTypeCodeType }
+     * 
      */
     public ParentDocumentTypeCodeType createParentDocumentTypeCodeType() {
         return new ParentDocumentTypeCodeType();
@@ -3773,6 +4194,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PartialDeliveryIndicatorType }
+     * 
      */
     public PartialDeliveryIndicatorType createPartialDeliveryIndicatorType() {
         return new PartialDeliveryIndicatorType();
@@ -3780,6 +4202,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PayableAmountType }
+     * 
      */
     public PayableAmountType createPayableAmountType() {
         return new PayableAmountType();
@@ -3787,6 +4210,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PayableRoundingAmountType }
+     * 
      */
     public PayableRoundingAmountType createPayableRoundingAmountType() {
         return new PayableRoundingAmountType();
@@ -3794,6 +4218,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PayerReferenceType }
+     * 
      */
     public PayerReferenceType createPayerReferenceType() {
         return new PayerReferenceType();
@@ -3801,6 +4226,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PaymentAlternativeCurrencyCodeType }
+     * 
      */
     public PaymentAlternativeCurrencyCodeType createPaymentAlternativeCurrencyCodeType() {
         return new PaymentAlternativeCurrencyCodeType();
@@ -3808,6 +4234,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PaymentAmountType }
+     * 
      */
     public PaymentAmountType createPaymentAmountType() {
         return new PaymentAmountType();
@@ -3815,6 +4242,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PaymentChannelCodeType }
+     * 
      */
     public PaymentChannelCodeType createPaymentChannelCodeType() {
         return new PaymentChannelCodeType();
@@ -3822,6 +4250,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PaymentCurrencyCodeType }
+     * 
      */
     public PaymentCurrencyCodeType createPaymentCurrencyCodeType() {
         return new PaymentCurrencyCodeType();
@@ -3829,6 +4258,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PaymentDueDateType }
+     * 
      */
     public PaymentDueDateType createPaymentDueDateType() {
         return new PaymentDueDateType();
@@ -3836,6 +4266,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PaymentIDType }
+     * 
      */
     public PaymentIDType createPaymentIDType() {
         return new PaymentIDType();
@@ -3843,6 +4274,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PaymentMeansCodeTypeCommBas }
+     * 
      */
     public PaymentMeansCodeTypeCommBas createPaymentMeansCodeTypeCommBas() {
         return new PaymentMeansCodeTypeCommBas();
@@ -3850,6 +4282,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PaymentMeansIDType }
+     * 
      */
     public PaymentMeansIDType createPaymentMeansIDType() {
         return new PaymentMeansIDType();
@@ -3857,6 +4290,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PaymentNoteType }
+     * 
      */
     public PaymentNoteType createPaymentNoteType() {
         return new PaymentNoteType();
@@ -3864,6 +4298,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PaymentOrderReferenceType }
+     * 
      */
     public PaymentOrderReferenceType createPaymentOrderReferenceType() {
         return new PaymentOrderReferenceType();
@@ -3871,6 +4306,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PenaltySurchargePercentType }
+     * 
      */
     public PenaltySurchargePercentType createPenaltySurchargePercentType() {
         return new PenaltySurchargePercentType();
@@ -3878,6 +4314,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PercentType }
+     * 
      */
     public PercentType createPercentType() {
         return new PercentType();
@@ -3885,6 +4322,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PerUnitAmountType }
+     * 
      */
     public PerUnitAmountType createPerUnitAmountType() {
         return new PerUnitAmountType();
@@ -3892,6 +4330,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PlacardEndorsementType }
+     * 
      */
     public PlacardEndorsementType createPlacardEndorsementType() {
         return new PlacardEndorsementType();
@@ -3899,6 +4338,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PlacardNotationType }
+     * 
      */
     public PlacardNotationType createPlacardNotationType() {
         return new PlacardNotationType();
@@ -3906,6 +4346,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PlotIdentificationType }
+     * 
      */
     public PlotIdentificationType createPlotIdentificationType() {
         return new PlotIdentificationType();
@@ -3913,6 +4354,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PositionCodeType }
+     * 
      */
     public PositionCodeType createPositionCodeType() {
         return new PositionCodeType();
@@ -3920,6 +4362,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PostalZoneType }
+     * 
      */
     public PostalZoneType createPostalZoneType() {
         return new PostalZoneType();
@@ -3927,6 +4370,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PostboxType }
+     * 
      */
     public PostboxType createPostboxType() {
         return new PostboxType();
@@ -3934,6 +4378,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PreCarriageIndicatorType }
+     * 
      */
     public PreCarriageIndicatorType createPreCarriageIndicatorType() {
         return new PreCarriageIndicatorType();
@@ -3941,6 +4386,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PreferenceCriterionCodeType }
+     * 
      */
     public PreferenceCriterionCodeType createPreferenceCriterionCodeType() {
         return new PreferenceCriterionCodeType();
@@ -3948,6 +4394,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PrepaidAmountType }
+     * 
      */
     public PrepaidAmountType createPrepaidAmountType() {
         return new PrepaidAmountType();
@@ -3955,6 +4402,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PrepaidIndicatorType }
+     * 
      */
     public PrepaidIndicatorType createPrepaidIndicatorType() {
         return new PrepaidIndicatorType();
@@ -3962,6 +4410,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PrepaidPaymentReferenceIDType }
+     * 
      */
     public PrepaidPaymentReferenceIDType createPrepaidPaymentReferenceIDType() {
         return new PrepaidPaymentReferenceIDType();
@@ -3969,6 +4418,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PreviousJobIDType }
+     * 
      */
     public PreviousJobIDType createPreviousJobIDType() {
         return new PreviousJobIDType();
@@ -3976,6 +4426,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PreviousVersionIDType }
+     * 
      */
     public PreviousVersionIDType createPreviousVersionIDType() {
         return new PreviousVersionIDType();
@@ -3983,6 +4434,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PriceAmountType }
+     * 
      */
     public PriceAmountType createPriceAmountType() {
         return new PriceAmountType();
@@ -3990,6 +4442,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PriceChangeReasonType }
+     * 
      */
     public PriceChangeReasonType createPriceChangeReasonType() {
         return new PriceChangeReasonType();
@@ -3997,6 +4450,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PriceTypeType }
+     * 
      */
     public PriceTypeType createPriceTypeType() {
         return new PriceTypeType();
@@ -4004,6 +4458,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PriceTypeCodeType }
+     * 
      */
     public PriceTypeCodeType createPriceTypeCodeType() {
         return new PriceTypeCodeType();
@@ -4011,6 +4466,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PricingCurrencyCodeType }
+     * 
      */
     public PricingCurrencyCodeType createPricingCurrencyCodeType() {
         return new PricingCurrencyCodeType();
@@ -4018,6 +4474,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PricingUpdateRequestIndicatorType }
+     * 
      */
     public PricingUpdateRequestIndicatorType createPricingUpdateRequestIndicatorType() {
         return new PricingUpdateRequestIndicatorType();
@@ -4025,6 +4482,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PrimaryAccountNumberIDType }
+     * 
      */
     public PrimaryAccountNumberIDType createPrimaryAccountNumberIDType() {
         return new PrimaryAccountNumberIDType();
@@ -4032,6 +4490,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PrintQualifierType }
+     * 
      */
     public PrintQualifierType createPrintQualifierType() {
         return new PrintQualifierType();
@@ -4039,6 +4498,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PriorityType }
+     * 
      */
     public PriorityType createPriorityType() {
         return new PriorityType();
@@ -4046,6 +4506,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ProductTraceIDType }
+     * 
      */
     public ProductTraceIDType createProductTraceIDType() {
         return new ProductTraceIDType();
@@ -4053,6 +4514,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ProfileIDType }
+     * 
      */
     public ProfileIDType createProfileIDType() {
         return new ProfileIDType();
@@ -4060,6 +4522,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ProviderTypeCodeType }
+     * 
      */
     public ProviderTypeCodeType createProviderTypeCodeType() {
         return new ProviderTypeCodeType();
@@ -4067,6 +4530,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link QualifierType }
+     * 
      */
     public QualifierType createQualifierType() {
         return new QualifierType();
@@ -4074,6 +4538,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link QuantityTypeCommBas }
+     * 
      */
     public QuantityTypeCommBas createQuantityTypeCommBas() {
         return new QuantityTypeCommBas();
@@ -4081,6 +4546,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RailCarIDType }
+     * 
      */
     public RailCarIDType createRailCarIDType() {
         return new RailCarIDType();
@@ -4088,6 +4554,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ReasonType }
+     * 
      */
     public ReasonType createReasonType() {
         return new ReasonType();
@@ -4095,6 +4562,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ReceivedDateType }
+     * 
      */
     public ReceivedDateType createReceivedDateType() {
         return new ReceivedDateType();
@@ -4102,6 +4570,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ReceivedQuantityType }
+     * 
      */
     public ReceivedQuantityType createReceivedQuantityType() {
         return new ReceivedQuantityType();
@@ -4109,6 +4578,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ReferenceType }
+     * 
      */
     public ReferenceType createReferenceType() {
         return new ReferenceType();
@@ -4116,6 +4586,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ReferenceDateType }
+     * 
      */
     public ReferenceDateType createReferenceDateType() {
         return new ReferenceDateType();
@@ -4123,6 +4594,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ReferenceEventCodeType }
+     * 
      */
     public ReferenceEventCodeType createReferenceEventCodeType() {
         return new ReferenceEventCodeType();
@@ -4130,6 +4602,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ReferenceIDType }
+     * 
      */
     public ReferenceIDType createReferenceIDType() {
         return new ReferenceIDType();
@@ -4137,6 +4610,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ReferenceTimeType }
+     * 
      */
     public ReferenceTimeType createReferenceTimeType() {
         return new ReferenceTimeType();
@@ -4144,6 +4618,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RefrigerationOnIndicatorType }
+     * 
      */
     public RefrigerationOnIndicatorType createRefrigerationOnIndicatorType() {
         return new RefrigerationOnIndicatorType();
@@ -4151,6 +4626,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RegionType }
+     * 
      */
     public RegionType createRegionType() {
         return new RegionType();
@@ -4158,6 +4634,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RegistrationIDType }
+     * 
      */
     public RegistrationIDType createRegistrationIDType() {
         return new RegistrationIDType();
@@ -4165,6 +4642,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RegistrationNameType }
+     * 
      */
     public RegistrationNameType createRegistrationNameType() {
         return new RegistrationNameType();
@@ -4172,6 +4650,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RegistrationNationalityType }
+     * 
      */
     public RegistrationNationalityType createRegistrationNationalityType() {
         return new RegistrationNationalityType();
@@ -4179,6 +4658,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RegistrationNationalityIDType }
+     * 
      */
     public RegistrationNationalityIDType createRegistrationNationalityIDType() {
         return new RegistrationNationalityIDType();
@@ -4186,6 +4666,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RejectActionCodeType }
+     * 
      */
     public RejectActionCodeType createRejectActionCodeType() {
         return new RejectActionCodeType();
@@ -4193,6 +4674,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RejectedQuantityType }
+     * 
      */
     public RejectedQuantityType createRejectedQuantityType() {
         return new RejectedQuantityType();
@@ -4200,6 +4682,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RejectionNoteType }
+     * 
      */
     public RejectionNoteType createRejectionNoteType() {
         return new RejectionNoteType();
@@ -4207,6 +4690,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RejectReasonType }
+     * 
      */
     public RejectReasonType createRejectReasonType() {
         return new RejectReasonType();
@@ -4214,6 +4698,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RejectReasonCodeType }
+     * 
      */
     public RejectReasonCodeType createRejectReasonCodeType() {
         return new RejectReasonCodeType();
@@ -4221,6 +4706,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RemarksType }
+     * 
      */
     public RemarksType createRemarksType() {
         return new RemarksType();
@@ -4228,6 +4714,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ReminderSequenceNumericType }
+     * 
      */
     public ReminderSequenceNumericType createReminderSequenceNumericType() {
         return new ReminderSequenceNumericType();
@@ -4235,6 +4722,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ReminderTypeCodeType }
+     * 
      */
     public ReminderTypeCodeType createReminderTypeCodeType() {
         return new ReminderTypeCodeType();
@@ -4242,6 +4730,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RequestedDespatchDateType }
+     * 
      */
     public RequestedDespatchDateType createRequestedDespatchDateType() {
         return new RequestedDespatchDateType();
@@ -4249,6 +4738,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RequestedDespatchTimeType }
+     * 
      */
     public RequestedDespatchTimeType createRequestedDespatchTimeType() {
         return new RequestedDespatchTimeType();
@@ -4256,6 +4746,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RequestedInvoiceCurrencyCodeType }
+     * 
      */
     public RequestedInvoiceCurrencyCodeType createRequestedInvoiceCurrencyCodeType() {
         return new RequestedInvoiceCurrencyCodeType();
@@ -4263,6 +4754,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RequiredCustomsIDType }
+     * 
      */
     public RequiredCustomsIDType createRequiredCustomsIDType() {
         return new RequiredCustomsIDType();
@@ -4270,6 +4762,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ResponseCodeType }
+     * 
      */
     public ResponseCodeType createResponseCodeType() {
         return new ResponseCodeType();
@@ -4277,6 +4770,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ResponseDateType }
+     * 
      */
     public ResponseDateType createResponseDateType() {
         return new ResponseDateType();
@@ -4284,6 +4778,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ResponseTimeType }
+     * 
      */
     public ResponseTimeType createResponseTimeType() {
         return new ResponseTimeType();
@@ -4291,6 +4786,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ReturnabilityIndicatorType }
+     * 
      */
     public ReturnabilityIndicatorType createReturnabilityIndicatorType() {
         return new ReturnabilityIndicatorType();
@@ -4298,6 +4794,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ReturnableMaterialIndicatorType }
+     * 
      */
     public ReturnableMaterialIndicatorType createReturnableMaterialIndicatorType() {
         return new ReturnableMaterialIndicatorType();
@@ -4305,6 +4802,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RevisionDateType }
+     * 
      */
     public RevisionDateType createRevisionDateType() {
         return new RevisionDateType();
@@ -4312,6 +4810,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RevisionTimeType }
+     * 
      */
     public RevisionTimeType createRevisionTimeType() {
         return new RevisionTimeType();
@@ -4319,6 +4818,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RoleCodeType }
+     * 
      */
     public RoleCodeType createRoleCodeType() {
         return new RoleCodeType();
@@ -4326,6 +4826,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RoomType }
+     * 
      */
     public RoomType createRoomType() {
         return new RoomType();
@@ -4333,6 +4834,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RoundingAmountType }
+     * 
      */
     public RoundingAmountType createRoundingAmountType() {
         return new RoundingAmountType();
@@ -4340,6 +4842,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SalesOrderIDType }
+     * 
      */
     public SalesOrderIDType createSalesOrderIDType() {
         return new SalesOrderIDType();
@@ -4347,6 +4850,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SalesOrderLineIDType }
+     * 
      */
     public SalesOrderLineIDType createSalesOrderLineIDType() {
         return new SalesOrderLineIDType();
@@ -4354,6 +4858,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SchemeURIType }
+     * 
      */
     public SchemeURIType createSchemeURIType() {
         return new SchemeURIType();
@@ -4361,6 +4866,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SealingPartyTypeType }
+     * 
      */
     public SealingPartyTypeType createSealingPartyTypeType() {
         return new SealingPartyTypeType();
@@ -4368,6 +4874,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SealIssuerTypeCodeType }
+     * 
      */
     public SealIssuerTypeCodeType createSealIssuerTypeCodeType() {
         return new SealIssuerTypeCodeType();
@@ -4375,6 +4882,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SealStatusCodeType }
+     * 
      */
     public SealStatusCodeType createSealStatusCodeType() {
         return new SealStatusCodeType();
@@ -4382,6 +4890,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SequenceIDType }
+     * 
      */
     public SequenceIDType createSequenceIDType() {
         return new SequenceIDType();
@@ -4389,6 +4898,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SequenceNumberIDType }
+     * 
      */
     public SequenceNumberIDType createSequenceNumberIDType() {
         return new SequenceNumberIDType();
@@ -4396,6 +4906,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SequenceNumericType }
+     * 
      */
     public SequenceNumericType createSequenceNumericType() {
         return new SequenceNumericType();
@@ -4403,6 +4914,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SerialIDType }
+     * 
      */
     public SerialIDType createSerialIDType() {
         return new SerialIDType();
@@ -4410,6 +4922,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SettlementDiscountPercentType }
+     * 
      */
     public SettlementDiscountPercentType createSettlementDiscountPercentType() {
         return new SettlementDiscountPercentType();
@@ -4417,6 +4930,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ShippingMarksType }
+     * 
      */
     public ShippingMarksType createShippingMarksType() {
         return new ShippingMarksType();
@@ -4424,6 +4938,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ShippingOrderIDType }
+     * 
      */
     public ShippingOrderIDType createShippingOrderIDType() {
         return new ShippingOrderIDType();
@@ -4431,6 +4946,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ShippingPriorityLevelCodeType }
+     * 
      */
     public ShippingPriorityLevelCodeType createShippingPriorityLevelCodeType() {
         return new ShippingPriorityLevelCodeType();
@@ -4438,6 +4954,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ShortageActionCodeType }
+     * 
      */
     public ShortageActionCodeType createShortageActionCodeType() {
         return new ShortageActionCodeType();
@@ -4445,6 +4962,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ShortQuantityType }
+     * 
      */
     public ShortQuantityType createShortQuantityType() {
         return new ShortQuantityType();
@@ -4452,6 +4970,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SignatureMethodType }
+     * 
      */
     public SignatureMethodType createSignatureMethodType() {
         return new SignatureMethodType();
@@ -4459,6 +4978,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SizeTypeCodeType }
+     * 
      */
     public SizeTypeCodeType createSizeTypeCodeType() {
         return new SizeTypeCodeType();
@@ -4466,6 +4986,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SourceCurrencyBaseRateType }
+     * 
      */
     public SourceCurrencyBaseRateType createSourceCurrencyBaseRateType() {
         return new SourceCurrencyBaseRateType();
@@ -4473,6 +4994,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SourceCurrencyCodeType }
+     * 
      */
     public SourceCurrencyCodeType createSourceCurrencyCodeType() {
         return new SourceCurrencyCodeType();
@@ -4480,6 +5002,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SpecialInstructionsType }
+     * 
      */
     public SpecialInstructionsType createSpecialInstructionsType() {
         return new SpecialInstructionsType();
@@ -4487,6 +5010,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SpecialTermsType }
+     * 
      */
     public SpecialTermsType createSpecialTermsType() {
         return new SpecialTermsType();
@@ -4494,6 +5018,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SplitConsignmentIndicatorType }
+     * 
      */
     public SplitConsignmentIndicatorType createSplitConsignmentIndicatorType() {
         return new SplitConsignmentIndicatorType();
@@ -4501,6 +5026,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link StartDateType }
+     * 
      */
     public StartDateType createStartDateType() {
         return new StartDateType();
@@ -4508,6 +5034,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link StartTimeType }
+     * 
      */
     public StartTimeType createStartTimeType() {
         return new StartTimeType();
@@ -4515,6 +5042,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link StatusCodeType }
+     * 
      */
     public StatusCodeType createStatusCodeType() {
         return new StatusCodeType();
@@ -4522,6 +5050,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link StatusReasonType }
+     * 
      */
     public StatusReasonType createStatusReasonType() {
         return new StatusReasonType();
@@ -4529,6 +5058,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link StatusReasonCodeType }
+     * 
      */
     public StatusReasonCodeType createStatusReasonCodeType() {
         return new StatusReasonCodeType();
@@ -4536,6 +5066,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link StreetNameType }
+     * 
      */
     public StreetNameType createStreetNameType() {
         return new StreetNameType();
@@ -4543,6 +5074,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SubstitutionStatusCodeTypeCommBas }
+     * 
      */
     public SubstitutionStatusCodeTypeCommBas createSubstitutionStatusCodeTypeCommBas() {
         return new SubstitutionStatusCodeTypeCommBas();
@@ -4550,6 +5082,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SummaryDescriptionType }
+     * 
      */
     public SummaryDescriptionType createSummaryDescriptionType() {
         return new SummaryDescriptionType();
@@ -4557,6 +5090,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SupplierAssignedAccountIDType }
+     * 
      */
     public SupplierAssignedAccountIDType createSupplierAssignedAccountIDType() {
         return new SupplierAssignedAccountIDType();
@@ -4564,6 +5098,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SurchargePercentType }
+     * 
      */
     public SurchargePercentType createSurchargePercentType() {
         return new SurchargePercentType();
@@ -4571,6 +5106,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TargetCurrencyBaseRateType }
+     * 
      */
     public TargetCurrencyBaseRateType createTargetCurrencyBaseRateType() {
         return new TargetCurrencyBaseRateType();
@@ -4578,6 +5114,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TargetCurrencyCodeType }
+     * 
      */
     public TargetCurrencyCodeType createTargetCurrencyCodeType() {
         return new TargetCurrencyCodeType();
@@ -4585,6 +5122,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TariffClassCodeType }
+     * 
      */
     public TariffClassCodeType createTariffClassCodeType() {
         return new TariffClassCodeType();
@@ -4592,6 +5130,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TariffCodeType }
+     * 
      */
     public TariffCodeType createTariffCodeType() {
         return new TariffCodeType();
@@ -4599,6 +5138,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TariffDescriptionType }
+     * 
      */
     public TariffDescriptionType createTariffDescriptionType() {
         return new TariffDescriptionType();
@@ -4606,6 +5146,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TaxableAmountType }
+     * 
      */
     public TaxableAmountType createTaxableAmountType() {
         return new TaxableAmountType();
@@ -4613,6 +5154,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TaxAmountType }
+     * 
      */
     public TaxAmountType createTaxAmountType() {
         return new TaxAmountType();
@@ -4620,6 +5162,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TaxCurrencyCodeType }
+     * 
      */
     public TaxCurrencyCodeType createTaxCurrencyCodeType() {
         return new TaxCurrencyCodeType();
@@ -4627,6 +5170,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TaxEvidenceIndicatorType }
+     * 
      */
     public TaxEvidenceIndicatorType createTaxEvidenceIndicatorType() {
         return new TaxEvidenceIndicatorType();
@@ -4634,6 +5178,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TaxExclusiveAmountType }
+     * 
      */
     public TaxExclusiveAmountType createTaxExclusiveAmountType() {
         return new TaxExclusiveAmountType();
@@ -4641,6 +5186,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TaxExemptionReasonType }
+     * 
      */
     public TaxExemptionReasonType createTaxExemptionReasonType() {
         return new TaxExemptionReasonType();
@@ -4648,6 +5194,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TaxExemptionReasonCodeType }
+     * 
      */
     public TaxExemptionReasonCodeType createTaxExemptionReasonCodeType() {
         return new TaxExemptionReasonCodeType();
@@ -4655,6 +5202,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TaxInclusiveAmountType }
+     * 
      */
     public TaxInclusiveAmountType createTaxInclusiveAmountType() {
         return new TaxInclusiveAmountType();
@@ -4662,6 +5210,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TaxLevelCodeType }
+     * 
      */
     public TaxLevelCodeType createTaxLevelCodeType() {
         return new TaxLevelCodeType();
@@ -4669,6 +5218,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TaxPointDateType }
+     * 
      */
     public TaxPointDateType createTaxPointDateType() {
         return new TaxPointDateType();
@@ -4676,6 +5226,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TaxTypeCodeType }
+     * 
      */
     public TaxTypeCodeType createTaxTypeCodeType() {
         return new TaxTypeCodeType();
@@ -4683,6 +5234,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TechnicalNameType }
+     * 
      */
     public TechnicalNameType createTechnicalNameType() {
         return new TechnicalNameType();
@@ -4690,6 +5242,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TelefaxType }
+     * 
      */
     public TelefaxType createTelefaxType() {
         return new TelefaxType();
@@ -4697,6 +5250,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TelephoneType }
+     * 
      */
     public TelephoneType createTelephoneType() {
         return new TelephoneType();
@@ -4704,6 +5258,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TermsType }
+     * 
      */
     public TermsType createTermsType() {
         return new TermsType();
@@ -4711,6 +5266,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TextType }
+     * 
      */
     public TextType createTextType() {
         return new TextType();
@@ -4718,6 +5274,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TierRangeType }
+     * 
      */
     public TierRangeType createTierRangeType() {
         return new TierRangeType();
@@ -4725,6 +5282,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TierRatePercentType }
+     * 
      */
     public TierRatePercentType createTierRatePercentType() {
         return new TierRatePercentType();
@@ -4732,6 +5290,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TimeType }
+     * 
      */
     public TimeType createTimeType() {
         return new TimeType();
@@ -4739,6 +5298,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TimezoneOffsetType }
+     * 
      */
     public TimezoneOffsetType createTimezoneOffsetType() {
         return new TimezoneOffsetType();
@@ -4746,6 +5306,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TimingComplaintType }
+     * 
      */
     public TimingComplaintType createTimingComplaintType() {
         return new TimingComplaintType();
@@ -4753,6 +5314,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TimingComplaintCodeType }
+     * 
      */
     public TimingComplaintCodeType createTimingComplaintCodeType() {
         return new TimingComplaintCodeType();
@@ -4760,6 +5322,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TitleType }
+     * 
      */
     public TitleType createTitleType() {
         return new TitleType();
@@ -4767,6 +5330,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ToOrderIndicatorType }
+     * 
      */
     public ToOrderIndicatorType createToOrderIndicatorType() {
         return new ToOrderIndicatorType();
@@ -4774,6 +5338,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TotalBalanceAmountType }
+     * 
      */
     public TotalBalanceAmountType createTotalBalanceAmountType() {
         return new TotalBalanceAmountType();
@@ -4781,6 +5346,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TotalCreditAmountType }
+     * 
      */
     public TotalCreditAmountType createTotalCreditAmountType() {
         return new TotalCreditAmountType();
@@ -4788,6 +5354,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TotalDebitAmountType }
+     * 
      */
     public TotalDebitAmountType createTotalDebitAmountType() {
         return new TotalDebitAmountType();
@@ -4795,6 +5362,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TotalGoodsItemQuantityType }
+     * 
      */
     public TotalGoodsItemQuantityType createTotalGoodsItemQuantityType() {
         return new TotalGoodsItemQuantityType();
@@ -4802,6 +5370,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TotalInvoiceAmountType }
+     * 
      */
     public TotalInvoiceAmountType createTotalInvoiceAmountType() {
         return new TotalInvoiceAmountType();
@@ -4809,6 +5378,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TotalPackageQuantityType }
+     * 
      */
     public TotalPackageQuantityType createTotalPackageQuantityType() {
         return new TotalPackageQuantityType();
@@ -4816,6 +5386,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TotalPackagesQuantityType }
+     * 
      */
     public TotalPackagesQuantityType createTotalPackagesQuantityType() {
         return new TotalPackagesQuantityType();
@@ -4823,6 +5394,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TotalPaymentAmountType }
+     * 
      */
     public TotalPaymentAmountType createTotalPaymentAmountType() {
         return new TotalPaymentAmountType();
@@ -4830,6 +5402,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TotalTaxAmountType }
+     * 
      */
     public TotalTaxAmountType createTotalTaxAmountType() {
         return new TotalTaxAmountType();
@@ -4837,6 +5410,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TotalTransportHandlingUnitQuantityType }
+     * 
      */
     public TotalTransportHandlingUnitQuantityType createTotalTransportHandlingUnitQuantityType() {
         return new TotalTransportHandlingUnitQuantityType();
@@ -4844,6 +5418,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TrackingIDType }
+     * 
      */
     public TrackingIDType createTrackingIDType() {
         return new TrackingIDType();
@@ -4851,6 +5426,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TradingRestrictionsType }
+     * 
      */
     public TradingRestrictionsType createTradingRestrictionsType() {
         return new TradingRestrictionsType();
@@ -4858,6 +5434,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TrainIDType }
+     * 
      */
     public TrainIDType createTrainIDType() {
         return new TrainIDType();
@@ -4865,6 +5442,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TransactionCurrencyTaxAmountType }
+     * 
      */
     public TransactionCurrencyTaxAmountType createTransactionCurrencyTaxAmountType() {
         return new TransactionCurrencyTaxAmountType();
@@ -4872,6 +5450,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TransitDirectionCodeType }
+     * 
      */
     public TransitDirectionCodeType createTransitDirectionCodeType() {
         return new TransitDirectionCodeType();
@@ -4879,6 +5458,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TransportAuthorizationCodeType }
+     * 
      */
     public TransportAuthorizationCodeType createTransportAuthorizationCodeType() {
         return new TransportAuthorizationCodeType();
@@ -4886,6 +5466,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TransportEmergencyCardCodeType }
+     * 
      */
     public TransportEmergencyCardCodeType createTransportEmergencyCardCodeType() {
         return new TransportEmergencyCardCodeType();
@@ -4893,6 +5474,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TransportEquipmentTypeCodeTypeCommBas }
+     * 
      */
     public TransportEquipmentTypeCodeTypeCommBas createTransportEquipmentTypeCodeTypeCommBas() {
         return new TransportEquipmentTypeCodeTypeCommBas();
@@ -4900,6 +5482,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TransportEventTypeCodeType }
+     * 
      */
     public TransportEventTypeCodeType createTransportEventTypeCodeType() {
         return new TransportEventTypeCodeType();
@@ -4907,6 +5490,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TransportHandlingUnitQuantityType }
+     * 
      */
     public TransportHandlingUnitQuantityType createTransportHandlingUnitQuantityType() {
         return new TransportHandlingUnitQuantityType();
@@ -4914,6 +5498,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TransportHandlingUnitTypeCodeType }
+     * 
      */
     public TransportHandlingUnitTypeCodeType createTransportHandlingUnitTypeCodeType() {
         return new TransportHandlingUnitTypeCodeType();
@@ -4921,6 +5506,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TransportMeansTypeCodeType }
+     * 
      */
     public TransportMeansTypeCodeType createTransportMeansTypeCodeType() {
         return new TransportMeansTypeCodeType();
@@ -4928,6 +5514,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TransportModeCodeTypeCommBas }
+     * 
      */
     public TransportModeCodeTypeCommBas createTransportModeCodeTypeCommBas() {
         return new TransportModeCodeTypeCommBas();
@@ -4935,6 +5522,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TransportServiceCodeType }
+     * 
      */
     public TransportServiceCodeType createTransportServiceCodeType() {
         return new TransportServiceCodeType();
@@ -4942,6 +5530,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link UBLVersionIDType }
+     * 
      */
     public UBLVersionIDType createUBLVersionIDType() {
         return new UBLVersionIDType();
@@ -4949,6 +5538,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link UNDGCodeType }
+     * 
      */
     public UNDGCodeType createUNDGCodeType() {
         return new UNDGCodeType();
@@ -4956,6 +5546,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link UnitType }
+     * 
      */
     public UnitType createUnitType() {
         return new UnitType();
@@ -4963,6 +5554,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link UnitQuantityType }
+     * 
      */
     public UnitQuantityType createUnitQuantityType() {
         return new UnitQuantityType();
@@ -4970,6 +5562,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link UpperOrangeHazardPlacardIDType }
+     * 
      */
     public UpperOrangeHazardPlacardIDType createUpperOrangeHazardPlacardIDType() {
         return new UpperOrangeHazardPlacardIDType();
@@ -4977,6 +5570,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link URIType }
+     * 
      */
     public URIType createURIType() {
         return new URIType();
@@ -4984,6 +5578,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link UUIDType }
+     * 
      */
     public UUIDType createUUIDType() {
         return new UUIDType();
@@ -4991,6 +5586,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ValidationDateType }
+     * 
      */
     public ValidationDateType createValidationDateType() {
         return new ValidationDateType();
@@ -4998,6 +5594,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ValidationTimeType }
+     * 
      */
     public ValidationTimeType createValidationTimeType() {
         return new ValidationTimeType();
@@ -5005,6 +5602,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ValidatorIDType }
+     * 
      */
     public ValidatorIDType createValidatorIDType() {
         return new ValidatorIDType();
@@ -5012,6 +5610,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ValidityStartDateType }
+     * 
      */
     public ValidityStartDateType createValidityStartDateType() {
         return new ValidityStartDateType();
@@ -5019,6 +5618,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ValueType }
+     * 
      */
     public ValueType createValueType() {
         return new ValueType();
@@ -5026,6 +5626,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ValueAmountType }
+     * 
      */
     public ValueAmountType createValueAmountType() {
         return new ValueAmountType();
@@ -5033,6 +5634,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link VersionIDType }
+     * 
      */
     public VersionIDType createVersionIDType() {
         return new VersionIDType();
@@ -5040,6 +5642,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link VesselIDType }
+     * 
      */
     public VesselIDType createVesselIDType() {
         return new VesselIDType();
@@ -5047,6 +5650,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link VesselNameType }
+     * 
      */
     public VesselNameType createVesselNameType() {
         return new VesselNameType();
@@ -5054,6 +5658,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link VolumeMeasureType }
+     * 
      */
     public VolumeMeasureType createVolumeMeasureType() {
         return new VolumeMeasureType();
@@ -5061,6 +5666,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link WarrantyInformationType }
+     * 
      */
     public WarrantyInformationType createWarrantyInformationType() {
         return new WarrantyInformationType();
@@ -5068,6 +5674,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link WebsiteURIType }
+     * 
      */
     public WebsiteURIType createWebsiteURIType() {
         return new WebsiteURIType();
@@ -5075,6 +5682,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link WeightMeasureType }
+     * 
      */
     public WeightMeasureType createWeightMeasureType() {
         return new WeightMeasureType();
@@ -5082,6 +5690,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link XPathType }
+     * 
      */
     public XPathType createXPathType() {
         return new XPathType();
@@ -5089,6 +5698,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ZoneType }
+     * 
      */
     public ZoneType createZoneType() {
         return new ZoneType();
@@ -5096,6 +5706,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AmountType }
+     * 
      */
     public AmountType createAmountType() {
         return new AmountType();
@@ -5103,6 +5714,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link BinaryObjectType }
+     * 
      */
     public BinaryObjectType createBinaryObjectType() {
         return new BinaryObjectType();
@@ -5110,6 +5722,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link GraphicType }
+     * 
      */
     public GraphicType createGraphicType() {
         return new GraphicType();
@@ -5117,6 +5730,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PictureType }
+     * 
      */
     public PictureType createPictureType() {
         return new PictureType();
@@ -5124,6 +5738,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SoundType }
+     * 
      */
     public SoundType createSoundType() {
         return new SoundType();
@@ -5131,6 +5746,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link VideoType }
+     * 
      */
     public VideoType createVideoType() {
         return new VideoType();
@@ -5138,6 +5754,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link MeasureType }
+     * 
      */
     public MeasureType createMeasureType() {
         return new MeasureType();
@@ -5145,6 +5762,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link QuantityType }
+     * 
      */
     public QuantityType createQuantityType() {
         return new QuantityType();
@@ -5152,6 +5770,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link NameType }
+     * 
      */
     public NameType createNameType() {
         return new NameType();
@@ -5159,6 +5778,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link AllowanceChargeReasonCodeType }
+     * 
      */
     public AllowanceChargeReasonCodeType createAllowanceChargeReasonCodeType() {
         return new AllowanceChargeReasonCodeType();
@@ -5166,6 +5786,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ChannelCodeType }
+     * 
      */
     public ChannelCodeType createChannelCodeType() {
         return new ChannelCodeType();
@@ -5173,6 +5794,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ChipCodeType }
+     * 
      */
     public ChipCodeType createChipCodeType() {
         return new ChipCodeType();
@@ -5180,6 +5802,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ContainerSizeTypeCodeType }
+     * 
      */
     public ContainerSizeTypeCodeType createContainerSizeTypeCodeType() {
         return new ContainerSizeTypeCodeType();
@@ -5187,6 +5810,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CountryIdentificationCodeType }
+     * 
      */
     public CountryIdentificationCodeType createCountryIdentificationCodeType() {
         return new CountryIdentificationCodeType();
@@ -5194,6 +5818,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CurrencyCodeType }
+     * 
      */
     public CurrencyCodeType createCurrencyCodeType() {
         return new CurrencyCodeType();
@@ -5201,6 +5826,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link DocumentStatusCodeType }
+     * 
      */
     public DocumentStatusCodeType createDocumentStatusCodeType() {
         return new DocumentStatusCodeType();
@@ -5208,6 +5834,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LatitudeDirectionCodeType }
+     * 
      */
     public LatitudeDirectionCodeType createLatitudeDirectionCodeType() {
         return new LatitudeDirectionCodeType();
@@ -5215,6 +5842,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LineStatusCodeType }
+     * 
      */
     public LineStatusCodeType createLineStatusCodeType() {
         return new LineStatusCodeType();
@@ -5222,6 +5850,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LongitudeDirectionCodeType }
+     * 
      */
     public LongitudeDirectionCodeType createLongitudeDirectionCodeType() {
         return new LongitudeDirectionCodeType();
@@ -5229,6 +5858,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link OperatorCodeType }
+     * 
      */
     public OperatorCodeType createOperatorCodeType() {
         return new OperatorCodeType();
@@ -5236,6 +5866,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PackagingTypeCodeType }
+     * 
      */
     public PackagingTypeCodeType createPackagingTypeCodeType() {
         return new PackagingTypeCodeType();
@@ -5243,6 +5874,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PaymentMeansCodeType }
+     * 
      */
     public PaymentMeansCodeType createPaymentMeansCodeType() {
         return new PaymentMeansCodeType();
@@ -5250,6 +5882,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PortCodeType }
+     * 
      */
     public PortCodeType createPortCodeType() {
         return new PortCodeType();
@@ -5257,6 +5890,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SubstitutionStatusCodeType }
+     * 
      */
     public SubstitutionStatusCodeType createSubstitutionStatusCodeType() {
         return new SubstitutionStatusCodeType();
@@ -5264,6 +5898,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TransportationStatusCodeType }
+     * 
      */
     public TransportationStatusCodeType createTransportationStatusCodeType() {
         return new TransportationStatusCodeType();
@@ -5271,6 +5906,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TransportEquipmentTypeCodeType }
+     * 
      */
     public TransportEquipmentTypeCodeType createTransportEquipmentTypeCodeType() {
         return new TransportEquipmentTypeCodeType();
@@ -5278,6 +5914,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link TransportModeCodeType }
+     * 
      */
     public TransportModeCodeType createTransportModeCodeType() {
         return new TransportModeCodeType();
@@ -5285,6 +5922,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link UnitOfMeasureCodeType }
+     * 
      */
     public UnitOfMeasureCodeType createUnitOfMeasureCodeType() {
         return new UnitOfMeasureCodeType();
@@ -5292,6 +5930,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link UBLExtensionsType }
+     * 
      */
     public UBLExtensionsType createUBLExtensionsType() {
         return new UBLExtensionsType();
@@ -5299,6 +5938,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link UBLExtensionType }
+     * 
      */
     public UBLExtensionType createUBLExtensionType() {
         return new UBLExtensionType();
@@ -5306,6 +5946,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ExtensionAgencyIDType }
+     * 
      */
     public ExtensionAgencyIDType createExtensionAgencyIDType() {
         return new ExtensionAgencyIDType();
@@ -5313,6 +5954,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ExtensionAgencyNameType }
+     * 
      */
     public ExtensionAgencyNameType createExtensionAgencyNameType() {
         return new ExtensionAgencyNameType();
@@ -5320,6 +5962,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ExtensionAgencyURIType }
+     * 
      */
     public ExtensionAgencyURIType createExtensionAgencyURIType() {
         return new ExtensionAgencyURIType();
@@ -5327,6 +5970,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ExtensionContentType }
+     * 
      */
     public ExtensionContentType createExtensionContentType() {
         return new ExtensionContentType();
@@ -5334,6 +5978,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ExtensionReasonType }
+     * 
      */
     public ExtensionReasonType createExtensionReasonType() {
         return new ExtensionReasonType();
@@ -5341,6 +5986,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ExtensionReasonCodeType }
+     * 
      */
     public ExtensionReasonCodeType createExtensionReasonCodeType() {
         return new ExtensionReasonCodeType();
@@ -5348,6 +5994,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ExtensionURIType }
+     * 
      */
     public ExtensionURIType createExtensionURIType() {
         return new ExtensionURIType();
@@ -5355,6 +6002,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ExtensionVersionIDType }
+     * 
      */
     public ExtensionVersionIDType createExtensionVersionIDType() {
         return new ExtensionVersionIDType();
@@ -5362,14 +6010,16 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link InvoiceType }{@code >}}
+     * 
      */
-    @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:Factura-2", name = "Factura")
+    @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:Invoice-2", name = "Invoice")
     public JAXBElement<InvoiceType> createInvoice(InvoiceType value) {
         return new JAXBElement<InvoiceType>(_Invoice_QNAME, InvoiceType.class, null, value);
     }
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SummaryDocumentsLineType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "SummaryDocumentsLine")
     public JAXBElement<SummaryDocumentsLineType> createSummaryDocumentsLine(SummaryDocumentsLineType value) {
@@ -5378,6 +6028,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link VoidedDocumentsLineType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "VoidedDocumentsLine")
     public JAXBElement<VoidedDocumentsLineType> createVoidedDocumentsLine(VoidedDocumentsLineType value) {
@@ -5386,6 +6037,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link IdentifierType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "DocumentSerialID")
     public JAXBElement<IdentifierType> createDocumentSerialID(IdentifierType value) {
@@ -5394,6 +6046,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link IdentifierType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "DocumentNumberID")
     public JAXBElement<IdentifierType> createDocumentNumberID(IdentifierType value) {
@@ -5402,6 +6055,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TextTypeUnqDat }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "VoidReasonDescription")
     public JAXBElement<TextTypeUnqDat> createVoidReasonDescription(TextTypeUnqDat value) {
@@ -5410,6 +6064,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link IdentifierType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "StartDocumentNumberID")
     public JAXBElement<IdentifierType> createStartDocumentNumberID(IdentifierType value) {
@@ -5418,6 +6073,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link IdentifierType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "EndDocumentNumberID")
     public JAXBElement<IdentifierType> createEndDocumentNumberID(IdentifierType value) {
@@ -5426,6 +6082,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link IdentifierType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "PeriodID")
     public JAXBElement<IdentifierType> createPeriodID(IdentifierType value) {
@@ -5434,6 +6091,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PaymentType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "BillingPayment")
     public JAXBElement<PaymentType> createBillingPayment(PaymentType value) {
@@ -5442,6 +6100,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AdditionalInformationTypeSunatAgg }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "AdditionalInformation")
     public JAXBElement<AdditionalInformationTypeSunatAgg> createAdditionalInformation(AdditionalInformationTypeSunatAgg value) {
@@ -5450,6 +6109,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AdditionalMonetaryTotalType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "AdditionalMonetaryTotal")
     public JAXBElement<AdditionalMonetaryTotalType> createAdditionalMonetaryTotal(AdditionalMonetaryTotalType value) {
@@ -5458,6 +6118,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AdditionalPropertyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "AdditionalProperty")
     public JAXBElement<AdditionalPropertyType> createAdditionalProperty(AdditionalPropertyType value) {
@@ -5466,6 +6127,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AmountTypeCommBas }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "ReferenceAmount")
     public JAXBElement<AmountTypeCommBas> createReferenceAmount(AmountTypeCommBas value) {
@@ -5474,6 +6136,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AmountTypeCommBas }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "TotalAmount")
     public JAXBElement<AmountTypeCommBas> createTotalAmount(AmountTypeCommBas value) {
@@ -5482,6 +6145,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SUNATTransactionType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "SUNATTransaction")
     public JAXBElement<SUNATTransactionType> createSUNATTransaction(SUNATTransactionType value) {
@@ -5490,6 +6154,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SUNATEmbededDespatchAdviceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "SUNATEmbededDespatchAdvice")
     public JAXBElement<SUNATEmbededDespatchAdviceType> createSUNATEmbededDespatchAdvice(SUNATEmbededDespatchAdviceType value) {
@@ -5498,6 +6163,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SUNATShipmentType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "SUNATShipment")
     public JAXBElement<SUNATShipmentType> createSUNATShipment(SUNATShipmentType value) {
@@ -5506,6 +6172,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SUNATShipmentStageType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "SUNATShipmentStage")
     public JAXBElement<SUNATShipmentStageType> createSUNATShipmentStage(SUNATShipmentStageType value) {
@@ -5514,6 +6181,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SUNATTransportMeansType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "SUNATTransportMeans")
     public JAXBElement<SUNATTransportMeansType> createSUNATTransportMeans(SUNATTransportMeansType value) {
@@ -5522,6 +6190,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SUNATRoadTransportType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "SUNATRoadTransport")
     public JAXBElement<SUNATRoadTransportType> createSUNATRoadTransport(SUNATRoadTransportType value) {
@@ -5530,6 +6199,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SUNATDespatchLineType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "SUNATDespatchLine")
     public JAXBElement<SUNATDespatchLineType> createSUNATDespatchLine(SUNATDespatchLineType value) {
@@ -5538,6 +6208,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DriverPartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "DriverParty")
     public JAXBElement<DriverPartyType> createDriverParty(DriverPartyType value) {
@@ -5546,6 +6217,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SUNATCarrierPartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "SUNATCarrierParty")
     public JAXBElement<SUNATCarrierPartyType> createSUNATCarrierParty(SUNATCarrierPartyType value) {
@@ -5554,6 +6226,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "TransportReasonCode")
     public JAXBElement<CodeType> createTransportReasonCode(CodeType value) {
@@ -5562,6 +6235,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RoadTransportType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "SemiTrailer")
     public JAXBElement<RoadTransportType> createSemiTrailer(RoadTransportType value) {
@@ -5570,6 +6244,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeliveryCarrierDateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "DeliveryCarrierDate")
     public JAXBElement<DeliveryCarrierDateType> createDeliveryCarrierDate(DeliveryCarrierDateType value) {
@@ -5578,6 +6253,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeliveryTimeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "DeliveryCarrierTime")
     public JAXBElement<DeliveryTimeType> createDeliveryCarrierTime(DeliveryTimeType value) {
@@ -5586,6 +6262,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "OriginalDespatchDocumentReference")
     public JAXBElement<DocumentReferenceType> createOriginalDespatchDocumentReference(DocumentReferenceType value) {
@@ -5594,6 +6271,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link IDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "DespatchChangeReason")
     public JAXBElement<IDType> createDespatchChangeReason(IDType value) {
@@ -5602,6 +6280,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddressType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "OldOriginAddress")
     public JAXBElement<AddressType> createOldOriginAddress(AddressType value) {
@@ -5610,6 +6289,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddressType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "OldDeliveryAddress")
     public JAXBElement<AddressType> createOldDeliveryAddress(AddressType value) {
@@ -5618,6 +6298,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link IndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "OutsourcedIndicator")
     public JAXBElement<IndicatorType> createOutsourcedIndicator(IndicatorType value) {
@@ -5626,6 +6307,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link IndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "MultiStageIndicator")
     public JAXBElement<IndicatorType> createMultiStageIndicator(IndicatorType value) {
@@ -5634,6 +6316,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link IDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "ShipmentStageTypeCode")
     public JAXBElement<IDType> createShipmentStageTypeCode(IDType value) {
@@ -5642,6 +6325,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SUNATFiscalPathType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "SUNATFiscalPath")
     public JAXBElement<SUNATFiscalPathType> createSUNATFiscalPath(SUNATFiscalPathType value) {
@@ -5650,6 +6334,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link IDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:sunat:names:specification:ubl:peru:schema:xsd:SunatAggregateComponents-1", name = "SUNATVerificationCode")
     public JAXBElement<IDType> createSUNATVerificationCode(IDType value) {
@@ -5658,6 +6343,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RelatedItemType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "AccessoryRelatedItem")
     public JAXBElement<RelatedItemType> createAccessoryRelatedItem(RelatedItemType value) {
@@ -5666,6 +6352,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ContactType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "AccountingContact")
     public JAXBElement<ContactType> createAccountingContact(ContactType value) {
@@ -5674,6 +6361,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CustomerPartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "AccountingCustomerParty")
     public JAXBElement<CustomerPartyType> createAccountingCustomerParty(CustomerPartyType value) {
@@ -5682,6 +6370,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SupplierPartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "AccountingSupplierParty")
     public JAXBElement<SupplierPartyType> createAccountingSupplierParty(SupplierPartyType value) {
@@ -5690,6 +6379,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PackageType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ActualPackage")
     public JAXBElement<PackageType> createActualPackage(PackageType value) {
@@ -5698,6 +6388,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "AdditionalDocumentReference")
     public JAXBElement<DocumentReferenceType> createAdditionalDocumentReference(DocumentReferenceType value) {
@@ -5706,6 +6397,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ItemIdentificationType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "AdditionalItemIdentification")
     public JAXBElement<ItemIdentificationType> createAdditionalItemIdentification(ItemIdentificationType value) {
@@ -5714,6 +6406,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ItemPropertyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "AdditionalItemProperty")
     public JAXBElement<ItemPropertyType> createAdditionalItemProperty(ItemPropertyType value) {
@@ -5722,6 +6415,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TemperatureType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "AdditionalTemperature")
     public JAXBElement<TemperatureType> createAdditionalTemperature(TemperatureType value) {
@@ -5730,6 +6424,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddressType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "Address")
     public JAXBElement<AddressType> createAddress(AddressType value) {
@@ -5738,6 +6433,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddressLineType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "AddressLine")
     public JAXBElement<AddressLineType> createAddressLine(AddressLineType value) {
@@ -5746,6 +6442,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "AgentParty")
     public JAXBElement<PartyType> createAgentParty(PartyType value) {
@@ -5754,6 +6451,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AirTransportType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "AirTransport")
     public JAXBElement<AirTransportType> createAirTransport(AirTransportType value) {
@@ -5762,6 +6460,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AllowanceChargeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "AllowanceCharge")
     public JAXBElement<AllowanceChargeType> createAllowanceCharge(AllowanceChargeType value) {
@@ -5770,6 +6469,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PriceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "AlternativeConditionPrice")
     public JAXBElement<PriceType> createAlternativeConditionPrice(PriceType value) {
@@ -5778,6 +6478,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MonetaryTotalType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "AnticipatedMonetaryTotal")
     public JAXBElement<MonetaryTotalType> createAnticipatedMonetaryTotal(MonetaryTotalType value) {
@@ -5786,6 +6487,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddressType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ApplicableAddress")
     public JAXBElement<AddressType> createApplicableAddress(AddressType value) {
@@ -5794,6 +6496,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TaxCategoryType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ApplicableTaxCategory")
     public JAXBElement<TaxCategoryType> createApplicableTaxCategory(TaxCategoryType value) {
@@ -5802,6 +6505,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddressType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ApplicableTerritoryAddress")
     public JAXBElement<AddressType> createApplicableTerritoryAddress(AddressType value) {
@@ -5810,6 +6514,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AttachmentType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "Attachment")
     public JAXBElement<AttachmentType> createAttachment(AttachmentType value) {
@@ -5818,6 +6523,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BillingReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "BillingReference")
     public JAXBElement<BillingReferenceType> createBillingReference(BillingReferenceType value) {
@@ -5826,6 +6532,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BillingReferenceLineType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "BillingReferenceLine")
     public JAXBElement<BillingReferenceLineType> createBillingReferenceLine(BillingReferenceLineType value) {
@@ -5834,6 +6541,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BranchType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "Branch")
     public JAXBElement<BranchType> createBranch(BranchType value) {
@@ -5842,6 +6550,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ContactType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "BuyerContact")
     public JAXBElement<ContactType> createBuyerContact(ContactType value) {
@@ -5850,6 +6559,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CustomerPartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "BuyerCustomerParty")
     public JAXBElement<CustomerPartyType> createBuyerCustomerParty(CustomerPartyType value) {
@@ -5858,6 +6568,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LineItemType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "BuyerProposedSubstituteLineItem")
     public JAXBElement<LineItemType> createBuyerProposedSubstituteLineItem(LineItemType value) {
@@ -5866,6 +6577,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ItemIdentificationType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "BuyersItemIdentification")
     public JAXBElement<ItemIdentificationType> createBuyersItemIdentification(ItemIdentificationType value) {
@@ -5874,6 +6586,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CardAccountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "CardAccount")
     public JAXBElement<CardAccountType> createCardAccount(CardAccountType value) {
@@ -5882,6 +6595,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "CarrierParty")
     public JAXBElement<PartyType> createCarrierParty(PartyType value) {
@@ -5890,6 +6604,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "CatalogueDocumentReference")
     public JAXBElement<DocumentReferenceType> createCatalogueDocumentReference(DocumentReferenceType value) {
@@ -5898,6 +6613,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ItemIdentificationType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "CatalogueItemIdentification")
     public JAXBElement<ItemIdentificationType> createCatalogueItemIdentification(ItemIdentificationType value) {
@@ -5906,6 +6622,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CatalogueItemSpecificationUpdateLineType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "CatalogueItemSpecificationUpdateLine")
     public JAXBElement<CatalogueItemSpecificationUpdateLineType> createCatalogueItemSpecificationUpdateLine(CatalogueItemSpecificationUpdateLineType value) {
@@ -5914,6 +6631,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CatalogueLineType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "CatalogueLine")
     public JAXBElement<CatalogueLineType> createCatalogueLine(CatalogueLineType value) {
@@ -5922,6 +6640,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LineReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "CatalogueLineReference")
     public JAXBElement<LineReferenceType> createCatalogueLineReference(LineReferenceType value) {
@@ -5930,6 +6649,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CataloguePricingUpdateLineType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "CataloguePricingUpdateLine")
     public JAXBElement<CataloguePricingUpdateLineType> createCataloguePricingUpdateLine(CataloguePricingUpdateLineType value) {
@@ -5938,6 +6658,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CatalogueReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "CatalogueReference")
     public JAXBElement<CatalogueReferenceType> createCatalogueReference(CatalogueReferenceType value) {
@@ -5946,6 +6667,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CatalogueRequestLineType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "CatalogueRequestLine")
     public JAXBElement<CatalogueRequestLineType> createCatalogueRequestLine(CatalogueRequestLineType value) {
@@ -5954,6 +6676,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ClassificationCategoryType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "CategorizesClassificationCategory")
     public JAXBElement<ClassificationCategoryType> createCategorizesClassificationCategory(ClassificationCategoryType value) {
@@ -5962,6 +6685,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CertificateOfOriginApplicationType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "CertificateOfOriginApplication")
     public JAXBElement<CertificateOfOriginApplicationType> createCertificateOfOriginApplication(CertificateOfOriginApplicationType value) {
@@ -5970,6 +6694,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ClassificationCategoryType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ClassificationCategory")
     public JAXBElement<ClassificationCategoryType> createClassificationCategory(ClassificationCategoryType value) {
@@ -5978,6 +6703,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ClassificationSchemeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ClassificationScheme")
     public JAXBElement<ClassificationSchemeType> createClassificationScheme(ClassificationSchemeType value) {
@@ -5986,6 +6712,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TaxCategoryType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ClassifiedTaxCategory")
     public JAXBElement<TaxCategoryType> createClassifiedTaxCategory(TaxCategoryType value) {
@@ -5994,6 +6721,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CommodityClassificationType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "CommodityClassification")
     public JAXBElement<CommodityClassificationType> createCommodityClassification(CommodityClassificationType value) {
@@ -6002,6 +6730,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CommunicationType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "Communication")
     public JAXBElement<CommunicationType> createCommunication(CommunicationType value) {
@@ -6010,6 +6739,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RelatedItemType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ComplementaryRelatedItem")
     public JAXBElement<RelatedItemType> createComplementaryRelatedItem(RelatedItemType value) {
@@ -6018,6 +6748,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RelatedItemType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ComponentRelatedItem")
     public JAXBElement<RelatedItemType> createComponentRelatedItem(RelatedItemType value) {
@@ -6026,6 +6757,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ConsigneeParty")
     public JAXBElement<PartyType> createConsigneeParty(PartyType value) {
@@ -6034,6 +6766,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ConsignmentType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "Consignment")
     public JAXBElement<ConsignmentType> createConsignment(ConsignmentType value) {
@@ -6042,6 +6775,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ConsignorParty")
     public JAXBElement<PartyType> createConsignorParty(PartyType value) {
@@ -6050,6 +6784,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ContactType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "Contact")
     public JAXBElement<ContactType> createContact(ContactType value) {
@@ -6058,6 +6793,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ContactParty")
     public JAXBElement<PartyType> createContactParty(PartyType value) {
@@ -6066,6 +6802,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GoodsItemType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ContainedGoodsItem")
     public JAXBElement<GoodsItemType> createContainedGoodsItem(GoodsItemType value) {
@@ -6074,6 +6811,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PackageType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ContainedPackage")
     public JAXBElement<PackageType> createContainedPackage(PackageType value) {
@@ -6082,6 +6820,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ContractType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "Contract")
     public JAXBElement<ContractType> createContract(ContractType value) {
@@ -6090,6 +6829,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ContractDocumentReference")
     public JAXBElement<DocumentReferenceType> createContractDocumentReference(DocumentReferenceType value) {
@@ -6098,6 +6838,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CustomerPartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ContractorCustomerParty")
     public JAXBElement<CustomerPartyType> createContractorCustomerParty(CustomerPartyType value) {
@@ -6106,6 +6847,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CorporateRegistrationSchemeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "CorporateRegistrationScheme")
     public JAXBElement<CorporateRegistrationSchemeType> createCorporateRegistrationScheme(CorporateRegistrationSchemeType value) {
@@ -6114,6 +6856,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CountryType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "Country")
     public JAXBElement<CountryType> createCountry(CountryType value) {
@@ -6122,6 +6865,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CreditAccountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "CreditAccount")
     public JAXBElement<CreditAccountType> createCreditAccount(CreditAccountType value) {
@@ -6130,6 +6874,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "CreditNoteDocumentReference")
     public JAXBElement<DocumentReferenceType> createCreditNoteDocumentReference(DocumentReferenceType value) {
@@ -6138,6 +6883,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CreditNoteLineType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "CreditNoteLine")
     public JAXBElement<CreditNoteLineType> createCreditNoteLine(CreditNoteLineType value) {
@@ -6146,6 +6892,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link StatusType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "CurrentStatus")
     public JAXBElement<StatusType> createCurrentStatus(StatusType value) {
@@ -6154,6 +6901,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CustomerPartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "CustomerParty")
     public JAXBElement<CustomerPartyType> createCustomerParty(CustomerPartyType value) {
@@ -6162,6 +6910,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "DebitNoteDocumentReference")
     public JAXBElement<DocumentReferenceType> createDebitNoteDocumentReference(DocumentReferenceType value) {
@@ -6170,6 +6919,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DebitNoteLineType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "DebitNoteLine")
     public JAXBElement<DebitNoteLineType> createDebitNoteLine(DebitNoteLineType value) {
@@ -6178,6 +6928,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LanguageType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "DefaultLanguage")
     public JAXBElement<LanguageType> createDefaultLanguage(LanguageType value) {
@@ -6186,6 +6937,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CatalogueReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "DeletedCatalogueReference")
     public JAXBElement<CatalogueReferenceType> createDeletedCatalogueReference(CatalogueReferenceType value) {
@@ -6194,6 +6946,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeliveryType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "Delivery")
     public JAXBElement<DeliveryType> createDelivery(DeliveryType value) {
@@ -6202,6 +6955,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddressType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "DeliveryAddress")
     public JAXBElement<AddressType> createDeliveryAddress(AddressType value) {
@@ -6210,6 +6964,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ContactType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "DeliveryContact")
     public JAXBElement<ContactType> createDeliveryContact(ContactType value) {
@@ -6218,6 +6973,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CustomerPartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "DeliveryCustomerParty")
     public JAXBElement<CustomerPartyType> createDeliveryCustomerParty(CustomerPartyType value) {
@@ -6226,6 +6982,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LocationTypeCommAgg }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "DeliveryLocation")
     public JAXBElement<LocationTypeCommAgg> createDeliveryLocation(LocationTypeCommAgg value) {
@@ -6234,6 +6991,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "DeliveryParty")
     public JAXBElement<PartyType> createDeliveryParty(PartyType value) {
@@ -6242,6 +7000,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeliveryTermsType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "DeliveryTerms")
     public JAXBElement<DeliveryTermsType> createDeliveryTerms(DeliveryTermsType value) {
@@ -6250,6 +7009,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeliveryUnitType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "DeliveryUnit")
     public JAXBElement<DeliveryUnitType> createDeliveryUnit(DeliveryUnitType value) {
@@ -6258,6 +7018,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DespatchType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "Despatch")
     public JAXBElement<DespatchType> createDespatch(DespatchType value) {
@@ -6266,6 +7027,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddressType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "DespatchAddress")
     public JAXBElement<AddressType> createDespatchAddress(AddressType value) {
@@ -6274,6 +7036,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ContactType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "DespatchContact")
     public JAXBElement<ContactType> createDespatchContact(ContactType value) {
@@ -6282,6 +7045,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "DespatchDocumentReference")
     public JAXBElement<DocumentReferenceType> createDespatchDocumentReference(DocumentReferenceType value) {
@@ -6290,6 +7054,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DespatchLineType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "DespatchLine")
     public JAXBElement<DespatchLineType> createDespatchLine(DespatchLineType value) {
@@ -6298,6 +7063,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LineReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "DespatchLineReference")
     public JAXBElement<LineReferenceType> createDespatchLineReference(LineReferenceType value) {
@@ -6306,6 +7072,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "DespatchParty")
     public JAXBElement<PartyType> createDespatchParty(PartyType value) {
@@ -6314,6 +7081,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SupplierPartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "DespatchSupplierParty")
     public JAXBElement<SupplierPartyType> createDespatchSupplierParty(SupplierPartyType value) {
@@ -6322,6 +7090,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CountryType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "DestinationCountry")
     public JAXBElement<CountryType> createDestinationCountry(CountryType value) {
@@ -6330,6 +7099,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AttachmentType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "DigitalSignatureAttachment")
     public JAXBElement<AttachmentType> createDigitalSignatureAttachment(AttachmentType value) {
@@ -6338,6 +7108,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DimensionType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "Dimension")
     public JAXBElement<DimensionType> createDimension(DimensionType value) {
@@ -6346,6 +7117,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ResponseType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "DiscrepancyResponse")
     public JAXBElement<ResponseType> createDiscrepancyResponse(ResponseType value) {
@@ -6354,6 +7126,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentDistributionType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "DocumentDistribution")
     public JAXBElement<DocumentDistributionType> createDocumentDistribution(DocumentDistributionType value) {
@@ -6362,6 +7135,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "DocumentReference")
     public JAXBElement<DocumentReferenceType> createDocumentReference(DocumentReferenceType value) {
@@ -6370,6 +7144,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentResponseType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "DocumentResponse")
     public JAXBElement<DocumentResponseType> createDocumentResponse(DocumentResponseType value) {
@@ -6378,6 +7153,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link EndorsementType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "EmbassyEndorsement")
     public JAXBElement<EndorsementType> createEmbassyEndorsement(EndorsementType value) {
@@ -6386,6 +7162,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TemperatureType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "EmergencyTemperature")
     public JAXBElement<TemperatureType> createEmergencyTemperature(TemperatureType value) {
@@ -6394,6 +7171,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link EndorsementType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "Endorsement")
     public JAXBElement<EndorsementType> createEndorsement(EndorsementType value) {
@@ -6402,6 +7180,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link EndorserPartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "EndorserParty")
     public JAXBElement<EndorserPartyType> createEndorserParty(EndorserPartyType value) {
@@ -6410,6 +7189,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PeriodType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "EstimatedDeliveryPeriod")
     public JAXBElement<PeriodType> createEstimatedDeliveryPeriod(PeriodType value) {
@@ -6418,6 +7198,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ExchangeRateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ExchangeRate")
     public JAXBElement<ExchangeRateType> createExchangeRate(ExchangeRateType value) {
@@ -6426,6 +7207,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CountryType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ExportCountry")
     public JAXBElement<CountryType> createExportCountry(CountryType value) {
@@ -6434,6 +7216,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ExporterParty")
     public JAXBElement<PartyType> createExporterParty(PartyType value) {
@@ -6442,6 +7225,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ExternalReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ExternalReference")
     public JAXBElement<ExternalReferenceType> createExternalReference(ExternalReferenceType value) {
@@ -6450,6 +7234,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "FinalDeliveryParty")
     public JAXBElement<PartyType> createFinalDeliveryParty(PartyType value) {
@@ -6458,6 +7243,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TransportationServiceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "FinalDeliveryTransportationService")
     public JAXBElement<TransportationServiceType> createFinalDeliveryTransportationService(TransportationServiceType value) {
@@ -6466,6 +7252,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CountryType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "FinalDestinationCountry")
     public JAXBElement<CountryType> createFinalDestinationCountry(CountryType value) {
@@ -6474,6 +7261,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link FinancialAccountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "FinancialAccount")
     public JAXBElement<FinancialAccountType> createFinancialAccount(FinancialAccountType value) {
@@ -6482,6 +7270,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link FinancialInstitutionType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "FinancialInstitution")
     public JAXBElement<FinancialInstitutionType> createFinancialInstitution(FinancialInstitutionType value) {
@@ -6490,6 +7279,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BranchType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "FinancialInstitutionBranch")
     public JAXBElement<BranchType> createFinancialInstitutionBranch(BranchType value) {
@@ -6498,6 +7288,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LocationTypeCommAgg }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "FirstArrivalPortLocation")
     public JAXBElement<LocationTypeCommAgg> createFirstArrivalPortLocation(LocationTypeCommAgg value) {
@@ -6506,6 +7297,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TemperatureType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "FlashpointTemperature")
     public JAXBElement<TemperatureType> createFlashpointTemperature(TemperatureType value) {
@@ -6514,6 +7306,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ContractType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ForeignExchangeContract")
     public JAXBElement<ContractType> createForeignExchangeContract(ContractType value) {
@@ -6522,6 +7315,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AllowanceChargeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "FreightAllowanceCharge")
     public JAXBElement<AllowanceChargeType> createFreightAllowanceCharge(AllowanceChargeType value) {
@@ -6530,6 +7324,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "FreightForwarderParty")
     public JAXBElement<PartyType> createFreightForwarderParty(PartyType value) {
@@ -6538,6 +7333,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GoodsItemType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "GoodsItem")
     public JAXBElement<GoodsItemType> createGoodsItem(GoodsItemType value) {
@@ -6546,6 +7342,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GoodsItemContainerType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "GoodsItemContainer")
     public JAXBElement<GoodsItemContainerType> createGoodsItemContainer(GoodsItemContainerType value) {
@@ -6554,6 +7351,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DespatchLineType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "HandlingUnitDespatchLine")
     public JAXBElement<DespatchLineType> createHandlingUnitDespatchLine(DespatchLineType value) {
@@ -6562,6 +7360,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link HazardousGoodsTransitType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "HazardousGoodsTransit")
     public JAXBElement<HazardousGoodsTransitType> createHazardousGoodsTransit(HazardousGoodsTransitType value) {
@@ -6570,6 +7369,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link HazardousItemType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "HazardousItem")
     public JAXBElement<HazardousItemType> createHazardousItem(HazardousItemType value) {
@@ -6578,6 +7378,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ImporterParty")
     public JAXBElement<PartyType> createImporterParty(PartyType value) {
@@ -6586,6 +7387,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "InformationContentProviderParty")
     public JAXBElement<PartyType> createInformationContentProviderParty(PartyType value) {
@@ -6594,6 +7396,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link EndorsementType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "InsuranceEndorsement")
     public JAXBElement<EndorsementType> createInsuranceEndorsement(EndorsementType value) {
@@ -6602,6 +7405,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "InvoiceDocumentReference")
     public JAXBElement<DocumentReferenceType> createInvoiceDocumentReference(DocumentReferenceType value) {
@@ -6610,6 +7414,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link InvoiceLineType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "InvoiceLine")
     public JAXBElement<InvoiceLineType> createInvoiceLine(InvoiceLineType value) {
@@ -6618,6 +7423,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PeriodType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "InvoicePeriod")
     public JAXBElement<PeriodType> createInvoicePeriod(PeriodType value) {
@@ -6626,6 +7432,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link EndorsementType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "IssuerEndorsement")
     public JAXBElement<EndorsementType> createIssuerEndorsement(EndorsementType value) {
@@ -6634,6 +7441,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "IssuerParty")
     public JAXBElement<PartyType> createIssuerParty(PartyType value) {
@@ -6642,6 +7450,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CountryType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "IssuingCountry")
     public JAXBElement<CountryType> createIssuingCountry(CountryType value) {
@@ -6650,6 +7459,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ItemType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "Item")
     public JAXBElement<ItemType> createItem(ItemType value) {
@@ -6658,6 +7468,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ItemComparisonType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ItemComparison")
     public JAXBElement<ItemComparisonType> createItemComparison(ItemComparisonType value) {
@@ -6666,6 +7477,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ItemIdentificationType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ItemIdentification")
     public JAXBElement<ItemIdentificationType> createItemIdentification(ItemIdentificationType value) {
@@ -6674,6 +7486,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ItemInstanceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ItemInstance")
     public JAXBElement<ItemInstanceType> createItemInstance(ItemInstanceType value) {
@@ -6682,6 +7495,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ItemLocationQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ItemLocationQuantity")
     public JAXBElement<ItemLocationQuantityType> createItemLocationQuantity(ItemLocationQuantityType value) {
@@ -6690,6 +7504,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ItemPropertyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ItemProperty")
     public JAXBElement<ItemPropertyType> createItemProperty(ItemPropertyType value) {
@@ -6698,6 +7513,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ItemPropertyGroupType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ItemPropertyGroup")
     public JAXBElement<ItemPropertyGroupType> createItemPropertyGroup(ItemPropertyGroupType value) {
@@ -6706,6 +7522,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ItemSpecificationDocumentReference")
     public JAXBElement<DocumentReferenceType> createItemSpecificationDocumentReference(DocumentReferenceType value) {
@@ -6714,6 +7531,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddressType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "JurisdictionRegionAddress")
     public JAXBElement<AddressType> createJurisdictionRegionAddress(AddressType value) {
@@ -6722,6 +7540,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LanguageType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "Language")
     public JAXBElement<LanguageType> createLanguage(LanguageType value) {
@@ -6730,6 +7549,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LocationTypeCommAgg }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "LastExitPortLocation")
     public JAXBElement<LocationTypeCommAgg> createLastExitPortLocation(LocationTypeCommAgg value) {
@@ -6738,6 +7558,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MonetaryTotalType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "LegalMonetaryTotal")
     public JAXBElement<MonetaryTotalType> createLegalMonetaryTotal(MonetaryTotalType value) {
@@ -6746,6 +7567,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LineItemType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "LineItem")
     public JAXBElement<LineItemType> createLineItem(LineItemType value) {
@@ -6754,6 +7576,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LineReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "LineReference")
     public JAXBElement<LineReferenceType> createLineReference(LineReferenceType value) {
@@ -6762,6 +7585,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LineResponseType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "LineResponse")
     public JAXBElement<LineResponseType> createLineResponse(LineResponseType value) {
@@ -6770,6 +7594,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PeriodType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "LineValidityPeriod")
     public JAXBElement<PeriodType> createLineValidityPeriod(PeriodType value) {
@@ -6778,6 +7603,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LocationTypeCommAgg }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "LoadingLocation")
     public JAXBElement<LocationTypeCommAgg> createLoadingLocation(LocationTypeCommAgg value) {
@@ -6786,6 +7612,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LocationTypeCommAgg }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "LoadingPortLocation")
     public JAXBElement<LocationTypeCommAgg> createLoadingPortLocation(LocationTypeCommAgg value) {
@@ -6794,6 +7621,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "LoadingProofParty")
     public JAXBElement<PartyType> createLoadingProofParty(PartyType value) {
@@ -6802,6 +7630,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LocationTypeCommAgg }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "Location")
     public JAXBElement<LocationTypeCommAgg> createLocation(LocationTypeCommAgg value) {
@@ -6810,6 +7639,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LocationCoordinateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "LocationCoordinate")
     public JAXBElement<LocationCoordinateType> createLocationCoordinate(LocationCoordinateType value) {
@@ -6818,6 +7648,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LotIdentificationType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "LotIdentification")
     public JAXBElement<LotIdentificationType> createLotIdentification(LotIdentificationType value) {
@@ -6826,6 +7657,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ManufacturerParty")
     public JAXBElement<PartyType> createManufacturerParty(PartyType value) {
@@ -6834,6 +7666,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ItemIdentificationType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ManufacturersItemIdentification")
     public JAXBElement<ItemIdentificationType> createManufacturersItemIdentification(ItemIdentificationType value) {
@@ -6842,6 +7675,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MaritimeTransportType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "MaritimeTransport")
     public JAXBElement<MaritimeTransportType> createMaritimeTransport(MaritimeTransportType value) {
@@ -6850,6 +7684,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TemperatureType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "MaximumTemperature")
     public JAXBElement<TemperatureType> createMaximumTemperature(TemperatureType value) {
@@ -6858,6 +7693,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DimensionType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "MeasurementDimension")
     public JAXBElement<DimensionType> createMeasurementDimension(DimensionType value) {
@@ -6866,6 +7702,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TemperatureType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "MinimumTemperature")
     public JAXBElement<TemperatureType> createMinimumTemperature(TemperatureType value) {
@@ -6874,6 +7711,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MonetaryTotalType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "MonetaryTotal")
     public JAXBElement<MonetaryTotalType> createMonetaryTotal(MonetaryTotalType value) {
@@ -6882,6 +7720,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "NotifyParty")
     public JAXBElement<PartyType> createNotifyParty(PartyType value) {
@@ -6890,6 +7729,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "OrderDocumentReference")
     public JAXBElement<DocumentReferenceType> createOrderDocumentReference(DocumentReferenceType value) {
@@ -6898,6 +7738,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link OrderedShipmentType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "OrderedShipment")
     public JAXBElement<OrderedShipmentType> createOrderedShipment(OrderedShipmentType value) {
@@ -6906,6 +7747,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link OrderLineType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "OrderLine")
     public JAXBElement<OrderLineType> createOrderLine(OrderLineType value) {
@@ -6914,6 +7756,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link OrderLineReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "OrderLineReference")
     public JAXBElement<OrderLineReferenceType> createOrderLineReference(OrderLineReferenceType value) {
@@ -6922,6 +7765,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link OrderReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "OrderReference")
     public JAXBElement<OrderReferenceType> createOrderReference(OrderReferenceType value) {
@@ -6930,6 +7774,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddressType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "OriginAddress")
     public JAXBElement<AddressType> createOriginAddress(AddressType value) {
@@ -6938,6 +7783,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CountryType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "OriginalDepartureCountry")
     public JAXBElement<CountryType> createOriginalDepartureCountry(CountryType value) {
@@ -6946,6 +7792,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "OriginalDespatchParty")
     public JAXBElement<PartyType> createOriginalDespatchParty(PartyType value) {
@@ -6954,6 +7801,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TransportationServiceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "OriginalDespatchTransportationService")
     public JAXBElement<TransportationServiceType> createOriginalDespatchTransportationService(TransportationServiceType value) {
@@ -6962,6 +7810,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "OriginalDocumentReference")
     public JAXBElement<DocumentReferenceType> createOriginalDocumentReference(DocumentReferenceType value) {
@@ -6970,6 +7819,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ItemLocationQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "OriginalItemLocationQuantity")
     public JAXBElement<ItemLocationQuantityType> createOriginalItemLocationQuantity(ItemLocationQuantityType value) {
@@ -6978,6 +7828,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CustomerPartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "OriginatorCustomerParty")
     public JAXBElement<CustomerPartyType> createOriginatorCustomerParty(CustomerPartyType value) {
@@ -6986,6 +7837,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "OriginatorDocumentReference")
     public JAXBElement<DocumentReferenceType> createOriginatorDocumentReference(DocumentReferenceType value) {
@@ -6994,6 +7846,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "OriginatorParty")
     public JAXBElement<PartyType> createOriginatorParty(PartyType value) {
@@ -7002,6 +7855,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CountryType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "OriginCountry")
     public JAXBElement<CountryType> createOriginCountry(CountryType value) {
@@ -7010,6 +7864,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CommunicationType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "OtherCommunication")
     public JAXBElement<CommunicationType> createOtherCommunication(CommunicationType value) {
@@ -7018,6 +7873,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "OwnerParty")
     public JAXBElement<PartyType> createOwnerParty(PartyType value) {
@@ -7026,6 +7882,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PackageType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "Package")
     public JAXBElement<PackageType> createPackage(PackageType value) {
@@ -7034,6 +7891,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "Party")
     public JAXBElement<PartyType> createParty(PartyType value) {
@@ -7042,6 +7900,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyIdentificationType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "PartyIdentification")
     public JAXBElement<PartyIdentificationType> createPartyIdentification(PartyIdentificationType value) {
@@ -7050,6 +7909,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyLegalEntityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "PartyLegalEntity")
     public JAXBElement<PartyLegalEntityType> createPartyLegalEntity(PartyLegalEntityType value) {
@@ -7058,6 +7918,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyNameType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "PartyName")
     public JAXBElement<PartyNameType> createPartyName(PartyNameType value) {
@@ -7066,6 +7927,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyTaxSchemeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "PartyTaxScheme")
     public JAXBElement<PartyTaxSchemeType> createPartyTaxScheme(PartyTaxSchemeType value) {
@@ -7074,6 +7936,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link FinancialAccountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "PayeeFinancialAccount")
     public JAXBElement<FinancialAccountType> createPayeeFinancialAccount(FinancialAccountType value) {
@@ -7082,6 +7945,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "PayeeParty")
     public JAXBElement<PartyType> createPayeeParty(PartyType value) {
@@ -7090,6 +7954,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link FinancialAccountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "PayerFinancialAccount")
     public JAXBElement<FinancialAccountType> createPayerFinancialAccount(FinancialAccountType value) {
@@ -7098,6 +7963,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PaymentType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "Payment")
     public JAXBElement<PaymentType> createPayment(PaymentType value) {
@@ -7106,6 +7972,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ExchangeRateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "PaymentAlternativeExchangeRate")
     public JAXBElement<ExchangeRateType> createPaymentAlternativeExchangeRate(ExchangeRateType value) {
@@ -7114,6 +7981,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ExchangeRateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "PaymentExchangeRate")
     public JAXBElement<ExchangeRateType> createPaymentExchangeRate(ExchangeRateType value) {
@@ -7122,6 +7990,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PaymentMeansType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "PaymentMeans")
     public JAXBElement<PaymentMeansType> createPaymentMeans(PaymentMeansType value) {
@@ -7130,6 +7999,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PaymentTermsType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "PaymentTerms")
     public JAXBElement<PaymentTermsType> createPaymentTerms(PaymentTermsType value) {
@@ -7138,6 +8008,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PeriodType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "PenaltyPeriod")
     public JAXBElement<PeriodType> createPenaltyPeriod(PeriodType value) {
@@ -7146,6 +8017,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PeriodType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "Period")
     public JAXBElement<PeriodType> createPeriod(PeriodType value) {
@@ -7154,6 +8026,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PersonType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "Person")
     public JAXBElement<PersonType> createPerson(PersonType value) {
@@ -7162,6 +8035,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PhysicalAttributeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "PhysicalAttribute")
     public JAXBElement<PhysicalAttributeType> createPhysicalAttribute(PhysicalAttributeType value) {
@@ -7170,6 +8044,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LocationTypeCommAgg }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "PhysicalLocation")
     public JAXBElement<LocationTypeCommAgg> createPhysicalLocation(LocationTypeCommAgg value) {
@@ -7178,6 +8053,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddressType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "PostalAddress")
     public JAXBElement<AddressType> createPostalAddress(AddressType value) {
@@ -7186,6 +8062,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PaymentType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "PrepaidPayment")
     public JAXBElement<PaymentType> createPrepaidPayment(PaymentType value) {
@@ -7194,6 +8071,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "PreparationParty")
     public JAXBElement<PartyType> createPreparationParty(PartyType value) {
@@ -7202,6 +8080,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PriceListType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "PreviousPriceList")
     public JAXBElement<PriceListType> createPreviousPriceList(PriceListType value) {
@@ -7210,6 +8089,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PriceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "Price")
     public JAXBElement<PriceType> createPrice(PriceType value) {
@@ -7218,6 +8098,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PriceListType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "PriceList")
     public JAXBElement<PriceListType> createPriceList(PriceListType value) {
@@ -7226,6 +8107,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ExchangeRateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "PricingExchangeRate")
     public JAXBElement<ExchangeRateType> createPricingExchangeRate(ExchangeRateType value) {
@@ -7234,6 +8116,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PricingReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "PricingReference")
     public JAXBElement<PricingReferenceType> createPricingReference(PricingReferenceType value) {
@@ -7242,6 +8125,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PeriodType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "PromisedDeliveryPeriod")
     public JAXBElement<PeriodType> createPromisedDeliveryPeriod(PeriodType value) {
@@ -7250,6 +8134,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ProviderParty")
     public JAXBElement<PartyType> createProviderParty(PartyType value) {
@@ -7258,6 +8143,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "QuotationDocumentReference")
     public JAXBElement<DocumentReferenceType> createQuotationDocumentReference(DocumentReferenceType value) {
@@ -7266,6 +8152,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link QuotationLineType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "QuotationLine")
     public JAXBElement<QuotationLineType> createQuotationLine(QuotationLineType value) {
@@ -7274,6 +8161,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LineReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "QuotationLineReference")
     public JAXBElement<LineReferenceType> createQuotationLineReference(LineReferenceType value) {
@@ -7282,6 +8170,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MonetaryTotalType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "QuotedMonetaryTotal")
     public JAXBElement<MonetaryTotalType> createQuotedMonetaryTotal(MonetaryTotalType value) {
@@ -7290,6 +8179,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RailTransportType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "RailTransport")
     public JAXBElement<RailTransportType> createRailTransport(RailTransportType value) {
@@ -7298,6 +8188,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ReceiptDocumentReference")
     public JAXBElement<DocumentReferenceType> createReceiptDocumentReference(DocumentReferenceType value) {
@@ -7306,6 +8197,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ReceiptLineType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ReceiptLine")
     public JAXBElement<ReceiptLineType> createReceiptLine(ReceiptLineType value) {
@@ -7314,6 +8206,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LineReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ReceiptLineReference")
     public JAXBElement<LineReferenceType> createReceiptLineReference(LineReferenceType value) {
@@ -7322,6 +8215,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ReceiptLineType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ReceivedHandlingUnitReceiptLine")
     public JAXBElement<ReceiptLineType> createReceivedHandlingUnitReceiptLine(ReceiptLineType value) {
@@ -7330,6 +8224,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ReceiverParty")
     public JAXBElement<PartyType> createReceiverParty(PartyType value) {
@@ -7338,6 +8233,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "RecipientParty")
     public JAXBElement<PartyType> createRecipientParty(PartyType value) {
@@ -7346,6 +8242,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ContractType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ReferencedContract")
     public JAXBElement<ContractType> createReferencedContract(ContractType value) {
@@ -7354,6 +8251,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddressType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "RegistrationAddress")
     public JAXBElement<AddressType> createRegistrationAddress(AddressType value) {
@@ -7362,6 +8260,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CatalogueReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "RelatedCatalogueReference")
     public JAXBElement<CatalogueReferenceType> createRelatedCatalogueReference(CatalogueReferenceType value) {
@@ -7370,6 +8269,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RelatedItemType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "RelatedItem")
     public JAXBElement<RelatedItemType> createRelatedItem(RelatedItemType value) {
@@ -7378,6 +8278,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ReminderDocumentReference")
     public JAXBElement<DocumentReferenceType> createReminderDocumentReference(DocumentReferenceType value) {
@@ -7386,6 +8287,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ReminderLineType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ReminderLine")
     public JAXBElement<ReminderLineType> createReminderLine(ReminderLineType value) {
@@ -7394,6 +8296,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PeriodType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ReminderPeriod")
     public JAXBElement<PeriodType> createReminderPeriod(PeriodType value) {
@@ -7402,6 +8305,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RemittanceAdviceLineType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "RemittanceAdviceLine")
     public JAXBElement<RemittanceAdviceLineType> createRemittanceAdviceLine(RemittanceAdviceLineType value) {
@@ -7410,6 +8314,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RelatedItemType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ReplacementRelatedItem")
     public JAXBElement<RelatedItemType> createReplacementRelatedItem(RelatedItemType value) {
@@ -7418,6 +8323,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ShipmentType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ReportedShipment")
     public JAXBElement<ShipmentType> createReportedShipment(ShipmentType value) {
@@ -7426,6 +8332,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CatalogueReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "RequestedCatalogueReference")
     public JAXBElement<CatalogueReferenceType> createRequestedCatalogueReference(CatalogueReferenceType value) {
@@ -7434,6 +8341,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ClassificationSchemeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "RequestedClassificationScheme")
     public JAXBElement<ClassificationSchemeType> createRequestedClassificationScheme(ClassificationSchemeType value) {
@@ -7442,6 +8350,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PeriodType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "RequestedDeliveryPeriod")
     public JAXBElement<PeriodType> createRequestedDeliveryPeriod(PeriodType value) {
@@ -7450,6 +8359,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LanguageType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "RequestedLanguage")
     public JAXBElement<LanguageType> createRequestedLanguage(LanguageType value) {
@@ -7458,6 +8368,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MonetaryTotalType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "RequestedMonetaryTotal")
     public JAXBElement<MonetaryTotalType> createRequestedMonetaryTotal(MonetaryTotalType value) {
@@ -7466,6 +8377,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "RequestForQuotationDocumentReference")
     public JAXBElement<DocumentReferenceType> createRequestForQuotationDocumentReference(DocumentReferenceType value) {
@@ -7474,6 +8386,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RequestForQuotationLineType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "RequestForQuotationLine")
     public JAXBElement<RequestForQuotationLineType> createRequestForQuotationLine(RequestForQuotationLineType value) {
@@ -7482,6 +8395,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ItemLocationQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "RequiredItemLocationQuantity")
     public JAXBElement<ItemLocationQuantityType> createRequiredItemLocationQuantity(ItemLocationQuantityType value) {
@@ -7490,6 +8404,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RelatedItemType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "RequiredRelatedItem")
     public JAXBElement<RelatedItemType> createRequiredRelatedItem(RelatedItemType value) {
@@ -7498,6 +8413,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ResponseType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "Response")
     public JAXBElement<ResponseType> createResponse(ResponseType value) {
@@ -7506,6 +8422,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RoadTransportType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "RoadTransport")
     public JAXBElement<RoadTransportType> createRoadTransport(RoadTransportType value) {
@@ -7514,6 +8431,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SecondaryHazardType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "SecondaryHazard")
     public JAXBElement<SecondaryHazardType> createSecondaryHazard(SecondaryHazardType value) {
@@ -7522,6 +8440,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "SelfBilledCreditNoteDocumentReference")
     public JAXBElement<DocumentReferenceType> createSelfBilledCreditNoteDocumentReference(DocumentReferenceType value) {
@@ -7530,6 +8449,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "SelfBilledInvoiceDocumentReference")
     public JAXBElement<DocumentReferenceType> createSelfBilledInvoiceDocumentReference(DocumentReferenceType value) {
@@ -7538,6 +8458,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ContactType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "SellerContact")
     public JAXBElement<ContactType> createSellerContact(ContactType value) {
@@ -7546,6 +8467,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LineItemType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "SellerProposedSubstituteLineItem")
     public JAXBElement<LineItemType> createSellerProposedSubstituteLineItem(LineItemType value) {
@@ -7554,6 +8476,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ItemIdentificationType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "SellersItemIdentification")
     public JAXBElement<ItemIdentificationType> createSellersItemIdentification(ItemIdentificationType value) {
@@ -7562,6 +8485,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LineItemType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "SellerSubstitutedLineItem")
     public JAXBElement<LineItemType> createSellerSubstitutedLineItem(LineItemType value) {
@@ -7570,6 +8494,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SupplierPartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "SellerSupplierParty")
     public JAXBElement<SupplierPartyType> createSellerSupplierParty(SupplierPartyType value) {
@@ -7578,6 +8503,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "SenderParty")
     public JAXBElement<PartyType> createSenderParty(PartyType value) {
@@ -7586,6 +8512,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PeriodType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "SettlementPeriod")
     public JAXBElement<PeriodType> createSettlementPeriod(PeriodType value) {
@@ -7594,6 +8521,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ShipmentType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "Shipment")
     public JAXBElement<ShipmentType> createShipment(ShipmentType value) {
@@ -7602,6 +8530,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ShipmentStageType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ShipmentStage")
     public JAXBElement<ShipmentStageType> createShipmentStage(ShipmentStageType value) {
@@ -7610,6 +8539,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ContactType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "SignatoryContact")
     public JAXBElement<ContactType> createSignatoryContact(ContactType value) {
@@ -7618,6 +8548,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "SignatoryParty")
     public JAXBElement<PartyType> createSignatoryParty(PartyType value) {
@@ -7626,6 +8557,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SignatureType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "Signature")
     public JAXBElement<SignatureType> createSignature(SignatureType value) {
@@ -7634,6 +8566,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ItemIdentificationType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "StandardItemIdentification")
     public JAXBElement<ItemIdentificationType> createStandardItemIdentification(ItemIdentificationType value) {
@@ -7642,6 +8575,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "StatementDocumentReference")
     public JAXBElement<DocumentReferenceType> createStatementDocumentReference(DocumentReferenceType value) {
@@ -7650,6 +8584,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link StatementLineType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "StatementLine")
     public JAXBElement<StatementLineType> createStatementLine(StatementLineType value) {
@@ -7658,6 +8593,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PeriodType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "StatementPeriod")
     public JAXBElement<PeriodType> createStatementPeriod(PeriodType value) {
@@ -7666,6 +8602,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link StatusType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "Status")
     public JAXBElement<StatusType> createStatus(StatusType value) {
@@ -7674,6 +8611,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link StowageType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "Stowage")
     public JAXBElement<StowageType> createStowage(StowageType value) {
@@ -7682,6 +8620,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SupplierPartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "SupplierParty")
     public JAXBElement<SupplierPartyType> createSupplierParty(SupplierPartyType value) {
@@ -7690,6 +8629,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "SupportingDocumentReference")
     public JAXBElement<DocumentReferenceType> createSupportingDocumentReference(DocumentReferenceType value) {
@@ -7698,6 +8638,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TaxCategoryType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "TaxCategory")
     public JAXBElement<TaxCategoryType> createTaxCategory(TaxCategoryType value) {
@@ -7706,6 +8647,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ExchangeRateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "TaxExchangeRate")
     public JAXBElement<ExchangeRateType> createTaxExchangeRate(ExchangeRateType value) {
@@ -7714,6 +8656,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "TaxRepresentativeParty")
     public JAXBElement<PartyType> createTaxRepresentativeParty(PartyType value) {
@@ -7722,6 +8665,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TaxSchemeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "TaxScheme")
     public JAXBElement<TaxSchemeType> createTaxScheme(TaxSchemeType value) {
@@ -7730,6 +8674,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TaxSubtotalType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "TaxSubtotal")
     public JAXBElement<TaxSubtotalType> createTaxSubtotal(TaxSubtotalType value) {
@@ -7738,6 +8683,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TaxTotalType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "TaxTotal")
     public JAXBElement<TaxTotalType> createTaxTotal(TaxTotalType value) {
@@ -7746,6 +8692,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TemperatureType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "Temperature")
     public JAXBElement<TemperatureType> createTemperature(TemperatureType value) {
@@ -7754,6 +8701,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TradingTermsType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "TradingTerms")
     public JAXBElement<TradingTermsType> createTradingTerms(TradingTermsType value) {
@@ -7762,6 +8710,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TransactionConditionsType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "TransactionConditions")
     public JAXBElement<TransactionConditionsType> createTransactionConditions(TransactionConditionsType value) {
@@ -7770,6 +8719,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CountryType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "TransitCountry")
     public JAXBElement<CountryType> createTransitCountry(CountryType value) {
@@ -7778,6 +8728,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PeriodType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "TransitPeriod")
     public JAXBElement<PeriodType> createTransitPeriod(PeriodType value) {
@@ -7786,6 +8737,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TransportationServiceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "TransportationService")
     public JAXBElement<TransportationServiceType> createTransportationService(TransportationServiceType value) {
@@ -7794,6 +8746,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ContractType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "TransportContract")
     public JAXBElement<ContractType> createTransportContract(ContractType value) {
@@ -7802,6 +8755,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TransportEquipmentType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "TransportEquipment")
     public JAXBElement<TransportEquipmentType> createTransportEquipment(TransportEquipmentType value) {
@@ -7810,6 +8764,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TransportEquipmentSealType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "TransportEquipmentSeal")
     public JAXBElement<TransportEquipmentSealType> createTransportEquipmentSeal(TransportEquipmentSealType value) {
@@ -7818,6 +8773,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TransportEventType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "TransportEvent")
     public JAXBElement<TransportEventType> createTransportEvent(TransportEventType value) {
@@ -7826,6 +8782,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TransportHandlingUnitType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "TransportHandlingUnit")
     public JAXBElement<TransportHandlingUnitType> createTransportHandlingUnit(TransportHandlingUnitType value) {
@@ -7834,6 +8791,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TransportMeansType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "TransportMeans")
     public JAXBElement<TransportMeansType> createTransportMeans(TransportMeansType value) {
@@ -7842,6 +8800,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LocationTypeCommAgg }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "TransshipPortLocation")
     public JAXBElement<LocationTypeCommAgg> createTransshipPortLocation(LocationTypeCommAgg value) {
@@ -7850,6 +8809,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LocationTypeCommAgg }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "UnloadingPortLocation")
     public JAXBElement<LocationTypeCommAgg> createUnloadingPortLocation(LocationTypeCommAgg value) {
@@ -7858,6 +8818,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PeriodType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "UsabilityPeriod")
     public JAXBElement<PeriodType> createUsabilityPeriod(PeriodType value) {
@@ -7866,6 +8827,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PeriodType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "ValidityPeriod")
     public JAXBElement<PeriodType> createValidityPeriod(PeriodType value) {
@@ -7874,6 +8836,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartyType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "WarrantyParty")
     public JAXBElement<PartyType> createWarrantyParty(PartyType value) {
@@ -7882,6 +8845,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PeriodType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", name = "WarrantyValidityPeriod")
     public JAXBElement<PeriodType> createWarrantyValidityPeriod(PeriodType value) {
@@ -7890,6 +8854,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AcceptedIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "AcceptedIndicator")
     public JAXBElement<AcceptedIndicatorType> createAcceptedIndicator(AcceptedIndicatorType value) {
@@ -7898,6 +8863,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AccountIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "AccountID")
     public JAXBElement<AccountIDType> createAccountID(AccountIDType value) {
@@ -7906,6 +8872,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AccountingCostType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "AccountingCost")
     public JAXBElement<AccountingCostType> createAccountingCost(AccountingCostType value) {
@@ -7914,6 +8881,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AccountingCostCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "AccountingCostCode")
     public JAXBElement<AccountingCostCodeType> createAccountingCostCode(AccountingCostCodeType value) {
@@ -7922,6 +8890,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AccountNumberIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "AccountNumberID")
     public JAXBElement<AccountNumberIDType> createAccountNumberID(AccountNumberIDType value) {
@@ -7930,6 +8899,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AccountTypeCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "AccountTypeCode")
     public JAXBElement<AccountTypeCodeType> createAccountTypeCode(AccountTypeCodeType value) {
@@ -7938,6 +8908,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ActionCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ActionCode")
     public JAXBElement<ActionCodeType> createActionCode(ActionCodeType value) {
@@ -7946,6 +8917,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ActualDeliveryDateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ActualDeliveryDate")
     public JAXBElement<ActualDeliveryDateType> createActualDeliveryDate(ActualDeliveryDateType value) {
@@ -7954,6 +8926,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ActualDeliveryTimeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ActualDeliveryTime")
     public JAXBElement<ActualDeliveryTimeType> createActualDeliveryTime(ActualDeliveryTimeType value) {
@@ -7962,6 +8935,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ActualDespatchDateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ActualDespatchDate")
     public JAXBElement<ActualDespatchDateType> createActualDespatchDate(ActualDespatchDateType value) {
@@ -7970,6 +8944,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ActualDespatchTimeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ActualDespatchTime")
     public JAXBElement<ActualDespatchTimeType> createActualDespatchTime(ActualDespatchTimeType value) {
@@ -7978,6 +8953,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AdditionalAccountIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "AdditionalAccountID")
     public JAXBElement<AdditionalAccountIDType> createAdditionalAccountID(AdditionalAccountIDType value) {
@@ -7986,6 +8962,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AdditionalInformationType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "AdditionalInformation")
     public JAXBElement<AdditionalInformationType> createAdditionalInformationCommBas(AdditionalInformationType value) {
@@ -7994,6 +8971,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AdditionalStreetNameType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "AdditionalStreetName")
     public JAXBElement<AdditionalStreetNameType> createAdditionalStreetName(AdditionalStreetNameType value) {
@@ -8002,6 +8980,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddressFormatCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "AddressFormatCode")
     public JAXBElement<AddressFormatCodeType> createAddressFormatCode(AddressFormatCodeType value) {
@@ -8010,6 +8989,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddressTypeCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "AddressTypeCode")
     public JAXBElement<AddressTypeCodeType> createAddressTypeCode(AddressTypeCodeType value) {
@@ -8018,6 +8998,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AdValoremIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "AdValoremIndicator")
     public JAXBElement<AdValoremIndicatorType> createAdValoremIndicator(AdValoremIndicatorType value) {
@@ -8026,6 +9007,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AgencyIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "AgencyID")
     public JAXBElement<AgencyIDType> createAgencyID(AgencyIDType value) {
@@ -8034,6 +9016,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AgencyNameType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "AgencyName")
     public JAXBElement<AgencyNameType> createAgencyName(AgencyNameType value) {
@@ -8042,6 +9025,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AircraftIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "AircraftID")
     public JAXBElement<AircraftIDType> createAircraftID(AircraftIDType value) {
@@ -8050,6 +9034,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AllowanceChargeReasonType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "AllowanceChargeReason")
     public JAXBElement<AllowanceChargeReasonType> createAllowanceChargeReason(AllowanceChargeReasonType value) {
@@ -8058,6 +9043,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AllowanceChargeReasonCodeTypeCommBas }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "AllowanceChargeReasonCode")
     public JAXBElement<AllowanceChargeReasonCodeTypeCommBas> createAllowanceChargeReasonCode(AllowanceChargeReasonCodeTypeCommBas value) {
@@ -8066,6 +9052,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AllowanceTotalAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "AllowanceTotalAmount")
     public JAXBElement<AllowanceTotalAmountType> createAllowanceTotalAmount(AllowanceTotalAmountType value) {
@@ -8074,6 +9061,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AmountTypeCommBas }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Amount")
     public JAXBElement<AmountTypeCommBas> createAmount(AmountTypeCommBas value) {
@@ -8082,6 +9070,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ApplicationIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ApplicationID")
     public JAXBElement<ApplicationIDType> createApplicationID(ApplicationIDType value) {
@@ -8090,6 +9079,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ApplicationStatusCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ApplicationStatusCode")
     public JAXBElement<ApplicationStatusCodeType> createApplicationStatusCode(ApplicationStatusCodeType value) {
@@ -8098,6 +9088,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ApprovalStatusType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ApprovalStatus")
     public JAXBElement<ApprovalStatusType> createApprovalStatus(ApprovalStatusType value) {
@@ -8106,6 +9097,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AttributeIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "AttributeID")
     public JAXBElement<AttributeIDType> createAttributeID(AttributeIDType value) {
@@ -8114,6 +9106,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BackOrderAllowedIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "BackOrderAllowedIndicator")
     public JAXBElement<BackOrderAllowedIndicatorType> createBackOrderAllowedIndicator(BackOrderAllowedIndicatorType value) {
@@ -8122,6 +9115,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BackorderQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "BackorderQuantity")
     public JAXBElement<BackorderQuantityType> createBackorderQuantity(BackorderQuantityType value) {
@@ -8130,6 +9124,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BackorderReasonType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "BackorderReason")
     public JAXBElement<BackorderReasonType> createBackorderReason(BackorderReasonType value) {
@@ -8138,6 +9133,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BalanceAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "BalanceAmount")
     public JAXBElement<BalanceAmountType> createBalanceAmount(BalanceAmountType value) {
@@ -8146,6 +9142,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BalanceBroughtForwardIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "BalanceBroughtForwardIndicator")
     public JAXBElement<BalanceBroughtForwardIndicatorType> createBalanceBroughtForwardIndicator(BalanceBroughtForwardIndicatorType value) {
@@ -8154,6 +9151,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BaseAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "BaseAmount")
     public JAXBElement<BaseAmountType> createBaseAmount(BaseAmountType value) {
@@ -8162,6 +9160,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BaseQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "BaseQuantity")
     public JAXBElement<BaseQuantityType> createBaseQuantity(BaseQuantityType value) {
@@ -8170,6 +9169,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BaseUnitMeasureType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "BaseUnitMeasure")
     public JAXBElement<BaseUnitMeasureType> createBaseUnitMeasure(BaseUnitMeasureType value) {
@@ -8178,6 +9178,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BatchQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "BatchQuantity")
     public JAXBElement<BatchQuantityType> createBatchQuantity(BatchQuantityType value) {
@@ -8186,6 +9187,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BlockNameType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "BlockName")
     public JAXBElement<BlockNameType> createBlockName(BlockNameType value) {
@@ -8194,6 +9196,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BrandNameType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "BrandName")
     public JAXBElement<BrandNameType> createBrandName(BrandNameType value) {
@@ -8202,6 +9205,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BuildingNameType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "BuildingName")
     public JAXBElement<BuildingNameType> createBuildingName(BuildingNameType value) {
@@ -8210,6 +9214,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BuildingNumberType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "BuildingNumber")
     public JAXBElement<BuildingNumberType> createBuildingNumber(BuildingNumberType value) {
@@ -8218,6 +9223,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CalculationRateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CalculationRate")
     public JAXBElement<CalculationRateType> createCalculationRate(CalculationRateType value) {
@@ -8226,6 +9232,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CalculationSequenceNumericType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CalculationSequenceNumeric")
     public JAXBElement<CalculationSequenceNumericType> createCalculationSequenceNumeric(CalculationSequenceNumericType value) {
@@ -8234,6 +9241,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CancellationNoteType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CancellationNote")
     public JAXBElement<CancellationNoteType> createCancellationNote(CancellationNoteType value) {
@@ -8242,6 +9250,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CanonicalizationMethodType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CanonicalizationMethod")
     public JAXBElement<CanonicalizationMethodType> createCanonicalizationMethod(CanonicalizationMethodType value) {
@@ -8250,6 +9259,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CardChipCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CardChipCode")
     public JAXBElement<CardChipCodeType> createCardChipCode(CardChipCodeType value) {
@@ -8258,6 +9268,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CardTypeCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CardTypeCode")
     public JAXBElement<CardTypeCodeType> createCardTypeCode(CardTypeCodeType value) {
@@ -8266,6 +9277,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CargoTypeCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CargoTypeCode")
     public JAXBElement<CargoTypeCodeType> createCargoTypeCode(CargoTypeCodeType value) {
@@ -8274,6 +9286,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CarrierAssignedIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CarrierAssignedID")
     public JAXBElement<CarrierAssignedIDType> createCarrierAssignedID(CarrierAssignedIDType value) {
@@ -8282,6 +9295,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CatalogueIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CatalogueIndicator")
     public JAXBElement<CatalogueIndicatorType> createCatalogueIndicator(CatalogueIndicatorType value) {
@@ -8290,6 +9304,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CategoryNameType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CategoryName")
     public JAXBElement<CategoryNameType> createCategoryName(CategoryNameType value) {
@@ -8298,6 +9313,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CertificateTypeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CertificateType")
     public JAXBElement<CertificateTypeType> createCertificateType(CertificateTypeType value) {
@@ -8306,6 +9322,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ChannelType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Channel")
     public JAXBElement<ChannelType> createChannel(ChannelType value) {
@@ -8314,6 +9331,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ChannelCodeTypeCommBas }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ChannelCode")
     public JAXBElement<ChannelCodeTypeCommBas> createChannelCode(ChannelCodeTypeCommBas value) {
@@ -8322,6 +9340,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ChargeableWeightMeasureType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ChargeableWeightMeasure")
     public JAXBElement<ChargeableWeightMeasureType> createChargeableWeightMeasure(ChargeableWeightMeasureType value) {
@@ -8330,6 +9349,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ChargeIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ChargeIndicator")
     public JAXBElement<ChargeIndicatorType> createChargeIndicator(ChargeIndicatorType value) {
@@ -8338,6 +9358,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ChargeTotalAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ChargeTotalAmount")
     public JAXBElement<ChargeTotalAmountType> createChargeTotalAmount(ChargeTotalAmountType value) {
@@ -8346,6 +9367,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ChipApplicationIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ChipApplicationID")
     public JAXBElement<ChipApplicationIDType> createChipApplicationID(ChipApplicationIDType value) {
@@ -8354,6 +9376,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CityNameType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CityName")
     public JAXBElement<CityNameType> createCityName(CityNameType value) {
@@ -8362,6 +9385,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CitySubdivisionNameType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CitySubdivisionName")
     public JAXBElement<CitySubdivisionNameType> createCitySubdivisionName(CitySubdivisionNameType value) {
@@ -8370,6 +9394,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ClassifiedIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ClassifiedIndicator")
     public JAXBElement<ClassifiedIndicatorType> createClassifiedIndicator(ClassifiedIndicatorType value) {
@@ -8378,6 +9403,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CodeValueType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CodeValue")
     public JAXBElement<CodeValueType> createCodeValue(CodeValueType value) {
@@ -8386,6 +9412,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CommodityCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CommodityCode")
     public JAXBElement<CommodityCodeType> createCommodityCode(CommodityCodeType value) {
@@ -8394,6 +9421,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CompanyIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CompanyID")
     public JAXBElement<CompanyIDType> createCompanyID(CompanyIDType value) {
@@ -8402,6 +9430,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CompletionIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CompletionIndicator")
     public JAXBElement<CompletionIndicatorType> createCompletionIndicator(CompletionIndicatorType value) {
@@ -8410,6 +9439,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ConditionType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Condition")
     public JAXBElement<ConditionType> createCondition(ConditionType value) {
@@ -8418,6 +9448,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ConditionCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ConditionCode")
     public JAXBElement<ConditionCodeType> createConditionCode(ConditionCodeType value) {
@@ -8426,6 +9457,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ConditionsType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Conditions")
     public JAXBElement<ConditionsType> createConditions(ConditionsType value) {
@@ -8434,6 +9466,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ConsumerUnitQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ConsumerUnitQuantity")
     public JAXBElement<ConsumerUnitQuantityType> createConsumerUnitQuantity(ConsumerUnitQuantityType value) {
@@ -8442,6 +9475,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ContentUnitQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ContentUnitQuantity")
     public JAXBElement<ContentUnitQuantityType> createContentUnitQuantity(ContentUnitQuantityType value) {
@@ -8450,6 +9484,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ContractSubdivisionType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ContractSubdivision")
     public JAXBElement<ContractSubdivisionType> createContractSubdivision(ContractSubdivisionType value) {
@@ -8458,6 +9493,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ContractTypeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ContractType")
     public JAXBElement<ContractTypeType> createContractType(ContractTypeType value) {
@@ -8466,6 +9502,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ContractTypeCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ContractTypeCode")
     public JAXBElement<ContractTypeCodeType> createContractTypeCode(ContractTypeCodeType value) {
@@ -8474,6 +9511,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CoordinateSystemCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CoordinateSystemCode")
     public JAXBElement<CoordinateSystemCodeType> createCoordinateSystemCode(CoordinateSystemCodeType value) {
@@ -8482,6 +9520,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CopiesNumericType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CopiesNumeric")
     public JAXBElement<CopiesNumericType> createCopiesNumeric(CopiesNumericType value) {
@@ -8490,6 +9529,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CopyIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CopyIndicator")
     public JAXBElement<CopyIndicatorType> createCopyIndicator(CopyIndicatorType value) {
@@ -8498,6 +9538,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CorporateRegistrationTypeCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CorporateRegistrationTypeCode")
     public JAXBElement<CorporateRegistrationTypeCodeType> createCorporateRegistrationTypeCode(CorporateRegistrationTypeCodeType value) {
@@ -8506,6 +9547,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CountrySubentityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CountrySubentity")
     public JAXBElement<CountrySubentityType> createCountrySubentity(CountrySubentityType value) {
@@ -8514,6 +9556,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CountrySubentityCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CountrySubentityCode")
     public JAXBElement<CountrySubentityCodeType> createCountrySubentityCode(CountrySubentityCodeType value) {
@@ -8522,6 +9565,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CreditAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CreditAmount")
     public JAXBElement<CreditAmountType> createCreditAmount(CreditAmountType value) {
@@ -8530,6 +9574,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CreditedQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CreditedQuantity")
     public JAXBElement<CreditedQuantityType> createCreditedQuantity(CreditedQuantityType value) {
@@ -8538,6 +9583,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CreditLineAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CreditLineAmount")
     public JAXBElement<CreditLineAmountType> createCreditLineAmount(CreditLineAmountType value) {
@@ -8546,6 +9592,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CurrencyBaseRateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CurrencyBaseRate")
     public JAXBElement<CurrencyBaseRateType> createCurrencyBaseRate(CurrencyBaseRateType value) {
@@ -8554,6 +9601,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CurrencyCodeTypeCommBas }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CurrencyCode")
     public JAXBElement<CurrencyCodeTypeCommBas> createCurrencyCode(CurrencyCodeTypeCommBas value) {
@@ -8562,6 +9610,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CustomerAssignedAccountIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CustomerAssignedAccountID")
     public JAXBElement<CustomerAssignedAccountIDType> createCustomerAssignedAccountID(CustomerAssignedAccountIDType value) {
@@ -8570,6 +9619,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CustomerReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CustomerReference")
     public JAXBElement<CustomerReferenceType> createCustomerReference(CustomerReferenceType value) {
@@ -8578,6 +9628,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CustomizationIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CustomizationID")
     public JAXBElement<CustomizationIDType> createCustomizationID(CustomizationIDType value) {
@@ -8586,6 +9637,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CustomsIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CustomsID")
     public JAXBElement<CustomsIDType> createCustomsID(CustomsIDType value) {
@@ -8594,6 +9646,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CustomsImportClassifiedIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CustomsImportClassifiedIndicator")
     public JAXBElement<CustomsImportClassifiedIndicatorType> createCustomsImportClassifiedIndicator(CustomsImportClassifiedIndicatorType value) {
@@ -8602,6 +9655,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CustomsStatusCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CustomsStatusCode")
     public JAXBElement<CustomsStatusCodeType> createCustomsStatusCode(CustomsStatusCodeType value) {
@@ -8610,6 +9664,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CustomsTariffQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CustomsTariffQuantity")
     public JAXBElement<CustomsTariffQuantityType> createCustomsTariffQuantity(CustomsTariffQuantityType value) {
@@ -8618,6 +9673,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CV2IDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "CV2ID")
     public JAXBElement<CV2IDType> createCV2ID(CV2IDType value) {
@@ -8626,6 +9682,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DamageRemarksType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DamageRemarks")
     public JAXBElement<DamageRemarksType> createDamageRemarks(DamageRemarksType value) {
@@ -8634,6 +9691,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DataSendingCapabilityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DataSendingCapability")
     public JAXBElement<DataSendingCapabilityType> createDataSendingCapability(DataSendingCapabilityType value) {
@@ -8642,6 +9700,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Date")
     public JAXBElement<DateType> createDate(DateType value) {
@@ -8650,6 +9709,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DebitAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DebitAmount")
     public JAXBElement<DebitAmountType> createDebitAmount(DebitAmountType value) {
@@ -8658,6 +9718,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DebitedQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DebitedQuantity")
     public JAXBElement<DebitedQuantityType> createDebitedQuantity(DebitedQuantityType value) {
@@ -8666,6 +9727,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DebitLineAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DebitLineAmount")
     public JAXBElement<DebitLineAmountType> createDebitLineAmount(DebitLineAmountType value) {
@@ -8674,6 +9736,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeclaredCarriageValueAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DeclaredCarriageValueAmount")
     public JAXBElement<DeclaredCarriageValueAmountType> createDeclaredCarriageValueAmount(DeclaredCarriageValueAmountType value) {
@@ -8682,6 +9745,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeclaredCustomsValueAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DeclaredCustomsValueAmount")
     public JAXBElement<DeclaredCustomsValueAmountType> createDeclaredCustomsValueAmount(DeclaredCustomsValueAmountType value) {
@@ -8690,6 +9754,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeclaredForCarriageValueAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DeclaredForCarriageValueAmount")
     public JAXBElement<DeclaredForCarriageValueAmountType> createDeclaredForCarriageValueAmount(DeclaredForCarriageValueAmountType value) {
@@ -8698,6 +9763,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeclaredStatisticsValueAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DeclaredStatisticsValueAmount")
     public JAXBElement<DeclaredStatisticsValueAmountType> createDeclaredStatisticsValueAmount(DeclaredStatisticsValueAmountType value) {
@@ -8706,6 +9772,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DegreesMeasureType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DegreesMeasure")
     public JAXBElement<DegreesMeasureType> createDegreesMeasure(DegreesMeasureType value) {
@@ -8714,6 +9781,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeliveredQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DeliveredQuantity")
     public JAXBElement<DeliveredQuantityType> createDeliveredQuantity(DeliveredQuantityType value) {
@@ -8722,6 +9790,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeliveryDateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DeliveryDate")
     public JAXBElement<DeliveryDateType> createDeliveryDate(DeliveryDateType value) {
@@ -8730,6 +9799,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeliveryInstructionsType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DeliveryInstructions")
     public JAXBElement<DeliveryInstructionsType> createDeliveryInstructions(DeliveryInstructionsType value) {
@@ -8738,6 +9808,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeliveryTimeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DeliveryTime")
     public JAXBElement<DeliveryTimeType> createDeliveryTime(DeliveryTimeType value) {
@@ -8746,6 +9817,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DepartmentType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Department")
     public JAXBElement<DepartmentType> createDepartment(DepartmentType value) {
@@ -8754,6 +9826,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DescriptionType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Description")
     public JAXBElement<DescriptionType> createDescription(DescriptionType value) {
@@ -8762,6 +9835,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DescriptionCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DescriptionCode")
     public JAXBElement<DescriptionCodeType> createDescriptionCode(DescriptionCodeType value) {
@@ -8770,6 +9844,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DespatchAdviceTypeCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DespatchAdviceTypeCode")
     public JAXBElement<DespatchAdviceTypeCodeType> createDespatchAdviceTypeCode(DespatchAdviceTypeCodeType value) {
@@ -8778,6 +9853,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DespatchDateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DespatchDate")
     public JAXBElement<DespatchDateType> createDespatchDate(DespatchDateType value) {
@@ -8786,6 +9862,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DespatchTimeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DespatchTime")
     public JAXBElement<DespatchTimeType> createDespatchTime(DespatchTimeType value) {
@@ -8794,6 +9871,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DirectionCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DirectionCode")
     public JAXBElement<DirectionCodeType> createDirectionCode(DirectionCodeType value) {
@@ -8802,6 +9880,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DiscountPercentType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DiscountPercent")
     public JAXBElement<DiscountPercentType> createDiscountPercent(DiscountPercentType value) {
@@ -8810,6 +9889,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DispositionCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DispositionCode")
     public JAXBElement<DispositionCodeType> createDispositionCode(DispositionCodeType value) {
@@ -8818,6 +9898,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DistrictType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "District")
     public JAXBElement<DistrictType> createDistrict(DistrictType value) {
@@ -8826,6 +9907,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentBinaryObjectType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DocumentBinaryObject")
     public JAXBElement<DocumentBinaryObjectType> createDocumentBinaryObject(DocumentBinaryObjectType value) {
@@ -8834,6 +9916,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentCurrencyCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DocumentCurrencyCode")
     public JAXBElement<DocumentCurrencyCodeType> createDocumentCurrencyCode(DocumentCurrencyCodeType value) {
@@ -8842,6 +9925,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentHashType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DocumentHash")
     public JAXBElement<DocumentHashType> createDocumentHash(DocumentHashType value) {
@@ -8850,6 +9934,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DocumentID")
     public JAXBElement<DocumentIDType> createDocumentID(DocumentIDType value) {
@@ -8858,6 +9943,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentStatusCodeTypeCommBas }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DocumentStatusCode")
     public JAXBElement<DocumentStatusCodeTypeCommBas> createDocumentStatusCode(DocumentStatusCodeTypeCommBas value) {
@@ -8866,6 +9952,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentTypeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DocumentType")
     public JAXBElement<DocumentTypeType> createDocumentType(DocumentTypeType value) {
@@ -8874,6 +9961,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DocumentTypeCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DocumentTypeCode")
     public JAXBElement<DocumentTypeCodeType> createDocumentTypeCode(DocumentTypeCodeType value) {
@@ -8882,6 +9970,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DurationMeasureType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "DurationMeasure")
     public JAXBElement<DurationMeasureType> createDurationMeasure(DurationMeasureType value) {
@@ -8890,6 +9979,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ElectronicMailType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ElectronicMail")
     public JAXBElement<ElectronicMailType> createElectronicMail(ElectronicMailType value) {
@@ -8898,6 +9988,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link EmbeddedDocumentBinaryObjectType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "EmbeddedDocumentBinaryObject")
     public JAXBElement<EmbeddedDocumentBinaryObjectType> createEmbeddedDocumentBinaryObject(EmbeddedDocumentBinaryObjectType value) {
@@ -8906,6 +9997,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link EmergencyProceduresCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "EmergencyProceduresCode")
     public JAXBElement<EmergencyProceduresCodeType> createEmergencyProceduresCode(EmergencyProceduresCodeType value) {
@@ -8914,6 +10006,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link EndDateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "EndDate")
     public JAXBElement<EndDateType> createEndDate(EndDateType value) {
@@ -8922,6 +10015,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link EndpointIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "EndpointID")
     public JAXBElement<EndpointIDType> createEndpointID(EndpointIDType value) {
@@ -8930,6 +10024,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link EndTimeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "EndTime")
     public JAXBElement<EndTimeType> createEndTime(EndTimeType value) {
@@ -8938,6 +10033,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link EstimatedDespatchDateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "EstimatedDespatchDate")
     public JAXBElement<EstimatedDespatchDateType> createEstimatedDespatchDate(EstimatedDespatchDateType value) {
@@ -8946,6 +10042,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link EstimatedDespatchTimeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "EstimatedDespatchTime")
     public JAXBElement<EstimatedDespatchTimeType> createEstimatedDespatchTime(EstimatedDespatchTimeType value) {
@@ -8954,6 +10051,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link EventCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "EventCode")
     public JAXBElement<EventCodeType> createEventCode(EventCodeType value) {
@@ -8962,6 +10060,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ExchangeMarketIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ExchangeMarketID")
     public JAXBElement<ExchangeMarketIDType> createExchangeMarketID(ExchangeMarketIDType value) {
@@ -8970,6 +10069,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ExemptionReasonType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ExemptionReason")
     public JAXBElement<ExemptionReasonType> createExemptionReason(ExemptionReasonType value) {
@@ -8978,6 +10078,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ExemptionReasonCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ExemptionReasonCode")
     public JAXBElement<ExemptionReasonCodeType> createExemptionReasonCode(ExemptionReasonCodeType value) {
@@ -8986,6 +10087,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ExpiryDateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ExpiryDate")
     public JAXBElement<ExpiryDateType> createExpiryDate(ExpiryDateType value) {
@@ -8994,6 +10096,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ExpiryTimeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ExpiryTime")
     public JAXBElement<ExpiryTimeType> createExpiryTime(ExpiryTimeType value) {
@@ -9002,6 +10105,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ExtendedIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ExtendedID")
     public JAXBElement<ExtendedIDType> createExtendedID(ExtendedIDType value) {
@@ -9010,6 +10114,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ExtensionType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Extension")
     public JAXBElement<ExtensionType> createExtension(ExtensionType value) {
@@ -9018,6 +10123,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link FactorNumericType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "FactorNumeric")
     public JAXBElement<FactorNumericType> createFactorNumeric(FactorNumericType value) {
@@ -9026,6 +10132,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link FamilyNameType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "FamilyName")
     public JAXBElement<FamilyNameType> createFamilyName(FamilyNameType value) {
@@ -9034,6 +10141,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link FirstNameType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "FirstName")
     public JAXBElement<FirstNameType> createFirstName(FirstNameType value) {
@@ -9042,6 +10150,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link FloorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Floor")
     public JAXBElement<FloorType> createFloor(FloorType value) {
@@ -9050,6 +10159,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link FreeOfChargeIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "FreeOfChargeIndicator")
     public JAXBElement<FreeOfChargeIndicatorType> createFreeOfChargeIndicator(FreeOfChargeIndicatorType value) {
@@ -9058,6 +10168,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link FreeOnBoardValueAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "FreeOnBoardValueAmount")
     public JAXBElement<FreeOnBoardValueAmountType> createFreeOnBoardValueAmount(FreeOnBoardValueAmountType value) {
@@ -9066,6 +10177,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link FreightRateClassCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "FreightRateClassCode")
     public JAXBElement<FreightRateClassCodeType> createFreightRateClassCode(FreightRateClassCodeType value) {
@@ -9074,6 +10186,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link FullnessIndicationCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "FullnessIndicationCode")
     public JAXBElement<FullnessIndicationCodeType> createFullnessIndicationCode(FullnessIndicationCodeType value) {
@@ -9082,6 +10195,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GoodsItemQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "GoodsItemQuantity")
     public JAXBElement<GoodsItemQuantityType> createGoodsItemQuantity(GoodsItemQuantityType value) {
@@ -9090,6 +10204,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GrossVolumeMeasureType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "GrossVolumeMeasure")
     public JAXBElement<GrossVolumeMeasureType> createGrossVolumeMeasure(GrossVolumeMeasureType value) {
@@ -9098,6 +10213,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GrossWeightMeasureType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "GrossWeightMeasure")
     public JAXBElement<GrossWeightMeasureType> createGrossWeightMeasure(GrossWeightMeasureType value) {
@@ -9106,6 +10222,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link HandlingCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "HandlingCode")
     public JAXBElement<HandlingCodeType> createHandlingCode(HandlingCodeType value) {
@@ -9114,6 +10231,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link HandlingInstructionsType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "HandlingInstructions")
     public JAXBElement<HandlingInstructionsType> createHandlingInstructions(HandlingInstructionsType value) {
@@ -9122,6 +10240,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link HazardClassIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "HazardClassID")
     public JAXBElement<HazardClassIDType> createHazardClassID(HazardClassIDType value) {
@@ -9130,6 +10249,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link HazardousCategoryCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "HazardousCategoryCode")
     public JAXBElement<HazardousCategoryCodeType> createHazardousCategoryCode(HazardousCategoryCodeType value) {
@@ -9138,6 +10258,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link HazardousRegulationCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "HazardousRegulationCode")
     public JAXBElement<HazardousRegulationCodeType> createHazardousRegulationCode(HazardousRegulationCodeType value) {
@@ -9146,6 +10267,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link HazardousRiskIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "HazardousRiskIndicator")
     public JAXBElement<HazardousRiskIndicatorType> createHazardousRiskIndicator(HazardousRiskIndicatorType value) {
@@ -9154,6 +10276,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link HolderNameType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "HolderName")
     public JAXBElement<HolderNameType> createHolderName(HolderNameType value) {
@@ -9162,6 +10285,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link IDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ID")
     public JAXBElement<IDType> createID(IDType value) {
@@ -9170,6 +10294,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link IdentificationCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "IdentificationCode")
     public JAXBElement<IdentificationCodeType> createIdentificationCode(IdentificationCodeType value) {
@@ -9178,6 +10303,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link IdentificationIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "IdentificationID")
     public JAXBElement<IdentificationIDType> createIdentificationID(IdentificationIDType value) {
@@ -9186,6 +10312,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link IndicationIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "IndicationIndicator")
     public JAXBElement<IndicationIndicatorType> createIndicationIndicator(IndicationIndicatorType value) {
@@ -9194,6 +10321,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link IndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Indicator")
     public JAXBElement<IndicatorType> createIndicator(IndicatorType value) {
@@ -9202,6 +10330,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link InformationType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Information")
     public JAXBElement<InformationType> createInformation(InformationType value) {
@@ -9210,6 +10339,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link InhalationToxicityZoneCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "InhalationToxicityZoneCode")
     public JAXBElement<InhalationToxicityZoneCodeType> createInhalationToxicityZoneCode(InhalationToxicityZoneCodeType value) {
@@ -9218,6 +10348,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link InhouseMailType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "InhouseMail")
     public JAXBElement<InhouseMailType> createInhouseMail(InhouseMailType value) {
@@ -9226,6 +10357,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link InspectionMethodCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "InspectionMethodCode")
     public JAXBElement<InspectionMethodCodeType> createInspectionMethodCode(InspectionMethodCodeType value) {
@@ -9234,6 +10366,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link InstructionType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Instruction")
     public JAXBElement<InstructionType> createInstruction(InstructionType value) {
@@ -9242,6 +10375,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link InstructionIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "InstructionID")
     public JAXBElement<InstructionIDType> createInstructionID(InstructionIDType value) {
@@ -9250,6 +10384,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link InstructionNoteType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "InstructionNote")
     public JAXBElement<InstructionNoteType> createInstructionNote(InstructionNoteType value) {
@@ -9258,6 +10393,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link InstructionsType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Instructions")
     public JAXBElement<InstructionsType> createInstructions(InstructionsType value) {
@@ -9266,6 +10402,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link InsurancePremiumAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "InsurancePremiumAmount")
     public JAXBElement<InsurancePremiumAmountType> createInsurancePremiumAmount(InsurancePremiumAmountType value) {
@@ -9274,6 +10411,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link InsuranceValueAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "InsuranceValueAmount")
     public JAXBElement<InsuranceValueAmountType> createInsuranceValueAmount(InsuranceValueAmountType value) {
@@ -9282,6 +10420,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link InvoiceAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "InvoiceAmount")
     public JAXBElement<InvoiceAmountType> createInvoiceAmount(InvoiceAmountType value) {
@@ -9290,6 +10429,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link InvoicedQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "InvoicedQuantity")
     public JAXBElement<InvoicedQuantityType> createInvoicedQuantity(InvoicedQuantityType value) {
@@ -9298,6 +10438,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link InvoiceTypeCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "InvoiceTypeCode")
     public JAXBElement<InvoiceTypeCodeType> createInvoiceTypeCode(InvoiceTypeCodeType value) {
@@ -9306,6 +10447,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link InvoicingPartyReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "InvoicingPartyReference")
     public JAXBElement<InvoicingPartyReferenceType> createInvoicingPartyReference(InvoicingPartyReferenceType value) {
@@ -9314,6 +10456,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link IssueDateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "IssueDate")
     public JAXBElement<IssueDateType> createIssueDate(IssueDateType value) {
@@ -9322,6 +10465,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link IssueNumberIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "IssueNumberID")
     public JAXBElement<IssueNumberIDType> createIssueNumberID(IssueNumberIDType value) {
@@ -9330,6 +10474,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link IssuerIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "IssuerID")
     public JAXBElement<IssuerIDType> createIssuerID(IssuerIDType value) {
@@ -9338,6 +10483,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link IssueTimeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "IssueTime")
     public JAXBElement<IssueTimeType> createIssueTime(IssueTimeType value) {
@@ -9346,6 +10492,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ItemClassificationCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ItemClassificationCode")
     public JAXBElement<ItemClassificationCodeType> createItemClassificationCode(ItemClassificationCodeType value) {
@@ -9354,6 +10501,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ItemUpdateRequestIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ItemUpdateRequestIndicator")
     public JAXBElement<ItemUpdateRequestIndicatorType> createItemUpdateRequestIndicator(ItemUpdateRequestIndicatorType value) {
@@ -9362,6 +10510,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link JobIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "JobID")
     public JAXBElement<JobIDType> createJobID(JobIDType value) {
@@ -9370,6 +10519,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link JobTitleType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "JobTitle")
     public JAXBElement<JobTitleType> createJobTitle(JobTitleType value) {
@@ -9378,6 +10528,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link JourneyIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "JourneyID")
     public JAXBElement<JourneyIDType> createJourneyID(JourneyIDType value) {
@@ -9386,6 +10537,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link KeywordType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Keyword")
     public JAXBElement<KeywordType> createKeyword(KeywordType value) {
@@ -9394,6 +10546,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LanguageIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LanguageID")
     public JAXBElement<LanguageIDType> createLanguageID(LanguageIDType value) {
@@ -9402,6 +10555,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LastRevisionDateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LastRevisionDate")
     public JAXBElement<LastRevisionDateType> createLastRevisionDate(LastRevisionDateType value) {
@@ -9410,6 +10564,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LastRevisionTimeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LastRevisionTime")
     public JAXBElement<LastRevisionTimeType> createLastRevisionTime(LastRevisionTimeType value) {
@@ -9418,6 +10573,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LatestDeliveryDateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LatestDeliveryDate")
     public JAXBElement<LatestDeliveryDateType> createLatestDeliveryDate(LatestDeliveryDateType value) {
@@ -9426,6 +10582,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LatestDeliveryTimeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LatestDeliveryTime")
     public JAXBElement<LatestDeliveryTimeType> createLatestDeliveryTime(LatestDeliveryTimeType value) {
@@ -9434,6 +10591,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LatitudeDegreesMeasureType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LatitudeDegreesMeasure")
     public JAXBElement<LatitudeDegreesMeasureType> createLatitudeDegreesMeasure(LatitudeDegreesMeasureType value) {
@@ -9442,6 +10600,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LatitudeDirectionCodeTypeCommBas }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LatitudeDirectionCode")
     public JAXBElement<LatitudeDirectionCodeTypeCommBas> createLatitudeDirectionCode(LatitudeDirectionCodeTypeCommBas value) {
@@ -9450,6 +10609,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LatitudeMinutesMeasureType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LatitudeMinutesMeasure")
     public JAXBElement<LatitudeMinutesMeasureType> createLatitudeMinutesMeasure(LatitudeMinutesMeasureType value) {
@@ -9458,6 +10618,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LeadTimeMeasureType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LeadTimeMeasure")
     public JAXBElement<LeadTimeMeasureType> createLeadTimeMeasure(LeadTimeMeasureType value) {
@@ -9466,6 +10627,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LegalStatusIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LegalStatusIndicator")
     public JAXBElement<LegalStatusIndicatorType> createLegalStatusIndicator(LegalStatusIndicatorType value) {
@@ -9474,6 +10636,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LengthMeasureType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LengthMeasure")
     public JAXBElement<LengthMeasureType> createLengthMeasure(LengthMeasureType value) {
@@ -9482,6 +10645,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LicensePlateIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LicensePlateID")
     public JAXBElement<LicensePlateIDType> createLicensePlateID(LicensePlateIDType value) {
@@ -9490,6 +10654,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LifeCycleStatusCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LifeCycleStatusCode")
     public JAXBElement<LifeCycleStatusCodeType> createLifeCycleStatusCode(LifeCycleStatusCodeType value) {
@@ -9498,6 +10663,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LineType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Line")
     public JAXBElement<LineType> createLine(LineType value) {
@@ -9506,6 +10672,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LineAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LineAmount")
     public JAXBElement<LineAmountType> createLineAmount(LineAmountType value) {
@@ -9514,6 +10681,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LineCountNumericType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LineCountNumeric")
     public JAXBElement<LineCountNumericType> createLineCountNumeric(LineCountNumericType value) {
@@ -9522,6 +10690,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LineExtensionAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LineExtensionAmount")
     public JAXBElement<LineExtensionAmountType> createLineExtensionAmount(LineExtensionAmountType value) {
@@ -9530,6 +10699,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LineIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LineID")
     public JAXBElement<LineIDType> createLineID(LineIDType value) {
@@ -9538,6 +10708,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LineStatusCodeTypeCommBas }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LineStatusCode")
     public JAXBElement<LineStatusCodeTypeCommBas> createLineStatusCode(LineStatusCodeTypeCommBas value) {
@@ -9546,6 +10717,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LoadingLengthMeasureType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LoadingLengthMeasure")
     public JAXBElement<LoadingLengthMeasureType> createLoadingLengthMeasure(LoadingLengthMeasureType value) {
@@ -9554,6 +10726,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LocaleCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LocaleCode")
     public JAXBElement<LocaleCodeType> createLocaleCode(LocaleCodeType value) {
@@ -9562,6 +10735,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LocationType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Location")
     public JAXBElement<LocationType> createLocationCommBas(LocationType value) {
@@ -9570,6 +10744,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LocationIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LocationID")
     public JAXBElement<LocationIDType> createLocationID(LocationIDType value) {
@@ -9578,6 +10753,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LogoReferenceIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LogoReferenceID")
     public JAXBElement<LogoReferenceIDType> createLogoReferenceID(LogoReferenceIDType value) {
@@ -9586,6 +10762,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LongitudeDegreesMeasureType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LongitudeDegreesMeasure")
     public JAXBElement<LongitudeDegreesMeasureType> createLongitudeDegreesMeasure(LongitudeDegreesMeasureType value) {
@@ -9594,6 +10771,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LongitudeDirectionCodeTypeCommBas }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LongitudeDirectionCode")
     public JAXBElement<LongitudeDirectionCodeTypeCommBas> createLongitudeDirectionCode(LongitudeDirectionCodeTypeCommBas value) {
@@ -9602,6 +10780,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LongitudeMinutesMeasureType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LongitudeMinutesMeasure")
     public JAXBElement<LongitudeMinutesMeasureType> createLongitudeMinutesMeasure(LongitudeMinutesMeasureType value) {
@@ -9610,6 +10789,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LossRiskType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LossRisk")
     public JAXBElement<LossRiskType> createLossRisk(LossRiskType value) {
@@ -9618,6 +10798,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LossRiskResponsibilityCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LossRiskResponsibilityCode")
     public JAXBElement<LossRiskResponsibilityCodeType> createLossRiskResponsibilityCode(LossRiskResponsibilityCodeType value) {
@@ -9626,6 +10807,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LotNumberIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LotNumberID")
     public JAXBElement<LotNumberIDType> createLotNumberID(LotNumberIDType value) {
@@ -9634,6 +10816,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LowerOrangeHazardPlacardIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "LowerOrangeHazardPlacardID")
     public JAXBElement<LowerOrangeHazardPlacardIDType> createLowerOrangeHazardPlacardID(LowerOrangeHazardPlacardIDType value) {
@@ -9642,6 +10825,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MailType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Mail")
     public JAXBElement<MailType> createMail(MailType value) {
@@ -9650,6 +10834,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ManufactureDateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ManufactureDate")
     public JAXBElement<ManufactureDateType> createManufactureDate(ManufactureDateType value) {
@@ -9658,6 +10843,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ManufactureTimeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ManufactureTime")
     public JAXBElement<ManufactureTimeType> createManufactureTime(ManufactureTimeType value) {
@@ -9666,6 +10852,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MarkAttentionType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "MarkAttention")
     public JAXBElement<MarkAttentionType> createMarkAttention(MarkAttentionType value) {
@@ -9674,6 +10861,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MarkAttentionIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "MarkAttentionIndicator")
     public JAXBElement<MarkAttentionIndicatorType> createMarkAttentionIndicator(MarkAttentionIndicatorType value) {
@@ -9682,6 +10870,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MarkCareType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "MarkCare")
     public JAXBElement<MarkCareType> createMarkCare(MarkCareType value) {
@@ -9690,6 +10879,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MarkCareIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "MarkCareIndicator")
     public JAXBElement<MarkCareIndicatorType> createMarkCareIndicator(MarkCareIndicatorType value) {
@@ -9698,6 +10888,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MarkingIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "MarkingID")
     public JAXBElement<MarkingIDType> createMarkingID(MarkingIDType value) {
@@ -9706,6 +10897,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MarksType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Marks")
     public JAXBElement<MarksType> createMarks(MarksType value) {
@@ -9714,6 +10906,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MathematicOperatorCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "MathematicOperatorCode")
     public JAXBElement<MathematicOperatorCodeType> createMathematicOperatorCode(MathematicOperatorCodeType value) {
@@ -9722,6 +10915,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MaximumBackorderQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "MaximumBackorderQuantity")
     public JAXBElement<MaximumBackorderQuantityType> createMaximumBackorderQuantity(MaximumBackorderQuantityType value) {
@@ -9730,6 +10924,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MaximumCopiesNumericType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "MaximumCopiesNumeric")
     public JAXBElement<MaximumCopiesNumericType> createMaximumCopiesNumeric(MaximumCopiesNumericType value) {
@@ -9738,6 +10933,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MaximumMeasureType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "MaximumMeasure")
     public JAXBElement<MaximumMeasureType> createMaximumMeasure(MaximumMeasureType value) {
@@ -9746,6 +10942,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MaximumOrderQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "MaximumOrderQuantity")
     public JAXBElement<MaximumOrderQuantityType> createMaximumOrderQuantity(MaximumOrderQuantityType value) {
@@ -9754,6 +10951,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MaximumQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "MaximumQuantity")
     public JAXBElement<MaximumQuantityType> createMaximumQuantity(MaximumQuantityType value) {
@@ -9762,6 +10960,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MeasureTypeCommBas }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Measure")
     public JAXBElement<MeasureTypeCommBas> createMeasure(MeasureTypeCommBas value) {
@@ -9770,6 +10969,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MedicalFirstAidGuideCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "MedicalFirstAidGuideCode")
     public JAXBElement<MedicalFirstAidGuideCodeType> createMedicalFirstAidGuideCode(MedicalFirstAidGuideCodeType value) {
@@ -9778,6 +10978,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MiddleNameType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "MiddleName")
     public JAXBElement<MiddleNameType> createMiddleName(MiddleNameType value) {
@@ -9786,6 +10987,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MinimumBackorderQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "MinimumBackorderQuantity")
     public JAXBElement<MinimumBackorderQuantityType> createMinimumBackorderQuantity(MinimumBackorderQuantityType value) {
@@ -9794,6 +10996,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MinimumMeasureType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "MinimumMeasure")
     public JAXBElement<MinimumMeasureType> createMinimumMeasure(MinimumMeasureType value) {
@@ -9802,6 +11005,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MinimumOrderQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "MinimumOrderQuantity")
     public JAXBElement<MinimumOrderQuantityType> createMinimumOrderQuantity(MinimumOrderQuantityType value) {
@@ -9810,6 +11014,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MinimumQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "MinimumQuantity")
     public JAXBElement<MinimumQuantityType> createMinimumQuantity(MinimumQuantityType value) {
@@ -9818,6 +11023,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MinutesMeasureType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "MinutesMeasure")
     public JAXBElement<MinutesMeasureType> createMinutesMeasure(MinutesMeasureType value) {
@@ -9826,6 +11032,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ModelNameType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ModelName")
     public JAXBElement<ModelNameType> createModelName(ModelNameType value) {
@@ -9834,6 +11041,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link MultiplierFactorNumericType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "MultiplierFactorNumeric")
     public JAXBElement<MultiplierFactorNumericType> createMultiplierFactorNumeric(MultiplierFactorNumericType value) {
@@ -9842,6 +11050,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link NameTypeCommBas }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Name")
     public JAXBElement<NameTypeCommBas> createName(NameTypeCommBas value) {
@@ -9850,6 +11059,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link NameSuffixType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "NameSuffix")
     public JAXBElement<NameSuffixType> createNameSuffix(NameSuffixType value) {
@@ -9858,6 +11068,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link NationalityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Nationality")
     public JAXBElement<NationalityType> createNationality(NationalityType value) {
@@ -9866,6 +11077,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link NationalityIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "NationalityID")
     public JAXBElement<NationalityIDType> createNationalityID(NationalityIDType value) {
@@ -9874,6 +11086,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link NatureCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "NatureCode")
     public JAXBElement<NatureCodeType> createNatureCode(NatureCodeType value) {
@@ -9882,6 +11095,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link NetNetWeightMeasureType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "NetNetWeightMeasure")
     public JAXBElement<NetNetWeightMeasureType> createNetNetWeightMeasure(NetNetWeightMeasureType value) {
@@ -9890,6 +11104,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link NetVolumeMeasureType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "NetVolumeMeasure")
     public JAXBElement<NetVolumeMeasureType> createNetVolumeMeasure(NetVolumeMeasureType value) {
@@ -9898,6 +11113,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link NetWeightMeasureType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "NetWeightMeasure")
     public JAXBElement<NetWeightMeasureType> createNetWeightMeasure(NetWeightMeasureType value) {
@@ -9906,6 +11122,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link NetworkIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "NetworkID")
     public JAXBElement<NetworkIDType> createNetworkID(NetworkIDType value) {
@@ -9914,6 +11131,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link NoteType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Note")
     public JAXBElement<NoteType> createNote(NoteType value) {
@@ -9922,6 +11140,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link NumberIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "NumberID")
     public JAXBElement<NumberIDType> createNumberID(NumberIDType value) {
@@ -9930,6 +11149,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link OccurrenceDateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "OccurrenceDate")
     public JAXBElement<OccurrenceDateType> createOccurrenceDate(OccurrenceDateType value) {
@@ -9938,6 +11158,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link OccurrenceTimeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "OccurrenceTime")
     public JAXBElement<OccurrenceTimeType> createOccurrenceTime(OccurrenceTimeType value) {
@@ -9946,6 +11167,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link OnCarriageIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "OnCarriageIndicator")
     public JAXBElement<OnCarriageIndicatorType> createOnCarriageIndicator(OnCarriageIndicatorType value) {
@@ -9954,6 +11176,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link OrangeHazardPlacardIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "OrangeHazardPlacardID")
     public JAXBElement<OrangeHazardPlacardIDType> createOrangeHazardPlacardID(OrangeHazardPlacardIDType value) {
@@ -9962,6 +11185,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link OrderableIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "OrderableIndicator")
     public JAXBElement<OrderableIndicatorType> createOrderableIndicator(OrderableIndicatorType value) {
@@ -9970,6 +11194,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link OrderableUnitType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "OrderableUnit")
     public JAXBElement<OrderableUnitType> createOrderableUnit(OrderableUnitType value) {
@@ -9978,6 +11203,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link OrderableUnitFactorRateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "OrderableUnitFactorRate")
     public JAXBElement<OrderableUnitFactorRateType> createOrderableUnitFactorRate(OrderableUnitFactorRateType value) {
@@ -9986,6 +11212,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link OrderIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "OrderID")
     public JAXBElement<OrderIDType> createOrderID(OrderIDType value) {
@@ -9994,6 +11221,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link OrderQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "OrderQuantity")
     public JAXBElement<OrderQuantityType> createOrderQuantity(OrderQuantityType value) {
@@ -10002,6 +11230,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link OrderQuantityIncrementNumericType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "OrderQuantityIncrementNumeric")
     public JAXBElement<OrderQuantityIncrementNumericType> createOrderQuantityIncrementNumeric(OrderQuantityIncrementNumericType value) {
@@ -10010,6 +11239,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link OrganizationDepartmentType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "OrganizationDepartment")
     public JAXBElement<OrganizationDepartmentType> createOrganizationDepartment(OrganizationDepartmentType value) {
@@ -10018,6 +11248,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link OriginalJobIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "OriginalJobID")
     public JAXBElement<OriginalJobIDType> createOriginalJobID(OriginalJobIDType value) {
@@ -10026,6 +11257,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link OtherInstructionType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "OtherInstruction")
     public JAXBElement<OtherInstructionType> createOtherInstruction(OtherInstructionType value) {
@@ -10034,6 +11266,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link OutstandingQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "OutstandingQuantity")
     public JAXBElement<OutstandingQuantityType> createOutstandingQuantity(OutstandingQuantityType value) {
@@ -10042,6 +11275,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link OutstandingReasonType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "OutstandingReason")
     public JAXBElement<OutstandingReasonType> createOutstandingReason(OutstandingReasonType value) {
@@ -10050,6 +11284,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link OversupplyQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "OversupplyQuantity")
     public JAXBElement<OversupplyQuantityType> createOversupplyQuantity(OversupplyQuantityType value) {
@@ -10058,6 +11293,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link OwnerTypeCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "OwnerTypeCode")
     public JAXBElement<OwnerTypeCodeType> createOwnerTypeCode(OwnerTypeCodeType value) {
@@ -10066,6 +11302,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PackageLevelCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PackageLevelCode")
     public JAXBElement<PackageLevelCodeType> createPackageLevelCode(PackageLevelCodeType value) {
@@ -10074,6 +11311,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PackageQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PackageQuantity")
     public JAXBElement<PackageQuantityType> createPackageQuantity(PackageQuantityType value) {
@@ -10082,6 +11320,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PackagesQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PackagesQuantity")
     public JAXBElement<PackagesQuantityType> createPackagesQuantity(PackagesQuantityType value) {
@@ -10090,6 +11329,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PackagingTypeCodeTypeCommBas }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PackagingTypeCode")
     public JAXBElement<PackagingTypeCodeTypeCommBas> createPackagingTypeCode(PackagingTypeCodeTypeCommBas value) {
@@ -10098,6 +11338,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PackingCriteriaCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PackingCriteriaCode")
     public JAXBElement<PackingCriteriaCodeType> createPackingCriteriaCode(PackingCriteriaCodeType value) {
@@ -10106,6 +11347,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PackingMaterialType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PackingMaterial")
     public JAXBElement<PackingMaterialType> createPackingMaterial(PackingMaterialType value) {
@@ -10114,6 +11356,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PackLevelCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PackLevelCode")
     public JAXBElement<PackLevelCodeType> createPackLevelCode(PackLevelCodeType value) {
@@ -10122,6 +11365,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PackQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PackQuantity")
     public JAXBElement<PackQuantityType> createPackQuantity(PackQuantityType value) {
@@ -10130,6 +11374,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PackSizeNumericType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PackSizeNumeric")
     public JAXBElement<PackSizeNumericType> createPackSizeNumeric(PackSizeNumericType value) {
@@ -10138,6 +11383,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PaidAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PaidAmount")
     public JAXBElement<PaidAmountType> createPaidAmount(PaidAmountType value) {
@@ -10146,6 +11392,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PaidDateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PaidDate")
     public JAXBElement<PaidDateType> createPaidDate(PaidDateType value) {
@@ -10154,6 +11401,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PaidTimeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PaidTime")
     public JAXBElement<PaidTimeType> createPaidTime(PaidTimeType value) {
@@ -10162,6 +11410,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ParentDocumentIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ParentDocumentID")
     public JAXBElement<ParentDocumentIDType> createParentDocumentID(ParentDocumentIDType value) {
@@ -10170,6 +11419,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ParentDocumentTypeCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ParentDocumentTypeCode")
     public JAXBElement<ParentDocumentTypeCodeType> createParentDocumentTypeCode(ParentDocumentTypeCodeType value) {
@@ -10178,6 +11428,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PartialDeliveryIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PartialDeliveryIndicator")
     public JAXBElement<PartialDeliveryIndicatorType> createPartialDeliveryIndicator(PartialDeliveryIndicatorType value) {
@@ -10186,6 +11437,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PayableAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PayableAmount")
     public JAXBElement<PayableAmountType> createPayableAmount(PayableAmountType value) {
@@ -10194,6 +11446,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PayableRoundingAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PayableRoundingAmount")
     public JAXBElement<PayableRoundingAmountType> createPayableRoundingAmount(PayableRoundingAmountType value) {
@@ -10202,6 +11455,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PayerReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PayerReference")
     public JAXBElement<PayerReferenceType> createPayerReference(PayerReferenceType value) {
@@ -10210,6 +11464,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PaymentAlternativeCurrencyCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PaymentAlternativeCurrencyCode")
     public JAXBElement<PaymentAlternativeCurrencyCodeType> createPaymentAlternativeCurrencyCode(PaymentAlternativeCurrencyCodeType value) {
@@ -10218,6 +11473,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PaymentAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PaymentAmount")
     public JAXBElement<PaymentAmountType> createPaymentAmount(PaymentAmountType value) {
@@ -10226,6 +11482,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PaymentChannelCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PaymentChannelCode")
     public JAXBElement<PaymentChannelCodeType> createPaymentChannelCode(PaymentChannelCodeType value) {
@@ -10234,6 +11491,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PaymentCurrencyCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PaymentCurrencyCode")
     public JAXBElement<PaymentCurrencyCodeType> createPaymentCurrencyCode(PaymentCurrencyCodeType value) {
@@ -10242,6 +11500,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PaymentDueDateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PaymentDueDate")
     public JAXBElement<PaymentDueDateType> createPaymentDueDate(PaymentDueDateType value) {
@@ -10250,6 +11509,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PaymentIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PaymentID")
     public JAXBElement<PaymentIDType> createPaymentID(PaymentIDType value) {
@@ -10258,6 +11518,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PaymentMeansCodeTypeCommBas }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PaymentMeansCode")
     public JAXBElement<PaymentMeansCodeTypeCommBas> createPaymentMeansCode(PaymentMeansCodeTypeCommBas value) {
@@ -10266,6 +11527,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PaymentMeansIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PaymentMeansID")
     public JAXBElement<PaymentMeansIDType> createPaymentMeansID(PaymentMeansIDType value) {
@@ -10274,6 +11536,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PaymentNoteType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PaymentNote")
     public JAXBElement<PaymentNoteType> createPaymentNote(PaymentNoteType value) {
@@ -10282,6 +11545,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PaymentOrderReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PaymentOrderReference")
     public JAXBElement<PaymentOrderReferenceType> createPaymentOrderReference(PaymentOrderReferenceType value) {
@@ -10290,6 +11554,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PenaltySurchargePercentType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PenaltySurchargePercent")
     public JAXBElement<PenaltySurchargePercentType> createPenaltySurchargePercent(PenaltySurchargePercentType value) {
@@ -10298,6 +11563,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PercentType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Percent")
     public JAXBElement<PercentType> createPercent(PercentType value) {
@@ -10306,6 +11572,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PerUnitAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PerUnitAmount")
     public JAXBElement<PerUnitAmountType> createPerUnitAmount(PerUnitAmountType value) {
@@ -10314,6 +11581,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PlacardEndorsementType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PlacardEndorsement")
     public JAXBElement<PlacardEndorsementType> createPlacardEndorsement(PlacardEndorsementType value) {
@@ -10322,6 +11590,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PlacardNotationType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PlacardNotation")
     public JAXBElement<PlacardNotationType> createPlacardNotation(PlacardNotationType value) {
@@ -10330,6 +11599,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PlotIdentificationType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PlotIdentification")
     public JAXBElement<PlotIdentificationType> createPlotIdentification(PlotIdentificationType value) {
@@ -10338,6 +11608,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PositionCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PositionCode")
     public JAXBElement<PositionCodeType> createPositionCode(PositionCodeType value) {
@@ -10346,6 +11617,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PostalZoneType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PostalZone")
     public JAXBElement<PostalZoneType> createPostalZone(PostalZoneType value) {
@@ -10354,6 +11626,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PostboxType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Postbox")
     public JAXBElement<PostboxType> createPostbox(PostboxType value) {
@@ -10362,6 +11635,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PreCarriageIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PreCarriageIndicator")
     public JAXBElement<PreCarriageIndicatorType> createPreCarriageIndicator(PreCarriageIndicatorType value) {
@@ -10370,6 +11644,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PreferenceCriterionCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PreferenceCriterionCode")
     public JAXBElement<PreferenceCriterionCodeType> createPreferenceCriterionCode(PreferenceCriterionCodeType value) {
@@ -10378,6 +11653,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PrepaidAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PrepaidAmount")
     public JAXBElement<PrepaidAmountType> createPrepaidAmount(PrepaidAmountType value) {
@@ -10386,6 +11662,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PrepaidIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PrepaidIndicator")
     public JAXBElement<PrepaidIndicatorType> createPrepaidIndicator(PrepaidIndicatorType value) {
@@ -10394,6 +11671,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PrepaidPaymentReferenceIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PrepaidPaymentReferenceID")
     public JAXBElement<PrepaidPaymentReferenceIDType> createPrepaidPaymentReferenceID(PrepaidPaymentReferenceIDType value) {
@@ -10402,6 +11680,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PreviousJobIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PreviousJobID")
     public JAXBElement<PreviousJobIDType> createPreviousJobID(PreviousJobIDType value) {
@@ -10410,6 +11689,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PreviousVersionIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PreviousVersionID")
     public JAXBElement<PreviousVersionIDType> createPreviousVersionID(PreviousVersionIDType value) {
@@ -10418,6 +11698,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PriceAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PriceAmount")
     public JAXBElement<PriceAmountType> createPriceAmount(PriceAmountType value) {
@@ -10426,6 +11707,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PriceChangeReasonType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PriceChangeReason")
     public JAXBElement<PriceChangeReasonType> createPriceChangeReason(PriceChangeReasonType value) {
@@ -10434,6 +11716,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PriceTypeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PriceType")
     public JAXBElement<PriceTypeType> createPriceType(PriceTypeType value) {
@@ -10442,6 +11725,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PriceTypeCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PriceTypeCode")
     public JAXBElement<PriceTypeCodeType> createPriceTypeCode(PriceTypeCodeType value) {
@@ -10450,6 +11734,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PricingCurrencyCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PricingCurrencyCode")
     public JAXBElement<PricingCurrencyCodeType> createPricingCurrencyCode(PricingCurrencyCodeType value) {
@@ -10458,6 +11743,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PricingUpdateRequestIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PricingUpdateRequestIndicator")
     public JAXBElement<PricingUpdateRequestIndicatorType> createPricingUpdateRequestIndicator(PricingUpdateRequestIndicatorType value) {
@@ -10466,6 +11752,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PrimaryAccountNumberIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PrimaryAccountNumberID")
     public JAXBElement<PrimaryAccountNumberIDType> createPrimaryAccountNumberID(PrimaryAccountNumberIDType value) {
@@ -10474,6 +11761,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PrintQualifierType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "PrintQualifier")
     public JAXBElement<PrintQualifierType> createPrintQualifier(PrintQualifierType value) {
@@ -10482,6 +11770,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PriorityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Priority")
     public JAXBElement<PriorityType> createPriority(PriorityType value) {
@@ -10490,6 +11779,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ProductTraceIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ProductTraceID")
     public JAXBElement<ProductTraceIDType> createProductTraceID(ProductTraceIDType value) {
@@ -10498,6 +11788,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ProfileIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ProfileID")
     public JAXBElement<ProfileIDType> createProfileID(ProfileIDType value) {
@@ -10506,6 +11797,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ProviderTypeCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ProviderTypeCode")
     public JAXBElement<ProviderTypeCodeType> createProviderTypeCode(ProviderTypeCodeType value) {
@@ -10514,6 +11806,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link QualifierType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Qualifier")
     public JAXBElement<QualifierType> createQualifier(QualifierType value) {
@@ -10522,6 +11815,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link QuantityTypeCommBas }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Quantity")
     public JAXBElement<QuantityTypeCommBas> createQuantity(QuantityTypeCommBas value) {
@@ -10530,6 +11824,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RailCarIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "RailCarID")
     public JAXBElement<RailCarIDType> createRailCarID(RailCarIDType value) {
@@ -10538,6 +11833,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ReasonType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Reason")
     public JAXBElement<ReasonType> createReason(ReasonType value) {
@@ -10546,6 +11842,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ReceivedDateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ReceivedDate")
     public JAXBElement<ReceivedDateType> createReceivedDate(ReceivedDateType value) {
@@ -10554,6 +11851,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ReceivedQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ReceivedQuantity")
     public JAXBElement<ReceivedQuantityType> createReceivedQuantity(ReceivedQuantityType value) {
@@ -10562,6 +11860,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ReferenceType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Reference")
     public JAXBElement<ReferenceType> createReference(ReferenceType value) {
@@ -10570,6 +11869,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ReferenceDateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ReferenceDate")
     public JAXBElement<ReferenceDateType> createReferenceDate(ReferenceDateType value) {
@@ -10578,6 +11878,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ReferenceEventCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ReferenceEventCode")
     public JAXBElement<ReferenceEventCodeType> createReferenceEventCode(ReferenceEventCodeType value) {
@@ -10586,6 +11887,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ReferenceIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ReferenceID")
     public JAXBElement<ReferenceIDType> createReferenceID(ReferenceIDType value) {
@@ -10594,6 +11896,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ReferenceTimeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ReferenceTime")
     public JAXBElement<ReferenceTimeType> createReferenceTime(ReferenceTimeType value) {
@@ -10602,6 +11905,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RefrigerationOnIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "RefrigerationOnIndicator")
     public JAXBElement<RefrigerationOnIndicatorType> createRefrigerationOnIndicator(RefrigerationOnIndicatorType value) {
@@ -10610,6 +11914,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RegionType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Region")
     public JAXBElement<RegionType> createRegion(RegionType value) {
@@ -10618,6 +11923,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RegistrationIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "RegistrationID")
     public JAXBElement<RegistrationIDType> createRegistrationID(RegistrationIDType value) {
@@ -10626,6 +11932,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RegistrationNameType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "RegistrationName")
     public JAXBElement<RegistrationNameType> createRegistrationName(RegistrationNameType value) {
@@ -10634,6 +11941,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RegistrationNationalityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "RegistrationNationality")
     public JAXBElement<RegistrationNationalityType> createRegistrationNationality(RegistrationNationalityType value) {
@@ -10642,6 +11950,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RegistrationNationalityIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "RegistrationNationalityID")
     public JAXBElement<RegistrationNationalityIDType> createRegistrationNationalityID(RegistrationNationalityIDType value) {
@@ -10650,6 +11959,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RejectActionCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "RejectActionCode")
     public JAXBElement<RejectActionCodeType> createRejectActionCode(RejectActionCodeType value) {
@@ -10658,6 +11968,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RejectedQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "RejectedQuantity")
     public JAXBElement<RejectedQuantityType> createRejectedQuantity(RejectedQuantityType value) {
@@ -10666,6 +11977,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RejectionNoteType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "RejectionNote")
     public JAXBElement<RejectionNoteType> createRejectionNote(RejectionNoteType value) {
@@ -10674,6 +11986,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RejectReasonType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "RejectReason")
     public JAXBElement<RejectReasonType> createRejectReason(RejectReasonType value) {
@@ -10682,6 +11995,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RejectReasonCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "RejectReasonCode")
     public JAXBElement<RejectReasonCodeType> createRejectReasonCode(RejectReasonCodeType value) {
@@ -10690,6 +12004,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RemarksType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Remarks")
     public JAXBElement<RemarksType> createRemarks(RemarksType value) {
@@ -10698,6 +12013,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ReminderSequenceNumericType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ReminderSequenceNumeric")
     public JAXBElement<ReminderSequenceNumericType> createReminderSequenceNumeric(ReminderSequenceNumericType value) {
@@ -10706,6 +12022,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ReminderTypeCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ReminderTypeCode")
     public JAXBElement<ReminderTypeCodeType> createReminderTypeCode(ReminderTypeCodeType value) {
@@ -10714,6 +12031,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RequestedDespatchDateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "RequestedDespatchDate")
     public JAXBElement<RequestedDespatchDateType> createRequestedDespatchDate(RequestedDespatchDateType value) {
@@ -10722,6 +12040,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RequestedDespatchTimeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "RequestedDespatchTime")
     public JAXBElement<RequestedDespatchTimeType> createRequestedDespatchTime(RequestedDespatchTimeType value) {
@@ -10730,6 +12049,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RequestedInvoiceCurrencyCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "RequestedInvoiceCurrencyCode")
     public JAXBElement<RequestedInvoiceCurrencyCodeType> createRequestedInvoiceCurrencyCode(RequestedInvoiceCurrencyCodeType value) {
@@ -10738,6 +12058,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RequiredCustomsIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "RequiredCustomsID")
     public JAXBElement<RequiredCustomsIDType> createRequiredCustomsID(RequiredCustomsIDType value) {
@@ -10746,6 +12067,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ResponseCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ResponseCode")
     public JAXBElement<ResponseCodeType> createResponseCode(ResponseCodeType value) {
@@ -10754,6 +12076,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ResponseDateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ResponseDate")
     public JAXBElement<ResponseDateType> createResponseDate(ResponseDateType value) {
@@ -10762,6 +12085,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ResponseTimeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ResponseTime")
     public JAXBElement<ResponseTimeType> createResponseTime(ResponseTimeType value) {
@@ -10770,6 +12094,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ReturnabilityIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ReturnabilityIndicator")
     public JAXBElement<ReturnabilityIndicatorType> createReturnabilityIndicator(ReturnabilityIndicatorType value) {
@@ -10778,6 +12103,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ReturnableMaterialIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ReturnableMaterialIndicator")
     public JAXBElement<ReturnableMaterialIndicatorType> createReturnableMaterialIndicator(ReturnableMaterialIndicatorType value) {
@@ -10786,6 +12112,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RevisionDateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "RevisionDate")
     public JAXBElement<RevisionDateType> createRevisionDate(RevisionDateType value) {
@@ -10794,6 +12121,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RevisionTimeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "RevisionTime")
     public JAXBElement<RevisionTimeType> createRevisionTime(RevisionTimeType value) {
@@ -10802,6 +12130,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RoleCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "RoleCode")
     public JAXBElement<RoleCodeType> createRoleCode(RoleCodeType value) {
@@ -10810,6 +12139,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RoomType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Room")
     public JAXBElement<RoomType> createRoom(RoomType value) {
@@ -10818,6 +12148,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RoundingAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "RoundingAmount")
     public JAXBElement<RoundingAmountType> createRoundingAmount(RoundingAmountType value) {
@@ -10826,6 +12157,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SalesOrderIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "SalesOrderID")
     public JAXBElement<SalesOrderIDType> createSalesOrderID(SalesOrderIDType value) {
@@ -10834,6 +12166,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SalesOrderLineIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "SalesOrderLineID")
     public JAXBElement<SalesOrderLineIDType> createSalesOrderLineID(SalesOrderLineIDType value) {
@@ -10842,6 +12175,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SchemeURIType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "SchemeURI")
     public JAXBElement<SchemeURIType> createSchemeURI(SchemeURIType value) {
@@ -10850,6 +12184,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SealingPartyTypeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "SealingPartyType")
     public JAXBElement<SealingPartyTypeType> createSealingPartyType(SealingPartyTypeType value) {
@@ -10858,6 +12193,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SealIssuerTypeCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "SealIssuerTypeCode")
     public JAXBElement<SealIssuerTypeCodeType> createSealIssuerTypeCode(SealIssuerTypeCodeType value) {
@@ -10866,6 +12202,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SealStatusCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "SealStatusCode")
     public JAXBElement<SealStatusCodeType> createSealStatusCode(SealStatusCodeType value) {
@@ -10874,6 +12211,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SequenceIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "SequenceID")
     public JAXBElement<SequenceIDType> createSequenceID(SequenceIDType value) {
@@ -10882,6 +12220,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SequenceNumberIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "SequenceNumberID")
     public JAXBElement<SequenceNumberIDType> createSequenceNumberID(SequenceNumberIDType value) {
@@ -10890,6 +12229,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SequenceNumericType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "SequenceNumeric")
     public JAXBElement<SequenceNumericType> createSequenceNumeric(SequenceNumericType value) {
@@ -10898,6 +12238,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SerialIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "SerialID")
     public JAXBElement<SerialIDType> createSerialID(SerialIDType value) {
@@ -10906,6 +12247,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SettlementDiscountPercentType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "SettlementDiscountPercent")
     public JAXBElement<SettlementDiscountPercentType> createSettlementDiscountPercent(SettlementDiscountPercentType value) {
@@ -10914,6 +12256,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ShippingMarksType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ShippingMarks")
     public JAXBElement<ShippingMarksType> createShippingMarks(ShippingMarksType value) {
@@ -10922,6 +12265,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ShippingOrderIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ShippingOrderID")
     public JAXBElement<ShippingOrderIDType> createShippingOrderID(ShippingOrderIDType value) {
@@ -10930,6 +12274,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ShippingPriorityLevelCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ShippingPriorityLevelCode")
     public JAXBElement<ShippingPriorityLevelCodeType> createShippingPriorityLevelCode(ShippingPriorityLevelCodeType value) {
@@ -10938,6 +12283,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ShortageActionCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ShortageActionCode")
     public JAXBElement<ShortageActionCodeType> createShortageActionCode(ShortageActionCodeType value) {
@@ -10946,6 +12292,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ShortQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ShortQuantity")
     public JAXBElement<ShortQuantityType> createShortQuantity(ShortQuantityType value) {
@@ -10954,6 +12301,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SignatureMethodType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "SignatureMethod")
     public JAXBElement<SignatureMethodType> createSignatureMethod(SignatureMethodType value) {
@@ -10962,6 +12310,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SizeTypeCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "SizeTypeCode")
     public JAXBElement<SizeTypeCodeType> createSizeTypeCode(SizeTypeCodeType value) {
@@ -10970,6 +12319,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SourceCurrencyBaseRateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "SourceCurrencyBaseRate")
     public JAXBElement<SourceCurrencyBaseRateType> createSourceCurrencyBaseRate(SourceCurrencyBaseRateType value) {
@@ -10978,6 +12328,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SourceCurrencyCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "SourceCurrencyCode")
     public JAXBElement<SourceCurrencyCodeType> createSourceCurrencyCode(SourceCurrencyCodeType value) {
@@ -10986,6 +12337,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SpecialInstructionsType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "SpecialInstructions")
     public JAXBElement<SpecialInstructionsType> createSpecialInstructions(SpecialInstructionsType value) {
@@ -10994,6 +12346,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SpecialTermsType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "SpecialTerms")
     public JAXBElement<SpecialTermsType> createSpecialTerms(SpecialTermsType value) {
@@ -11002,6 +12355,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SplitConsignmentIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "SplitConsignmentIndicator")
     public JAXBElement<SplitConsignmentIndicatorType> createSplitConsignmentIndicator(SplitConsignmentIndicatorType value) {
@@ -11010,6 +12364,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link StartDateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "StartDate")
     public JAXBElement<StartDateType> createStartDate(StartDateType value) {
@@ -11018,6 +12373,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link StartTimeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "StartTime")
     public JAXBElement<StartTimeType> createStartTime(StartTimeType value) {
@@ -11026,6 +12382,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link StatusCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "StatusCode")
     public JAXBElement<StatusCodeType> createStatusCode(StatusCodeType value) {
@@ -11034,6 +12391,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link StatusReasonType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "StatusReason")
     public JAXBElement<StatusReasonType> createStatusReason(StatusReasonType value) {
@@ -11042,6 +12400,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link StatusReasonCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "StatusReasonCode")
     public JAXBElement<StatusReasonCodeType> createStatusReasonCode(StatusReasonCodeType value) {
@@ -11050,6 +12409,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link StreetNameType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "StreetName")
     public JAXBElement<StreetNameType> createStreetName(StreetNameType value) {
@@ -11058,6 +12418,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SubstitutionStatusCodeTypeCommBas }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "SubstitutionStatusCode")
     public JAXBElement<SubstitutionStatusCodeTypeCommBas> createSubstitutionStatusCode(SubstitutionStatusCodeTypeCommBas value) {
@@ -11066,6 +12427,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SummaryDescriptionType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "SummaryDescription")
     public JAXBElement<SummaryDescriptionType> createSummaryDescription(SummaryDescriptionType value) {
@@ -11074,6 +12436,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SupplierAssignedAccountIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "SupplierAssignedAccountID")
     public JAXBElement<SupplierAssignedAccountIDType> createSupplierAssignedAccountID(SupplierAssignedAccountIDType value) {
@@ -11082,6 +12445,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SurchargePercentType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "SurchargePercent")
     public JAXBElement<SurchargePercentType> createSurchargePercent(SurchargePercentType value) {
@@ -11090,6 +12454,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TargetCurrencyBaseRateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TargetCurrencyBaseRate")
     public JAXBElement<TargetCurrencyBaseRateType> createTargetCurrencyBaseRate(TargetCurrencyBaseRateType value) {
@@ -11098,6 +12463,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TargetCurrencyCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TargetCurrencyCode")
     public JAXBElement<TargetCurrencyCodeType> createTargetCurrencyCode(TargetCurrencyCodeType value) {
@@ -11106,6 +12472,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TariffClassCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TariffClassCode")
     public JAXBElement<TariffClassCodeType> createTariffClassCode(TariffClassCodeType value) {
@@ -11114,6 +12481,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TariffCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TariffCode")
     public JAXBElement<TariffCodeType> createTariffCode(TariffCodeType value) {
@@ -11122,6 +12490,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TariffDescriptionType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TariffDescription")
     public JAXBElement<TariffDescriptionType> createTariffDescription(TariffDescriptionType value) {
@@ -11130,6 +12499,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TaxableAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TaxableAmount")
     public JAXBElement<TaxableAmountType> createTaxableAmount(TaxableAmountType value) {
@@ -11138,6 +12508,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TaxAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TaxAmount")
     public JAXBElement<TaxAmountType> createTaxAmount(TaxAmountType value) {
@@ -11146,6 +12517,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TaxCurrencyCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TaxCurrencyCode")
     public JAXBElement<TaxCurrencyCodeType> createTaxCurrencyCode(TaxCurrencyCodeType value) {
@@ -11154,6 +12526,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TaxEvidenceIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TaxEvidenceIndicator")
     public JAXBElement<TaxEvidenceIndicatorType> createTaxEvidenceIndicator(TaxEvidenceIndicatorType value) {
@@ -11162,6 +12535,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TaxExclusiveAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TaxExclusiveAmount")
     public JAXBElement<TaxExclusiveAmountType> createTaxExclusiveAmount(TaxExclusiveAmountType value) {
@@ -11170,6 +12544,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TaxExemptionReasonType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TaxExemptionReason")
     public JAXBElement<TaxExemptionReasonType> createTaxExemptionReason(TaxExemptionReasonType value) {
@@ -11178,6 +12553,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TaxExemptionReasonCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TaxExemptionReasonCode")
     public JAXBElement<TaxExemptionReasonCodeType> createTaxExemptionReasonCode(TaxExemptionReasonCodeType value) {
@@ -11186,6 +12562,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TaxInclusiveAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TaxInclusiveAmount")
     public JAXBElement<TaxInclusiveAmountType> createTaxInclusiveAmount(TaxInclusiveAmountType value) {
@@ -11194,6 +12571,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TaxLevelCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TaxLevelCode")
     public JAXBElement<TaxLevelCodeType> createTaxLevelCode(TaxLevelCodeType value) {
@@ -11202,6 +12580,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TaxPointDateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TaxPointDate")
     public JAXBElement<TaxPointDateType> createTaxPointDate(TaxPointDateType value) {
@@ -11210,6 +12589,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TaxTypeCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TaxTypeCode")
     public JAXBElement<TaxTypeCodeType> createTaxTypeCode(TaxTypeCodeType value) {
@@ -11218,6 +12598,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TechnicalNameType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TechnicalName")
     public JAXBElement<TechnicalNameType> createTechnicalName(TechnicalNameType value) {
@@ -11226,6 +12607,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TelefaxType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Telefax")
     public JAXBElement<TelefaxType> createTelefax(TelefaxType value) {
@@ -11234,6 +12616,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TelephoneType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Telephone")
     public JAXBElement<TelephoneType> createTelephone(TelephoneType value) {
@@ -11242,6 +12625,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TermsType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Terms")
     public JAXBElement<TermsType> createTerms(TermsType value) {
@@ -11250,6 +12634,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TextType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Text")
     public JAXBElement<TextType> createText(TextType value) {
@@ -11258,6 +12643,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TierRangeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TierRange")
     public JAXBElement<TierRangeType> createTierRange(TierRangeType value) {
@@ -11266,6 +12652,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TierRatePercentType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TierRatePercent")
     public JAXBElement<TierRatePercentType> createTierRatePercent(TierRatePercentType value) {
@@ -11274,6 +12661,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TimeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Time")
     public JAXBElement<TimeType> createTime(TimeType value) {
@@ -11282,6 +12670,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TimezoneOffsetType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TimezoneOffset")
     public JAXBElement<TimezoneOffsetType> createTimezoneOffset(TimezoneOffsetType value) {
@@ -11290,6 +12679,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TimingComplaintType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TimingComplaint")
     public JAXBElement<TimingComplaintType> createTimingComplaint(TimingComplaintType value) {
@@ -11298,6 +12688,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TimingComplaintCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TimingComplaintCode")
     public JAXBElement<TimingComplaintCodeType> createTimingComplaintCode(TimingComplaintCodeType value) {
@@ -11306,6 +12697,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TitleType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Title")
     public JAXBElement<TitleType> createTitle(TitleType value) {
@@ -11314,6 +12706,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ToOrderIndicatorType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ToOrderIndicator")
     public JAXBElement<ToOrderIndicatorType> createToOrderIndicator(ToOrderIndicatorType value) {
@@ -11322,6 +12715,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TotalBalanceAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TotalBalanceAmount")
     public JAXBElement<TotalBalanceAmountType> createTotalBalanceAmount(TotalBalanceAmountType value) {
@@ -11330,6 +12724,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TotalCreditAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TotalCreditAmount")
     public JAXBElement<TotalCreditAmountType> createTotalCreditAmount(TotalCreditAmountType value) {
@@ -11338,6 +12733,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TotalDebitAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TotalDebitAmount")
     public JAXBElement<TotalDebitAmountType> createTotalDebitAmount(TotalDebitAmountType value) {
@@ -11346,6 +12742,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TotalGoodsItemQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TotalGoodsItemQuantity")
     public JAXBElement<TotalGoodsItemQuantityType> createTotalGoodsItemQuantity(TotalGoodsItemQuantityType value) {
@@ -11354,6 +12751,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TotalInvoiceAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TotalInvoiceAmount")
     public JAXBElement<TotalInvoiceAmountType> createTotalInvoiceAmount(TotalInvoiceAmountType value) {
@@ -11362,6 +12760,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TotalPackageQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TotalPackageQuantity")
     public JAXBElement<TotalPackageQuantityType> createTotalPackageQuantity(TotalPackageQuantityType value) {
@@ -11370,6 +12769,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TotalPackagesQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TotalPackagesQuantity")
     public JAXBElement<TotalPackagesQuantityType> createTotalPackagesQuantity(TotalPackagesQuantityType value) {
@@ -11378,6 +12778,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TotalPaymentAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TotalPaymentAmount")
     public JAXBElement<TotalPaymentAmountType> createTotalPaymentAmount(TotalPaymentAmountType value) {
@@ -11386,6 +12787,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TotalTaxAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TotalTaxAmount")
     public JAXBElement<TotalTaxAmountType> createTotalTaxAmount(TotalTaxAmountType value) {
@@ -11394,6 +12796,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TotalTransportHandlingUnitQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TotalTransportHandlingUnitQuantity")
     public JAXBElement<TotalTransportHandlingUnitQuantityType> createTotalTransportHandlingUnitQuantity(TotalTransportHandlingUnitQuantityType value) {
@@ -11402,6 +12805,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TrackingIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TrackingID")
     public JAXBElement<TrackingIDType> createTrackingID(TrackingIDType value) {
@@ -11410,6 +12814,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TradingRestrictionsType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TradingRestrictions")
     public JAXBElement<TradingRestrictionsType> createTradingRestrictions(TradingRestrictionsType value) {
@@ -11418,6 +12823,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TrainIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TrainID")
     public JAXBElement<TrainIDType> createTrainID(TrainIDType value) {
@@ -11426,6 +12832,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TransactionCurrencyTaxAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TransactionCurrencyTaxAmount")
     public JAXBElement<TransactionCurrencyTaxAmountType> createTransactionCurrencyTaxAmount(TransactionCurrencyTaxAmountType value) {
@@ -11434,6 +12841,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TransitDirectionCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TransitDirectionCode")
     public JAXBElement<TransitDirectionCodeType> createTransitDirectionCode(TransitDirectionCodeType value) {
@@ -11442,6 +12850,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TransportAuthorizationCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TransportAuthorizationCode")
     public JAXBElement<TransportAuthorizationCodeType> createTransportAuthorizationCode(TransportAuthorizationCodeType value) {
@@ -11450,6 +12859,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TransportEmergencyCardCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TransportEmergencyCardCode")
     public JAXBElement<TransportEmergencyCardCodeType> createTransportEmergencyCardCode(TransportEmergencyCardCodeType value) {
@@ -11458,6 +12868,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TransportEquipmentTypeCodeTypeCommBas }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TransportEquipmentTypeCode")
     public JAXBElement<TransportEquipmentTypeCodeTypeCommBas> createTransportEquipmentTypeCode(TransportEquipmentTypeCodeTypeCommBas value) {
@@ -11466,6 +12877,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TransportEventTypeCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TransportEventTypeCode")
     public JAXBElement<TransportEventTypeCodeType> createTransportEventTypeCode(TransportEventTypeCodeType value) {
@@ -11474,6 +12886,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TransportHandlingUnitQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TransportHandlingUnitQuantity")
     public JAXBElement<TransportHandlingUnitQuantityType> createTransportHandlingUnitQuantity(TransportHandlingUnitQuantityType value) {
@@ -11482,6 +12895,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TransportHandlingUnitTypeCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TransportHandlingUnitTypeCode")
     public JAXBElement<TransportHandlingUnitTypeCodeType> createTransportHandlingUnitTypeCode(TransportHandlingUnitTypeCodeType value) {
@@ -11490,6 +12904,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TransportMeansTypeCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TransportMeansTypeCode")
     public JAXBElement<TransportMeansTypeCodeType> createTransportMeansTypeCode(TransportMeansTypeCodeType value) {
@@ -11498,6 +12913,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TransportModeCodeTypeCommBas }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TransportModeCode")
     public JAXBElement<TransportModeCodeTypeCommBas> createTransportModeCode(TransportModeCodeTypeCommBas value) {
@@ -11506,6 +12922,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TransportServiceCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "TransportServiceCode")
     public JAXBElement<TransportServiceCodeType> createTransportServiceCode(TransportServiceCodeType value) {
@@ -11514,6 +12931,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link UBLVersionIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "UBLVersionID")
     public JAXBElement<UBLVersionIDType> createUBLVersionID(UBLVersionIDType value) {
@@ -11522,6 +12940,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link UNDGCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "UNDGCode")
     public JAXBElement<UNDGCodeType> createUNDGCode(UNDGCodeType value) {
@@ -11530,6 +12949,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link UnitType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Unit")
     public JAXBElement<UnitType> createUnit(UnitType value) {
@@ -11538,6 +12958,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link UnitQuantityType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "UnitQuantity")
     public JAXBElement<UnitQuantityType> createUnitQuantity(UnitQuantityType value) {
@@ -11546,6 +12967,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link UpperOrangeHazardPlacardIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "UpperOrangeHazardPlacardID")
     public JAXBElement<UpperOrangeHazardPlacardIDType> createUpperOrangeHazardPlacardID(UpperOrangeHazardPlacardIDType value) {
@@ -11554,6 +12976,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link URIType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "URI")
     public JAXBElement<URIType> createURI(URIType value) {
@@ -11562,6 +12985,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link UUIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "UUID")
     public JAXBElement<UUIDType> createUUID(UUIDType value) {
@@ -11570,6 +12994,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ValidationDateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ValidationDate")
     public JAXBElement<ValidationDateType> createValidationDate(ValidationDateType value) {
@@ -11578,6 +13003,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ValidationTimeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ValidationTime")
     public JAXBElement<ValidationTimeType> createValidationTime(ValidationTimeType value) {
@@ -11586,6 +13012,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ValidatorIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ValidatorID")
     public JAXBElement<ValidatorIDType> createValidatorID(ValidatorIDType value) {
@@ -11594,6 +13021,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ValidityStartDateType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ValidityStartDate")
     public JAXBElement<ValidityStartDateType> createValidityStartDate(ValidityStartDateType value) {
@@ -11602,6 +13030,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ValueType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Value")
     public JAXBElement<ValueType> createValue(ValueType value) {
@@ -11610,6 +13039,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ValueAmountType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "ValueAmount")
     public JAXBElement<ValueAmountType> createValueAmount(ValueAmountType value) {
@@ -11618,6 +13048,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link VersionIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "VersionID")
     public JAXBElement<VersionIDType> createVersionID(VersionIDType value) {
@@ -11626,6 +13057,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link VesselIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "VesselID")
     public JAXBElement<VesselIDType> createVesselID(VesselIDType value) {
@@ -11634,6 +13066,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link VesselNameType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "VesselName")
     public JAXBElement<VesselNameType> createVesselName(VesselNameType value) {
@@ -11642,6 +13075,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link VolumeMeasureType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "VolumeMeasure")
     public JAXBElement<VolumeMeasureType> createVolumeMeasure(VolumeMeasureType value) {
@@ -11650,6 +13084,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link WarrantyInformationType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "WarrantyInformation")
     public JAXBElement<WarrantyInformationType> createWarrantyInformation(WarrantyInformationType value) {
@@ -11658,6 +13093,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link WebsiteURIType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "WebsiteURI")
     public JAXBElement<WebsiteURIType> createWebsiteURI(WebsiteURIType value) {
@@ -11666,6 +13102,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link WeightMeasureType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "WeightMeasure")
     public JAXBElement<WeightMeasureType> createWeightMeasure(WeightMeasureType value) {
@@ -11674,6 +13111,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link XPathType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "XPath")
     public JAXBElement<XPathType> createXPath(XPathType value) {
@@ -11682,6 +13120,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ZoneType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2", name = "Zone")
     public JAXBElement<ZoneType> createZone(ZoneType value) {
@@ -11690,6 +13129,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link UBLExtensionsType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", name = "UBLExtensions")
     public JAXBElement<UBLExtensionsType> createUBLExtensions(UBLExtensionsType value) {
@@ -11698,6 +13138,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link UBLExtensionType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", name = "UBLExtension")
     public JAXBElement<UBLExtensionType> createUBLExtension(UBLExtensionType value) {
@@ -11706,6 +13147,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ExtensionAgencyIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", name = "ExtensionAgencyID")
     public JAXBElement<ExtensionAgencyIDType> createExtensionAgencyID(ExtensionAgencyIDType value) {
@@ -11714,6 +13156,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ExtensionAgencyNameType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", name = "ExtensionAgencyName")
     public JAXBElement<ExtensionAgencyNameType> createExtensionAgencyName(ExtensionAgencyNameType value) {
@@ -11722,6 +13165,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ExtensionAgencyURIType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", name = "ExtensionAgencyURI")
     public JAXBElement<ExtensionAgencyURIType> createExtensionAgencyURI(ExtensionAgencyURIType value) {
@@ -11730,6 +13174,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ExtensionContentType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", name = "ExtensionContent")
     public JAXBElement<ExtensionContentType> createExtensionContent(ExtensionContentType value) {
@@ -11738,6 +13183,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ExtensionReasonType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", name = "ExtensionReason")
     public JAXBElement<ExtensionReasonType> createExtensionReason(ExtensionReasonType value) {
@@ -11746,6 +13192,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ExtensionReasonCodeType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", name = "ExtensionReasonCode")
     public JAXBElement<ExtensionReasonCodeType> createExtensionReasonCode(ExtensionReasonCodeType value) {
@@ -11754,6 +13201,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ExtensionURIType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", name = "ExtensionURI")
     public JAXBElement<ExtensionURIType> createExtensionURI(ExtensionURIType value) {
@@ -11762,6 +13210,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ExtensionVersionIDType }{@code >}}
+     * 
      */
     @XmlElementDecl(namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", name = "ExtensionVersionID")
     public JAXBElement<ExtensionVersionIDType> createExtensionVersionID(ExtensionVersionIDType value) {

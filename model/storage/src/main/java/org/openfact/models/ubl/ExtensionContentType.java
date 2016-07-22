@@ -18,9 +18,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Clase Java para ExtensionContentType complex type.
- * <p>
+ * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
- * <p>
+ * 
  * <pre>
  * &lt;complexType name="ExtensionContentType"&gt;
  *   &lt;complexContent&gt;
@@ -32,6 +32,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
+ *
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ExtensionContentType", namespace = "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", propOrder = {
@@ -45,8 +47,10 @@ public class ExtensionContentType {
     /**
      * Obtiene el valor de la propiedad any.
      *
-     * @return possible object is
-     * {@link Element }
+     * @return
+     *     possible object is
+     *     {@link Element }
+     *     
      */
     public Element getAny() {
         return any;
@@ -55,8 +59,10 @@ public class ExtensionContentType {
     /**
      * Define el valor de la propiedad any.
      *
-     * @param value allowed object is
-     *              {@link Element }
+     * @param value
+     *     allowed object is
+     *     {@link Element }
+     *     
      */
     public void setAny(Element value) {
         this.any = value;
