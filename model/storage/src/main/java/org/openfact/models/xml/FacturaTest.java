@@ -92,7 +92,7 @@ public class FacturaTest {
             det1.setPricePriceAmount(new BigDecimal("83.05"), CurrencyCodeContentType.PEN);
             factura.addInvoiceLine(det1);
 
-            factura.generar(FileLocation.XmlInvoice.getLocation() + "10428482072-01-F001-2.xml");
+            factura.generar(FileLocation.XmlInvoice.getLocation() + "10428482072-01-F001-1.xml");
             factura.validar(FileLocation.XmlValidator.getLocation() + "UBLPE-Invoice-1.0.xsd");
 
         } catch (JAXBException ex) {
@@ -106,7 +106,7 @@ public class FacturaTest {
     public void unMarshallFacturaElectronica() {
         try {
 
-            File file = new File(FileLocation.XmlInvoice.getLocation() + "10428482072-01-F001-2.xml");
+            File file = new File(FileLocation.XmlInvoice.getLocation() + "10428482072-01-F001-1.xml");
             JAXBContext jaxbContext = JAXBContext.newInstance(ObjectFactory.class);
 
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();

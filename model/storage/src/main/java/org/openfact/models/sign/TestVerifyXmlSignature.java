@@ -2,8 +2,6 @@ package org.openfact.models.sign;
 
 import org.openfact.models.enums.FileLocation;
 
-import java.io.File;
-
 /**
  * Created by Alex Pariona-"alexpariona@openfact.com" on 22/07/2016.
  */
@@ -24,25 +22,9 @@ public class TestVerifyXmlSignature {
         }
     }
 
-    /**
-     * Method used to validate a tampered signed XML document
-     */
-    public static void testSignedTamperedXMLDoc() {
-        String signedXmlFilePath = "xml" + File.separator + "digitallytamperdEmpSal.xml";
-        String publicKeyFilePath = "keys" + File.separator + "publickey.key";
-        try {
-            boolean validFlag = SignatureXmlDocumentVerifier.
-                    isXmlDigitalSignatureValid(signedXmlFilePath, publicKeyFilePath);
-            System.out.println("Validity of XML Digital Signature : " + validFlag);
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
-    }
 
     public static void main(String[] args) {
         //Test for Valid one
         testSignedXMLDoc();
-        //Test for tampered one
-        testSignedTamperedXMLDoc();
     }
 }

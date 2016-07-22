@@ -161,9 +161,9 @@ public class KeyEncriptation {
     public PrivateKeyEntry getLlave() throws KeyStoreException, IOException, NoSuchAlgorithmException,
             CertificateException, UnrecoverableEntryException {
         KeyStore ks = KeyStore.getInstance("JKS");
-        ks.load(new FileInputStream(FileLocation.UrlKey.getLocation() + "private.key"/*"C:\\Users\\AHREN\\.keystore"*/), "42848207".toCharArray());
-        keyEntry = (KeyStore.PrivateKeyEntry) ks.getEntry("sunat",
-                new KeyStore.PasswordProtection("42848207".toCharArray()));
+        ks.load(new FileInputStream(FileLocation.KeyStore.getLocation() + "openfact.jsk"), "123456".toCharArray());
+        keyEntry = (KeyStore.PrivateKeyEntry) ks.getEntry("SignatureOlva",
+                new KeyStore.PasswordProtection("123456".toCharArray()));
         cert = (X509Certificate) keyEntry.getCertificate();
         return keyEntry;
     }

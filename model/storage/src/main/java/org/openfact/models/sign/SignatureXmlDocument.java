@@ -112,17 +112,12 @@ public class SignatureXmlDocument {
         Document doc = getXmlDocument(originalXmlFilePath);
         // Create XML Signature Factory
         XMLSignatureFactory xmlSigFactory = XMLSignatureFactory.getInstance("DOM");
-        // PrivateKey privateKey = new
-        // KryptoUtil().getStoredPrivateKey(privateKeyFilePath);
-        PrivateKey privateKey = new KeyEncriptation().getLlave().getPrivateKey();
-        // DOMSignContext domSignCtx = new DOMSignContext(privateKey,
-        // doc.getDocumentElement(),
-        // doc.getDocumentElement().getFirstChild().getNextSibling().getFirstChild().getNextSibling().getNextSibling().getNextSibling().getFirstChild().getNextSibling().getNextSibling());
+        PrivateKey privateKey = new KeyEncriptation().getStoredPrivateKey(privateKeyFilePath);
+       /* PrivateKey privateKey = new KeyEncriptation().getLlave().getPrivateKey();*/
         DOMSignContext domSignCtx = new DOMSignContext(privateKey,
                 doc.getDocumentElement().getFirstChild().getNextSibling().getFirstChild().getNextSibling()
                         .getNextSibling().getNextSibling().getFirstChild().getNextSibling());
         domSignCtx.setDefaultNamespacePrefix("ds");
-
         Reference ref = null;
         SignedInfo signedInfo = null;
         try {
@@ -142,7 +137,7 @@ public class SignatureXmlDocument {
         // Pass the Public Key File Path
         KeyInfo keyInfo = getKeyInfo(xmlSigFactory, publicKeyFilePath);
         // Create a new XML Signature
-        XMLSignature xmlSignature = xmlSigFactory.newXMLSignature(signedInfo, keyInfo, null, "SignatureOpenFact", null);
+        XMLSignature xmlSignature = xmlSigFactory.newXMLSignature(signedInfo, keyInfo, null, "SignatureOlva", null);
         try {
             // Sign the document
             xmlSignature.sign(domSignCtx);

@@ -7,7 +7,8 @@ public enum FileLocation {
     UrlKey("D:\\Factura\\Llave\\"),
     XmlInvoice("D:\\Factura\\Generate\\"),
     XmlValidator("D:\\Factura\\Invoice\\"),
-    XmlSignature("D:\\Factura\\Signature\\");
+    XmlSignature("D:\\Factura\\Signature\\"),
+    KeyStore("D:\\Factura\\KeyStore\\");
 
 
     private final String location;
