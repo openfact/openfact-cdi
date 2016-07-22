@@ -81,6 +81,7 @@ public class SignatureXmlDocument {
      */
     private void storeSignedDoc(Document doc, String destnSignedXmlFilePath) {
         TransformerFactory transFactory = TransformerFactory.newInstance();
+        doc.setXmlStandalone(false);
         Transformer trans = null;
         try {
             trans = transFactory.newTransformer();
