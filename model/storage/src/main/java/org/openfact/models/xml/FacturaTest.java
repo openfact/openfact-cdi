@@ -123,7 +123,7 @@ public class FacturaTest {
 
     }
 
-    /*@Test
+   /* @Test
     public void sendBill() {
 
         try { // Call Web Service Operation
@@ -132,11 +132,11 @@ public class FacturaTest {
             BillService port = service.getBillServicePort();
             // TODO initialize WS operation arguments here
             java.lang.String fileName = "10428482072-01-F001-1.zip";
-            DataSource fds = new FileDataSource("C:\\Users\\christian\\Documents\\10428482072-01-F001-1.zip");
+            DataSource fds = new FileDataSource(FileLocation.XmlSignature.getLocation() + "10428482072-01-F001-1.zip");
             javax.activation.DataHandler contentFile = new javax.activation.DataHandler(fds);
             // TODO process result here
             byte[] result = port.sendBill(fileName, contentFile);
-            FileOutputStream fileOuputStream = new FileOutputStream("C:\\Users\\christian\\Documents\\respuesta.zip");
+            FileOutputStream fileOuputStream = new FileOutputStream(FileLocation.XmlResponse.getLocation() + "10428482072-01-F001-1.zip");
             fileOuputStream.write(result);
             fileOuputStream.close();
             System.out.println("Result = " + result);
