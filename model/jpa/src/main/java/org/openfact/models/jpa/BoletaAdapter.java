@@ -38,19 +38,19 @@ public class BoletaAdapter implements BoletaModel, JpaModel<BoletaEntity> {
     }
 
     @Override public String getId() {
-        return null;
+        return boletaEntity.getId();
     }
 
     @Override public TipoDocumentoType getTipoDocumento() {
-        return null;
+        return boletaEntity.getTipoDocumento();
     }
 
     @Override public LocalDate getFechaEmision() {
-        return null;
+        return boletaEntity.getFechaEmision();
     }
 
     @Override public NumeracionComprobantePagoModel getNumeracion() {
-        return null;
+        return  this.getNumeracion();
     }
 
     @Override public EmisorModel getEmisor() {

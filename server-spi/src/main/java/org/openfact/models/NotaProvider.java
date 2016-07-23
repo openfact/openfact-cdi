@@ -23,6 +23,7 @@ public interface NotaProvider extends Provider {
 	ResumenNotaModel createResumenExonerado(BigDecimal totalExonerado, String moneda, BigDecimal importeTotal);
 
 	NotaModel findById(String id);
+	NotaModel findByEmisor(String id);
 
 	List<NotaModel> getAll(EmisorModel emisorModel);
 
