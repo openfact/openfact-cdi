@@ -1,23 +1,38 @@
 package org.openfact.models.jpa.entities;
 
-import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.*;
 import org.openfact.models.ResumenNotaModel;
 import org.openfact.models.enums.TipoNotaType;
 
 import javax.persistence.*;
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.ForeignKey;
+import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
+
+
+import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.NamedQueries;
+import org.hibernate.annotations.NamedQuery;
+import org.hibernate.annotations.Type;
+
 import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
 @Entity
 @Table(name = "NOTA")
+@NamedQueries(value = { @NamedQuery(name = "NotaEntity.findAll", query = "SELECT e FROM NotaEntity e"),
+        @NamedQuery(name = "EmisorEntity.findByNotaSerie", query = "SELECT e FROM NotaEntity e WHERE e.serie=:serie AND e.numero=:numero"),
+        @NamedQuery(name = "EmisorEntity.findByPaisRuc", query = "SELECT e FROM EmisorEntity e WHERE e.pais=:pais AND e.ruc=:ruc") })
+
 public class NotaEntity {
     @Id
     @GeneratedValue(generator = "uuid2")
     @GenericGenerator(name ="uuid2", strategy = "uuid2")
     @Column(name = "ID")
-    private String getId;
+    private String id;
 
     @NotNull
     @Column(name = "SERIE")
@@ -26,6 +41,7 @@ public class NotaEntity {
     @NotNull
     @Column(name = "NUMERO")
     private String numero;
+
 
     @NotNull
     @Column(name = "FECHA_EMISION")
@@ -68,11 +84,11 @@ public class NotaEntity {
     private Set<DetalleNotaEntity> detalle= new HashSet<>();
 
     public String getGetId() {
-        return getId;
+        return id;
     }
 
     public void setGetId(String getId) {
-        this.getId = getId;
+        this.id = getId;
     }
 
     public String getSerie() {
@@ -154,5 +170,29 @@ public class NotaEntity {
 
     public void setResumen(ResumenNotaEntity resumen) {
         this.resumen = resumen;
+    }
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((id == null) ? 0 : id.hashCode());
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+       NotaEntity other = (NotaEntity) obj;
+        if (id == null) {
+            if (other.id != null)
+                return false;
+        } else if (!id.equals(other.id))
+            return false;
+        return true;
     }
 }

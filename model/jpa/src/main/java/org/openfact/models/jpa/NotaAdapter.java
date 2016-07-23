@@ -37,7 +37,7 @@ public class NotaAdapter implements NotaModel, JpaModel<NotaEntity> {
     }
     @Override
     public String getId() {
-        return null;
+        return notaEntity.getGetId();
     }
 
     @Override
@@ -62,7 +62,7 @@ public class NotaAdapter implements NotaModel, JpaModel<NotaEntity> {
 
     @Override
     public LocalDate getFechaEmision() {
-        return null;
+        return notaEntity.getFechaEmision();
     }
 
     @Override
@@ -95,5 +95,28 @@ public class NotaAdapter implements NotaModel, JpaModel<NotaEntity> {
         return null;
     }
 
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((notaEntity == null) ? 0 : notaEntity.hashCode());
+        return result;
+    }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        NotaAdapter other = (NotaAdapter) obj;
+        if (notaEntity == null) {
+            if (other.notaEntity != null)
+                return false;
+        } else if (!notaEntity.equals(other.notaEntity))
+            return false;
+        return true;
+    }
 }

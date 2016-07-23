@@ -1,7 +1,6 @@
 package org.openfact.models.jpa.entities;
 
 import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.annotations.Table;
 import org.hibernate.validator.constraints.NotBlank;
 
 import javax.persistence.*;
@@ -9,10 +8,8 @@ import javax.validation.constraints.Digits;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
-
 @Entity
-//@Table(name = "RESUMEN_NOTA_")
-@DiscriminatorValue(value = "RESUMEN_NOTA")
+@Table(name = "RESUMEN_NOTA")
 public class ResumenNotaEntity {
     @Id
     @GeneratedValue(generator = "uuid2")
