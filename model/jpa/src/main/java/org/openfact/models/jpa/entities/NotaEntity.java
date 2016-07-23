@@ -23,9 +23,9 @@ import java.util.Set;
 
 @Entity
 @Table(name = "NOTA")
-@NamedQueries(value = { @NamedQuery(name = "NotaEntity.findAll", query = "SELECT e FROM NotaEntity e"),
-        @NamedQuery(name = "EmisorEntity.findByNotaSerie", query = "SELECT e FROM NotaEntity e WHERE e.serie=:serie AND e.numero=:numero"),
-        @NamedQuery(name = "EmisorEntity.findByPaisRuc", query = "SELECT e FROM EmisorEntity e WHERE e.pais=:pais AND e.ruc=:ruc") })
+@NamedQueries(value = { @NamedQuery(name = "NotaEntity.findAll", query = "SELECT n FROM NotaEntity n"),
+        @NamedQuery(name = "NotaEntity.findByNumeracion", query = "SELECT n FROM NotaEntity n WHERE n.serie=:serie AND n.numero=:numero"),
+        @NamedQuery(name = "EmisorEntity.findByNumeracion", query = "SELECT e FROM EmisorEntity e WHERE e.pais=:pais AND e.ruc=:ruc") })
 
 public class NotaEntity {
     @Id
@@ -82,6 +82,9 @@ public class NotaEntity {
 
     @OneToMany(cascade = {CascadeType.REMOVE}, orphanRemoval = true, mappedBy = "nota")
     private Set<DetalleNotaEntity> detalle= new HashSet<>();
+
+//    @OneToMany(cascade = {CascadeType.REMOVE}, orphanRemoval = true, mappedBy = "nota")
+//    private ResumenNotaEntity resumenNota;
 
     public String getGetId() {
         return id;
@@ -195,4 +198,5 @@ public class NotaEntity {
             return false;
         return true;
     }
+
 }

@@ -23,7 +23,8 @@ public interface NotaProvider extends Provider {
 	ResumenNotaModel createResumenExonerado(BigDecimal totalExonerado, String moneda, BigDecimal importeTotal);
 
 	NotaModel findById(String id);
-	NotaModel findByEmisor(String id);
+	NotaModel findByNumeracion(String serie, String numero);
+
 
 	List<NotaModel> getAll(EmisorModel emisorModel);
 
@@ -31,8 +32,8 @@ public interface NotaProvider extends Provider {
 
 	SearchResultsModel<NotaModel> search(SearchCriteriaModel criteria, String filterText);
 
-	SearchResultsModel<NotaModel> search(NotaModel facturaModel, SearchCriteriaModel criteria);
+	SearchResultsModel<NotaModel> search(NotaModel notaModel, SearchCriteriaModel criteria);
 
-	SearchResultsModel<NotaModel> search(NotaModel facturaModel, SearchCriteriaModel criteria, String filterText);
+	SearchResultsModel<NotaModel> search(NotaModel notaModel, SearchCriteriaModel criteria, String filterText);
 
 }

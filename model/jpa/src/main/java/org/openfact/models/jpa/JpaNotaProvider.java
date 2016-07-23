@@ -77,14 +77,27 @@ public class JpaNotaProvider extends AbstractHibernateStorage implements NotaPro
     }
 
     @Override
-    public NotaModel findByEmisor(String id) {
-        return null;
+    public NotaModel findByNumeracion(String serie, String numero) {
+        TypedQuery<NotaEntity> query = em.createNamedQuery("NotaEntity.findByNumeracion", NotaEntity.class);
+        query.setParameter("serie", serie);
+        query.setParameter("numero", numero);
+        List<NotaEntity> results = query.getResultList();
+        if (results.isEmpty()) {
+
+            return null;
+        } else if (results.size() > 1) {
+            throw new IllegalStateException("Mas de una Nota con SERIE=" + serie + ", results" + results);
+        } else {
+            return new NotaAdapter(em, results.get(0));
+        }
     }
+
 
     @Override
     public List<NotaModel> getAll(EmisorModel emisorModel) {
         TypedQuery<NotaEntity> query = em.createNamedQuery("NotaEntity.findAll", NotaEntity.class);
         query.setParameter("ruc", emisorModel.getRuc());
+        query.setParameter("razonSocial", emisorModel.getRazonSocial());
         List<NotaEntity> entities = query.getResultList();
         List<NotaModel> result = new ArrayList<>();
         entities.forEach(n -> result.add(new NotaAdapter(em, n)));
@@ -107,16 +120,25 @@ public class JpaNotaProvider extends AbstractHibernateStorage implements NotaPro
 
     @Override
     public SearchResultsModel<NotaModel> search(SearchCriteriaModel criteria, String filterText) {
+        SearchResultsModel<NotaEntity> entityResult = findFullText(criteria, NotaEntity.class, filterText,
+                "serie");
+        List<NotaEntity> entities=entityResult.getModels();
+
+        SearchResultsModel<NotaModel> searchResults=new SearchResultsModel<>();
+        List<NotaModel> models=searchResults.getModels();
+        entities.forEach(n-> models.add(new NotaAdapter(em, n)));
+        searchResults.setTotalSize(entityResult.getTotalSize());
+
+        return searchResults;
+    }
+
+    @Override
+    public SearchResultsModel<NotaModel> search(NotaModel notaModel, SearchCriteriaModel criteria) {
         return null;
     }
 
     @Override
-    public SearchResultsModel<NotaModel> search(NotaModel facturaModel, SearchCriteriaModel criteria) {
-        return null;
-    }
-
-    @Override
-    public SearchResultsModel<NotaModel> search(NotaModel facturaModel, SearchCriteriaModel criteria, String filterText) {
+    public SearchResultsModel<NotaModel> search(NotaModel notaModel, SearchCriteriaModel criteria, String filterText) {
         return null;
     }
 

@@ -63,6 +63,7 @@ public class ComprobantePagoEntity {
 	@JoinColumn(name = "RESUMEN", foreignKey = @ForeignKey)
 	private ResumenComprobantePagoEntity resumen;
 
+
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "INFORMACION_ADICIONAL", foreignKey = @ForeignKey)
 	private InformacionAdicionalComprobantePagoEntity informacionAdicional;

@@ -63,6 +63,10 @@ public class ResumenNotaEntity {
     @Column(name = "ISC")
     private BigDecimal totalIsc;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(foreignKey = @ForeignKey)
+    private NotaEntity nota;
+
     public String getId() {
         return id;
     }
@@ -167,4 +171,11 @@ public class ResumenNotaEntity {
         return true;
     }
 
+    public NotaEntity getNota() {
+        return nota;
+    }
+
+    public void setNota(NotaEntity nota) {
+        this.nota = nota;
+    }
 }

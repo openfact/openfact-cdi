@@ -22,6 +22,8 @@ public class FacturaEntity extends ComprobantePagoEntity {
     @JoinColumn(foreignKey = @ForeignKey)
     private EnvioEntity envio;
 
+
+
     @OneToMany(cascade = {CascadeType.REMOVE}, orphanRemoval = true, mappedBy = "factura")
     private Set<DetalleFacturaEntity> detalle = new HashSet<>();
 
